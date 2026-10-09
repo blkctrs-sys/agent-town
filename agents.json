@@ -1,11 +1,11 @@
 [
   {
     "id": "job-scout",
-    "name": "Scout",
+    "name": "Craig",
     "title": "Job Scout",
     "plot": 0,
     "color": "#3f7f86",
-    "hat": "#8a6a3c",
+    "hat": "#e8a33a",
     "status": "status/job-scout.json"
   }
 ]
