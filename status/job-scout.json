@@ -1,11 +1,74 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-09T23:03:17Z",
-  "lastRun": "2026-10-09T22:21:17Z",
-  "summary": "Found 3 new roles: 1 art, 2 operations. Sources were thin today.",
+  "state": "done",
+  "updated": "2026-10-09T23:04:16Z",
+  "lastRun": "2026-10-09T23:04:16Z",
+  "summary": "Found 10 new roles: 6 game/tech/art, 4 operations. Several sources were unverifiable. 3 tailored resume drafts ready.",
   "report": "jobs/2026-10-09.md",
   "items": [
+    {
+      "title": "Junior / Associate Producer",
+      "company": "Pocket Lobster",
+      "location": "Remote",
+      "url": "https://hitmarker.net/jobs/pocket-lobster-jr-associate-producer-1599594",
+      "source": "Hitmarker",
+      "category": "art",
+      "note": "Entry-level producer role at a Roblox studio, remote, supporting day-to-day workflow coordination; listed as a contract that can convert to full-time. Not verified: the page was blocked, so confirm it is open."
+    },
+    {
+      "title": "Junior 3D Artist",
+      "company": "Splitting Point Studios",
+      "location": "Remote",
+      "url": "https://workwithindies.com/careers/splitting-point-junior-3d-artist",
+      "source": "Work With Indies",
+      "category": "art",
+      "note": "Full-time remote junior 3D role (modeling and texturing) at a Roblox studio. Not verified: the page was blocked, so confirm it is open and check requirements."
+    },
+    {
+      "title": "Technical Support Agent (contract)",
+      "company": "Keywords Studios",
+      "location": "Remote (US)",
+      "url": "https://hitmarker.net/jobs/keywords-studios-technical-support-agent-t-contract-432639",
+      "source": "Hitmarker",
+      "category": "art",
+      "note": "Work-from-home ticket-based player support for major online games, open to people across the US. Contract role. Not verified: confirm it is still open."
+    },
+    {
+      "title": "Player Support Specialist",
+      "company": "Volka",
+      "location": "Remote",
+      "url": "https://hitmarker.net/jobs/volka-player-support-specialist-4663677",
+      "source": "Hitmarker",
+      "category": "art",
+      "note": "Entry-level (0-1 years) remote player support contract at a game company. Not verified: confirm US eligibility, test assignment and that it is open."
+    },
+    {
+      "title": "Technical Support Specialist (AI / SaaS)",
+      "company": "EvolutionIQ",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZpTWlDUk9UbF9GRWJLaU9tYXZZTFZBEiQwMWExMjJlOC04MjMzLTc1YzItODBlNi04OTFlMjFhMGRmZWYaUEFBRWgwQjVnNzNOZ3VEd3FEOWI2UDY3dTZ0TUFLZDhIOEkyNE9NMVhycERrRkE3ZGVFNmhKanlaeG03VmVRNG43V25EeUNGa3psRm9JRG5WIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Entry-level tech support role at a software company, posted about 11 days ago; commute is NJ Transit/Penn Station area to be confirmed. Degree requirement not checked."
+    },
+    {
+      "title": "Inventory Control Supervisor, Maison Madison",
+      "company": "Herm\u00e8s",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtNjg5a0ptUEVHbzZlcnJxSWFkV3FnEiQwMWExMjJlOC00OTA1LTcyNjUtYTY0YS0zZjlhNzhlYmY4YzkaUEFBRVpPcl90N1VrMWRiWl9SQmZCNm5GNTY2NDNxWkxtNHFPMFU2WkpzWjVyTUhGZWV0YjlHdkFnVUotZ0NqQXN3VkpVNTJvbjV5LXF6dVdMIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Inventory supervisor role in Manhattan, posted about 1 day ago, with a train commute. Degree requirement not checked."
+    },
+    {
+      "title": "Purchasing Coordinator",
+      "company": "Constructive Partnerships Unlimited",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ1Q2NEMzQ2TXByaTVhX285ZUw3c0VnEiQwMWExMjJlOC00YjJiLTc4ZTQtYjhjYi1lNTJlZjEwMWM2NzEaUEFBSFRESFZQbU1JVVROcjdVOE9qN0JvbVZmTnF5UGxJQ1JTUElwY2kwc25xaEw1SXRLZ19seXExdDRMaTcwbmI5dWR6SHlNXzlIRklFWTdUIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Entry-level purchasing role in Manhattan, posted about 11 days ago. Degree requirement and industry not checked."
+    },
     {
       "title": "Junior 3D Artist",
       "company": "Threekit",
