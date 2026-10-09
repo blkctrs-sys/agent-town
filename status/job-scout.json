@@ -1,9 +1,37 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-09T22:20:21Z",
-  "lastRun": null,
-  "summary": "Just moved in. First shift starts soon.",
-  "report": null,
-  "items": []
+  "state": "done",
+  "updated": "2026-10-09T22:21:17Z",
+  "lastRun": "2026-10-09T22:21:17Z",
+  "summary": "Found 3 new roles: 1 art, 2 operations. Sources were thin today.",
+  "report": "jobs/2026-10-09.md",
+  "items": [
+    {
+      "title": "Junior 3D Artist",
+      "company": "Threekit",
+      "location": "Remote (US)",
+      "url": "https://startup.jobs/junior-3d-artist-threekit-2395944",
+      "source": "startup.jobs",
+      "category": "art",
+      "note": "Entry-level 3D role, remote, mentored by a senior artist. Unverified: confirm it is open and has no degree requirement."
+    },
+    {
+      "title": "Site Inventory Coordinator",
+      "company": "MSD",
+      "location": "Rahway, NJ",
+      "url": "https://www.careercircle.com/jobs/all/all/usa/nj/rahway/84983531-5cac-407c-bef8-0b7fc0135f92",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Inventory role with a short train commute; no degree mentioned in the listed skills."
+    },
+    {
+      "title": "IPI/Distribution Coordinator",
+      "company": "Coda Logistics and Distribution",
+      "location": "Linden, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5ZTZmdmdtc1FjZzk3REJNNUFaSWhnEiQwMWExMjJjMS00N2I0LTdhYTUtODY1NC00OTlkZGYzYTQ4MzMaUEFBRlVMNUdWNG9Id1RyNi1hR0JuRENHbk5ZQVhadHBiUE9PWVl5WFo3T2FZaVJ4NE5tVHhYRWM3NC0zdmkwbWJqeUtPeGtiNVN6cFdHSEdiIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Logistics coordination role close by on the train line, posted about 10 days ago."
+    }
+  ]
 }

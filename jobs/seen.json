@@ -1,3 +1,22 @@
 {
-  "jobs": []
+  "jobs": [
+    {
+      "url": "https://startup.jobs/junior-3d-artist-threekit-2395944",
+      "title": "Junior 3D Artist",
+      "company": "Threekit",
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "url": "https://www.careercircle.com/jobs/all/all/usa/nj/rahway/84983531-5cac-407c-bef8-0b7fc0135f92",
+      "title": "Site Inventory Coordinator",
+      "company": "MSD",
+      "firstSeen": "2026-10-09"
+    },
+    {
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5ZTZmdmdtc1FjZzk3REJNNUFaSWhnEiQwMWExMjJjMS00N2I0LTdhYTUtODY1NC00OTlkZGYzYTQ4MzMaUEFBRlVMNUdWNG9Id1RyNi1hR0JuRENHbk5ZQVhadHBiUE9PWVl5WFo3T2FZaVJ4NE5tVHhYRWM3NC0zdmkwbWJqeUtPeGtiNVN6cFdHSEdiIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "IPI/Distribution Coordinator",
+      "company": "Coda Logistics and Distribution",
+      "firstSeen": "2026-10-09"
+    }
+  ]
 }
