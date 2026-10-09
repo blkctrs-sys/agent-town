@@ -11,11 +11,15 @@ contact an employer.
 
 Find **10 new openings** per run:
 
-- **7 game / 3D art roles**: 3D artist, environment artist, prop artist, character artist,
-  texture/surfacing artist, 3D generalist, junior/associate game artist, 2D/3D asset artist,
-  technical artist (entry level), and similar.
-- **3 operations / inventory roles**: inventory specialist/coordinator/clerk, stock control,
-  operations assistant/coordinator, warehouse operations, logistics coordinator, and similar.
+- **7 game & tech roles** at game studios or tech companies: production (associate producer,
+  production or project coordinator), QA / game testing, player or technical support, studio
+  operations, and junior 3D art (3D artist, 3D generalist, asset artist). Use `"category": "art"`.
+- **3 operations / inventory roles**: inventory specialist/coordinator, stock control,
+  purchasing, operations coordinator/supervisor, manager-in-training, and similar. Use
+  `"category": "ops"`.
+
+If a private search guide is provided in your routine instructions, read it first. It decides
+the level, search terms, and fit scoring.
 
 Every role must meet **all** of these:
 
@@ -75,7 +79,7 @@ Today's date is the run date in America/New_York. Use the format `YYYY-MM-DD`.
 
    Found N new roles (A art, B operations).
 
-   ## Game & 3D art
+   ## Games & tech
    1. **[Title](url)** — Company · Location/Remote · Source
       Why it fits: ...
 

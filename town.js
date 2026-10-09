@@ -790,7 +790,7 @@
       : 'Every lot in town is taken.';
   }
 
-  const CATEGORY_NAMES = { art: 'Game & 3D art', ops: 'Operations & inventory' };
+  const CATEGORY_NAMES = { art: 'Games & tech', ops: 'Operations & inventory' };
   let openId = null, lastFocus = null;
 
   function openPanel(id, refresh) {
