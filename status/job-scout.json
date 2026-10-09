@@ -1,7 +1,7 @@
 {
   "agent": "job-scout",
-  "state": "done",
-  "updated": "2026-10-09T22:21:17Z",
+  "state": "working",
+  "updated": "2026-10-09T23:03:17Z",
   "lastRun": "2026-10-09T22:21:17Z",
   "summary": "Found 3 new roles: 1 art, 2 operations. Sources were thin today.",
   "report": "jobs/2026-10-09.md",
