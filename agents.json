@@ -6,7 +6,13 @@
     "plot": 0,
     "color": "#3f7f86",
     "hat": "#e8a33a",
-    "status": "status/job-scout.json"
+    "status": "status/job-scout.json",
+    "links": [
+      {
+        "label": "Tailored resumes",
+        "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/tailored"
+      }
+    ]
   },
   {
     "id": "brenden",
@@ -17,6 +23,12 @@
     "hair": "#f2d16b",
     "skin": "#f6d7b8",
     "prop": "boombox",
-    "status": "status/brenden.json"
+    "status": "status/brenden.json",
+    "links": [
+      {
+        "label": "Open my drafts",
+        "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/brenden/drafts"
+      }
+    ]
   }
 ]

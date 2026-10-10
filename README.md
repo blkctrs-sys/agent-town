@@ -7,7 +7,7 @@ At night they go to sleep.
 
 **Live town:** https://blkctrs-sys.github.io/agent-town/
 
-Add `?hour=21` to the URL to preview a different time of day.
+Add `?hour=21` to preview a time of day, `?event=halloween` or `?event=none` to preview the seasonal theme, and `?witch=1` to summon the witch right away.
 
 ## How it works
 

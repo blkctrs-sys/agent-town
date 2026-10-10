@@ -80,6 +80,16 @@
     return 'autumn';
   }
 
+  // Seasonal events: Halloween runs Oct 1 to Nov 7. Preview with ?event=halloween or ?event=none.
+  const EVENT_PARAM = new URLSearchParams(location.search).get('event');
+  function eventOf(d) {
+    if (EVENT_PARAM) return EVENT_PARAM === 'none' ? '' : EVENT_PARAM;
+    const m = d.getMonth(), day = d.getDate();
+    return m === 9 || (m === 10 && day <= 7) ? 'halloween' : '';
+  }
+  let spooky = false;
+  const SPOOKY_CROWN = ['#3d1f33', '#6b2a2a', '#a8461f'];
+
   // Sky tint keyframes by hour: [hour, [r, g, b, alpha]]
   const SKY = [
     [0, [26, 20, 66, 0.56]], [5, [26, 20, 66, 0.56]], [6.5, [255, 150, 140, 0.18]],
@@ -173,14 +183,21 @@
     for (let i = 0; i < 400; i++) rect(g, R() * W, SKYLINE_H + R() * (H - SKYLINE_H), 1, 1, '#d6cebf');
 
     // skyline
-    rect(g, 0, 0, W, SKYLINE_H, '#b9c3d6');
+    rect(g, 0, 0, W, SKYLINE_H, spooky ? '#3a2850' : '#b9c3d6');
+    if (spooky) {
+      rect(g, 0, 16, W, SKYLINE_H - 16, '#5a3058');
+      rect(g, 0, 24, W, SKYLINE_H - 24, '#8a4a3a');
+      disc(g, 342, 11, 8, '#f6dfae');
+      disc(g, 339, 9, 2, '#e3c58c'); disc(g, 345, 14, 1, '#e3c58c'); disc(g, 346, 8, 1, '#e3c58c');
+    }
     for (const b of skyline) {
-      rect(g, b.x, SKYLINE_H - b.h, b.w, b.h, b.col);
-      rect(g, b.x, SKYLINE_H - b.h, 1, b.h, shade(b.col, 18));
-      rect(g, b.x + b.w - 1, SKYLINE_H - b.h, 1, b.h, shade(b.col, -18));
+      const bc = spooky ? shade(b.col, -78) : b.col;
+      rect(g, b.x, SKYLINE_H - b.h, b.w, b.h, bc);
+      rect(g, b.x, SKYLINE_H - b.h, 1, b.h, shade(bc, 18));
+      rect(g, b.x + b.w - 1, SKYLINE_H - b.h, 1, b.h, shade(bc, -18));
       if (season === 'winter') rect(g, b.x, SKYLINE_H - b.h, b.w, 1, '#f4f8fb');
     }
-    for (const w of skyWindows) rect(g, w.x, w.y, 2, 2, '#d4e3ee');
+    for (const w of skyWindows) rect(g, w.x, w.y, 2, 2, spooky ? '#3c3650' : '#d4e3ee');
     rect(g, 0, SKYLINE_H, W, 2, '#6f7891');
     rect(g, 0, SKYLINE_H + 2, W, 1, '#8b93a8');
 
@@ -224,6 +241,18 @@
         rect(g, P.x + 6, P.y + 14, 42, 32, '#b5ac9b');
         for (let x = 0; x < 42; x += 4) rect(g, P.x + 6 + x, P.y + 14, 2, 2, '#e8c547');
         for (let x = 2; x < 42; x += 4) rect(g, P.x + 6 + x, P.y + 14, 2, 2, '#3b3f4d');
+        if (spooky) {
+          // a tiny graveyard until someone moves in
+          for (const [cx, cy] of [[11, 26], [22, 30], [33, 25]]) {
+            rect(g, P.x + cx, P.y + cy + 1, 7, 9, '#8a8790');
+            rect(g, P.x + cx + 1, P.y + cy, 5, 1, '#8a8790');
+            rect(g, P.x + cx + 1, P.y + cy + 1, 1, 8, '#a19ea8');
+            rect(g, P.x + cx + 3, P.y + cy + 3, 1, 3, '#5e5b66');
+            rect(g, P.x + cx + 2, P.y + cy + 4, 3, 1, '#5e5b66');
+            rect(g, P.x + cx - 1, P.y + cy + 10, 9, 1, '#6e5a44');
+          }
+          return;
+        }
         for (const [cx, cy] of [[12, 32], [20, 34], [15, 27]]) {
           rect(g, P.x + cx, P.y + cy, 7, 6, '#b98a5a');
           rect(g, P.x + cx, P.y + cy, 7, 1, '#d0a272');
@@ -487,6 +516,96 @@
     ctx.globalAlpha = 1;
   }
 
+  // ---------- spooky season ----------
+
+  const bats = Array.from({ length: 6 }, (_, i) => ({ x: Math.random() * W, y: 6 + Math.random() * 20, vx: 14 + Math.random() * 12, ph: i * 1.7, base: 6 + Math.random() * 22 }));
+  const witch = { x: -60, y: 12, active: false, wait: new URLSearchParams(location.search).has('witch') ? 0 : 6, preview: new URLSearchParams(location.search).has('witch') };
+  const sparks = [];
+  const ghosts = [{ ph: 0 }, { ph: 2.5 }].map((g) => ({ ...g, lot: -1, x: 0, y: 0, tx: 0, ty: 0, pause: 0 }));
+  const fogs = Array.from({ length: 7 }, (_, i) => ({ x: Math.random() * W, y: 60 + i * 22 + Math.random() * 8, rx: 30 + Math.random() * 30, speed: 3 + Math.random() * 4 }));
+
+  function drawPumpkin(x, y, lit, t) {
+    ellipse(ctx, x, y + 1, 4, 1, 'rgba(0,0,0,0.25)');
+    ellipse(ctx, x, y - 2, 4, 3, '#d9661c');
+    rect(ctx, x - 1, y - 5, 1, 6, '#b8501a');
+    rect(ctx, x + 2, y - 4, 1, 4, '#b8501a');
+    rect(ctx, x, y - 7, 1, 2, '#4a7a2a');
+    const face = lit && Math.sin(t * 13 + x) > -0.8 ? '#ffd36b' : '#3b1d0f';
+    rect(ctx, x - 2, y - 3, 1, 1, face);
+    rect(ctx, x + 1, y - 3, 1, 1, face);
+    rect(ctx, x - 2, y - 1, 4, 1, face);
+  }
+
+  function drawBat(b, t) {
+    const up = Math.sin(t * 16 + b.ph) > 0;
+    glyph(ctx, b.x, b.y, up ? ['#...#', '##.##', '.###.'] : ['.....', '#####', '#.#.#'], '#1c1026');
+  }
+
+  function drawWitch(t) {
+    if (!witch.active) return;
+    const x = Math.round(witch.x), y = Math.round(witch.y), flap = Math.floor(t * 6) % 2;
+    ctx.globalCompositeOperation = 'lighter';
+    const wg = ctx.createRadialGradient(x, y, 0, x, y, 16); wg.addColorStop(0, 'rgba(160,107,255,0.35)'); wg.addColorStop(1, 'rgba(160,107,255,0)');
+    ctx.fillStyle = wg; ctx.fillRect(x - 16, y - 16, 32, 32);
+    ctx.globalCompositeOperation = 'source-over';
+    rect(ctx, x - 9, y + 3, 15, 1, '#c08a4a');
+    glyph(ctx, x - 12, y + 2, ['###', '####', '###'], '#f2c94c');
+    rect(ctx, x - 5 - flap, y - 1, 3, 4, '#5a2e8a');
+    rect(ctx, x - 3, y - 2, 5, 5, '#8a52d6');
+    rect(ctx, x + 1, y + 3, 2, 2, '#1a1024');
+    rect(ctx, x, y - 5, 3, 3, '#8fd18a');
+    rect(ctx, x + 2, y - 4, 1, 1, '#1a1024');
+    rect(ctx, x - 2, y - 6, 8, 1, '#2a1838');
+    rect(ctx, x - 1, y - 8, 4, 2, '#1a1024');
+    rect(ctx, x - 1, y - 7, 4, 1, '#7fff7a');
+    rect(ctx, x - 1, y - 10, 2, 2, '#1a1024');
+    rect(ctx, x - 3, y - 11, 2, 1, '#1a1024');
+    rect(ctx, x - 1, y - 2, 1, 3, '#ff8a2a'); // hair
+  }
+
+  function drawGhost(gh, t) {
+    if (gh.lot < 0) return;
+    const x = Math.round(gh.x), y = Math.round(gh.y + Math.sin(t * 2 + gh.ph) * 1.5);
+    const w = Math.floor(t * 4 + gh.ph) % 2;
+    ctx.globalAlpha = 0.78;
+    glyph(ctx, x - 3, y - 9, ['.#####.', '#######', '#######', '#######', '#######', w ? '#.#.#.#' : '.#.#.#.'], '#eef0ff');
+    ctx.globalAlpha = 1;
+    rect(ctx, x - 2, y - 7, 1, 2, '#2a1838');
+    rect(ctx, x + 1, y - 7, 1, 2, '#2a1838');
+    rect(ctx, x - 1, y - 5, 2, 1, '#2a1838');
+  }
+
+  function updateSpooky(dt, t) {
+    for (const b of bats) {
+      b.x += b.vx * dt; b.y = b.base + Math.sin(t * 2.4 + b.ph) * 4;
+      if (b.x > W + 8) { b.x = -8; b.base = 4 + Math.random() * 26; }
+    }
+    if (!witch.active) {
+      witch.wait -= dt;
+      if (witch.wait <= 0) { witch.active = true; witch.x = witch.preview ? 150 : -20; witch.preview = false; witch.base = 8 + Math.random() * 18; }
+    } else {
+      witch.x += 46 * dt; witch.y = witch.base + Math.sin(t * 2) * 3;
+      if (Math.random() < dt * 14) sparks.push({ x: witch.x - 12, y: witch.y + 3, life: 0, col: ['#a06bff', '#7fff7a', '#ffb347'][(Math.random() * 3) | 0] });
+      if (witch.x > W + 30) { witch.active = false; witch.wait = 25 + Math.random() * 30; }
+    }
+    for (let i = sparks.length - 1; i >= 0; i--) { const s = sparks[i]; s.life += dt; s.y += 6 * dt; if (s.life > 1.2) sparks.splice(i, 1); }
+    // ghosts drift around the empty lots
+    const empty = PLOTS.map((P, i) => i).filter((i) => !agents.some((a) => a.plot === i));
+    ghosts.forEach((gh, k) => {
+      if (!empty.length) { gh.lot = -1; return; }
+      if (gh.lot < 0 || !empty.includes(gh.lot)) {
+        gh.lot = empty[(k * 2) % empty.length]; const P = PLOTS[gh.lot];
+        gh.x = gh.tx = P.x + 30; gh.y = gh.ty = P.y + 40;
+      }
+      const P = PLOTS[gh.lot];
+      if (gh.pause > 0) { gh.pause -= dt; return; }
+      const dx = gh.tx - gh.x, dy = gh.ty - gh.y, d = Math.hypot(dx, dy);
+      if (d < 0.5) { gh.tx = P.x + 8 + Math.random() * 74; gh.ty = P.y + 24 + Math.random() * 40; gh.pause = 1 + Math.random() * 2; return; }
+      const step = Math.min(d, 7 * dt); gh.x += (dx / d) * step; gh.y += (dy / d) * step;
+    });
+    for (const f of fogs) { f.x += f.speed * dt; if (f.x - f.rx > W) f.x = -f.rx; }
+  }
+
   // ---------- resident behaviour ----------
 
   function modeOf(a, now) {
@@ -631,13 +750,14 @@
   // ---------- main loop ----------
 
   function render(t, now) {
-    const S = SEASONS[season];
+    const S = spooky ? { ...SEASONS[season], crown: SPOOKY_CROWN } : SEASONS[season];
     const hour = now.getHours() + now.getMinutes() / 60;
     const sky = skyAt(hour);
-    const dark = sky[3] / 0.56;
+    // In spooky season it never gets fully bright, so the lights stay on.
+    const dark = Math.max(sky[3] / 0.56, spooky ? 0.6 : 0);
     const lightsOn = dark > 0.3;
 
-    const key = season + '|' + agents.map((a) => a.plot).join(',');
+    const key = season + '|' + spooky + '|' + agents.map((a) => a.plot).join(',');
     if (key !== bgKey) { bg = buildBackground(); bgKey = key; }
     ctx.drawImage(bg, 0, 0);
 
@@ -651,6 +771,7 @@
     const occupied = new Map(agents.map((a) => [a.plot, a]));
     PLOTS.forEach((P, i) => {
       const a = occupied.get(i);
+      if (spooky) items.push([P.y + 50, () => drawPumpkin(P.x + 14, P.y + 50, lightsOn, t)]);
       if (!a) { items.push([P.y + 48, () => drawHoloSign(P, t)]); return; }
       const lit = (lightsOn && a.mode !== 'sleeping') || (a.mode === 'working' && dark > 0.1);
       items.push([P.y + 46, () => drawHome(P, a, lit, t)]);
@@ -670,7 +791,8 @@
       }
     }
 
-    // time-of-day tint
+    // spooky gloom, then the time-of-day tint
+    if (spooky) { ctx.fillStyle = 'rgba(34,12,48,0.34)'; ctx.fillRect(0, 0, W, H); }
     if (sky[3] > 0.005) {
       ctx.fillStyle = `rgba(${sky[0] | 0},${sky[1] | 0},${sky[2] | 0},${sky[3].toFixed(3)})`;
       ctx.fillRect(0, 0, W, H);
@@ -688,7 +810,11 @@
         ctx.fillStyle = g;
         ctx.fillRect(x - r, y - r, r * 2, r * 2);
       };
-      for (const L of LAMPS) glow(L.x + 3, L.y - 15, 16, '#ffbe64', 0.35 * dark);
+      LAMPS.forEach((L, k) => {
+        const flicker = spooky && k === 1 && Math.sin(t * 23) + Math.sin(t * 7.3) > 1.2 ? 0.15 : 1;
+        glow(L.x + 3, L.y - 15, 16, '#ffbe64', 0.35 * dark * flicker);
+      });
+      if (spooky) PLOTS.forEach((P) => glow(P.x + 14, P.y + 47, 9, '#ff8a2a', (0.45 + Math.sin(t * 9 + P.x) * 0.1) * dark));
       for (const a of agents) {
         const P = PLOTS[a.plot];
         if (!(a.mode === 'sleeping' && hour < 5)) {
@@ -707,6 +833,21 @@
       glow(CART.x + 10, CART.y - 15, 12, '#ff7a59', 0.4 * dark);
       for (const d of drones) glow(d.x, d.y + 2, 4, '#7be08a', 0.5 * dark);
       ctx.globalCompositeOperation = 'source-over';
+    }
+
+    if (spooky) {
+      // the moon glows through the gloom
+      ctx.globalCompositeOperation = 'lighter';
+      const mg = ctx.createRadialGradient(342, 11, 0, 342, 11, 22); mg.addColorStop(0, 'rgba(255,220,160,0.45)'); mg.addColorStop(1, 'rgba(255,220,160,0)');
+      ctx.fillStyle = mg; ctx.fillRect(318, 0, 48, 34);
+      ctx.globalCompositeOperation = 'source-over';
+      for (const f of fogs) { ctx.globalAlpha = 0.09; ellipse(ctx, f.x, f.y, Math.round(f.rx), 4, '#cbbfe6'); ellipse(ctx, f.x + 10, f.y - 2, Math.round(f.rx * 0.6), 3, '#cbbfe6'); }
+      ctx.globalAlpha = 1;
+      for (const b of bats) drawBat(b, t);
+      for (const sp of sparks) { ctx.globalAlpha = 1 - sp.life / 1.2; rect(ctx, sp.x, sp.y, 1, 1, sp.col); }
+      ctx.globalAlpha = 1;
+      drawWitch(t);
+      for (const gh of ghosts) drawGhost(gh, t);
     }
 
     // speech bubbles & Zs stay readable above the tint
@@ -746,6 +887,9 @@
     last = ms;
     const t = ms / 1000, now = clockNow();
     season = seasonOf(now);
+    spooky = eventOf(now) === 'halloween';
+    document.body.classList.toggle('halloween', spooky);
+    if (spooky) updateSpooky(dt, t);
     for (const a of agents) { a.mode = modeOf(a, now); updateVillager(a, dt); }
     updateWorld(dt, t);
     render(t, now);
@@ -851,6 +995,7 @@
         <div class="where">${esc([it.company, it.location, it.source].filter(Boolean).join(' · '))}</div>
         ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}</li>`).join('') + '</ul>';
     }
+    for (const l of a.links || []) html += `<a class="report-link btn-link" href="${esc(safeUrl(l.url))}" target="_blank" rel="noopener">${esc(l.label)} →</a> `;
     if (s.report) html += `<a class="report-link" href="${esc(REPO_URL + s.report)}" target="_blank" rel="noopener">Read the full report on GitHub →</a>`;
     document.getElementById('panel-body').innerHTML = html;
 
@@ -901,7 +1046,7 @@
     document.getElementById('clock').textContent =
       now.toLocaleDateString(undefined, { weekday: 'long' }) + ', ' +
       now.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' }) + ' · ' +
-      s[0].toUpperCase() + s.slice(1);
+      (eventOf(now) === 'halloween' ? '🎃 Spooky season' : s[0].toUpperCase() + s.slice(1));
   }
 
   tickClock();

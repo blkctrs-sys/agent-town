@@ -238,3 +238,48 @@ canvas {
   h1 { font-size: 1.6rem; }
   .stage { border-width: 3px; border-radius: 10px; }
 }
+
+/* ---------- spooky season (Oct 1 – Nov 7) ---------- */
+body.halloween {
+  --bg: #120c18;
+  --panel: #1f1626;
+  --panel-2: #1a1220;
+  --line: #3a2a44;
+  --ink: #efe3d6;
+  --muted: #a598ad;
+  --amber: #ff8a2a;
+  --cyan: #9cff8a;
+  --pink: #b07cff;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 85% -10%, rgba(255, 138, 42, 0.16), transparent 50%),
+    radial-gradient(ellipse at 10% 110%, rgba(150, 90, 255, 0.14), transparent 55%),
+    radial-gradient(rgba(176, 124, 255, 0.07) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 22px 22px;
+}
+body.halloween h1 {
+  font-family: "Creepster", "Pixelify Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  font-size: 2.4rem;
+  text-shadow: 0 0 14px rgba(255, 138, 42, 0.55), 0 2px 0 #3a1608;
+}
+body.halloween .stage {
+  border-color: #2a1d33;
+  box-shadow: 0 0 0 1px rgba(255, 138, 42, 0.45), 0 0 34px rgba(255, 138, 42, 0.16), 0 14px 30px rgba(0, 0, 0, 0.6);
+}
+body.halloween .label { border-color: var(--amber); box-shadow: 0 0 8px rgba(255, 138, 42, 0.35); background: rgba(18, 12, 24, 0.88); }
+body.halloween .card:hover, body.halloween .card:focus-visible { border-color: var(--amber); box-shadow: 0 0 16px rgba(255, 138, 42, 0.22); }
+body.halloween .panel { border-left-color: var(--amber); }
+body.halloween .chip { background: var(--amber); }
+body.halloween .roster h2, body.halloween .panel h3 { color: var(--amber); }
+
+.btn-link {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 6px 12px;
+  border: 1px solid var(--cyan);
+  border-radius: 999px;
+  text-decoration: none;
+}
+.btn-link:hover { background: rgba(94, 231, 223, 0.1); }
