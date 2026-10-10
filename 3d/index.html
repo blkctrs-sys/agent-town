@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Town 3D</title>
+  <meta name="description" content="A low-poly 3D version of Agent Town, the tech city where my AI agents live and work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="town3d.css?v=1">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="scene" aria-label="A low-poly 3D tech city. Each townhouse belongs to an agent, and the residents walk around while they work."></canvas>
+  <div class="labels" id="labels" aria-hidden="true"></div>
+
+  <header class="top">
+    <h1>Agent Town</h1>
+    <p class="clock" id="clock"></p>
+  </header>
+
+  <nav class="corner">
+    <a href="../">2D town</a>
+  </nav>
+
+  <p class="hint">Drag to spin · scroll or pinch to zoom · tap a resident</p>
+
+  <aside class="panel" id="panel" role="dialog" aria-modal="false" aria-labelledby="panel-title" hidden>
+    <button class="close" id="close" aria-label="Close">×</button>
+    <div id="panel-body"></div>
+  </aside>
+
+  <script type="module" src="town3d.js?v=1"></script>
+</body>
+</html>
