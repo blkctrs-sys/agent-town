@@ -1,9 +1,11 @@
 {
   "agent": "brenden",
-  "state": "working",
-  "updated": "2026-10-10T01:27:21Z",
-  "lastRun": null,
-  "summary": "Brenden is on the mic, writing a video package.",
+  "state": "done",
+  "updated": "2026-10-10T01:27:46Z",
+  "lastRun": "2026-10-10T01:27:46Z",
+  "summary": "Video package done: 1 package ready for review.",
   "report": null,
-  "items": []
+  "items": [
+    { "title": "Video package", "category": "video" }
+  ]
 }
