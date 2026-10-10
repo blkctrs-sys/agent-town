@@ -311,7 +311,8 @@
     rect(ctx, bx + 1, by + 1, 20, 12, '#14202c');
     for (let i = 0; i < Math.min(items.length, 10); i++) {
       const px = bx + 2 + (i % 5) * 4, py = by + 2 + Math.floor(i / 5) * 5;
-      rect(ctx, px, py, 3, 4, items[i].category === 'ops' ? PINK : CYAN);
+      const cat = items[i].category;
+      rect(ctx, px, py, 3, 4, cat === 'ops' || cat === 'newsletter' ? PINK : cat === 'video' ? AMBER : CYAN);
       rect(ctx, px, py, 3, 1, '#e9fffd');
     }
     if (a.mode === 'working') rect(ctx, bx + 1, by + 1 + Math.floor(t * 8) % 12, 20, 1, rgba(CYAN, 0.6));
@@ -416,7 +417,7 @@
     const v = a.v;
     const x = Math.round(v.x), f = v.moving ? Math.floor(t * 8 + v.ph) % 2 : 0;
     const y = Math.round(v.y) + (v.moving && f ? -1 : 0);
-    const skin = '#f3cfa6', ink = '#3b2f25';
+    const skin = a.skin || '#f3cfa6', ink = '#3b2f25';
     ellipse(ctx, Math.round(v.x), Math.round(v.y), 3, 1, 'rgba(0,0,0,0.2)');
     rect(ctx, x - 2, y - 2, 1, v.moving && f ? 1 : 2, '#3b3f4d');
     rect(ctx, x + 1, y - 2, 1, v.moving && !f ? 1 : 2, '#3b3f4d');
@@ -426,19 +427,41 @@
     rect(ctx, x - 4, y - 6, 1, 3, shade(a.color, -15));
     rect(ctx, x + 3, y - 6, 1, 3, shade(a.color, -15));
     rect(ctx, x, y - 7, 1, 4, shade(a.color, 30));
-    // messenger bag
-    rect(ctx, v.dir > 0 ? x - 2 : x + 1, y - 7, 1, 4, '#7a4b2a');
-    rect(ctx, v.dir > 0 ? x - 4 : x + 3, y - 4, 2, 2, '#8f5b34');
+    if (a.prop === 'boombox') {
+      // gold chain and a boombox carried at the side
+      rect(ctx, x - 1, y - 7, 3, 1, '#f2c94c');
+      rect(ctx, x + 1, y - 6, 1, 1, '#f2c94c');
+      const bx = v.dir > 0 ? x + 3 : x - 9;
+      const bob = v.moving && f ? 1 : 0;
+      rect(ctx, bx + 1, y - 7 + bob, 4, 1, '#8a8f9e');
+      rect(ctx, bx, y - 6 + bob, 6, 4, '#2a2f3d');
+      rect(ctx, bx + 1, y - 5 + bob, 1, 2, '#c8ccd6');
+      rect(ctx, bx + 4, y - 5 + bob, 1, 2, '#c8ccd6');
+      rect(ctx, bx + 2, y - 5 + bob, 2, 1, (a.mode === 'working' || a.mode === 'home') && Math.sin(t * 8) > 0 ? PINK : '#5d6275');
+    } else {
+      // messenger bag
+      rect(ctx, v.dir > 0 ? x - 2 : x + 1, y - 7, 1, 4, '#7a4b2a');
+      rect(ctx, v.dir > 0 ? x - 4 : x + 3, y - 4, 2, 2, '#8f5b34');
+    }
     // head
     rect(ctx, x - 3, y - 12, 6, 5, skin);
     if (v.moving) rect(ctx, v.dir > 0 ? x + 1 : x - 2, y - 10, 1, 1, ink);
     else { rect(ctx, x - 2, y - 10, 1, 1, ink); rect(ctx, x + 1, y - 10, 1, 1, ink); }
     rect(ctx, v.dir > 0 ? x + 2 : x - 3, y - 9, 1, 1, '#eaa48e');
-    // cap & headset
-    rect(ctx, x - 3, y - 14, 6, 2, a.hat);
-    rect(ctx, v.dir > 0 ? x + 1 : x - 4, y - 12, 4, 1, shade(a.hat, -25));
-    rect(ctx, v.dir > 0 ? x - 4 : x + 3, y - 11, 1, 2, '#3b3f4d');
-    rect(ctx, v.dir > 0 ? x - 4 : x + 3, y - 11, 1, 1, CYAN);
+    if (a.hair) {
+      // swept hair
+      rect(ctx, x - 3, y - 14, 6, 2, a.hair);
+      rect(ctx, x - 4, y - 13, 1, 3, a.hair);
+      rect(ctx, x + 3, y - 13, 1, 2, a.hair);
+      rect(ctx, v.dir > 0 ? x + 1 : x - 3, y - 15, 3, 1, a.hair);
+      rect(ctx, x - 2, y - 14, 3, 1, shade(a.hair, 35));
+    } else {
+      // cap & headset
+      rect(ctx, x - 3, y - 14, 6, 2, a.hat);
+      rect(ctx, v.dir > 0 ? x + 1 : x - 4, y - 12, 4, 1, shade(a.hat, -25));
+      rect(ctx, v.dir > 0 ? x - 4 : x + 3, y - 11, 1, 2, '#3b3f4d');
+      rect(ctx, v.dir > 0 ? x - 4 : x + 3, y - 11, 1, 1, CYAN);
+    }
   }
 
   function drawBubble(x, y, kind, t) {
@@ -524,7 +547,7 @@
 
   // ---------- moving things: steam, weather, traffic ----------
 
-  let steamTimer = 0, weatherTimer = 0, carTimer = 1;
+  let steamTimer = 0, weatherTimer = 0, carTimer = 1, noteTimer = 0;
   const CAR_COLORS = ['#e07a5f', '#f2cc8f', '#81b29a', '#9b8ec4', '#f4ecdc', '#6fa8dc'];
 
   function updateWorld(dt, t) {
@@ -536,6 +559,17 @@
         particles.push({ kind: 'steam', x: P.x + 39, y: P.y + 7, vx: 2 + Math.random(), vy: -6, life: 0, max: 2.6 });
       }
       particles.push({ kind: 'steam', x: CART.x - 1 + Math.random() * 3, y: CART.y - 7, vx: 1, vy: -5, life: 0, max: 1.8 });
+    }
+    // music notes from anyone carrying a boombox
+    noteTimer -= dt;
+    if (noteTimer <= 0) {
+      noteTimer = 0.9;
+      for (const a of agents) {
+        if (a.prop !== 'boombox' || a.v.hidden) continue;
+        const bx = a.v.dir > 0 ? a.v.x + 6 : a.v.x - 6;
+        particles.push({ kind: 'note', x: bx, y: a.v.y - 8, vx: (Math.random() - 0.5) * 4, vy: -7, life: 0, max: 2.2, ph: Math.random() * 6,
+          col: [CYAN, PINK, AMBER][(Math.random() * 3) | 0] });
+      }
     }
     if (weatherTimer <= 0 && (season === 'autumn' || season === 'winter')) {
       weatherTimer = season === 'winter' ? 0.08 : 0.6;
@@ -580,6 +614,9 @@
         const k = p.life / p.max, s = 1 + Math.round(k * 2);
         ctx.globalAlpha = 0.55 * (1 - k);
         rect(ctx, p.x, p.y, s, s, '#f2efe8');
+      } else if (p.kind === 'note') {
+        ctx.globalAlpha = Math.min(1, 2 * (1 - p.life / p.max));
+        glyph(ctx, p.x + Math.sin(t * 3 + p.ph) * 1.5, p.y, ['.##', '.#.', '##.', '##.'], p.col);
       } else if (p.kind === 'snow') {
         ctx.globalAlpha = 0.9;
         rect(ctx, p.x, p.y, 1, 1, '#ffffff');
@@ -790,7 +827,7 @@
       : 'Every lot in town is taken.';
   }
 
-  const CATEGORY_NAMES = { art: 'Games & tech', ops: 'Operations & inventory' };
+  const CATEGORY_NAMES = { art: 'Games & tech', ops: 'Operations & inventory', video: 'Video packages', post: 'Community posts', newsletter: 'Newsletter' };
   let openId = null, lastFocus = null;
 
   function openPanel(id, refresh) {
@@ -810,7 +847,7 @@
     if (s.lastRun) html += `<p class="meta">Last finished: ${esc(new Date(s.lastRun).toLocaleString())}</p>`;
     for (const [cat, list] of Object.entries(groups)) {
       html += `<h4>${esc(CATEGORY_NAMES[cat] || cat)}</h4><ul class="jobs">` + list.map((it) => `<li>
-        <a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)}</a>
+        ${it.url ? `<a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${esc(it.title)}</a>` : `<strong>${esc(it.title)}</strong>`}
         <div class="where">${esc([it.company, it.location, it.source].filter(Boolean).join(' · '))}</div>
         ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}</li>`).join('') + '</ul>';
     }

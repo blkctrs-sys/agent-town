@@ -7,5 +7,16 @@
     "color": "#3f7f86",
     "hat": "#e8a33a",
     "status": "status/job-scout.json"
+  },
+  {
+    "id": "brenden",
+    "name": "Brenden",
+    "title": "Content Producer",
+    "plot": 1,
+    "color": "#7b5cd6",
+    "hair": "#f2d16b",
+    "skin": "#f6d7b8",
+    "prop": "boombox",
+    "status": "status/brenden.json"
   }
 ]
