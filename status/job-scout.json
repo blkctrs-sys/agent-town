@@ -1,100 +1,46 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-12T11:36:52Z",
-  "lastRun": "2026-10-09T23:04:16Z",
-  "summary": "Found 10 new roles: 6 game/tech/art, 4 operations. Several sources were unverifiable. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-09.md",
+  "state": "done",
+  "updated": "2026-10-12T11:37:50Z",
+  "lastRun": "2026-10-12T11:37:50Z",
+  "summary": "Found 4 new roles: 3 game/tech, 1 operations. Search was thin and job pages could not be fetched, so all are unverified. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-12.md",
   "items": [
     {
-      "title": "Junior / Associate Producer",
-      "company": "Pocket Lobster",
+      "title": "Production Assistant (contract)",
+      "company": "Alderon Games",
       "location": "Remote",
-      "url": "https://hitmarker.net/jobs/pocket-lobster-jr-associate-producer-1599594",
-      "source": "Hitmarker",
+      "url": "https://alderongames.com/work-with-us/production-assistant",
+      "source": "Web search",
       "category": "art",
-      "note": "Entry-level producer role at a Roblox studio, remote, supporting day-to-day workflow coordination; listed as a contract that can convert to full-time. Not verified: the page was blocked, so confirm it is open."
+      "note": "Entry-level production support role at a game studio, remote, supporting project management processes; contract, full-time hours. Not verified: page could not be fetched and has no visible date, so confirm it is open and US workers are eligible."
     },
     {
-      "title": "Junior 3D Artist",
-      "company": "Splitting Point Studios",
-      "location": "Remote",
-      "url": "https://workwithindies.com/careers/splitting-point-junior-3d-artist",
-      "source": "Work With Indies",
-      "category": "art",
-      "note": "Full-time remote junior 3D role (modeling and texturing) at a Roblox studio. Not verified: the page was blocked, so confirm it is open and check requirements."
-    },
-    {
-      "title": "Technical Support Agent (contract)",
-      "company": "Keywords Studios",
+      "title": "Game Development Quality Assurance Tester",
+      "company": "Tripwire Interactive",
       "location": "Remote (US)",
-      "url": "https://hitmarker.net/jobs/keywords-studios-technical-support-agent-t-contract-432639",
-      "source": "Hitmarker",
+      "url": "https://builtin.com/job/game-development-quality-assurance-tester/3605363",
+      "source": "Built In",
       "category": "art",
-      "note": "Work-from-home ticket-based player support for major online games, open to people across the US. Contract role. Not verified: confirm it is still open."
+      "note": "Remote QA role at an Unreal Engine studio; defect reproduction and reporting. Asks for 1-2 years of experience, so a stretch. Not verified: posting date unclear, confirm it is open."
     },
     {
-      "title": "Player Support Specialist",
-      "company": "Volka",
-      "location": "Remote",
-      "url": "https://hitmarker.net/jobs/volka-player-support-specialist-4663677",
-      "source": "Hitmarker",
-      "category": "art",
-      "note": "Entry-level (0-1 years) remote player support contract at a game company. Not verified: confirm US eligibility, test assignment and that it is open."
-    },
-    {
-      "title": "Technical Support Specialist (AI / SaaS)",
-      "company": "EvolutionIQ",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZpTWlDUk9UbF9GRWJLaU9tYXZZTFZBEiQwMWExMjJlOC04MjMzLTc1YzItODBlNi04OTFlMjFhMGRmZWYaUEFBRWgwQjVnNzNOZ3VEd3FEOWI2UDY3dTZ0TUFLZDhIOEkyNE9NMVhycERrRkE3ZGVFNmhKanlaeG03VmVRNG43V25EeUNGa3psRm9JRG5WIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Entry-level tech support role at a software company, posted about 11 days ago; commute is NJ Transit/Penn Station area to be confirmed. Degree requirement not checked."
-    },
-    {
-      "title": "Inventory Control Supervisor, Maison Madison",
-      "company": "Herm\u00e8s",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtNjg5a0ptUEVHbzZlcnJxSWFkV3FnEiQwMWExMjJlOC00OTA1LTcyNjUtYTY0YS0zZjlhNzhlYmY4YzkaUEFBRVpPcl90N1VrMWRiWl9SQmZCNm5GNTY2NDNxWkxtNHFPMFU2WkpzWjVyTUhGZWV0YjlHdkFnVUotZ0NqQXN3VkpVNTJvbjV5LXF6dVdMIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Inventory supervisor role in Manhattan, posted about 1 day ago, with a train commute. Degree requirement not checked."
-    },
-    {
-      "title": "Purchasing Coordinator",
-      "company": "Constructive Partnerships Unlimited",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ1Q2NEMzQ2TXByaTVhX285ZUw3c0VnEiQwMWExMjJlOC00YjJiLTc4ZTQtYjhjYi1lNTJlZjEwMWM2NzEaUEFBSFRESFZQbU1JVVROcjdVOE9qN0JvbVZmTnF5UGxJQ1JTUElwY2kwc25xaEw1SXRLZ19seXExdDRMaTcwbmI5dWR6SHlNXzlIRklFWTdUIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Entry-level purchasing role in Manhattan, posted about 11 days ago. Degree requirement and industry not checked."
-    },
-    {
-      "title": "Junior 3D Artist",
-      "company": "Threekit",
+      "title": "Customer Support Associate",
+      "company": "Empower",
       "location": "Remote (US)",
-      "url": "https://startup.jobs/junior-3d-artist-threekit-2395944",
-      "source": "startup.jobs",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZPbUMtRG5HdEJCX0c5S3pCMGkydEtBEiQwMWExMmZlNi1mMDcwLTc0YzAtOWFlZC1jMjdhOWEzNjQ0MWYaWEFBSEo1LXpZcnZIT3dnNDQyclRiNFVQdC1EZkdkS3hMZ3VmV3lEaHRfcXAzcUZOY0ItLUV6YnFaQl9sMWZrVlVycGpzOTA2VE1KUHRkdEtzS0lUS1BUakogya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "art",
-      "note": "Entry-level 3D role, remote, mentored by a senior artist. Unverified: confirm it is open and has no degree requirement."
+      "note": "Remote entry-level customer support role at a tech company, posted today. Not verified: page could not be fetched, so confirm degree requirement and details."
     },
     {
-      "title": "Site Inventory Coordinator",
-      "company": "MSD",
-      "location": "Rahway, NJ",
-      "url": "https://www.careercircle.com/jobs/all/all/usa/nj/rahway/84983531-5cac-407c-bef8-0b7fc0135f92",
+      "title": "IT Equipment Inventory Coordinator",
+      "company": "High Bridge Consulting LLC",
+      "location": "Newark, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZpRzVDMm4tQ3pfUVYzS29ldG5aWlNREiQwMWExMmZlNi1jMzZmLTcwNjYtOTBiZS04OWM0NDY0YjhiMGMaUEFBSGZuZ3pQMjdVWlB6OG9kdlFnREVfeXBxMnc1dVdrekFkSjdVNXBDWEpmNW1TY2tZN0VzaDdBbFdsT1EyRlNZS01JYjdFWTE4N3FKc3JlIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Inventory role with a short train commute; no degree mentioned in the listed skills."
-    },
-    {
-      "title": "IPI/Distribution Coordinator",
-      "company": "Coda Logistics and Distribution",
-      "location": "Linden, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5ZTZmdmdtc1FjZzk3REJNNUFaSWhnEiQwMWExMjJjMS00N2I0LTdhYTUtODY1NC00OTlkZGYzYTQ4MzMaUEFBRlVMNUdWNG9Id1RyNi1hR0JuRENHbk5ZQVhadHBiUE9PWVl5WFo3T2FZaVJ4NE5tVHhYRWM3NC0zdmkwbWJqeUtPeGtiNVN6cFdHSEdiIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Logistics coordination role close by on the train line, posted about 10 days ago."
+      "note": "Full-time on-site inventory coordination role, about 3 days old, reachable by train from the Newark area. Not verified: page could not be fetched, so confirm degree requirement."
     }
   ]
 }
