@@ -1,46 +1,55 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-13T11:41:00Z",
-  "lastRun": "2026-10-12T11:37:50Z",
-  "summary": "Found 4 new roles: 3 game/tech, 1 operations. Search was thin and job pages could not be fetched, so all are unverified. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-12.md",
+  "state": "done",
+  "updated": "2026-10-13T11:50:00Z",
+  "lastRun": "2026-10-13T11:50:00Z",
+  "summary": "Found 5 new roles: 4 game/tech, 1 operations. Search was thin and job pages could not be fetched, so all are unverified. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-13.md",
   "items": [
     {
-      "title": "Production Assistant (contract)",
-      "company": "Alderon Games",
-      "location": "Remote",
-      "url": "https://alderongames.com/work-with-us/production-assistant",
-      "source": "Web search",
-      "category": "art",
-      "note": "Entry-level production support role at a game studio, remote, supporting project management processes; contract, full-time hours. Not verified: page could not be fetched and has no visible date, so confirm it is open and US workers are eligible."
-    },
-    {
-      "title": "Game Development Quality Assurance Tester",
-      "company": "Tripwire Interactive",
+      "title": "Technical Support Specialist",
+      "company": "PatientNow",
       "location": "Remote (US)",
-      "url": "https://builtin.com/job/game-development-quality-assurance-tester/3605363",
-      "source": "Built In",
-      "category": "art",
-      "note": "Remote QA role at an Unreal Engine studio; defect reproduction and reporting. Asks for 1-2 years of experience, so a stretch. Not verified: posting date unclear, confirm it is open."
-    },
-    {
-      "title": "Customer Support Associate",
-      "company": "Empower",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZPbUMtRG5HdEJCX0c5S3pCMGkydEtBEiQwMWExMmZlNi1mMDcwLTc0YzAtOWFlZC1jMjdhOWEzNjQ0MWYaWEFBSEo1LXpZcnZIT3dnNDQyclRiNFVQdC1EZkdkS3hMZ3VmV3lEaHRfcXAzcUZOY0ItLUV6YnFaQl9sMWZrVlVycGpzOTA2VE1KUHRkdEtzS0lUS1BUakogya0FEAEYya0F&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZaMEJIbUI3S2xHZ3FUTW9vOU5hSUhREiQwMWExMzUxMC1jMTU4LTdkMTktYTYyNS0xMjE2ZWQ2ZjIxM2QaUEFBRkxXdXFrNE16T2ZsamdpSW9kWWRpU19idDVCV3hIN2VsbTlRSUZQdmRhRWpueEdWdXpZWkpNbk9hNGxxUkZ6eDRwNFZwWVBVVmtvajhIIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote entry-level customer support role at a tech company, posted today. Not verified: page could not be fetched, so confirm degree requirement and details."
+      "note": "Remote tech-company support role posted about a day ago, $50-60K listed. Not verified: full requirements (degree, experience) could not be checked, so confirm before applying."
     },
     {
-      "title": "IT Equipment Inventory Coordinator",
-      "company": "High Bridge Consulting LLC",
-      "location": "Newark, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZpRzVDMm4tQ3pfUVYzS29ldG5aWlNREiQwMWExMmZlNi1jMzZmLTcwNjYtOTBiZS04OWM0NDY0YjhiMGMaUEFBSGZuZ3pQMjdVWlB6OG9kdlFnREVfeXBxMnc1dVdrekFkSjdVNXBDWEpmNW1TY2tZN0VzaDdBbFdsT1EyRlNZS01JYjdFWTE4N3FKc3JlIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Technical Support Representative",
+      "company": "TouchTone Communications",
+      "location": "Remote (Cedar Knolls, NJ)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ3WFRQcFo3RF9KcGRJWkFEd1JUblZREiQwMWExMzUxMC1jMTU4LTdkMjktOTI0OS0xM2E1ZjZjNjAwMzkaW0FBSEpfd05zZ2RoNUJpZTRpRklXeDFQUW1RNnRkU0kyeVVnZGprZlR6VlI2UDk5YTJNN1hzeGM1Y3dENmt3LVZiUThmUHc1REdBTGNVRmJ2ZjJHZ0xCRGpVdTggya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote technical support role at a New Jersey tech/telecom company, posted 5 days ago, $45-60K listed. Not verified: requirements could not be checked."
+    },
+    {
+      "title": "Customer Support Specialist",
+      "company": "Facilitron",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZMelN6bHZ3dnZ6XzdpVXVKVEROVEtREiQwMWExMzUxMC1jMTZiLTdkZGEtYjVjZi1kOGUzZjhlY2UyZDIaUEFBRjVuLUJFcWRwZVdYZmd6Q0RsalJ3eDZuNXMwVGpCbmFXSDYyTDFtX001VnNCYjFyRmFrZ2VPV2hFZU5xRG1SZjVLQ3NuWkhrY1hhWFFzIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote software-company support role with benefits, posted about a day ago, $44K+ listed. Not verified: requirements could not be checked."
+    },
+    {
+      "title": "Junior QA Tester",
+      "company": "Seneca Resources Company, LLC",
+      "location": "New York, NY (on-site, contract)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3Ym1HeEpLUF9jRnU3V2NTMy1fTkpREiQwMWExMzUxMS0wMTg0LTc0YjctYjU2MC1lZjUzNjIwOTU0M2YaUEFBRmlaS19MeXZSbE5uNjFFcEZNVHB1dFpZOWRDbHdMbGhUWFhCckhxTy1RV1RlRGdWQkFzaXliU0FkMTI5eU9FaEt2Q2cxRHRyaUhJbzFQIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Entry-level QA role, contract, 11 days old. Needs a Manhattan commute; confirm exact location, degree requirements, and that it is a software role."
+    },
+    {
+      "title": "Inventory Asset Tagger",
+      "company": "Insight Global",
+      "location": "New York, NY (on-site, contract)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZJcXQzQnZTWGpoanNpMVJ1UUd6QmlREiQwMWExMzUxMC05YzRiLTdlYmYtOGZkYi0xYzdmYzliNjAzMWUaW0FBRTMxRFFLTXF1U2FqSzBmd2lnVjA1SWRZdDYtRTJMV0dUXzVSWGdzanhBMUE5R1VxRENNRUo0SXM5MW5CblpkS2kySXlzaTk4d2NhMWtzZ2M5R2o2eE5lRTggya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Full-time on-site inventory coordination role, about 3 days old, reachable by train from the Newark area. Not verified: page could not be fetched, so confirm degree requirement."
+      "note": "Hands-on inventory contract role, posted yesterday, $44-48K listed. Contract only; confirm exact site and commute."
     }
   ]
 }
