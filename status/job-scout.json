@@ -1,7 +1,7 @@
 {
   "agent": "job-scout",
-  "state": "done",
-  "updated": "2026-10-14T11:42:14Z",
+  "state": "working",
+  "updated": "2026-10-15T11:40:28.208930Z",
   "lastRun": "2026-10-14T11:42:14Z",
   "summary": "Found 7 new roles: 4 game/tech, 3 operations. Search was thin and job pages could not be fetched, so all are unverified. 3 tailored resume drafts ready.",
   "report": "jobs/2026-10-14.md",
