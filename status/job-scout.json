@@ -1,73 +1,46 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-15T11:40:28.208930Z",
-  "lastRun": "2026-10-14T11:42:14Z",
-  "summary": "Found 7 new roles: 4 game/tech, 3 operations. Search was thin and job pages could not be fetched, so all are unverified. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-14.md",
+  "state": "done",
+  "updated": "2026-10-15T11:41:07Z",
+  "lastRun": "2026-10-15T11:41:07Z",
+  "summary": "Found 4 new roles: 2 games & tech, 2 operations. Search was thin and job pages could not be fetched, so all are unverified. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-15.md",
   "items": [
     {
-      "title": "QA Tester",
-      "company": "Dotmatics",
+      "title": "Player Support Agent (Video Gaming)",
+      "company": "Keywords Studios",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZKX2t6WFNwU2pQZHdFb19iU2J2V3JREiQwMWExM2EzNy05YTFlLTc1MTctYjRkMy00ZDdhNDgyOTBmMDEaUEFBRVJZZ1pwdDZmbmxjT053Rl90RmpaR3lxVm9sa3dteFVpaFJYWG9RUzlfN2dLT05lZzlvRDNfTUoyMEZERHJXbTV3aGl4bnd1eGN4Q0ZOIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "url": "https://www.keywordsstudios.com/en/careers/browse-careers/ASh-player-support-agent-for-video-gaming",
+      "source": "Web search",
       "category": "art",
-      "note": "Remote QA tester role at a software company, full-time with benefits, posted about a day ago. Not verified: level, degree and experience requirements could not be checked, and the pay range suggests it may be above entry level."
+      "note": "Remote US player support role handling tickets, email and live chat for game players; training-oriented entry-level work. Not verified: page could not be opened, so degree rules and whether it is still open are unchecked."
     },
     {
-      "title": "Roblox Game Producer / Project Manager (Contract)",
-      "company": "Mad Labs",
-      "location": "Remote (US hours, PST-EST overlap)",
-      "url": "https://remotegamejobs.com/jobs/mad-labs-roblox-game-producer-project-manager-contract-remote-remote-job",
-      "source": "Remote Game Jobs",
-      "category": "art",
-      "note": "Remote production and project management contract at a game studio, with QA coordination in the duties. Stretch: described as lead level and the page could not be opened to confirm requirements or whether it is still open."
-    },
-    {
-      "title": "Customer Support Specialist",
-      "company": "Signpost",
-      "location": "Remote optional (Austin, TX)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZaeFRlanBiNHRwWHQxWE1DbTlNUk93EiQwMWExM2EzNy1jZmMxLTcxYzYtODNkYy03OTIzNzAyNDY0MjEaUEFBR1ljTWU0R3Zma2N0OXFfODE4MndiMnhXX01TbzUtS0hhbnNaNExmZDc5RGk4djZMV2lzV2FXSl9WZF9NZk0wRUh2a25yWUtEN2M1dktfIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Entry-level customer support at a software company, remote option, $45-55K listed, posted about a day ago. Not verified: full requirements could not be checked."
-    },
-    {
-      "title": "Customer Support Specialist",
-      "company": "Propelus",
+      "title": "Junior Project Coordinator Internship (Part-Time)",
+      "company": "Scale Inc",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY4cHdWaDFaeXM4TXNLZ0ZqeUhIWDVREiQwMWExM2EzNy1jZmMxLTcxYzctYTI4My1hN2M5YTgxZTg0OGIaUEFBRU9ST0Rnd1FyQWJIaE1KUXFheTBrUEs3Wm81T3Y1Q1pKT0dhMjlYay05Z19OUlB3R3I1a1NPVmppNTdpMDFydzlKOUxySTBScFlYR2wtIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZCVFgxUUFWVk5vaERfMjVCbTZJMnl3EiQwMWExM2Y1ZC02NmIxLTdiZDYtOWVmNC02NzExYjVlOWUwODIaT0FBSFJmMTVoR2VmdzNWX0hSb0Z2VnBPdmw5NXd0ZTRzdzNRem04SHEzeXRzYV9na1V5M2JabXp5YTVDa3dPUHhsRmJvR1FsNXBxTEdoMVEgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote tech-company support role with full benefits, $37-49.5K listed, posted 4 days ago. Not verified: requirements could not be checked."
+      "note": "Entry-level remote project coordination role that mentions Jira/Trello-style tracking, posted about 9 days ago. Stretch: part-time internship; requirements and degree rules not verified."
     },
     {
-      "title": "Coordinator Materials Management",
-      "company": "RWJBarnabas Health",
-      "location": "New Brunswick, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp4BChZZTWJNbU1SYmxSNmttSTM5OGhKUVd3EiQwMWExM2EzNy05ZWZiLTdlM2MtOGQ5Yy1kOTY5NDBkMjZhOGUaWkFBSGI2SUtRb3JDWThWcERJZVBpZXpUMWZFWjVVNWhWdExYdm9fUFBFZnJvNU9pZlJzZnRJekJyenFOZzU5V1VfUTJWMzE4MUQxcUlKeDNyZG55dWZDOWtFQSDJrQUQARjJrQU%3D&tsid=100000502",
+      "title": "Purchasing Coordinator",
+      "company": "Strive Pharmaceuticals Inc.",
+      "location": "East Brunswick, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZoRnVDYklxUXM1dUZ0UDhxS0dHNFBBEiQwMWExM2Y1ZC02MDU4LTdhN2YtOGFmZC04YzRjYTZjODVkZjEaW0FBRmt5ZE5YVHBmSE5PVGpsczU4UDBqdWg0aWcyWFQyNjFsMEwzTzFzUDFWMkpPekd2UWlNa2NRNHlHbnE0OGoycnBQZ3Bsa0M1ZWp3RDFrQlhaUkRQanZiRzQgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Supply and inventory coordination role at a health system, direct NJ Transit train commute, $45-54K with full benefits, posted 2 days ago. Not verified: degree requirement could not be checked."
+      "note": "Full-time on-site purchasing role with benefits, reachable by train corridor commute, posted about a day ago. Not verified: experience and degree requirements could not be checked."
     },
     {
-      "title": "Jewelry Inventory & Merchandising Coordinator",
-      "company": "Paramount Gems",
-      "location": "New York, NY (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZtYTNRVmlXc1BBclBfNGp6Xy1USzlREiQwMWExM2EzNy05ZWZkLTc3MzUtODliYi02Nzg4MGVkZmQzYzYaWEFBSGdMdWxmVWd4V09OWDBqRkpxelREVHRBRUpoVG5zbURNaURXLTJUaEV3a2tfdW5QMEJMV1VVOW1qejBkT2hTMlNSRlVyZDIxNzdvQkdkck9oTWx1WUQgya0FEAEYya0F&tsid=100000502",
+      "title": "Logistics Coordinator",
+      "company": "Value Industry, Inc.",
+      "location": "Newark, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZpbjI5NUdpZ3IzbFlOUjE3NklBUkhnEiQwMWExM2Y1ZC0yM2E3LTc2YzctODE1YS0xMDJhYzQ0Njk0MjMaW0FBRzViZVZfdG5NdVdPNmdIMUhoM2ZkYjVJeFUtQ2hPTmhkaTd5cTR5ZjhKa3M5MjIwakpLYklDV1pfaHQ3cENuSHpHdEx5X0Nub3J6ckhhVmFGdUEzZjBHaUkgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Inventory coordinator role in Manhattan, $45-70K listed, posted yesterday. Not verified: exact location and requirements."
-    },
-    {
-      "title": "Inventory Clerk",
-      "company": "On Target Staffing",
-      "location": "Port Reading, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ2LWpaRENYTGNaeTZhZ0JVUWJuYmJnEiQwMWExM2EzNy05ZWZkLTc3MzctYjUwZS1lMTY4MzA3MDYyODAaW0FBRzhTUkpVb2Nua2hGTkN6Ti1jMVZqYzlGTW1jT09pa3lHdUhGb1UyOGhTSnBld2xsRUt2Z0tpLVhtb1NOOTdZVVJvSTVpaGpKUUhONkdtVUNWLUo0VjNIMnMgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Entry-level inventory role in central NJ, full-time, posted 6 days ago. Staffing-agency listing; not verified: pay beyond $36K+ and shift details."
+      "note": "Full-time on-site coordinator role in Newark, short train commute, posted about 5 days ago. Not verified: requirements and degree rules could not be checked."
     }
   ]
 }
