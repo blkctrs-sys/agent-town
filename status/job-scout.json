@@ -1,46 +1,37 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-16T11:40:51Z",
-  "lastRun": "2026-10-15T11:41:07Z",
-  "summary": "Found 4 new roles: 2 games & tech, 2 operations. Search was thin and job pages could not be fetched, so all are unverified. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-15.md",
+  "state": "done",
+  "updated": "2026-10-16T11:41:51Z",
+  "lastRun": "2026-10-16T11:41:51Z",
+  "summary": "Found 3 new roles: 3 games & tech, 0 operations. Search was thin, only unverified listings, and no new qualifying operations roles turned up. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-16.md",
   "items": [
     {
-      "title": "Player Support Agent (Video Gaming)",
-      "company": "Keywords Studios",
-      "location": "Remote (US)",
-      "url": "https://www.keywordsstudios.com/en/careers/browse-careers/ASh-player-support-agent-for-video-gaming",
-      "source": "Web search",
-      "category": "art",
-      "note": "Remote US player support role handling tickets, email and live chat for game players; training-oriented entry-level work. Not verified: page could not be opened, so degree rules and whether it is still open are unchecked."
-    },
-    {
-      "title": "Junior Project Coordinator Internship (Part-Time)",
-      "company": "Scale Inc",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZCVFgxUUFWVk5vaERfMjVCbTZJMnl3EiQwMWExM2Y1ZC02NmIxLTdiZDYtOWVmNC02NzExYjVlOWUwODIaT0FBSFJmMTVoR2VmdzNWX0hSb0Z2VnBPdmw5NXd0ZTRzdzNRem04SHEzeXRzYV9na1V5M2JabXp5YTVDa3dPUHhsRmJvR1FsNXBxTEdoMVEgya0FEAEYya0F&tsid=100000502",
+      "title": "Technical Support Representative",
+      "company": "TouchTone Communications",
+      "location": "Remote (Cedar Knolls, NJ based)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ3WFRQcFo3RF9KcGRJWkFEd1JUblZREiQwMWExNDQ4NC01YzUxLTdkNWEtYWU2OS1iY2FmMzE1NGEwYzMaW0FBRUtnYnIyNmN4Q0xud0dVdkhhTnBwMG0zYXRTLTNUY01YMkdJbU91SXY2QzhlWTl6VzMyVjdLOXhJT0dxcmVLYjdOcFM5MF9TY052SmdiQmFCemNzNW9pdmMgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Entry-level remote project coordination role that mentions Jira/Trello-style tracking, posted about 9 days ago. Stretch: part-time internship; requirements and degree rules not verified."
+      "note": "Entry-level technical support role at a New Jersey tech company, remote, posted about 8 days ago. Ticket-based support work. Not verified: page not opened, degree rules unchecked."
     },
     {
-      "title": "Purchasing Coordinator",
-      "company": "Strive Pharmaceuticals Inc.",
-      "location": "East Brunswick, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZoRnVDYklxUXM1dUZ0UDhxS0dHNFBBEiQwMWExM2Y1ZC02MDU4LTdhN2YtOGFmZC04YzRjYTZjODVkZjEaW0FBRmt5ZE5YVHBmSE5PVGpsczU4UDBqdWg0aWcyWFQyNjFsMEwzTzFzUDFWMkpPekd2UWlNa2NRNHlHbnE0OGoycnBQZ3Bsa0M1ZWp3RDFrQlhaUkRQanZiRzQgya0FEAEYya0F&tsid=100000502",
+      "title": "Technical Support Specialist",
+      "company": "PatientNow",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZaMEJIbUI3S2xHZ3FUTW9vOU5hSUhREiQwMWExNDQ4NC01YzUxLTczZTEtODRmZS0zZGY0ODM2OWM3NzgaUEFBSHNyQ2pOYktGel9YaXZXVnZyQ2pna2YzOXJGb3Z2YkxqcEN0SG9Bd1FlQ0h4RVVTcGxhRE9Wemw1S2RySmRmWFFEb0FmSzNkMS03VXRCIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Full-time on-site purchasing role with benefits, reachable by train corridor commute, posted about a day ago. Not verified: experience and degree requirements could not be checked."
+      "category": "art",
+      "note": "Remote software support role, junior-level filter, posted about 4 days ago. Stretch: healthcare software rather than games. Not verified: page not opened, degree rules unchecked."
     },
     {
-      "title": "Logistics Coordinator",
-      "company": "Value Industry, Inc.",
-      "location": "Newark, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZpbjI5NUdpZ3IzbFlOUjE3NklBUkhnEiQwMWExM2Y1ZC0yM2E3LTc2YzctODE1YS0xMDJhYzQ0Njk0MjMaW0FBRzViZVZfdG5NdVdPNmdIMUhoM2ZkYjVJeFUtQ2hPTmhkaTd5cTR5ZjhKa3M5MjIwakpLYklDV1pfaHQ3cENuSHpHdEx5X0Nub3J6ckhhVmFGdUEzZjBHaUkgya0FEAEYya0F&tsid=100000502",
+      "title": "Junior QA Tester - Clinical Data Services",
+      "company": "Persistent Technology, Inc.",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5S2phNEtuYXVVb25rdGk1QXRoam5BEiQwMWExNDQ4My1lOTNmLTdiYmMtOGI4OC0wNGRmN2ZiNmU4NWUaUEFBSGFiYS1tMnY4NURRQTBZYXhzYXVvc3FOcGl0VXIwd3FfN0tBQlR0ejhvYmNHNUs3VlRCV2wzOG54OUJzNFFWc3luT3ladWZMcEwzVE1tIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Full-time on-site coordinator role in Newark, short train commute, posted about 5 days ago. Not verified: requirements and degree rules could not be checked."
+      "category": "art",
+      "note": "Junior-level remote QA role, posted about 3 days ago. Stretch: clinical data software rather than games. Not verified: page not opened, degree rules unchecked."
     }
   ]
 }
