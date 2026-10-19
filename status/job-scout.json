@@ -1,73 +1,64 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-19T16:23:07Z",
-  "lastRun": "2026-10-19T16:21:50Z",
-  "summary": "Found 3 more new roles today: 1 games & tech, 2 operations (7 total across both runs). Search was thin. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-19-midday.md",
+  "state": "done",
+  "updated": "2026-10-19T16:25:09Z",
+  "lastRun": "2026-10-19T16:25:09Z",
+  "summary": "Found 6 new roles this run: 3 games & tech, 3 operations. Search was thin. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-19-afternoon.md",
   "items": [
     {
-      "title": "Jr. Customer Success Manager (Remote)",
-      "company": "Process Street",
-      "location": "Remote (US hours, Pacific)",
-      "url": "https://to.indeed.com/aarb8dkcrlrb",
+      "title": "Service Desk Specialist",
+      "company": "Connexus Credit Union",
+      "location": "Remote",
+      "url": "https://to.indeed.com/aacn9v7ffjyh",
       "source": "Indeed",
       "category": "art",
-      "note": "Early-career, fully remote customer-facing role at a software startup; onboarding, training and help-center work, no prior CSM experience needed, no degree listed."
+      "note": "Remote ticket-based first-line support with documentation duties; associate's degree or equivalent experience accepted. Wants 1+ year of service desk experience."
     },
     {
-      "title": "Warehouse Operations Supervisor",
-      "company": "ReGo Trading",
-      "location": "Metuchen, NJ",
-      "url": "https://to.indeed.com/aar8fr8p8zhg",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Supervisory inventory-accuracy and fulfillment role, from $60k, short train ride. Prefers 3+ years of supervision; no degree listed."
-    },
-    {
-      "title": "Project Coordinator (Commercial Moving and Furniture Installation)",
-      "company": "Alliance Transfer",
-      "location": "Newark, NJ",
-      "url": "https://to.indeed.com/aawtthn6tph2",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Scheduling and job-coordination role with a path to project manager, $52-65k, Newark commute. Stretch: asks for 2+ years of coordinator or admin experience; no degree listed."
-    },
-    {
-      "title": "Technical Support Specialist",
-      "company": "Higher Logic",
+      "title": "SMB Customer Onboarding Specialist",
+      "company": "Dental Intelligence",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3azhURk1NMmFQa0ZMSjBKcmlIbUdnEiQwMWExNTNmNy00Zjk3LTdiMmEtYjAwOC1jMzM4NGE0Y2Q1OTQaUEFBSGd4RDBfS2JtU2JncFlzckZZTU9nSW80LWpUbXdLblBaclZIMzN1YjRmeWJvZjB5WWR0aEw1dmRPZDlFTFVyOVFoMURoenJGdzRsX0JRIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "url": "https://to.indeed.com/aa4c7hrfmptn",
+      "source": "Indeed",
       "category": "art",
-      "note": "Remote software support role at a tech company, posted about 3 days ago, entry-to-junior filter. Ticket-based support. Not verified: page not opened, degree rules unchecked."
-    },
-    {
-      "title": "Technical Support Specialist, Emphasys PHA",
-      "company": "Aquila Software Group",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYtV1BDMTJhc1NWeWVOOE92RmtsQ1dREiQwMWExNTNmNy00Zjk3LTdiMmYtYWVhZC0xNTk0NzBiNTM5NDgaUEFBSGVHNVlRTXhnNTVvdnZ6U29qSTBzSzJ0NFE5V1RxdTl6dkZJV25PRU91cGhNR2hPM2ZZMlBIQ2QycmV5VzVqYWFsVXk4dFhLN3VxS20xIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Remote software support role, junior-level filter, posted about 3 days ago. Stretch: housing-authority software rather than games. Not verified: page not opened, degree rules unchecked."
+      "note": "Fully remote SaaS onboarding and training role with cross-team coordination; no degree listed. Stretch: wants prior onboarding experience."
     },
     {
       "title": "Project Coordinator",
-      "company": "eimagine",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZPdGYwYVA0T3VUYXFUYUluSWRlbkJREiQwMWExNTNmNy01MWI1LTdjM2EtODgxMS03OWFkOGY4N2VlODkaT0FBR2l5TzJPN01aeXVFbnkxcDN3d2Y1RUJVdy00NjlFSktoVFZBVEg1bnFnSHhVNVY4aXdVYXJETFNhNHBlaHp5a2RIVkZkaW1ZTUgwVkUgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
+      "company": "Deployment Solutions, Inc.",
+      "location": "Remote (Eastern time preferred)",
+      "url": "https://to.indeed.com/aajhm987qdgk",
+      "source": "Indeed",
       "category": "art",
-      "note": "Remote contract project coordinator role, junior-level filter, posted about 2 days ago. Stretch: agency work rather than games. Not verified: page not opened, degree rules unchecked."
+      "note": "Remote coordination of multi-site tech rollouts with tracking tools, $55-66k contract; no degree listed. Stretch: 2+ years coordination."
     },
     {
-      "title": "Inventory Control Specialist",
-      "company": "Atrium",
-      "location": "Edison, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZSUEtscEFiVlFOQkNWRTZkY1dLeGJBEiQwMWExNTNmNi1mMTViLTcwYjUtODZjNi03ZGNlYjMzNGU3NDAaW0FBSGxvUlhTci11dTFtNlNTN0VwMlZ1aHVoSXpONWpTSzBmR1N3TFZzNHFWQ0YxZHU4TXVMNnBPbkdWbFRyaWJXMWhTbnVMUHZ4YVh5RWoyS0FNOTZiZnRnMlkgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
+      "title": "Operations Supervisor",
+      "company": "gate group (Gate Gourmet)",
+      "location": "Newark, NJ",
+      "url": "https://to.indeed.com/aa8lcqmycrzy",
+      "source": "Indeed",
       "category": "ops",
-      "note": "Inventory control role on a direct train line, posted about 2 days ago, from $56k. Not verified: page not opened, degree rules unchecked."
+      "note": "Supervises a high-volume kitchen team with inventory and waste duties, $70k, high school diploma required, short train ride. Closes 10/31."
+    },
+    {
+      "title": "Assistant General Manager",
+      "company": "Wawa",
+      "location": "Rahway, NJ",
+      "url": "https://to.indeed.com/aa7ssjpvy8hz",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Store-management path with staffing, training and shrink control, $25.80-35/hr, high school diploma, very short commute."
+    },
+    {
+      "title": "Assistant Manager - Restaurant",
+      "company": "Benihana",
+      "location": "Edison, NJ",
+      "url": "https://to.indeed.com/aa9h7hhzqr2d",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Restaurant assistant management with inventory control and scheduling, $60-65k, no degree listed. Stretch: wants prior restaurant management."
     }
   ]
 }
