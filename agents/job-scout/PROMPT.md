@@ -35,8 +35,10 @@ Every role must meet **all** of these:
    for the company's careers page). Skip listings that
    look closed, spammy, or pay-to-apply.
 
-If you can't find enough good matches, return fewer. **Never pad the list with weak
-matches.** Say in the summary how many you found.
+**25 is a target, not a quota.** Do the full search below, and if you still can't find
+enough good matches, return fewer. **Never pad the list with weak matches.** Say in the
+summary how many you found. A short list after a thorough search is a good run; a short
+list after a skipped search is not.
 
 ## Where to search
 
@@ -100,6 +102,11 @@ focus, entry level, remote work, a short commute, or no degree needed.
 **Privacy rule:** this repo is public. Notes and reports must **not** mention the owner's
 name, hometown, education, or any personal details. Write "short train commute" instead of
 naming the owner's town, and "no degree required" instead of discussing their education.
+
+**Never name the owner's home town anywhere in this repo**, not even as a job's location.
+For a job located there, write `"Local, NJ"` as the location, and don't use a link whose URL
+contains the town's name (find another link, or leave the title unlinked). Don't describe a
+commute as "very short" or "walkable"; "short train commute" is the most you may say.
 
 ## Steps for each run
 

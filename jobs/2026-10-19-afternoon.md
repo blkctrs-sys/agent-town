@@ -13,8 +13,8 @@ Found 6 new roles (3 games & tech, 3 operations).
 ## Operations & inventory
 1. **[Operations Supervisor](https://to.indeed.com/aa8lcqmycrzy)** — gate group (Gate Gourmet) · Newark, NJ · Indeed
    Why it fits: Supervises a high-volume kitchen team with inventory and waste duties, $70k, high school diploma required (associate's preferred), short train ride. Closes 10/31. Verified via Indeed details.
-2. **[Assistant General Manager](https://to.indeed.com/aa7ssjpvy8hz)** — Wawa · Rahway, NJ · Indeed
-   Why it fits: Store-management path with staffing, training and shrink control, $25.80-35/hr, high school diploma, very short commute. Weekend and holiday availability required; posted Sept 28. Verified via Indeed details.
+2. **[Assistant General Manager](https://to.indeed.com/aa7ssjpvy8hz)** — Wawa · Local, NJ · Indeed
+   Why it fits: Store-management path with staffing, training and shrink control, $25.80-35/hr, high school diploma, short train commute. Weekend and holiday availability required; posted Sept 28. Verified via Indeed details.
 3. **[Assistant Manager - Restaurant](https://to.indeed.com/aa9h7hhzqr2d)** — Benihana · Edison, NJ · Indeed
    Why it fits: Restaurant assistant management with inventory control and scheduling, $60-65k, no degree listed, short train ride. Stretch: wants prior quick-service or casual dining management. Verified via Indeed details.
 
