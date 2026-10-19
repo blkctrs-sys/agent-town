@@ -1,11 +1,38 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-19T16:20:38Z",
-  "lastRun": "2026-10-19T11:41:37Z",
-  "summary": "Found 4 new roles: 3 games & tech, 1 operations. Search was thin and listings are unverified. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-19.md",
+  "state": "done",
+  "updated": "2026-10-19T16:21:50Z",
+  "lastRun": "2026-10-19T16:21:50Z",
+  "summary": "Found 3 more new roles today: 1 games & tech, 2 operations (7 total across both runs). Search was thin. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-19-midday.md",
   "items": [
+    {
+      "title": "Jr. Customer Success Manager (Remote)",
+      "company": "Process Street",
+      "location": "Remote (US hours, Pacific)",
+      "url": "https://to.indeed.com/aarb8dkcrlrb",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Early-career, fully remote customer-facing role at a software startup; onboarding, training and help-center work, no prior CSM experience needed, no degree listed."
+    },
+    {
+      "title": "Warehouse Operations Supervisor",
+      "company": "ReGo Trading",
+      "location": "Metuchen, NJ",
+      "url": "https://to.indeed.com/aar8fr8p8zhg",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Supervisory inventory-accuracy and fulfillment role, from $60k, short train ride. Prefers 3+ years of supervision; no degree listed."
+    },
+    {
+      "title": "Project Coordinator (Commercial Moving and Furniture Installation)",
+      "company": "Alliance Transfer",
+      "location": "Newark, NJ",
+      "url": "https://to.indeed.com/aawtthn6tph2",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Scheduling and job-coordination role with a path to project manager, $52-65k, Newark commute. Stretch: asks for 2+ years of coordinator or admin experience; no degree listed."
+    },
     {
       "title": "Technical Support Specialist",
       "company": "Higher Logic",
