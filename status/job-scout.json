@@ -1,91 +1,118 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-19T16:41:16Z",
-  "lastRun": "2026-10-19T16:32:16Z",
-  "summary": "Found 9 new roles this run: 5 games & tech, 4 operations. Indeed was unavailable and no game-studio roles turned up. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-19-late.md",
+  "state": "done",
+  "updated": "2026-10-19T16:44:50Z",
+  "lastRun": "2026-10-19T16:44:50Z",
+  "summary": "Found 12 new roles this run: 7 games & tech, 5 operations. Indeed was unavailable and no pages could be opened, so all are unverified. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-19-run5.md",
   "items": [
     {
-      "title": "Help Desk Analyst",
-      "company": "TransPerfect",
+      "title": "Jr Prop Artist (contract)",
+      "company": "Studio Wildcard",
+      "location": "Remote (US)",
+      "url": "https://www.builtinseattle.com/job/jr-prop-artist/11583358",
+      "source": "Built In / Remotive (web search)",
+      "category": "art",
+      "note": "Junior prop artist role on a long-running Unreal-based survival franchise, USA-only remote contract around $50k-$60k, Blender/ZBrush/Substance and UE5 listed. Stretch: asks for a shipped title and/or mod experience plus an art test; posting date not visible. Unverified."
+    },
+    {
+      "title": "Technical Support Specialist",
+      "company": "Regal",
+      "location": "New York, NY (hybrid)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY2b2RtVmFYTVVVemNPTHhkQWhUOVBBEiQwMWExNTUwYS0zMDg3LTdjYjEtYWVmZi1lNDhhNWY0MDdlODkaUEFBRzBzN3B2V0NPQ2JyMFE2UG9wSkVqTVJqa3pZV2pvSW5jWU5Mc1llYl9IakRhdWRjbXB0eXljYTlRdjlxZFd4b2dYRnJaYVp0a0pKMk0zIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Entry-level ticket-based support role at an AI contact-center software company, $60k-$80k, posted about 3 days ago. Short train commute. Stretch: wants exposure to things like SQL or APIs. Unverified."
+    },
+    {
+      "title": "Composer's Assistant - Temp (SFD / Cinematics)",
+      "company": "Blizzard Entertainment",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZNSUJORXY0NXZ2d1BNVm10cE1jVjd3EiQwMWExNTUwYi04NTA5LTc3MWItYTU2ZS1mNWQxNzI1ZDZmZTEaUEFBR241WEQyRk5FV01xM2d4bnp5WFVqZHBHLWJtbkJDNGpFYU4wOVpUTFFjNV9xQjFvM1QyMjdpakZLckI2Y05vYnQyZmpCcGdhank3RnJ6IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Junior-level temporary audio role on a major game studio's cinematics team, listed remote, $48.9k-$90.4k, posted about 13 days ago. Full requirements not visible. Unverified."
+    },
+    {
+      "title": "Call Center Associate I",
+      "company": "Brightstar Lottery",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZfaDliYnFYcmVXOWMyNlhWNmQ5ajhBEiQwMWExNTUwYS0wMjM3LTcyZmQtYmI5MS0wZDJmMzNjMjUyY2IaUEFBRXN2cDN6cmpvX0xIdm9OM05WSkNhWUpORlFSeFpXbVZJU0pZZnpJMi1UdTFmRzJHTGtucURQRUU0N0ZtUGFtTi00RlpRNzZwSnNnZkNVIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Entry-level support role at a lottery and gaming technology company, listed remote, $43.7k-$46.8k with full benefits, posted about 5 days ago. Confirm remote eligibility outside the company's home state. Unverified."
+    },
+    {
+      "title": "IT Support Specialist I",
+      "company": "Ware Malcomb",
+      "location": "Newark, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYbk91NkJ3TURTVFNBX0lJcEdGd2hnEiQwMWExNTUwYi04MGUwLTc2YWMtODg3NS01OGNmZTE0YWJlOTcaUEFBR2txRW1haTI4U3lBNnB2NF9fYkRKV1NxM2F5VXlKVkhuWG9XUlV0NnZ6SHpyTEhKeUJVSk9TQnRKRnZTOWp0Q0dvSWZYT09EVzJRd2lqIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Level-one IT support role at a design firm, $48k-$57.7k, entry/junior filter, posted about 3 days ago. Short train commute. Unverified."
+    },
+    {
+      "title": "Technical Support",
+      "company": "Collabera Digital",
       "location": "New York, NY (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZOaWJCUVI1VWdkempvSkJUZmJuV1dBEiQwMWExNTUwMC00ZDViLTczYTItYWFjMS03NmQ3MDhhNDE0NjUaUEFBRlVhMjhMM0tqN2I4ZnpNSy1Vb0RHMDN5TFY2Qlc5WFBUMUNaRDdlOFpFMFUzd3VQSDVBRzNoaG11NnhnczlGTGpac1ljR2NXMGdCbDRYIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZrT3MwaDBnMnpvQ1g2ZG4tSGpQcVdnEiQwMWExNTUwYS0zMDg3LTdjYWItYmJhYy1hMzVlNDlhMjgwYmYaUEFBRUE2ZUJfZ2stQUtOWGJaRGJ1czBYTDJSVnZMTWtsRERkXzVjVVBBamJGSHJzRE05R0lwTHBsYWNWZzdDZ3VINXozSXBOVWtZTUwzaGlxIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Entry-to-junior help desk role at a large language-services and tech company in Manhattan, $45k-$61.5k, posted about 6 days ago. Short train commute. Unverified."
+      "note": "Junior technical support role through an IT staffing firm, $50k-$56k with benefits, posted about 4 days ago. Short train commute; end client not named. Unverified."
     },
     {
-      "title": "Service Desk Analyst - Remote, United States",
-      "company": "Slipstream IT",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZzR2JSSmRfVnhYOEtxV2pkOVZLcWpnEiQwMWExNTUwMC03OTA5LTc2MzQtODgxNC04MmNjOWQ5MWU4ODUaUEFBRWMxaG5HNHFIWk5PUXR0VVVUcmdkZHBHWVgzTzJFRXNvTFRPSTR3V2JKX1FkZnVlbC15aEVvUmF1emxpMU56VFBsMFFLZmIxaXUxNW02IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Disclosure Client Project Coordinator",
+      "company": "Broadridge",
+      "location": "New York, NY (hybrid)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZMHB0ZmpMR1ZHanBkU1hUaGdzU1lREiQwMWExNTUwYi03YjkxLTc5ZmUtYmNlNC01MGY0ZmQ4NDI0YjkaUEFBSDN2YVRuLTUxeWdmMXFzbWVaUmRMQ1RQaVlaZWF2a2VZbEJBeC15cmU4N0k0WTc1WjZ6MlFaWHFnS1hmc3VwVlBfX3hrRGFvbW8yZVpBIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Fully remote, US-wide ticket-based service desk role at a managed IT company, junior-level filter, posted about 6 days ago. Unverified."
+      "note": "Junior project coordinator role at a large financial-technology company, $64k-$74k, hybrid, posted about 6 days ago. Short train commute. Stretch: finance-document domain. Unverified."
     },
     {
-      "title": "Service Desk Analyst",
-      "company": "DMI",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZyaTBuZEtTU3NCdTVyeTRiYm9ZUmJnEiQwMWExNTUwMC03OTA5LTc2MzEtODczYi0zZmE4ZDY5ZDM1ODkaUEFBSGFoMWc0aFlDRGRmU01tSlFCWjcyeTZ1MzNJMFZoWEU2ZVZiME9hS09oNFJ0WTFJeWViZ0RFMk9CM3BmcFV0eEJRV3NjM0ZwLTczeWRyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Remote service desk role at a digital services company, $69k-$83k, junior-level filter, posted about 6 days ago. Stretch: may carry client-specific requirements. Unverified."
-    },
-    {
-      "title": "Customer Support Specialist - Remote role!",
-      "company": "Converge Technology Solutions",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZxT2Y0Mk5BTDE0VHVaWUdzTno3RjVnEiQwMWExNTUwMC02ODczLTdlZWYtODBkZi0wYjc0OTMyOWVhZTUaUEFBSGVKamNhRDFySjd6dFhKSGk3VU1SOXlZcC1STk1qdl9JbDVzNHZHUmVLQWJ6a3NUMmJ6bzlpc2NCOUg1WC1OWUxSeTlIaUFzY204OUFjIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Remote customer support role at an IT solutions company, entry-to-junior filter, posted about 3 days ago. Unverified."
-    },
-    {
-      "title": "IT Helpdesk Analyst (Remote)",
-      "company": "7Seventy Recruiting",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp4BChZvQVd1aXVfdE1ieVRBNGVJNU5fV1dREiQwMWExNTUwMC03OTA5LTc2MzgtOTQxYS1hZTI2YzNjMWUwOGUaWkFBRldTOGx5YjFPWVBDUlF0N3BZZjI2d3NjemFqckdBYkYwMXlua0NmWkc0TDZBZkUyVnBLX3llUlFsYmhMcjBrRGZmWUJhYV9LS3lmOVJUVnJ1bVZmS3dDUSDJrQUQARjJrQU%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Remote entry-level IT helpdesk role through a recruiter, posted about 6 days ago. Stretch: lower pay ($36k-$39k) and the end employer isn't named. Unverified."
-    },
-    {
-      "title": "Inventory Specialist",
-      "company": "Primo Brands",
-      "location": "Jersey City, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZsMS0yMExSaXhUSTVJMXhtMi1meWdBEiQwMWExNTRmZi03NWQ2LTcyMzgtODkyOS1kOTYzYjAwNmJkNWEaUEFBSF8zM25NSVhvZTJFSWd1RFBZekRYZ2xXeTdFLW5id01GU3pYTDJGczg1dU4weFNDbVllQWd2Z1J3ZkM1d0NTbjBvNEdrVFJxelFyMWFDIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Inventory Specialist (contract)",
+      "company": "Denken Solutions, Inc.",
+      "location": "New York, NY (hybrid)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY1Q0U2cnFhbGpmWnFsdE80RWRKemhREiQwMWExNTUwYi02ZGM1LTdiMWItYTY0OS0zNmE0Y2NmNzQ3NGUaUEFBRzdCclV2ZXNldTh6OTEwMXBZdXRUWWJ3dG43a3o0UjlHdDlVbHZlUVpTR3pJX2s4ZHM3cjFvaHNocmR0c3R3VnZyWW5HQ2h2aXlualIyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Full-time inventory role at a national beverage company, from $52.8k with full benefits, posted about 4 days ago. Reachable by train and PATH. Unverified."
+      "note": "Contract inventory role through a staffing firm, from $70k, hybrid, posted about 3 days ago. Short train commute. Unverified."
     },
     {
-      "title": "Receiving Clerk",
-      "company": "RWJBarnabas Health",
-      "location": "Local, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZzcUdqd3FpRHVKamY2UjV5MWN6OVpBEiQwMWExNTUwMC01MTQ1LTdiMmUtYTQ5My0zYWRhNmEzNjk3MjMaUEFBRWZNMEQ3ZmU5elkzNjUzUEpmbUtTaEdDLWFmMU9Ia25xd2FVZVFzaGNuN3dJclFwUDZleHh5YjR1aGdKS01xQlZDOW9nYUJEYVl6c096IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Inventory Specialist (contract)",
+      "company": "FuseGlobal",
+      "location": "New York, NY (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZrNUxDMnRKX2JpZmFRWHBweGxlRHhnEiQwMWExNTUwYi03NjU4LTcyYjktOGJmMi0yZjYyNzllNGZhNmQaUEFBRkNocmxxSzhTUzNOenc1OEE3UktyRFgxcXA2V1BFVXBreG9XbjhJRWk4VXlEUmdzeF8zbGNUQ2d3eUdDQjVQOUFqaXdMWWFjOGp2cGdEIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Hospital receiving and stock role with full benefits, posted about 7 days ago. Short train commute. Stretch: lower pay than other picks. Unverified."
+      "note": "Contract inventory role with benefits, from $65k, posted about 5 days ago. Short train commute. May be the same client role as the listing above. Unverified."
     },
     {
-      "title": "Assistant General Manager",
-      "company": "Fitness Holdings - Crunch Fitness",
-      "location": "Woodbridge, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZoSVFOSFJjalBBWmw1MlNtWWd3YnFREiQwMWExNTRmZi03MWQwLTdlOGQtOGMzZi00ZmYxYTM3OTdiNjYaT0FBR05raExNM21ncEYwZ1lVWHozUDlpbE9MOGtZOVVPVzBQd1Fja0Z0RG9nNVFybnVqcjVZdTdUQ1NicDQ3NEVlV0hubjlnVnp2LXJGMG8gya0FEAEYya0F&tsid=100000502",
+      "title": "Assistant Retail Manager",
+      "company": "Brasserie Boulud",
+      "location": "New York, NY (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYyX3NpVHg2cGpHYk1icXNGeXVHVmZBEiQwMWExNTUwYi1jMGNmLTdlNzMtODBmZC1kYmE3Mjk0ZjBkMWIaW0FBRjJkaWVSangySzBhUEZwTE1OVkhNYnVpb1lsNC02T0xuT29GejdhX2JHSWVrSWtxMy1iNnB1MVpLMXU3RERRLUhudjZVek9NRnlldDFqVjcxZFkzNHYwY2sgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Assistant GM role at a high-traffic gym covering staffing, scheduling and daily operations, posted about 2 days ago. Short train commute. Unverified."
+      "note": "Assistant manager role in a restaurant group's retail operation, $70k-$75k, posted about 3 days ago. Short train commute. Unverified."
     },
     {
-      "title": "Assistant Manager",
-      "company": "Visionworks",
-      "location": "Woodbridge, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZTbDNBUjRkd1VhN1Ezb2xKblk2ZHRBEiQwMWExNTRmZi03MWQwLTdlODEtYTBlYi00YjQ5ZmYzODIwOTIaUEFBRWpEQ2N3d280RHU1TDJyVjgxREltUTZfMmJ6TlQ0eVY2UG5aTE9tZERjTjZVYzBLUmVvUi1CdWFhZjdWY05TVm1IaUlUek15MkZMTFFhIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Mechanic Parts and Inventory Coordinator",
+      "company": "Staffing agency (Loxo listing)",
+      "location": "Newark, NJ (on-site)",
+      "url": "https://app.loxo.co/job/MTkyMTctNGd1bGtxaDBqMjZhMDIzeA==",
+      "source": "Web search",
+      "category": "ops",
+      "note": "Full-time parts and inventory role covering cycle counts and purchase orders, $60k-$90k. Short train commute. Posting date not visible and employer not named. Unverified."
+    },
+    {
+      "title": "Vans: Supervisor - Jersey Gardens",
+      "company": "Vans (VF Corporation)",
+      "location": "Elizabeth, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtRFhhWWpCNThJU21zeDBMZlNUdDNnEiQwMWExNTUwYS00MTRmLTcwM2YtYWU0Ni02NGFhYzM5YWE4ODQaUEFBSGFsWWFtTldadHVJWjVUUm55bFdnSkNhS0dfb2Y4X0xRcnV1OU1FSEVyS2JKaVJvTDV0UkI1OGY1RjFTRjgzb0ttRkZjMmstNjdDYVNGIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Retail assistant manager role with full benefits, posted about 13 days ago (near the freshness limit). Short train commute. Unverified."
+      "note": "Retail store supervisor role (part-time) with stock and team-lead duties, $44k-$66k annualized, posted about 6 days ago. Short train commute. Unverified."
     }
   ]
 }
