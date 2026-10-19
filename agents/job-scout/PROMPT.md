@@ -59,9 +59,24 @@ mcp__Indeed__get_job_details,mcp__ZipRecruiter__search_jobs,WebSearch,WebFetch`)
    mean skip.
 5. **Studio and company career pages:** when a promising role turns up on a board, search
    for the same role on the employer's own careers site (Greenhouse, Lever, Ashby, and
-   Workday links are fine) and link that instead.
+   Workday links are fine) and link that instead. Also run at least **4 WebSearches** of
+   `site:boards.greenhouse.io`, `site:jobs.lever.co`, or `site:jobs.ashbyhq.com` for game &
+   tech roles (e.g. "associate producer", "QA tester", "player support"), and open each
+   promising hit with WebFetch to check it's open.
 
 If a source's tool is missing or errors, note it and move on to the next one.
+
+### The minimums are a gate, not a suggestion
+
+Keep a running tally of searches per source as you go (in your head or in a scratch file
+under `/tmp`, **never** committed: queries can name commutable towns). **Don't write the
+report until every minimum above is met.** A search that returns nothing still counts.
+
+**Round 2:** if you have fewer than 25 matches after the minimums, keep going with new
+queries: synonyms (e.g. "game tester", "QA analyst", "localization tester", "community
+support", "production assistant", "3D generalist", "asset artist", "stock associate",
+"receiving clerk", "inventory analyst"), other commutable towns, and `job_type` variations.
+Stop at 25 matches or after **60 searches in total**, whichever comes first.
 
 ### Verifying listings
 
@@ -94,8 +109,8 @@ Today's date is the run date in America/New_York. Use the format `YYYY-MM-DD`.
    current UTC time (ISO 8601), and leave the other fields as they are. Commit and push to
    `main` with the message `Craig: clocking in`. If the push fails, keep going anyway.
 2. **Read** `jobs/seen.json`.
-3. **Search every source above** (all five, with the minimum searches each), then pick up
-   to 18 art and 7 operations matches. Verify each one as described in "Verifying listings".
+3. **Search every source above** (all five, with the minimum searches each, then round 2
+   if you're short), and pick up to 18 art and 7 operations matches. Verify each one as described in "Verifying listings".
 4. **Write the report** to `jobs/YYYY-MM-DD.md` in this format:
 
    ```markdown
