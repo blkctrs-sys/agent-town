@@ -45,6 +45,15 @@ list after a skipped search is not.
 **Search every source below on every run.** Don't stop after one or two sources work.
 Load the job tools first with ToolSearch (for example `select:mcp__Indeed__search_jobs,
 mcp__Indeed__get_job_details,mcp__ZipRecruiter__search_jobs,WebSearch,WebFetch`).
+Connectors can take a minute to connect after the session starts. If the Indeed or
+ZipRecruiter tools aren't found, run `sleep 30` in Bash and search again, up to **4 tries**,
+before treating that source as unavailable. Do the LinkedIn and game-board searches in the
+meantime.
+
+**Opening pages:** if WebFetch fails (for example `getaddrinfo ENOTFOUND`), fetch the page
+with Bash instead: `curl -sL --max-time 20 -A "Mozilla/5.0" "<url>" | sed 's/<[^>]*>/ /g' |
+tr -s ' \n' | head -c 6000`. curl goes through the sandbox's proxy, which WebFetch may not.
+Wherever these instructions say "WebFetch", use this fallback when WebFetch fails.
 
 1. **Indeed** (`mcp__Indeed__search_jobs`): run at least **12 searches**, covering each game &
    tech role type (with `location: "remote"`) and each operations role type (with a
@@ -57,7 +66,7 @@ mcp__Indeed__get_job_details,mcp__ZipRecruiter__search_jobs,WebSearch,WebFetch`)
 4. **Game industry boards:** use WebSearch with `site:` for each of ArtStation Jobs
    (artstation.com/jobs), Hitmarker (hitmarker.net), Work With Indies (workwithindies.com),
    GameJobs.co, and Remote Game Jobs (remotegamejobs.com). Run at least **two searches per
-   board**. Fetch the page only if WebFetch works. Search snippets that say "Job Closed"
+   board**. Open promising hits (WebFetch, then the curl fallback). Search snippets that say "Job Closed"
    mean skip.
 5. **Studio and company career pages:** when a promising role turns up on a board, search
    for the same role on the employer's own careers site (Greenhouse, Lever, Ashby, and
@@ -87,7 +96,7 @@ Page fetching is often blocked in this environment, so verify through the tools:
 - For **Indeed** results, call `mcp__Indeed__get_job_details` with the job ID to read the
   full description. Check the degree, experience, and location rules there. A role checked
   this way counts as **verified**.
-- For other sources, try WebFetch on the employer's page once. If it fails, the role is
+- For other sources, open the employer's page (WebFetch, then the curl fallback). If both fail, the role is
   **unverified**. Say so in its note.
 - When the same job shows up on more than one site, keep the most direct link (employer
   page, then Indeed, then LinkedIn, then ZipRecruiter). ZipRecruiter redirect links expire,
