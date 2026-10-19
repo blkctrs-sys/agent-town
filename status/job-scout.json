@@ -1,64 +1,91 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-19T16:29:14Z",
-  "lastRun": "2026-10-19T16:25:09Z",
-  "summary": "Found 6 new roles this run: 3 games & tech, 3 operations. Search was thin. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-19-afternoon.md",
+  "state": "done",
+  "updated": "2026-10-19T16:32:16Z",
+  "lastRun": "2026-10-19T16:32:16Z",
+  "summary": "Found 9 new roles this run: 5 games & tech, 4 operations. Indeed was unavailable and no game-studio roles turned up. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-19-late.md",
   "items": [
     {
-      "title": "Service Desk Specialist",
-      "company": "Connexus Credit Union",
-      "location": "Remote",
-      "url": "https://to.indeed.com/aacn9v7ffjyh",
-      "source": "Indeed",
+      "title": "Help Desk Analyst",
+      "company": "TransPerfect",
+      "location": "New York, NY (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZOaWJCUVI1VWdkempvSkJUZmJuV1dBEiQwMWExNTUwMC00ZDViLTczYTItYWFjMS03NmQ3MDhhNDE0NjUaUEFBRlVhMjhMM0tqN2I4ZnpNSy1Vb0RHMDN5TFY2Qlc5WFBUMUNaRDdlOFpFMFUzd3VQSDVBRzNoaG11NnhnczlGTGpac1ljR2NXMGdCbDRYIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote ticket-based first-line support with documentation duties; associate's degree or equivalent experience accepted. Wants 1+ year of service desk experience."
+      "note": "Entry-to-junior help desk role at a large language-services and tech company in Manhattan, $45k-$61.5k, posted about 6 days ago. Short train commute. Unverified."
     },
     {
-      "title": "SMB Customer Onboarding Specialist",
-      "company": "Dental Intelligence",
+      "title": "Service Desk Analyst - Remote, United States",
+      "company": "Slipstream IT",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aa4c7hrfmptn",
-      "source": "Indeed",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZzR2JSSmRfVnhYOEtxV2pkOVZLcWpnEiQwMWExNTUwMC03OTA5LTc2MzQtODgxNC04MmNjOWQ5MWU4ODUaUEFBRWMxaG5HNHFIWk5PUXR0VVVUcmdkZHBHWVgzTzJFRXNvTFRPSTR3V2JKX1FkZnVlbC15aEVvUmF1emxpMU56VFBsMFFLZmIxaXUxNW02IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "art",
-      "note": "Fully remote SaaS onboarding and training role with cross-team coordination; no degree listed. Stretch: wants prior onboarding experience."
+      "note": "Fully remote, US-wide ticket-based service desk role at a managed IT company, junior-level filter, posted about 6 days ago. Unverified."
     },
     {
-      "title": "Project Coordinator",
-      "company": "Deployment Solutions, Inc.",
-      "location": "Remote (Eastern time preferred)",
-      "url": "https://to.indeed.com/aajhm987qdgk",
-      "source": "Indeed",
+      "title": "Service Desk Analyst",
+      "company": "DMI",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZyaTBuZEtTU3NCdTVyeTRiYm9ZUmJnEiQwMWExNTUwMC03OTA5LTc2MzEtODczYi0zZmE4ZDY5ZDM1ODkaUEFBSGFoMWc0aFlDRGRmU01tSlFCWjcyeTZ1MzNJMFZoWEU2ZVZiME9hS09oNFJ0WTFJeWViZ0RFMk9CM3BmcFV0eEJRV3NjM0ZwLTczeWRyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote coordination of multi-site tech rollouts with tracking tools, $55-66k contract; no degree listed. Stretch: 2+ years coordination."
+      "note": "Remote service desk role at a digital services company, $69k-$83k, junior-level filter, posted about 6 days ago. Stretch: may carry client-specific requirements. Unverified."
     },
     {
-      "title": "Operations Supervisor",
-      "company": "gate group (Gate Gourmet)",
-      "location": "Newark, NJ",
-      "url": "https://to.indeed.com/aa8lcqmycrzy",
-      "source": "Indeed",
+      "title": "Customer Support Specialist - Remote role!",
+      "company": "Converge Technology Solutions",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZxT2Y0Mk5BTDE0VHVaWUdzTno3RjVnEiQwMWExNTUwMC02ODczLTdlZWYtODBkZi0wYjc0OTMyOWVhZTUaUEFBSGVKamNhRDFySjd6dFhKSGk3VU1SOXlZcC1STk1qdl9JbDVzNHZHUmVLQWJ6a3NUMmJ6bzlpc2NCOUg1WC1OWUxSeTlIaUFzY204OUFjIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote customer support role at an IT solutions company, entry-to-junior filter, posted about 3 days ago. Unverified."
+    },
+    {
+      "title": "IT Helpdesk Analyst (Remote)",
+      "company": "7Seventy Recruiting",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp4BChZvQVd1aXVfdE1ieVRBNGVJNU5fV1dREiQwMWExNTUwMC03OTA5LTc2MzgtOTQxYS1hZTI2YzNjMWUwOGUaWkFBRldTOGx5YjFPWVBDUlF0N3BZZjI2d3NjemFqckdBYkYwMXlua0NmWkc0TDZBZkUyVnBLX3llUlFsYmhMcjBrRGZmWUJhYV9LS3lmOVJUVnJ1bVZmS3dDUSDJrQUQARjJrQU%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote entry-level IT helpdesk role through a recruiter, posted about 6 days ago. Stretch: lower pay ($36k-$39k) and the end employer isn't named. Unverified."
+    },
+    {
+      "title": "Inventory Specialist",
+      "company": "Primo Brands",
+      "location": "Jersey City, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZsMS0yMExSaXhUSTVJMXhtMi1meWdBEiQwMWExNTRmZi03NWQ2LTcyMzgtODkyOS1kOTYzYjAwNmJkNWEaUEFBSF8zM25NSVhvZTJFSWd1RFBZekRYZ2xXeTdFLW5id01GU3pYTDJGczg1dU4weFNDbVllQWd2Z1J3ZkM1d0NTbjBvNEdrVFJxelFyMWFDIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Supervises a high-volume kitchen team with inventory and waste duties, $70k, high school diploma required, short train ride. Closes 10/31."
+      "note": "Full-time inventory role at a national beverage company, from $52.8k with full benefits, posted about 4 days ago. Reachable by train and PATH. Unverified."
+    },
+    {
+      "title": "Receiving Clerk",
+      "company": "RWJBarnabas Health",
+      "location": "Local, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZzcUdqd3FpRHVKamY2UjV5MWN6OVpBEiQwMWExNTUwMC01MTQ1LTdiMmUtYTQ5My0zYWRhNmEzNjk3MjMaUEFBRWZNMEQ3ZmU5elkzNjUzUEpmbUtTaEdDLWFmMU9Ia25xd2FVZVFzaGNuN3dJclFwUDZleHh5YjR1aGdKS01xQlZDOW9nYUJEYVl6c096IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Hospital receiving and stock role with full benefits, posted about 7 days ago. Short train commute. Stretch: lower pay than other picks. Unverified."
     },
     {
       "title": "Assistant General Manager",
-      "company": "Wawa",
-      "location": "Local, NJ",
-      "url": "https://to.indeed.com/aa7ssjpvy8hz",
-      "source": "Indeed",
+      "company": "Fitness Holdings - Crunch Fitness",
+      "location": "Woodbridge, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZoSVFOSFJjalBBWmw1MlNtWWd3YnFREiQwMWExNTRmZi03MWQwLTdlOGQtOGMzZi00ZmYxYTM3OTdiNjYaT0FBR05raExNM21ncEYwZ1lVWHozUDlpbE9MOGtZOVVPVzBQd1Fja0Z0RG9nNVFybnVqcjVZdTdUQ1NicDQ3NEVlV0hubjlnVnp2LXJGMG8gya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Store-management path with staffing, training and shrink control, $25.80-35/hr, high school diploma, short train commute."
+      "note": "Assistant GM role at a high-traffic gym covering staffing, scheduling and daily operations, posted about 2 days ago. Short train commute. Unverified."
     },
     {
-      "title": "Assistant Manager - Restaurant",
-      "company": "Benihana",
-      "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aa9h7hhzqr2d",
-      "source": "Indeed",
+      "title": "Assistant Manager",
+      "company": "Visionworks",
+      "location": "Woodbridge, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZTbDNBUjRkd1VhN1Ezb2xKblk2ZHRBEiQwMWExNTRmZi03MWQwLTdlODEtYTBlYi00YjQ5ZmYzODIwOTIaUEFBRWpEQ2N3d280RHU1TDJyVjgxREltUTZfMmJ6TlQ0eVY2UG5aTE9tZERjTjZVYzBLUmVvUi1CdWFhZjdWY05TVm1IaUlUek15MkZMTFFhIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Restaurant assistant management with inventory control and scheduling, $60-65k, no degree listed. Stretch: wants prior restaurant management."
+      "note": "Retail assistant manager role with full benefits, posted about 13 days ago (near the freshness limit). Short train commute. Unverified."
     }
   ]
 }
