@@ -40,18 +40,42 @@ matches.** Say in the summary how many you found.
 
 ## Where to search
 
-Use every source you can reach. Use web search and fetch pages where allowed.
+**Search every source below on every run.** Don't stop after one or two sources work.
+Load the job tools first with ToolSearch (for example `select:mcp__Indeed__search_jobs,
+mcp__Indeed__get_job_details,mcp__ZipRecruiter__search_jobs,WebSearch,WebFetch`).
 
-- **Indeed:** use an Indeed tool if one is available in this session. Otherwise web-search
-  `site:indeed.com` with the role and location keywords.
-- **ZipRecruiter:** use the ZipRecruiter tool if it's available.
-- **LinkedIn:** LinkedIn blocks automated browsing, so web-search `site:linkedin.com/jobs`
-  instead of logging in.
-- **Game industry boards:** ArtStation Jobs (artstation.com/jobs), Hitmarker
-  (hitmarker.net), Work With Indies (workwithindies.com), GameJobs.co, Remote Game Jobs
-  (remotegamejobs.com), and studio career pages you come across.
-- **Operations roles:** Indeed, ZipRecruiter, LinkedIn, and company career pages for
-  employers in the commutable areas.
+1. **Indeed** (`mcp__Indeed__search_jobs`): run at least **6 searches**, covering each game &
+   tech role type (with `location: "remote"`) and each operations role type (with a
+   commutable town as `location`). Always pass `country_code: "US"`.
+2. **ZipRecruiter** (`mcp__ZipRecruiter__search_jobs`): run at least **6 searches** over the
+   same role types, with `seniority_classes` of `NO_EXPERIENCE` / `JUNIOR` where it fits.
+3. **LinkedIn:** LinkedIn blocks automated browsing, so use WebSearch with
+   `site:linkedin.com/jobs/view` plus the role and "remote" or a commutable town. Run at
+   least **3 searches**. Don't log in or fetch LinkedIn pages.
+4. **Game industry boards:** use WebSearch with `site:` for each of ArtStation Jobs
+   (artstation.com/jobs), Hitmarker (hitmarker.net), Work With Indies (workwithindies.com),
+   GameJobs.co, and Remote Game Jobs (remotegamejobs.com). Run at least **one search per
+   board**. Fetch the page only if WebFetch works. Search snippets that say "Job Closed"
+   mean skip.
+5. **Studio and company career pages:** when a promising role turns up on a board, search
+   for the same role on the employer's own careers site (Greenhouse, Lever, Ashby, and
+   Workday links are fine) and link that instead.
+
+If a source's tool is missing or errors, note it and move on to the next one.
+
+### Verifying listings
+
+Page fetching is often blocked in this environment, so verify through the tools:
+
+- For **Indeed** results, call `mcp__Indeed__get_job_details` with the job ID to read the
+  full description. Check the degree, experience, and location rules there. A role checked
+  this way counts as **verified**.
+- For other sources, try WebFetch on the employer's page once. If it fails, the role is
+  **unverified**. Say so in its note.
+- When the same job shows up on more than one site, keep the most direct link (employer
+  page, then Indeed, then LinkedIn, then ZipRecruiter). ZipRecruiter redirect links expire,
+  so use them only when nothing else is available.
+- Prefer verified roles. With equal fit, a verified role beats an unverified one.
 
 ## The "why it fits" note
 
@@ -70,8 +94,8 @@ Today's date is the run date in America/New_York. Use the format `YYYY-MM-DD`.
    current UTC time (ISO 8601), and leave the other fields as they are. Commit and push to
    `main` with the message `Craig: clocking in`. If the push fails, keep going anyway.
 2. **Read** `jobs/seen.json`.
-3. **Search** using the sources above until you have up to 7 art and 3 operations matches.
-   Open each posting to confirm it's live and meets the rules when you can.
+3. **Search every source above** (all five, with the minimum searches each), then pick up
+   to 7 art and 3 operations matches. Verify each one as described in "Verifying listings".
 4. **Write the report** to `jobs/YYYY-MM-DD.md` in this format:
 
    ```markdown
@@ -81,10 +105,17 @@ Today's date is the run date in America/New_York. Use the format `YYYY-MM-DD`.
 
    ## Games & tech
    1. **[Title](url)** — Company · Location/Remote · Source
-      Why it fits: ...
+      Why it fits: ... End with "Verified via Indeed details." or "Unverified."
 
    ## Operations & inventory
    1. ...
+
+   ## Sources checked
+   - Indeed: N searches, N candidates, N kept
+   - ZipRecruiter: N searches, N candidates, N kept
+   - LinkedIn (web search): N searches, N candidates, N kept
+   - Game boards (web search): N searches, N candidates, N kept
+   - Career pages: N checked
 
    ## Notes
    - Sources that didn't work today, and anything else worth knowing.
