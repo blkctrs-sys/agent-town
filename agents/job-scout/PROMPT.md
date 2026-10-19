@@ -9,12 +9,12 @@ contact an employer.
 
 ## What to look for
 
-Find **10 new openings** per run:
+Find **25 new openings** per run:
 
-- **7 game & tech roles** at game studios or tech companies: production (associate producer,
+- **18 game & tech roles** at game studios or tech companies: production (associate producer,
   production or project coordinator), QA / game testing, player or technical support, studio
   operations, and junior 3D art (3D artist, 3D generalist, asset artist). Use `"category": "art"`.
-- **3 operations / inventory roles**: inventory specialist/coordinator, stock control,
+- **7 operations / inventory roles**: inventory specialist/coordinator, stock control,
   purchasing, operations coordinator/supervisor, manager-in-training, and similar. Use
   `"category": "ops"`.
 
@@ -44,17 +44,17 @@ matches.** Say in the summary how many you found.
 Load the job tools first with ToolSearch (for example `select:mcp__Indeed__search_jobs,
 mcp__Indeed__get_job_details,mcp__ZipRecruiter__search_jobs,WebSearch,WebFetch`).
 
-1. **Indeed** (`mcp__Indeed__search_jobs`): run at least **6 searches**, covering each game &
+1. **Indeed** (`mcp__Indeed__search_jobs`): run at least **12 searches**, covering each game &
    tech role type (with `location: "remote"`) and each operations role type (with a
    commutable town as `location`). Always pass `country_code: "US"`.
-2. **ZipRecruiter** (`mcp__ZipRecruiter__search_jobs`): run at least **6 searches** over the
+2. **ZipRecruiter** (`mcp__ZipRecruiter__search_jobs`): run at least **12 searches** over the
    same role types, with `seniority_classes` of `NO_EXPERIENCE` / `JUNIOR` where it fits.
 3. **LinkedIn:** LinkedIn blocks automated browsing, so use WebSearch with
    `site:linkedin.com/jobs/view` plus the role and "remote" or a commutable town. Run at
-   least **3 searches**. Don't log in or fetch LinkedIn pages.
+   least **6 searches**. Don't log in or fetch LinkedIn pages.
 4. **Game industry boards:** use WebSearch with `site:` for each of ArtStation Jobs
    (artstation.com/jobs), Hitmarker (hitmarker.net), Work With Indies (workwithindies.com),
-   GameJobs.co, and Remote Game Jobs (remotegamejobs.com). Run at least **one search per
+   GameJobs.co, and Remote Game Jobs (remotegamejobs.com). Run at least **two searches per
    board**. Fetch the page only if WebFetch works. Search snippets that say "Job Closed"
    mean skip.
 5. **Studio and company career pages:** when a promising role turns up on a board, search
@@ -95,7 +95,7 @@ Today's date is the run date in America/New_York. Use the format `YYYY-MM-DD`.
    `main` with the message `Craig: clocking in`. If the push fails, keep going anyway.
 2. **Read** `jobs/seen.json`.
 3. **Search every source above** (all five, with the minimum searches each), then pick up
-   to 7 art and 3 operations matches. Verify each one as described in "Verifying listings".
+   to 18 art and 7 operations matches. Verify each one as described in "Verifying listings".
 4. **Write the report** to `jobs/YYYY-MM-DD.md` in this format:
 
    ```markdown
@@ -132,7 +132,7 @@ Today's date is the run date in America/New_York. Use the format `YYYY-MM-DD`.
      "state": "done",
      "updated": "<now, UTC ISO 8601>",
      "lastRun": "<now, UTC ISO 8601>",
-     "summary": "Found 10 new roles: 7 art, 3 operations.",
+     "summary": "Found 25 new roles: 18 art, 7 operations.",
      "report": "jobs/YYYY-MM-DD.md",
      "items": [
        {
