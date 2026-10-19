@@ -1,37 +1,46 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-19T11:40:52Z",
-  "lastRun": "2026-10-16T11:41:51Z",
-  "summary": "Found 3 new roles: 3 games & tech, 0 operations. Search was thin, only unverified listings, and no new qualifying operations roles turned up. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-16.md",
+  "state": "done",
+  "updated": "2026-10-19T11:41:37Z",
+  "lastRun": "2026-10-19T11:41:37Z",
+  "summary": "Found 4 new roles: 3 games & tech, 1 operations. Search was thin and listings are unverified. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-19.md",
   "items": [
     {
-      "title": "Technical Support Representative",
-      "company": "TouchTone Communications",
-      "location": "Remote (Cedar Knolls, NJ based)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ3WFRQcFo3RF9KcGRJWkFEd1JUblZREiQwMWExNDQ4NC01YzUxLTdkNWEtYWU2OS1iY2FmMzE1NGEwYzMaW0FBRUtnYnIyNmN4Q0xud0dVdkhhTnBwMG0zYXRTLTNUY01YMkdJbU91SXY2QzhlWTl6VzMyVjdLOXhJT0dxcmVLYjdOcFM5MF9TY052SmdiQmFCemNzNW9pdmMgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Entry-level technical support role at a New Jersey tech company, remote, posted about 8 days ago. Ticket-based support work. Not verified: page not opened, degree rules unchecked."
-    },
-    {
       "title": "Technical Support Specialist",
-      "company": "PatientNow",
+      "company": "Higher Logic",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZaMEJIbUI3S2xHZ3FUTW9vOU5hSUhREiQwMWExNDQ4NC01YzUxLTczZTEtODRmZS0zZGY0ODM2OWM3NzgaUEFBSHNyQ2pOYktGel9YaXZXVnZyQ2pna2YzOXJGb3Z2YkxqcEN0SG9Bd1FlQ0h4RVVTcGxhRE9Wemw1S2RySmRmWFFEb0FmSzNkMS03VXRCIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3azhURk1NMmFQa0ZMSjBKcmlIbUdnEiQwMWExNTNmNy00Zjk3LTdiMmEtYjAwOC1jMzM4NGE0Y2Q1OTQaUEFBSGd4RDBfS2JtU2JncFlzckZZTU9nSW80LWpUbXdLblBaclZIMzN1YjRmeWJvZjB5WWR0aEw1dmRPZDlFTFVyOVFoMURoenJGdzRsX0JRIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote software support role, junior-level filter, posted about 4 days ago. Stretch: healthcare software rather than games. Not verified: page not opened, degree rules unchecked."
+      "note": "Remote software support role at a tech company, posted about 3 days ago, entry-to-junior filter. Ticket-based support. Not verified: page not opened, degree rules unchecked."
     },
     {
-      "title": "Junior QA Tester - Clinical Data Services",
-      "company": "Persistent Technology, Inc.",
+      "title": "Technical Support Specialist, Emphasys PHA",
+      "company": "Aquila Software Group",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5S2phNEtuYXVVb25rdGk1QXRoam5BEiQwMWExNDQ4My1lOTNmLTdiYmMtOGI4OC0wNGRmN2ZiNmU4NWUaUEFBSGFiYS1tMnY4NURRQTBZYXhzYXVvc3FOcGl0VXIwd3FfN0tBQlR0ejhvYmNHNUs3VlRCV2wzOG54OUJzNFFWc3luT3ladWZMcEwzVE1tIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYtV1BDMTJhc1NWeWVOOE92RmtsQ1dREiQwMWExNTNmNy00Zjk3LTdiMmYtYWVhZC0xNTk0NzBiNTM5NDgaUEFBSGVHNVlRTXhnNTVvdnZ6U29qSTBzSzJ0NFE5V1RxdTl6dkZJV25PRU91cGhNR2hPM2ZZMlBIQ2QycmV5VzVqYWFsVXk4dFhLN3VxS20xIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Junior-level remote QA role, posted about 3 days ago. Stretch: clinical data software rather than games. Not verified: page not opened, degree rules unchecked."
+      "note": "Remote software support role, junior-level filter, posted about 3 days ago. Stretch: housing-authority software rather than games. Not verified: page not opened, degree rules unchecked."
+    },
+    {
+      "title": "Project Coordinator",
+      "company": "eimagine",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZPdGYwYVA0T3VUYXFUYUluSWRlbkJREiQwMWExNTNmNy01MWI1LTdjM2EtODgxMS03OWFkOGY4N2VlODkaT0FBR2l5TzJPN01aeXVFbnkxcDN3d2Y1RUJVdy00NjlFSktoVFZBVEg1bnFnSHhVNVY4aXdVYXJETFNhNHBlaHp5a2RIVkZkaW1ZTUgwVkUgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote contract project coordinator role, junior-level filter, posted about 2 days ago. Stretch: agency work rather than games. Not verified: page not opened, degree rules unchecked."
+    },
+    {
+      "title": "Inventory Control Specialist",
+      "company": "Atrium",
+      "location": "Edison, NJ (on-site)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZSUEtscEFiVlFOQkNWRTZkY1dLeGJBEiQwMWExNTNmNi1mMTViLTcwYjUtODZjNi03ZGNlYjMzNGU3NDAaW0FBSGxvUlhTci11dTFtNlNTN0VwMlZ1aHVoSXpONWpTSzBmR1N3TFZzNHFWQ0YxZHU4TXVMNnBPbkdWbFRyaWJXMWhTbnVMUHZ4YVh5RWoyS0FNOTZiZnRnMlkgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Inventory control role on a direct train line, posted about 2 days ago, from $56k. Not verified: page not opened, degree rules unchecked."
     }
   ]
 }
