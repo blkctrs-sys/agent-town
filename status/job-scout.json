@@ -1,118 +1,118 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-20T11:47:17Z",
-  "lastRun": "2026-10-19T16:44:50Z",
-  "summary": "Found 12 new roles this run: 7 games & tech, 5 operations. Indeed was unavailable and no pages could be opened, so all are unverified. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-19-run5.md",
+  "state": "done",
+  "updated": "2026-10-20T11:51:10Z",
+  "lastRun": "2026-10-20T11:51:10Z",
+  "summary": "Found 12 new roles: 8 games & tech, 4 operations. 8 verified via Indeed; page fetching was blocked, so the rest are unverified. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-20.md",
   "items": [
     {
-      "title": "Jr Prop Artist (contract)",
-      "company": "Studio Wildcard",
+      "title": "Project Manager - Music, Video & Audio Production",
+      "company": "Sound Imagination",
+      "location": "Local, NJ",
+      "url": "https://to.indeed.com/aadgd2nnbwt8",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Project coordination role at an award-winning music, video and audio production company: schedules, budgets, vendors and deliverables. Part-time (3+ days) to start with a path to full-time, short train commute, no degree listed. Verified via Indeed details."
+    },
+    {
+      "title": "Junior Technical Support Specialist",
+      "company": "HS GovTech",
       "location": "Remote (US)",
-      "url": "https://www.builtinseattle.com/job/jr-prop-artist/11583358",
-      "source": "Built In / Remotive (web search)",
+      "url": "https://to.indeed.com/aaw72v2zrpqk",
+      "source": "Indeed",
       "category": "art",
-      "note": "Junior prop artist role on a long-running Unreal-based survival franchise, USA-only remote contract around $50k-$60k, Blender/ZBrush/Substance and UE5 listed. Stretch: asks for a shipped title and/or mod experience plus an art test; posting date not visible. Unverified."
+      "note": "Junior Tier I/II SaaS support role using Jira-style ticketing, with bug-fix testing and knowledge-base work; asks for 1-3 years of support experience, degree only preferred. Verified via Indeed details."
     },
     {
-      "title": "Technical Support Specialist",
-      "company": "Regal",
-      "location": "New York, NY (hybrid)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY2b2RtVmFYTVVVemNPTHhkQWhUOVBBEiQwMWExNTUwYS0zMDg3LTdjYjEtYWVmZi1lNDhhNWY0MDdlODkaUEFBRzBzN3B2V0NPQ2JyMFE2UG9wSkVqTVJqa3pZV2pvSW5jWU5Mc1llYl9IakRhdWRjbXB0eXljYTlRdjlxZFd4b2dYRnJaYVp0a0pKMk0zIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "title": "End User Analyst (Technical Support Analyst)",
+      "company": "Faroutsolutions",
+      "location": "Jersey City, NJ (hybrid)",
+      "url": "https://to.indeed.com/aas6gml6fvpq",
+      "source": "Indeed",
       "category": "art",
-      "note": "Entry-level ticket-based support role at an AI contact-center software company, $60k-$80k, posted about 3 days ago. Short train commute. Stretch: wants exposure to things like SQL or APIs. Unverified."
+      "note": "Frontline ticket-based IT support at a managed IT services firm, hybrid in Jersey City (train + PATH). Associate's degree OR 1-2 years of experience; networking basics and Autotask are pluses. Verified via Indeed details."
     },
     {
-      "title": "Composer's Assistant - Temp (SFD / Cinematics)",
-      "company": "Blizzard Entertainment",
+      "title": "Project Coordinator (Remote)",
+      "company": "GovCIO",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZNSUJORXY0NXZ2d1BNVm10cE1jVjd3EiQwMWExNTUwYi04NTA5LTc3MWItYTU2ZS1mNWQxNzI1ZDZmZTEaUEFBR241WEQyRk5FV01xM2d4bnp5WFVqZHBHLWJtbkJDNGpFYU4wOVpUTFFjNV9xQjFvM1QyMjdpakZLckI2Y05vYnQyZmpCcGdhank3RnJ6IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "url": "https://to.indeed.com/aapsdfpq8ncq",
+      "source": "Indeed",
       "category": "art",
-      "note": "Junior-level temporary audio role on a major game studio's cinematics team, listed remote, $48.9k-$90.4k, posted about 13 days ago. Full requirements not visible. Unverified."
+      "note": "Entry-level (0-2 years) program coordination at a tech services company: action tracking in Jira/Planner, SOP upkeep, onboarding support. Experience may substitute for the degree; must be able to get a Public Trust clearance. Verified via Indeed details."
     },
     {
-      "title": "Call Center Associate I",
-      "company": "Brightstar Lottery",
+      "title": "Support Specialist",
+      "company": "ImageTrend",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZfaDliYnFYcmVXOWMyNlhWNmQ5ajhBEiQwMWExNTUwYS0wMjM3LTcyZmQtYmI5MS0wZDJmMzNjMjUyY2IaUEFBRXN2cDN6cmpvX0xIdm9OM05WSkNhWUpORlFSeFpXbVZJU0pZZnpJMi1UdTFmRzJHTGtucURQRUU0N0ZtUGFtTi00RlpRNzZwSnNnZkNVIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZSWl9Sb05kMTZHOGFjNVY3ZDFuN1ZnEiQwMWExNTkyMy1jMjE4LTczY2YtYWFjZi1mNDFhMDg0YWEyNzQaT0FBRklBMVhtZ1JfaTdueFA2V3o3VkFwanR5bXM2dzRfTk53SWZFUWljZkVVeUhDTjVmU1Bfb1ZxLWZ5YmlpZlIyUVpKdk1kMVg2MTM0VTggya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Entry-level support role at a lottery and gaming technology company, listed remote, $43.7k-$46.8k with full benefits, posted about 5 days ago. Confirm remote eligibility outside the company's home state. Unverified."
+      "note": "Software support role at a SaaS company, 100% remote anywhere in the US, $50k-$60k, junior filter, posted about a day ago. Unverified."
     },
     {
-      "title": "IT Support Specialist I",
-      "company": "Ware Malcomb",
-      "location": "Newark, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYbk91NkJ3TURTVFNBX0lJcEdGd2hnEiQwMWExNTUwYi04MGUwLTc2YWMtODg3NS01OGNmZTE0YWJlOTcaUEFBR2txRW1haTI4U3lBNnB2NF9fYkRKV1NxM2F5VXlKVkhuWG9XUlV0NnZ6SHpyTEhKeUJVSk9TQnRKRnZTOWp0Q0dvSWZYT09EVzJRd2lqIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Customer Service Specialist",
+      "company": "Vector Airport Systems",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aazpnm4ncy2c",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Fully remote CRM-based support role at an aviation SaaS company; asks for 3+ years of inbound support, no degree listed. Stretch: Pacific-time hours (11am-7pm ET) and some billing/collections work. Verified via Indeed details."
+    },
+    {
+      "title": "Technical Support Specialist - Photo Finishing Equipment (temp)",
+      "company": "Computer Generated Solutions",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aarwgbmsq9wq",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Remote full-time temp role doing phone/email break-fix support and device swaps for retail equipment using TeamViewer/VNC. No degree listed; photo equipment experience preferred. Verified via Indeed details."
+    },
+    {
+      "title": "Customer Support Associate",
+      "company": "Fanatics Collectibles",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZJWDVmX1k4TWM1VUtIZFZnelNDT2tBEiQwMWExNTkyMy1iNzIyLTdkOWUtODVlYi0xOGQ1MTJkYjliN2QaW0FBSF91SVNneFA4LUxUS1Vlb21oMXFIb1VuZ3JsNjRRQzFaNV9oMmlfTVExdVZQelM4d1FiMnkydzJHZzlRSlZnQlhaVW1VYy1iSmMyTnR4dDBXYzlwczNNSlEgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Level-one IT support role at a design firm, $48k-$57.7k, entry/junior filter, posted about 3 days ago. Short train commute. Unverified."
+      "note": "Remote entry-level collector support role on Eastern hours at a trading-card and collectibles company, $40k-$50k, posted about a day ago. Unverified."
     },
     {
-      "title": "Technical Support",
-      "company": "Collabera Digital",
-      "location": "New York, NY (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZrT3MwaDBnMnpvQ1g2ZG4tSGpQcVdnEiQwMWExNTUwYS0zMDg3LTdjYWItYmJhYy1hMzVlNDlhMjgwYmYaUEFBRUE2ZUJfZ2stQUtOWGJaRGJ1czBYTDJSVnZMTWtsRERkXzVjVVBBamJGSHJzRE05R0lwTHBsYWNWZzdDZ3VINXozSXBOVWtZTUwzaGlxIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Junior technical support role through an IT staffing firm, $50k-$56k with benefits, posted about 4 days ago. Short train commute; end client not named. Unverified."
+      "title": "Restaurant Assistant General Manager",
+      "company": "Alfalfa",
+      "location": "Princeton, NJ",
+      "url": "https://to.indeed.com/aaqjhmmplwd6",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Second-in-command role that owns kitchen operations: inventory, vendor ordering, FIFO, waste and scheduling. $75k-$80k, posted Oct 15, reachable by train. Asks for 3 years of restaurant management; ServSafe can come after hire. Verified via Indeed details."
     },
     {
-      "title": "Disclosure Client Project Coordinator",
-      "company": "Broadridge",
-      "location": "New York, NY (hybrid)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZMHB0ZmpMR1ZHanBkU1hUaGdzU1lREiQwMWExNTUwYi03YjkxLTc5ZmUtYmNlNC01MGY0ZmQ4NDI0YjkaUEFBSDN2YVRuLTUxeWdmMXFzbWVaUmRMQ1RQaVlaZWF2a2VZbEJBeC15cmU4N0k0WTc1WjZ6MlFaWHFnS1hmc3VwVlBfX3hrRGFvbW8yZVpBIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Junior project coordinator role at a large financial-technology company, $64k-$74k, hybrid, posted about 6 days ago. Short train commute. Stretch: finance-document domain. Unverified."
+      "title": "Leadership Development Program",
+      "company": "Mainfreight",
+      "location": "Elizabeth, NJ",
+      "url": "https://to.indeed.com/aa88fdz8xd72",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Logistics management-training track that starts on the warehouse floor and moves into account and leadership roles. From $54k, posted Oct 13, short train commute. Open to recent grads or early-career people, so no degree is strictly required. Verified via Indeed details."
     },
     {
-      "title": "Inventory Specialist (contract)",
-      "company": "Denken Solutions, Inc.",
-      "location": "New York, NY (hybrid)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY1Q0U2cnFhbGpmWnFsdE80RWRKemhREiQwMWExNTUwYi02ZGM1LTdiMWItYTY0OS0zNmE0Y2NmNzQ3NGUaUEFBRzdCclV2ZXNldTh6OTEwMXBZdXRUWWJ3dG43a3o0UjlHdDlVbHZlUVpTR3pJX2s4ZHM3cjFvaHNocmR0c3R3VnZyWW5HQ2h2aXlualIyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Inventory Specialist",
+      "company": "Whole Foods Market",
+      "location": "Newark, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXckQ1cFRySkU5TzNXTHhtY2wwbkVREiQwMWExNTkyMy1lMDI2LTc5MjItODQ1Ni0zMTkzZjI5ZGMxMDgaW0FBRzBHa3NrNXYybGo4eEZsd1hickdhQUdlUGJ0UkwtWlgtdWE0YXhMSjR4M0F3OE9ldkNRY3ZjN2d3ZmdlMm1haXRiZWd1aFhIZ3ROenVRVEQwenZqOTFab1Ugya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Contract inventory role through a staffing firm, from $70k, hybrid, posted about 3 days ago. Short train commute. Unverified."
+      "note": "Grocery inventory role in Newark, $39k-$60k, posted about 5 days ago, short train commute. Unverified."
     },
     {
-      "title": "Inventory Specialist (contract)",
-      "company": "FuseGlobal",
-      "location": "New York, NY (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZrNUxDMnRKX2JpZmFRWHBweGxlRHhnEiQwMWExNTUwYi03NjU4LTcyYjktOGJmMi0yZjYyNzllNGZhNmQaUEFBRkNocmxxSzhTUzNOenc1OEE3UktyRFgxcXA2V1BFVXBreG9XbjhJRWk4VXlEUmdzeF8zbGNUQ2d3eUdDQjVQOUFqaXdMWWFjOGp2cGdEIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Purchasing & Receiving Coordinator",
+      "company": "WSA NYC, LLC",
+      "location": "Manhattan, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZISE1yQlFwZ1BjVjdvcHZKQUs4QW9BEiQwMWExNTkyMy1lNmE0LTc0MjgtOTBmNy0wOWYwNDc3ZDdlMTEaWEFBRlUzMVI0VzRJc1lueWdIQU1sR1VrcFZPUlRaTEJyZUw5dlhXSENua2ZiUlUtRHVUazhiMGFKaUJtRFdCSnp0TzUxbWZMRFNWQWJBbHJCWnRWeTVCS08gya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Contract inventory role with benefits, from $65k, posted about 5 days ago. Short train commute. May be the same client role as the listing above. Unverified."
-    },
-    {
-      "title": "Assistant Retail Manager",
-      "company": "Brasserie Boulud",
-      "location": "New York, NY (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYyX3NpVHg2cGpHYk1icXNGeXVHVmZBEiQwMWExNTUwYi1jMGNmLTdlNzMtODBmZC1kYmE3Mjk0ZjBkMWIaW0FBRjJkaWVSangySzBhUEZwTE1OVkhNYnVpb1lsNC02T0xuT29GejdhX2JHSWVrSWtxMy1iNnB1MVpLMXU3RERRLUhudjZVek9NRnlldDFqVjcxZFkzNHYwY2sgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Assistant manager role in a restaurant group's retail operation, $70k-$75k, posted about 3 days ago. Short train commute. Unverified."
-    },
-    {
-      "title": "Mechanic Parts and Inventory Coordinator",
-      "company": "Staffing agency (Loxo listing)",
-      "location": "Newark, NJ (on-site)",
-      "url": "https://app.loxo.co/job/MTkyMTctNGd1bGtxaDBqMjZhMDIzeA==",
-      "source": "Web search",
-      "category": "ops",
-      "note": "Full-time parts and inventory role covering cycle counts and purchase orders, $60k-$90k. Short train commute. Posting date not visible and employer not named. Unverified."
-    },
-    {
-      "title": "Vans: Supervisor - Jersey Gardens",
-      "company": "Vans (VF Corporation)",
-      "location": "Elizabeth, NJ (on-site)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZtRFhhWWpCNThJU21zeDBMZlNUdDNnEiQwMWExNTUwYS00MTRmLTcwM2YtYWU0Ni02NGFhYzM5YWE4ODQaUEFBSGFsWWFtTldadHVJWjVUUm55bFdnSkNhS0dfb2Y4X0xRcnV1OU1FSEVyS2JKaVJvTDV0UkI1OGY1RjFTRjgzb0ttRkZjMmstNjdDYVNGIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Retail store supervisor role (part-time) with stock and team-lead duties, $44k-$66k annualized, posted about 6 days ago. Short train commute. Unverified."
+      "note": "Purchasing and receiving coordination in Manhattan, $70k-$75k, posted today. Exact address and distance from Penn Station unknown. Unverified."
     }
   ]
 }
