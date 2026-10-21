@@ -486,7 +486,17 @@ function makeResident(cfg) {
     cyl(0.6, 0.6, 0.06, mat(cfg.hat), 0, 2.5, 0.05, body, 12);
     cyl(0.36, 0.4, 0.4, mat(cfg.hat), 0, 2.52, 0, body, 10);
   }
-  if (cfg.hair) {
+  if (cfg.hairStyle === 'emo') {
+    // Long sides and a side fringe swept over one eye.
+    const hm = mat(cfg.hair || '#1c1820');
+    const hair = mesh(new THREE.IcosahedronGeometry(0.5, 1), hm, 0, 2.38, -0.06, body);
+    hair.scale.set(1.04, 0.7, 1.04);
+    box(0.14, 0.62, 0.62, hm, -0.44, 1.92, -0.06, body);
+    box(0.14, 0.62, 0.62, hm, 0.44, 1.92, -0.06, body);
+    const fringe = box(0.52, 0.34, 0.12, hm, -0.14, 2.14, 0.42, body);
+    fringe.rotation.z = 0.35;
+    if (cfg.hairStreak) box(0.16, 0.08, 0.5, mat(cfg.hairStreak), 0.14, 2.66, 0.02, body);
+  } else if (cfg.hair) {
     const hair = mesh(new THREE.IcosahedronGeometry(0.5, 1), mat(cfg.hair), 0, 2.4, -0.06, body);
     hair.scale.set(1, 0.62, 1);
     const fringe = box(0.7, 0.16, 0.2, mat(cfg.hair), 0.08, 2.45, 0.33, body);
@@ -500,6 +510,17 @@ function makeResident(cfg) {
       sp.rotation.x = Math.PI / 2;
     }
     box(0.6, 0.06, 0.06, mat('#8a879c'), 0, 0.28, 0, bb);
+  }
+  if (cfg.prop === 'pumpkin') {
+    // A jack-o'-lantern pail carried at the side.
+    const pp = new THREE.Group(); pp.position.set(0.72, 0.75, 0.1); body.add(pp);
+    const pail = mesh(new THREE.SphereGeometry(0.3, 10, 7), mat('#e0701f'), 0, 0, 0, pp);
+    pail.scale.y = 0.8;
+    const handle = mesh(new THREE.TorusGeometry(0.22, 0.025, 4, 10, Math.PI), mat('#3b3f4d'), 0, 0.12, 0, pp);
+    handle.rotation.y = Math.PI / 2;
+    const face = glow('#ffb13b', 0.6, 3);
+    for (const sx of [-0.1, 0.1]) box(0.08, 0.08, 0.04, face, sx, 0.03, 0.27, pp);
+    box(0.22, 0.05, 0.04, face, 0, -0.1, 0.27, pp);
   }
   g.scale.setScalar(1.4);
   g.traverse((o) => { o.userData.agentId = cfg.id; });

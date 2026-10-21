@@ -22,6 +22,16 @@ agents/<agent>/PROMPT.md  the agent's instructions
 jobs/                   Job Scout's daily reports and seen-jobs list
 ```
 
+## Residents
+
+- **Craig**, Job Scout: finds new openings every weekday morning.
+- **Brenden**, Content Producer: drafts posts and video packages.
+- **Mildred**, Interview Coach: preps for Craig's top 3 roles and any interviews on the
+  owner's list, plus a daily practice drill. Everything she writes stays in the private repo.
+
+Resident looks in `agents.json`: `color`, `skin`, `hat` or `hair`, `hairStyle` (`"emo"`),
+`hairStreak`, and `prop` (`"boombox"` or `"pumpkin"`).
+
 ## Status file format
 
 ```json

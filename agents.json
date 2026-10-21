@@ -30,5 +30,28 @@
         "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/brenden/drafts"
       }
     ]
+  },
+  {
+    "id": "mildred",
+    "name": "Mildred",
+    "title": "Interview Coach",
+    "plot": 2,
+    "color": "#3a2d4a",
+    "hair": "#1c1820",
+    "hairStyle": "emo",
+    "hairStreak": "#9b5de5",
+    "skin": "#f6e3dc",
+    "prop": "pumpkin",
+    "status": "status/mildred.json",
+    "links": [
+      {
+        "label": "Open my prep packs",
+        "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/mildred/prep"
+      },
+      {
+        "label": "Add an interview",
+        "url": "https://github.com/blkctrs-sys/agent-town-private/edit/main/mildred/interviews.md"
+      }
+    ]
   }
 ]

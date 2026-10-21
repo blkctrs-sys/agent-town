@@ -467,6 +467,19 @@
       rect(ctx, bx + 1, y - 5 + bob, 1, 2, '#c8ccd6');
       rect(ctx, bx + 4, y - 5 + bob, 1, 2, '#c8ccd6');
       rect(ctx, bx + 2, y - 5 + bob, 2, 1, (a.mode === 'working' || a.mode === 'home') && Math.sin(t * 8) > 0 ? PINK : '#5d6275');
+    } else if (a.prop === 'pumpkin') {
+      // jack-o'-lantern pail carried at the side
+      const bx = v.dir > 0 ? x + 4 : x - 9;
+      const bob = v.moving && f ? 1 : 0;
+      const lit = Math.sin(t * 9) + Math.sin(t * 4.3) > -1 ? '#ffd34d' : '#e0a030';
+      rect(ctx, bx + 1, y - 8 + bob, 3, 1, '#3b3f4d');
+      rect(ctx, bx, y - 7 + bob, 1, 1, '#3b3f4d');
+      rect(ctx, bx + 4, y - 7 + bob, 1, 1, '#3b3f4d');
+      rect(ctx, bx, y - 6 + bob, 5, 4, '#e8742a');
+      rect(ctx, bx, y - 3 + bob, 5, 1, '#b8541c');
+      rect(ctx, bx + 1, y - 5 + bob, 1, 1, lit);
+      rect(ctx, bx + 3, y - 5 + bob, 1, 1, lit);
+      rect(ctx, bx + 1, y - 4 + bob, 3, 1, lit);
     } else {
       // messenger bag
       rect(ctx, v.dir > 0 ? x - 2 : x + 1, y - 7, 1, 4, '#7a4b2a');
@@ -477,7 +490,14 @@
     if (v.moving) rect(ctx, v.dir > 0 ? x + 1 : x - 2, y - 10, 1, 1, ink);
     else { rect(ctx, x - 2, y - 10, 1, 1, ink); rect(ctx, x + 1, y - 10, 1, 1, ink); }
     rect(ctx, v.dir > 0 ? x + 2 : x - 3, y - 9, 1, 1, '#eaa48e');
-    if (a.hair) {
+    if (a.hairStyle === 'emo') {
+      // long sides and a side fringe over one eye
+      rect(ctx, x - 3, y - 14, 6, 2, a.hair);
+      rect(ctx, x - 4, y - 13, 1, 5, a.hair);
+      rect(ctx, x + 3, y - 13, 1, 5, a.hair);
+      rect(ctx, v.dir > 0 ? x - 3 : x - 1, y - 12, 4, 3, a.hair);
+      if (a.hairStreak) rect(ctx, v.dir > 0 ? x : x - 2, y - 14, 2, 1, a.hairStreak);
+    } else if (a.hair) {
       // swept hair
       rect(ctx, x - 3, y - 14, 6, 2, a.hair);
       rect(ctx, x - 4, y - 13, 1, 3, a.hair);
@@ -823,6 +843,7 @@
         }
         glow(P.x + 26, P.y + 28, 22, a.color, 0.3 * dark);
         glow(P.x + 71, P.y + 35, 12, CYAN, 0.3 * dark);
+        if (a.prop === 'pumpkin' && !a.v.hidden) glow(a.v.dir > 0 ? a.v.x + 6 : a.v.x - 7, a.v.y - 5, 7, '#ff8a2a', 0.5 * dark);
       }
       PLOTS.forEach((P, i) => { if (!occupied.has(i)) glow(P.x + 70, P.y + 34, 10, CYAN, 0.25 * dark); });
       for (const c of cars) {
