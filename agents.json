@@ -37,15 +37,15 @@
   },
   {
     "id": "mildred",
-    "name": "Mildred",
+    "name": "Donathan",
     "title": "Interview Coach",
     "plot": 2,
-    "color": "#3a2d4a",
-    "hair": "#1c1820",
-    "hairStyle": "emo",
-    "hairStreak": "#9b5de5",
-    "skin": "#f6e3dc",
-    "prop": "pumpkin",
+    "color": "#d1495b",
+    "hair": "#16110f",
+    "skin": "#c68a5e",
+    "prop": "guitar",
+    "ride": "skateboard",
+    "board": "#2e86ab",
     "status": "status/mildred.json",
     "links": [
       {

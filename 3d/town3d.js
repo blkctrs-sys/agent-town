@@ -522,6 +522,27 @@ function makeResident(cfg) {
     for (const sx of [-0.1, 0.1]) box(0.08, 0.08, 0.04, face, sx, 0.03, 0.27, pp);
     box(0.22, 0.05, 0.04, face, 0, -0.1, 0.27, pp);
   }
+  if (cfg.prop === 'guitar') {
+    // An acoustic guitar held by the neck at his side, tipped forward a little.
+    const gt = new THREE.Group(); gt.position.set(0.66, 0.2, 0.12); gt.rotation.x = -0.25; body.add(gt);
+    const wood = mat('#d08a3c');
+    mesh(new THREE.SphereGeometry(0.27, 10, 8), wood, 0, 0, 0, gt).scale.set(0.32, 1, 1);
+    mesh(new THREE.SphereGeometry(0.2, 10, 8), wood, 0, 0.3, 0, gt).scale.set(0.32, 1, 1);
+    const hole = cyl(0.07, 0.07, 0.02, mat('#2a1d14'), 0.09, 0.14, 0, gt, 10);
+    hole.rotation.z = Math.PI / 2;
+    box(0.06, 0.62, 0.07, mat('#6b4423'), 0, 0.72, 0, gt);
+    box(0.08, 0.16, 0.1, mat('#3b2f25'), 0, 1.1, 0, gt);
+  }
+  if (cfg.ride === 'skateboard') {
+    // The board sits under his feet (outside the bobbing body) and he stands a little higher.
+    const sb = new THREE.Group(); sb.position.y = 0.1; g.add(sb);
+    box(0.44, 0.06, 1.3, mat(cfg.board || '#e0553d'), 0, 0, 0, sb);
+    for (const z of [-0.68, 0.68]) box(0.44, 0.06, 0.16, mat(cfg.board || '#e0553d'), 0, 0.05, z, sb).rotation.x = z > 0 ? -0.5 : 0.5;
+    for (const x of [-0.17, 0.17]) for (const z of [-0.42, 0.42]) {
+      cyl(0.07, 0.07, 0.07, mat('#f4ecdc'), x, -0.05, z, sb, 8).rotation.z = Math.PI / 2;
+    }
+    g.userData.lift = 0.16;
+  }
   g.scale.setScalar(1.4);
   g.traverse((o) => { o.userData.agentId = cfg.id; });
 
@@ -598,7 +619,7 @@ function updateResident(a, dt, t) {
     // Stands still, glancing around.
     o.rotation.y = Math.sin(t * 0.8) * 0.8;
   } else if (dist > 0.1) {
-    const speed = a.mode === 'working' ? 3.6 : 1.8;
+    const speed = (a.mode === 'working' ? 3.6 : 1.8) * (a.ride === 'skateboard' ? 1.7 : 1);
     o.position.addScaledVector(d.normalize(), Math.min(dist, speed * dt));
     const want = Math.atan2(d.x, d.z);
     o.rotation.y += Math.atan2(Math.sin(want - o.rotation.y), Math.cos(want - o.rotation.y)) * Math.min(1, dt * 10);
@@ -606,12 +627,20 @@ function updateResident(a, dt, t) {
   } else if ((a.pause -= dt) <= 0) {
     nextTarget(a);
   }
-  const step = moving ? Math.sin(t * (a.mode === 'working' ? 12 : 8)) : 0;
-  if (legs) { legs[0].rotation.x = step * 0.6; legs[1].rotation.x = -step * 0.6; }
-  if (o.userData.bodyGroup) o.userData.bodyGroup.position.y = moving ? Math.abs(step) * 0.08 : Math.sin(t * 2 + a.ph) * 0.02;
+  const lift = o.userData.lift || 0;
+  if (a.ride === 'skateboard') {
+    // Glides with the front foot planted; the back foot kicks to push now and then.
+    const push = moving ? Math.max(0, Math.sin(t * 3 + a.ph) - 0.55) * 2.2 : 0;
+    if (legs) { legs[0].rotation.x = 0; legs[1].rotation.x = push; }
+    if (o.userData.bodyGroup) o.userData.bodyGroup.position.y = lift + (moving ? 0 : Math.sin(t * 2 + a.ph) * 0.02);
+  } else {
+    const step = moving ? Math.sin(t * (a.mode === 'working' ? 12 : 8)) : 0;
+    if (legs) { legs[0].rotation.x = step * 0.6; legs[1].rotation.x = -step * 0.6; }
+    if (o.userData.bodyGroup) o.userData.bodyGroup.position.y = lift + (moving ? Math.abs(step) * 0.08 : Math.sin(t * 2 + a.ph) * 0.02);
+  }
 
-  // Brenden's boombox puts out music notes.
-  if (a.prop === 'boombox' && (a.notesT -= dt) <= 0) {
+  // Music notes from Brenden's boombox, or from a guitar strummed while standing still.
+  if ((a.prop === 'boombox' || (a.prop === 'guitar' && !moving)) && (a.notesT -= dt) <= 0) {
     a.notesT = a.mode === 'working' ? 0.35 : 0.9;
     const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: noteTex[Math.floor(rand() * 2)], transparent: true, depthWrite: false }));
     s.scale.setScalar(0.8);

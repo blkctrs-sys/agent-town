@@ -444,12 +444,26 @@
 
   function drawVillager(a, t) {
     const v = a.v;
-    const x = Math.round(v.x), f = v.moving ? Math.floor(t * 8 + v.ph) % 2 : 0;
-    const y = Math.round(v.y) + (v.moving && f ? -1 : 0);
+    const skate = a.ride === 'skateboard';
+    const x = Math.round(v.x), f = v.moving && !skate ? Math.floor(t * 8 + v.ph) % 2 : 0;
+    const y = Math.round(v.y) + (v.moving && f ? -1 : 0) - (skate ? 2 : 0);
     const skin = a.skin || '#f3cfa6', ink = '#3b2f25';
-    ellipse(ctx, Math.round(v.x), Math.round(v.y), 3, 1, 'rgba(0,0,0,0.2)');
-    rect(ctx, x - 2, y - 2, 1, v.moving && f ? 1 : 2, '#3b3f4d');
-    rect(ctx, x + 1, y - 2, 1, v.moving && !f ? 1 : 2, '#3b3f4d');
+    ellipse(ctx, Math.round(v.x), Math.round(v.y), skate ? 5 : 3, 1, 'rgba(0,0,0,0.2)');
+    if (skate) {
+      // deck with kicked-up ends and two wheels; the back foot kicks now and then to push
+      const back = v.dir > 0 ? x - 2 : x + 1, push = v.moving && Math.sin(t * 3 + v.ph) > 0.55;
+      rect(ctx, x - 4, y, 8, 1, a.board || '#e0553d');
+      rect(ctx, v.dir > 0 ? x + 4 : x - 5, y - 1, 1, 1, a.board || '#e0553d');
+      rect(ctx, v.dir > 0 ? x - 5 : x + 4, y - 1, 1, 1, a.board || '#e0553d');
+      rect(ctx, x - 3, y + 1, 1, 1, '#f4ecdc');
+      rect(ctx, x + 2, y + 1, 1, 1, '#f4ecdc');
+      rect(ctx, v.dir > 0 ? x + 1 : x - 2, y - 2, 1, 2, '#3b3f4d');
+      if (push) rect(ctx, back - v.dir, y - 1, 1, 2, '#3b3f4d');
+      else rect(ctx, back, y - 2, 1, 2, '#3b3f4d');
+    } else {
+      rect(ctx, x - 2, y - 2, 1, v.moving && f ? 1 : 2, '#3b3f4d');
+      rect(ctx, x + 1, y - 2, 1, v.moving && !f ? 1 : 2, '#3b3f4d');
+    }
     // jacket & arms
     rect(ctx, x - 3, y - 7, 6, 5, a.color);
     rect(ctx, x - 3, y - 3, 6, 1, shade(a.color, -30));
@@ -480,6 +494,17 @@
       rect(ctx, bx + 1, y - 5 + bob, 1, 1, lit);
       rect(ctx, bx + 3, y - 5 + bob, 1, 1, lit);
       rect(ctx, bx + 1, y - 4 + bob, 3, 1, lit);
+    } else if (a.prop === 'guitar') {
+      // acoustic guitar held by the neck at his side, headstock up
+      const bx = v.dir > 0 ? x + 4 : x - 7;
+      const nx = bx + 1, sway = v.moving && Math.sin(t * 3 + v.ph) > 0.55 ? (v.dir > 0 ? 1 : -1) : 0;
+      rect(ctx, nx + sway, y - 13, 1, 2, '#3b2f25');
+      rect(ctx, nx, y - 11, 1, 5, '#6b4423');
+      rect(ctx, bx, y - 6, 3, 2, '#d08a3c');
+      rect(ctx, bx - 1, y - 4, 5, 3, '#d08a3c');
+      rect(ctx, bx - 1, y - 2, 5, 1, '#a8642a');
+      rect(ctx, bx + 1, y - 4, 1, 1, '#3b2f25');
+      rect(ctx, v.dir > 0 ? x + 3 : x - 4, y - 7, 1, 1, skin);
     } else {
       // messenger bag
       rect(ctx, v.dir > 0 ? x - 2 : x + 1, y - 7, 1, 4, '#7a4b2a');
@@ -670,7 +695,7 @@
       }
       return;
     }
-    const step = Math.min(dist, (a.mode === 'working' ? 16 : 9) * dt);
+    const step = Math.min(dist, (a.mode === 'working' ? 16 : 9) * (a.ride === 'skateboard' ? 1.7 : 1) * dt);
     v.x += (dx / dist) * step; v.y += (dy / dist) * step;
     if (Math.abs(dx) > 0.2) v.dir = dx > 0 ? 1 : -1;
     v.moving = true;
@@ -699,12 +724,12 @@
       }
       particles.push({ kind: 'steam', x: CART.x - 1 + Math.random() * 3, y: CART.y - 7, vx: 1, vy: -5, life: 0, max: 1.8 });
     }
-    // music notes from anyone carrying a boombox
+    // music notes from a boombox, or from a guitar strummed while standing still
     noteTimer -= dt;
     if (noteTimer <= 0) {
       noteTimer = 0.9;
       for (const a of agents) {
-        if (a.prop !== 'boombox' || a.v.hidden) continue;
+        if (a.v.hidden || !(a.prop === 'boombox' || (a.prop === 'guitar' && !a.v.moving))) continue;
         const bx = a.v.dir > 0 ? a.v.x + 6 : a.v.x - 6;
         particles.push({ kind: 'note', x: bx, y: a.v.y - 8, vx: (Math.random() - 0.5) * 4, vy: -7, life: 0, max: 2.2, ph: Math.random() * 6,
           col: [CYAN, PINK, AMBER][(Math.random() * 3) | 0] });

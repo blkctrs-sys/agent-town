@@ -141,7 +141,7 @@
     state.jobs = state.reports.flatMap((r) => r.jobs);
   }
 
-  // ---------- Mildred + tailored (private) ----------
+  // ---------- Donathan (mildred/) + tailored (private) ----------
   function headerTitle(text, prefix) {
     const line = (text.match(new RegExp('^#\\s*' + prefix + '\\s*(.+)$', 'mi')) || [])[1] || '';
     const [title, company] = line.split(/\s+[—–]\s+/);
@@ -291,7 +291,7 @@
       return;
     }
     el.className = 'unlock';
-    el.innerHTML = `<h2>Unlock Mildred's desk</h2>
+    el.innerHTML = `<h2>Unlock Donathan's desk</h2>
       <p>Prep packs, drills and Craig's tailored resumes live in your private repo. Paste a read-only GitHub token to show them here.
       The token stays in this browser; nothing is saved to the site.</p>
       <form id="unlock-form">
@@ -440,7 +440,7 @@
   function renderMildred() {
     const el = $('mildred');
     if (!state.priv) {
-      el.innerHTML = `<p class="locked-note">🔒 Mildred keeps her work in the private repo. Unlock it above to read her prep packs, drills and your interview list here.</p>`;
+      el.innerHTML = `<p class="locked-note">🔒 Donathan keeps his work in the private repo. Unlock it above to read his prep packs, drills and your interview list here.</p>`;
       return;
     }
     const p = state.priv;
@@ -450,7 +450,7 @@
     el.innerHTML = `<div class="mildred-grid">
       <div><h3>🎧 Listen-along interviews</h3><div class="list">${p.scripts.map((d) => row(d, 'listen', [d.title, d.company].filter(Boolean).join(' — ') || d.name,
         `${d.date ? fmtDay(d.date) : ''} · ${d.voiced ? 'Ready to play' : 'Script ready, audio coming from your PC'}`)).join('')
-        || '<p class="empty">None yet. Mildred writes one with each new prep pack.</p>'}</div></div>
+        || '<p class="empty">None yet. Donathan writes one with each new prep pack.</p>'}</div></div>
       <div><h3>Prep packs</h3><div class="list">${p.prep.map((d) => row(d, 'prep', [d.title, d.company].filter(Boolean).join(' — ') || d.name,
         `${d.date ? fmtDay(d.date) : ''}${d.source ? ' · ' + d.source : ''}`)).join('') || '<p class="empty">No prep packs yet.</p>'}</div></div>
       <div><h3>Practice drills</h3><div class="list">${p.drills.map((d) => row(d, 'drill', d.date ? fmtDay(d.date) : d.name,
@@ -545,7 +545,7 @@
   function openListen(script) {
     const pack = state.priv.prep.find((d) => d.script === script);
     openReader(`<h2 class="rt" id="reader-title">🎧 ${esc([script.title, script.company].filter(Boolean).join(' — ') || script.name)}</h2>
-      <div class="w">A mock interview with Mildred's suggested answers, in your voice.</div>
+      <div class="w">A mock interview with Donathan's suggested answers, in your voice.</div>
       <div class="actions">${pack ? `<button class="btn ghost" data-doc="${esc(pack.path)}">Open the prep pack</button>` : ''}</div>
       ${listenPane(script)}`);
     wireListen(script);

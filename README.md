@@ -20,13 +20,13 @@ agents.json             list of residents: name, colour, which plot they live on
 status/<agent>.json     each agent's latest status (read by the town)
 agents/<agent>/PROMPT.md  the agent's instructions
 jobs/                   Job Scout's daily reports and seen-jobs list
-reports/                the Reading Room: every Craig report plus Mildred's prep, in one page
+reports/                the Reading Room: every Craig report plus Donathan's prep, in one page
 ```
 
 ## Reading Room
 
 `reports/` (linked from the town header) collects all of Craig's reports into one
-filterable job board, with a per-day chart and each full report. Mildred's prep packs and
+filterable job board, with a per-day chart and each full report. Donathan's prep packs and
 drills, the interview list, and Craig's tailored resumes live in the private repo, so the
 page only shows them after you paste a fine-grained GitHub token with **Contents:
 Read-only** access to `agent-town-private`. The token stays in that browser; the page has
@@ -36,11 +36,11 @@ instructions for making one.
 
 - **Craig**, Job Scout: finds new openings every weekday morning.
 - **Brenden**, Content Producer: drafts posts and video packages.
-- **Mildred**, Interview Coach: preps for Craig's top 3 roles and any interviews on the
-  owner's list, plus a daily practice drill. Everything she writes stays in the private repo.
+- **Donathan**, Interview Coach (files under `mildred/`): preps for Craig's top 3 roles and any interviews on the
+  owner's list, plus a daily practice drill. Everything he writes stays in the private repo.
 
 Resident looks in `agents.json`: `color`, `skin`, `hat` or `hair`, `hairStyle` (`"emo"`),
-`hairStreak`, and `prop` (`"boombox"` or `"pumpkin"`).
+`hairStreak`, `prop` (`"boombox"`, `"pumpkin"` or `"guitar"`), and `ride` (`"skateboard"`, deck color in `board`).
 
 ## Status file format
 
