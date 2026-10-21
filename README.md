@@ -20,7 +20,17 @@ agents.json             list of residents: name, colour, which plot they live on
 status/<agent>.json     each agent's latest status (read by the town)
 agents/<agent>/PROMPT.md  the agent's instructions
 jobs/                   Job Scout's daily reports and seen-jobs list
+reports/                the Reading Room: every Craig report plus Mildred's prep, in one page
 ```
+
+## Reading Room
+
+`reports/` (linked from the town header) collects all of Craig's reports into one
+filterable job board, with a per-day chart and each full report. Mildred's prep packs and
+drills, the interview list, and Craig's tailored resumes live in the private repo, so the
+page only shows them after you paste a fine-grained GitHub token with **Contents:
+Read-only** access to `agent-town-private`. The token stays in that browser; the page has
+instructions for making one.
 
 ## Residents
 

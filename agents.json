@@ -9,6 +9,10 @@
     "status": "status/job-scout.json",
     "links": [
       {
+        "label": "Open the Reading Room",
+        "url": "https://blkctrs-sys.github.io/agent-town/reports/"
+      },
+      {
         "label": "Tailored resumes",
         "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/tailored"
       }
@@ -44,6 +48,10 @@
     "prop": "pumpkin",
     "status": "status/mildred.json",
     "links": [
+      {
+        "label": "Open the Reading Room",
+        "url": "https://blkctrs-sys.github.io/agent-town/reports/"
+      },
       {
         "label": "Open my prep packs",
         "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/mildred/prep"
