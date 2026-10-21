@@ -215,6 +215,19 @@ button { font: inherit; cursor: pointer; }
 .md td, .md th { border: 1px solid var(--line); padding: 4px 8px; }
 .loading { color: var(--muted); }
 
+/* listen-along player */
+.player { position: sticky; top: 0; z-index: 2; background: var(--panel-2); padding: 8px 0 10px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.player audio { flex: 1 1 260px; min-width: 0; }
+.speed { display: flex; gap: 4px; }
+.transcript { display: grid; gap: 8px; margin-top: 6px; }
+.turn { margin: 0; padding: 8px 12px; border-radius: 10px; background: var(--panel); border: 1px solid var(--line); cursor: pointer; font-size: 0.95rem; }
+.turn b { display: block; font-size: 0.75rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.turn.you { margin-left: 28px; border-color: #5a4a7a; }
+.turn.you b { color: var(--violet); }
+.turn.them { margin-right: 28px; }
+.turn.now { border-color: var(--amber); box-shadow: 0 0 0 1px var(--amber); }
+@media (max-width: 560px) { .turn.you { margin-left: 12px; } .turn.them { margin-right: 12px; } }
+
 @media (max-width: 560px) {
   h1 { font-size: 1.6rem; }
   .reader { padding: 14px 16px 40px; }

@@ -6,7 +6,8 @@
   const PUBLIC_REPO = 'agent-town';
   const PRIVATE_REPO = 'agent-town-private';
   const API = 'https://api.github.com/repos/';
-  const PRIVATE_DIRS = ['mildred/prep/', 'mildred/drills/', 'tailored/'];
+  const PRIVATE_DIRS = ['mildred/prep/', 'mildred/drills/', 'mildred/scripts/', 'tailored/'];
+  const AUDIO_BRANCH = 'audio'; // made by the voice generator on the owner's PC: <script name>.mp3 + .json
   const INTERVIEWS = 'mildred/interviews.md';
   const TOKEN_KEY = 'agentTown.readingRoom.token';
   const PREFS_KEY = 'agentTown.readingRoom.prefs';
@@ -156,7 +157,10 @@
         (PRIVATE_DIRS.some((d) => t.path.startsWith(d)) || t.path === INTERVIEWS)).map((t) => t.path);
       const texts = await pool(paths, 6, (p) =>
         gh(`${OWNER}/${PRIVATE_REPO}/contents/${p.split('/').map(encodeURIComponent).join('/')}?ref=main`, { raw: true, auth: true }).catch(() => ''));
-      const priv = { prep: [], drills: [], tailored: [], interviews: '' };
+      const priv = { prep: [], drills: [], tailored: [], scripts: [], audio: new Set(), interviews: '' };
+      // The audio branch may not exist yet; that just means nothing has been voiced.
+      const audioTree = await gh(`${OWNER}/${PRIVATE_REPO}/git/trees/${AUDIO_BRANCH}`, { auth: true }).catch(() => null);
+      for (const t of (audioTree && audioTree.tree) || []) if (t.path.endsWith('.mp3')) priv.audio.add(t.path.replace(/\.mp3$/, ''));
       paths.forEach((p, i) => {
         const text = texts[i];
         const name = p.split('/').pop().replace(/\.md$/, '');
@@ -170,9 +174,14 @@
           doc.real = /interview/i.test(doc.source) && !/craig/i.test(doc.source);
           priv.prep.push(doc);
         } else if (p.startsWith('mildred/drills/')) priv.drills.push(doc);
-        else priv.tailored.push(Object.assign(doc, headerTitle(text, 'Tailored for:')));
+        else if (p.startsWith('mildred/scripts/')) {
+          doc.turns = parseScript(text);
+          doc.voiced = priv.audio.has(name);
+          priv.scripts.push(Object.assign(doc, headerTitle(text, 'Listen-along:')));
+        } else priv.tailored.push(Object.assign(doc, headerTitle(text, 'Tailored for:')));
       });
-      for (const k of ['prep', 'drills', 'tailored']) priv[k].sort((a, b) => b.name.localeCompare(a.name));
+      for (const k of ['prep', 'drills', 'tailored', 'scripts']) priv[k].sort((a, b) => b.name.localeCompare(a.name));
+      for (const d of priv.prep) d.script = priv.scripts.find((s) => s.name === d.name) || null;
       state.priv = priv;
       linkPrivate();
     } catch (e) {
@@ -183,6 +192,63 @@
     }
     state.loadingPriv = false;
     renderAll();
+  }
+
+  function parseScript(text) {
+    const turns = [];
+    for (const m of text.matchAll(/^\*\*(Interviewer|You):\*\*\s*(.+)$/gm)) turns.push({ who: m[1], text: m[2].trim() });
+    return turns;
+  }
+
+  // ---------- listen-along player ----------
+  const audioCache = {}; // name -> { url, timing }
+  async function loadAudio(name) {
+    if (audioCache[name]) return audioCache[name];
+    const base = `${OWNER}/${PRIVATE_REPO}/contents/${encodeURIComponent(name)}`;
+    const [timing, blob] = await Promise.all([
+      gh(`${base}.json?ref=${AUDIO_BRANCH}`, { raw: true, auth: true }).then((t) => JSON.parse(t)),
+      fetch(`${API}${base}.mp3?ref=${AUDIO_BRANCH}`, { headers: { Accept: 'application/vnd.github.raw', Authorization: 'Bearer ' + token } })
+        .then((r) => { if (!r.ok) throw new Error('GitHub ' + r.status); return r.blob(); }),
+    ]);
+    return (audioCache[name] = { url: URL.createObjectURL(new Blob([blob], { type: 'audio/mpeg' })), timing });
+  }
+
+  function listenPane(script) {
+    const lines = script.turns.map((t, i) => `<p class="turn ${t.who === 'You' ? 'you' : 'them'}" data-turn="${i}"><b>${esc(t.who)}</b> ${esc(t.text)}</p>`).join('');
+    const head = script.voiced
+      ? `<div class="player" id="player"><button class="btn" id="load-audio">▶ Load the interview audio</button></div>`
+      : `<p class="w">🕯 The script is ready. Your PC turns it into audio in your voice; check back once it has run.</p>`;
+    return `${head}<div class="transcript" id="transcript">${lines}</div>`;
+  }
+
+  function wireListen(script) {
+    const btn = $('load-audio');
+    if (!btn) return;
+    btn.onclick = async () => {
+      btn.disabled = true; btn.textContent = 'Loading…';
+      try {
+        const { url, timing } = await loadAudio(script.name);
+        $('player').innerHTML = `<audio id="audio" controls preload="auto" src="${url}"></audio>
+          <div class="speed">${[1, 1.25, 1.5].map((s) => `<button class="chip" data-speed="${s}" aria-pressed="${s === 1}">${s}×</button>`).join('')}</div>`;
+        const audio = $('audio');
+        const turns = timing.turns || [];
+        const els = [...document.querySelectorAll('#transcript .turn')];
+        audio.addEventListener('timeupdate', () => {
+          const i = turns.findIndex((t) => audio.currentTime >= t.start && audio.currentTime < t.end);
+          els.forEach((el, k) => el.classList.toggle('now', k === i));
+          const cur = els[i];
+          if (cur && !cur.dataset.seen) { cur.dataset.seen = '1'; cur.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+        });
+        els.forEach((el, k) => el.addEventListener('click', () => { if (turns[k]) { audio.currentTime = turns[k].start; audio.play(); } }));
+        document.querySelectorAll('[data-speed]').forEach((b) => b.addEventListener('click', () => {
+          audio.playbackRate = +b.dataset.speed;
+          document.querySelectorAll('[data-speed]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+        }));
+        audio.play().catch(() => {});
+      } catch {
+        btn.disabled = false; btn.textContent = "Couldn't load the audio. Try again";
+      }
+    };
   }
 
   // Match each role to its tailored resume and prep pack: by job link first, then by date + company in the filename.
@@ -339,7 +405,8 @@
     return `<span class="tag cat-${j.category}">${esc(CAT_NAMES[j.category])}</span>`
       + (j.verified ? '<span class="tag v">✓ Verified</span>' : '<span class="tag u">Unverified</span>')
       + (j.tailored ? '<span class="tag r">📄 Tailored resume</span>' : '')
-      + (j.prep ? '<span class="tag p">🕯 Prep pack</span>' : '');
+      + (j.prep ? '<span class="tag p">🕯 Prep pack</span>' : '')
+      + (j.prep && j.prep.script && j.prep.script.voiced ? '<span class="tag p">🎧 Listen</span>' : '');
   }
 
   function renderBoard() {
@@ -381,6 +448,9 @@
     const row = (doc, kind, title, meta) => `<button class="item mildred" data-doc="${esc(doc.path)}" data-kind="${kind}">
       <div><div class="t">${esc(title)}</div><div class="w">${esc(meta)}</div></div></button>`;
     el.innerHTML = `<div class="mildred-grid">
+      <div><h3>🎧 Listen-along interviews</h3><div class="list">${p.scripts.map((d) => row(d, 'listen', [d.title, d.company].filter(Boolean).join(' — ') || d.name,
+        `${d.date ? fmtDay(d.date) : ''} · ${d.voiced ? 'Ready to play' : 'Script ready, audio coming from your PC'}`)).join('')
+        || '<p class="empty">None yet. Mildred writes one with each new prep pack.</p>'}</div></div>
       <div><h3>Prep packs</h3><div class="list">${p.prep.map((d) => row(d, 'prep', [d.title, d.company].filter(Boolean).join(' — ') || d.name,
         `${d.date ? fmtDay(d.date) : ''}${d.source ? ' · ' + d.source : ''}`)).join('') || '<p class="empty">No prep packs yet.</p>'}</div></div>
       <div><h3>Practice drills</h3><div class="list">${p.drills.map((d) => row(d, 'drill', d.date ? fmtDay(d.date) : d.name,
@@ -424,7 +494,10 @@
     const tabs = [['note', "Craig's note"]];
     if (j.tailored) tabs.push(['tailored', 'Tailored resume']);
     if (j.prep) tabs.push(['prep', 'Prep pack']);
+    const script = j.prep && j.prep.script;
+    if (script) tabs.push(['listen', '🎧 Listen']);
     const panes = {
+      listen: script ? listenPane(script) : '',
       note: `<div class="md"><p>${esc(j.note)}</p><p class="w">From <a href="#" data-report-link="${esc(j.file)}">Craig's ${esc(fmtDay(j.date))}${j.run ? ' ' + esc(j.run) : ''} report</a>.</p>
         ${state.priv ? '' : '<p class="w">🔒 Unlock the private repo to see the tailored resume and prep pack for this role, if there is one.</p>'}</div>`,
       tailored: j.tailored ? `<div class="md">${renderMd(j.tailored.text)}</div>` : '',
@@ -439,6 +512,7 @@
     $('reader-body').querySelectorAll('.rtabs button').forEach((b) => b.addEventListener('click', () => {
       $('reader-body').querySelectorAll('.rtabs button').forEach((x) => x.setAttribute('aria-selected', String(x === b)));
       $('pane').innerHTML = panes[b.dataset.pane];
+      if (b.dataset.pane === 'listen') wireListen(script);
     }));
   }
 
@@ -453,6 +527,8 @@
   function openDoc(path) {
     const p = state.priv;
     if (!p) return;
+    const script = p.scripts.find((s) => s.path === path);
+    if (script) return openListen(script);
     const doc = [...p.prep, ...p.drills, ...p.tailored].find((d) => d.path === path)
       || (path === INTERVIEWS ? { path, text: p.interviews } : null);
     if (!doc) return;
@@ -464,6 +540,15 @@
         <a class="btn ghost" href="https://github.com/${OWNER}/${PRIVATE_REPO}/blob/main/${esc(path)}" target="_blank" rel="noopener">View on GitHub ↗</a>
       </div>
       <div class="md">${renderMd(doc.text)}</div>`);
+  }
+
+  function openListen(script) {
+    const pack = state.priv.prep.find((d) => d.script === script);
+    openReader(`<h2 class="rt" id="reader-title">🎧 ${esc([script.title, script.company].filter(Boolean).join(' — ') || script.name)}</h2>
+      <div class="w">A mock interview with Mildred's suggested answers, in your voice.</div>
+      <div class="actions">${pack ? `<button class="btn ghost" data-doc="${esc(pack.path)}">Open the prep pack</button>` : ''}</div>
+      ${listenPane(script)}`);
+    wireListen(script);
   }
 
   // ---------- events ----------
