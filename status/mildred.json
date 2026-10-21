@@ -1,14 +1,9 @@
 {
   "agent": "mildred",
-  "state": "done",
-  "updated": "2026-10-21T19:51:32Z",
+  "state": "working",
+  "updated": "2026-10-21T19:57:19Z",
   "lastRun": "2026-10-21T19:51:32Z",
-  "summary": "3 prep packs and today's drill. Try not to blink first.",
+  "summary": "Lighting the candles. Prep in progress.",
   "report": null,
-  "items": [
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Practice drill", "category": "drill" }
-  ]
+  "items": []
 }
