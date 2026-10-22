@@ -1,82 +1,82 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-22T11:47:02Z",
-  "lastRun": "2026-10-21T11:50:13Z",
+  "state": "done",
+  "updated": "2026-10-22T11:50:19Z",
+  "lastRun": "2026-10-22T11:50:19Z",
   "summary": "Found 8 new roles: 5 games & tech, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-21.md",
+  "report": "jobs/2026-10-22.md",
   "items": [
     {
-      "title": "Software Implementation Specialist",
-      "company": "Tallyforth Software",
+      "title": "Customer Experience Specialist",
+      "company": "Novi AMS",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aag9qf6c8yzl",
+      "url": "https://to.indeed.com/aax7wfts66hp",
       "source": "Indeed",
       "category": "art",
-      "note": "Fully remote SaaS onboarding role: launch plans, software setup and user training. $72k-$88k, and the posting says no degree is needed."
+      "note": "Fully remote SaaS support role at $65k, posted Oct 21: tickets across chat, email and phone, help-center writing and customer training. Asks for 2+ years of technical support or a comparable role; no degree listed."
     },
     {
-      "title": "Product Support Specialist (UltraTax CS, contract)",
-      "company": "Thomson Reuters",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aar6sb82pjr4",
+      "title": "IT Specialist",
+      "company": "Arizona Beverages",
+      "location": "Keasbey (Woodbridge Twp), NJ",
+      "url": "https://to.indeed.com/aajh8h4st477",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote software support at a major tech company, $35-$40/hr. Needs a high school diploma and 2 years of technical support."
+      "note": "Hands-on desktop and phone support logged in JIRA, $46k-$72k, posted Oct 9. Associate degree or equivalent experience plus 2 years in the field; some networking and lifting. A short ride from the Woodbridge-area train stations."
     },
     {
-      "title": "Help Desk Analyst",
-      "company": "HELP USA",
+      "title": "3D Artist",
+      "company": "The Wandering Band",
+      "location": "Remote (US)",
+      "url": "https://workwithindies.com/careers/the-wandering-band-3d-artist",
+      "source": "Work With Indies",
+      "category": "art",
+      "note": "Fully remote indie studio of about five people hiring a 3D artist for structures and environments in an open-world game; ideally full-time within the US, no-crunch culture, pay based on experience. No posting date shown, so confirm it's still open."
+    },
+    {
+      "title": "Junior IT Support Specialist",
+      "company": "Managed Service Provider (name not listed)",
       "location": "New York, NY",
-      "url": "https://to.indeed.com/aakdd4wngcfp",
-      "source": "Indeed",
-      "category": "art",
-      "note": "First-line, ticket-based help desk role in Manhattan, $26.20/hr. Asks for 1-2 years of support experience, no degree listed."
-    },
-    {
-      "title": "Social Support Specialist (Community Management & Moderation)",
-      "company": "Keywords Studios",
-      "location": "Remote (US)",
-      "url": "https://apply.workable.com/keywords-intl1/jobs/view/CCB60CAEF5",
-      "source": "Career page",
-      "category": "art",
-      "note": "Entry-level community moderation for game titles on Discord, X and Facebook, remote in the US. Unverified."
-    },
-    {
-      "title": "IT Help Desk Technician I",
-      "company": "Jazz at Lincoln Center",
-      "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZRUGgtb1VaZ1BnU3BpMWlkUXZvRjlnEiQwMWExNWU0YS0yYTRhLTc0YjktYTJjZS1kODgwOGJkMjhiNWYaUEFBRnB2R3hwd1BLVmpQUndBcl9qUTRUcC1mMFU3M3pLdVd2akRRTXBpMlhYNy1pXzNCTS1tbmRTVk8yNlR3RGs1NjNmaTh0dkVhSlZZNDVmIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChY4Z2hxNkZMcDVtT3lOdFFZNGpDQ2ZBEiQwMWExNjM3MS1kNTE1LTczNjQtYmRkMC05MGMzZDIzMjE2MGMaW0FBRnFTUzJfcFg2Wjlodmk4cS1mbjgxYnhhWTBDSWRBbDJPT3R3ZmdaOWFXZFAzUW5UUEgyZkdNY1hOQjVRcFc3Y0FzcXZJYkVHTml3QTlYcWdWVWFBcFdGX2Mgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Level I help desk role, a couple of subway stops from Penn Station. Unverified."
+      "note": "Junior-level IT support at a Manhattan managed service provider, $50k-$55k with benefits, posted about 13 days ago. Employer and exact requirements not shown."
     },
     {
-      "title": "Production & Purchase Order Coordinator",
-      "company": "Jay Apparel Group",
+      "title": "IT Support Engineer - MSP",
+      "company": "Bowman Williams",
+      "location": "Jersey City, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZWTXZOQzl4U0JYa1M2Q3BhcGhsQkt3EiQwMWExNjM3MS1kNTE1LTczNmYtYTk3ZC1iMDRkYzlkNzIzYzcaW0FBRWk4UEdJT1JlMVBTa3dwa0tyRkdlZm9TbkRSak8xWUZIYjRmUnZKZ1RvMWxPeU9TLTdhUFR5VFdXREc4Nkl5cExCcW9XLVZ2a2VQdXlpZ2ZkTUFsMXhLMlkgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "On-site IT support at a managed service provider (via a recruiter), $50k-$65k with benefits, posted about 1 day ago under the junior filter. Reachable by train plus PATH. Level and requirements not confirmed."
+    },
+    {
+      "title": "Assistant General Manager",
+      "company": "Honeybrains",
       "location": "New York, NY",
-      "url": "https://to.indeed.com/aan4kvyryr6t",
+      "url": "https://to.indeed.com/aawypxdbml9g",
       "source": "Indeed",
       "category": "ops",
-      "note": "PO entry, vendor follow-up and shipment tracking a few blocks from Penn Station. $50k-$70k, no degree listed."
+      "note": "Hands-on quick-casual restaurant AGM from $66.3k, posted Oct 19: scheduling to a labor budget, front and back of house, team accountability. No degree or set years listed."
     },
     {
-      "title": "Assistant Manager",
-      "company": "Wonder",
-      "location": "Shrewsbury, NJ",
-      "url": "https://to.indeed.com/aa822wpthrcc",
+      "title": "Shipping/Inventory Specialist",
+      "company": "Avi & Co.",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aa8jzqcbcn7d",
       "source": "Indeed",
       "category": "ops",
-      "note": "Restaurant second-in-command covering inventory, food safety and staffing. $66.5k-$80k; needs a Food Manager certificate."
+      "note": "Receiving, cycle counts, item data and courier coordination for a luxury watch retailer, $60k-$70k, weekday office hours, posted Oct 19. Asks for 3+ years in inventory, operations or logistics; no degree listed."
     },
     {
-      "title": "Purchasing Supervisor",
-      "company": "ASM Global",
+      "title": "Operations Coordinator",
+      "company": "She Wolf Bakery",
       "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZscURoOHBZaC1ocHd2THJEa3Y0bHV3EiQwMWExNWU0YS0zMWMxLTc2MzktODRmZC04Y2M5MzM0ODYwM2EaUEFBRm5EZHNsLUhiVk82NWVjX0Fmd21rZ1RfYldnTkg3cXUwQS10RDVjSW0xS3BjYWp6aEZFTnFKYVJ2cmY4ZVZFUWtYeV9ISTFWVloyWVU4IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZINWpBQVlNMlo5ekJrMFBMTEZRRk5REiQwMWExNjM3MC04YzY1LTc1ZjEtYmE2ZC0zMzQ4M2RjNjY5ZjUaW0FBSGNlYmtxeGhyWm13VXlZd0N2c2NELUVHRmgtcTlQTlhtTGU2WVpRV2ppb0hmZldieE52S3J2V044NGMzZl9heGRhejZ0UmVGb2pDbW1yZzRLWlJtUHliWDggya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Purchasing role at a venue-management company in New York, from $50k. Unverified."
+      "note": "Food-production operations coordinator at a wholesale bakery, $48k-$50k with full benefits, posted about 8 days ago under the junior filter. Duties and requirements not confirmed."
     }
   ]
 }
