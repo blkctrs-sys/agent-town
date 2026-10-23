@@ -1,82 +1,82 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-23T11:46:51Z",
-  "lastRun": "2026-10-22T11:50:19Z",
+  "state": "done",
+  "updated": "2026-10-23T11:50:10Z",
+  "lastRun": "2026-10-23T11:50:10Z",
   "summary": "Found 8 new roles: 5 games & tech, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-22.md",
+  "report": "jobs/2026-10-23.md",
   "items": [
     {
-      "title": "Customer Experience Specialist",
-      "company": "Novi AMS",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aax7wfts66hp",
-      "source": "Indeed",
+      "title": "Associate Producer - Age of Empires/Mythology (Remote)",
+      "company": "Forgotten Empires",
+      "location": "Remote",
+      "url": "https://builtin.com/job/associate-producer-age-empiresmythology-remote/3964858",
+      "source": "Built In (web search)",
       "category": "art",
-      "note": "Fully remote SaaS support role at $65k, posted Oct 21: tickets across chat, email and phone, help-center writing and customer training. Asks for 2+ years of technical support or a comparable role; no degree listed."
+      "note": "Junior producer role at a games studio: schedules, project documents and team communication from pre-production to release, with Jira or Trello listed. Asks for 1-2+ years in game development; older copies of this listing were Europe-only, so confirm US eligibility. Unverified."
     },
     {
-      "title": "IT Specialist",
-      "company": "Arizona Beverages",
-      "location": "Keasbey (Woodbridge Twp), NJ",
-      "url": "https://to.indeed.com/aajh8h4st477",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Hands-on desktop and phone support logged in JIRA, $46k-$72k, posted Oct 9. Associate degree or equivalent experience plus 2 years in the field; some networking and lifting. A short ride from the Woodbridge-area train stations."
-    },
-    {
-      "title": "3D Artist",
-      "company": "The Wandering Band",
-      "location": "Remote (US)",
-      "url": "https://workwithindies.com/careers/the-wandering-band-3d-artist",
-      "source": "Work With Indies",
-      "category": "art",
-      "note": "Fully remote indie studio of about five people hiring a 3D artist for structures and environments in an open-world game; ideally full-time within the US, no-crunch culture, pay based on experience. No posting date shown, so confirm it's still open."
-    },
-    {
-      "title": "Junior IT Support Specialist",
-      "company": "Managed Service Provider (name not listed)",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChY4Z2hxNkZMcDVtT3lOdFFZNGpDQ2ZBEiQwMWExNjM3MS1kNTE1LTczNjQtYmRkMC05MGMzZDIzMjE2MGMaW0FBRnFTUzJfcFg2Wjlodmk4cS1mbjgxYnhhWTBDSWRBbDJPT3R3ZmdaOWFXZFAzUW5UUEgyZkdNY1hOQjVRcFc3Y0FzcXZJYkVHTml3QTlYcWdWVWFBcFdGX2Mgya0FEAEYya0F&tsid=100000502",
+      "title": "Technical Support Specialist Level 1 (contract, East Coast)",
+      "company": "Centric Software",
+      "location": "Remote (US, Eastern Time)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5bGlXN2E0bW9Ody11a203bG9jc2pnEiQwMWExNjg5Ni0zZWVhLTcxOTgtOTk3Yi02M2IyYTA5MGE3ZjIaUEFBRW5hZXJPQ1NPVDduQUZPYlVDQjU3SlJ2WWg3QzN0QUhjVGp4LUdpeXFzOXJXcTdZQnk4SjZxNnl1a1VVYmlZcFUySi15bVpsTTVCbkFfIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Junior-level IT support at a Manhattan managed service provider, $50k-$55k with benefits, posted about 13 days ago. Employer and exact requirements not shown."
+      "note": "Entry-level SaaS support at a software company, remote on Eastern Time, about $48.5k-$73.5k, posted today under the junior filter. Jira is a listed skill and the contract can convert to full-time. Unverified."
     },
     {
-      "title": "IT Support Engineer - MSP",
-      "company": "Bowman Williams",
-      "location": "Jersey City, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZWTXZOQzl4U0JYa1M2Q3BhcGhsQkt3EiQwMWExNjM3MS1kNTE1LTczNmYtYTk3ZC1iMDRkYzlkNzIzYzcaW0FBRWk4UEdJT1JlMVBTa3dwa0tyRkdlZm9TbkRSak8xWUZIYjRmUnZKZ1RvMWxPeU9TLTdhUFR5VFdXREc4Nkl5cExCcW9XLVZ2a2VQdXlpZ2ZkTUFsMXhLMlkgya0FEAEYya0F&tsid=100000502",
+      "title": "IT Help Desk / Specialist",
+      "company": "Jewish Educational Center (JEC)",
+      "location": "Elizabeth, NJ",
+      "url": "https://to.indeed.com/aajgh66ty2ts",
+      "source": "Indeed",
+      "category": "art",
+      "note": "First-level help desk for a school network: laptops, Chromebooks, accounts, device inventory and new-hire setup, $45k-$50k, posted Oct 20. Help desk experience preferred, no degree listed, short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Project Coordinator II",
+      "company": "NV5",
+      "location": "Remote",
+      "url": "https://to.indeed.com/aa79fgv9ltx8",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Remote project coordinator at an engineering and tech consultancy, $55k-$65k, posted today: trackers, deliverables, meeting notes and dispatch scheduling. Degree preferred, not required. Verified via Indeed details."
+    },
+    {
+      "title": "IT Helpdesk Technician - Level I",
+      "company": "Impact Business Technology",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZnd3dHNmZUMEN5Z0ZjT1lmbzFXRGNREiQwMWExNjg5Ni03N2FkLTdlMTYtOTY2Mi03NmNkNzg1NTVhYTMaW0FBRmFtUzRWUjBzRTBpblZNWExNTDZfc3ktdWczN3FiZk50MXlCQjZ2NE12X3N0N1VaSWJHQ2g2ZnFXX1JHYlhwbTU0VGVpQkF4aC1UMGhqSy04UTYtNldCUkEgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "On-site IT support at a managed service provider (via a recruiter), $50k-$65k with benefits, posted about 1 day ago under the junior filter. Reachable by train plus PATH. Level and requirements not confirmed."
+      "note": "Level 1 help desk at a Manhattan IT services firm, $60k-$70k with full benefits, posted 2 days ago under the junior filter. Exact office location and requirements not confirmed. Unverified."
     },
     {
-      "title": "Assistant General Manager",
-      "company": "Honeybrains",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aawypxdbml9g",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Hands-on quick-casual restaurant AGM from $66.3k, posted Oct 19: scheduling to a labor budget, front and back of house, team accountability. No degree or set years listed."
-    },
-    {
-      "title": "Shipping/Inventory Specialist",
-      "company": "Avi & Co.",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aa8jzqcbcn7d",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Receiving, cycle counts, item data and courier coordination for a luxury watch retailer, $60k-$70k, weekday office hours, posted Oct 19. Asks for 3+ years in inventory, operations or logistics; no degree listed."
-    },
-    {
-      "title": "Operations Coordinator",
-      "company": "She Wolf Bakery",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZINWpBQVlNMlo5ekJrMFBMTEZRRk5REiQwMWExNjM3MC04YzY1LTc1ZjEtYmE2ZC0zMzQ4M2RjNjY5ZjUaW0FBSGNlYmtxeGhyWm13VXlZd0N2c2NELUVHRmgtcTlQTlhtTGU2WVpRV2ppb0hmZldieE52S3J2V044NGMzZl9heGRhejZ0UmVGb2pDbW1yZzRLWlJtUHliWDggya0FEAEYya0F&tsid=100000502",
+      "title": "Operations Supervisor - Jersey Gardens",
+      "company": "Victoria's Secret",
+      "location": "Elizabeth, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZkelY3MDVZNklIV282OU1PRDJGN1NnEiQwMWExNjg5Ni03Mzc2LTc1ZmMtOTM3NS00N2M4OGI3ZjhhMDMaUEFBR2pqcHZmd3EzVE10cmNsZnNvXzBHNmQwTUV0aW9mOUhhMGN6a2ZLUTRFcDBtVkVxZHl3WTRJVU9Hc3lkYjJUNGx5aWN2aFM0dTYxaHRGIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Food-production operations coordinator at a wholesale bakery, $48k-$50k with full benefits, posted about 8 days ago under the junior filter. Duties and requirements not confirmed."
+      "note": "Store operations supervisor role, $49k-$58.8k, posted a week ago: stock replenishment, back-of-house inventory accuracy and coaching associates. Similar listings ask for 1-2 years of retail preferred; short train commute. Unverified."
+    },
+    {
+      "title": "Full Time Supervisor",
+      "company": "PUMA",
+      "location": "Elizabeth, NJ",
+      "url": "https://to.indeed.com/aa2kyk6glnmw",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Retail store supervisor from $24/hr with benefits, posted Oct 13: scheduling, payroll control, training and merchandise flow. Asks for 1-2 years of customer-service retail and a high school diploma; short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Operations Supervisor",
+      "company": "MacBeth Farm Interiorscapes",
+      "location": "Newark, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ6ZS1KSFRwYzFpY1pvS0hxRkVTcWd3EiQwMWExNjg5Ni03Mzc2LTc1ZTgtYWNhOC0yMWQ1Y2Q4YzkxMTYaW0FBR3AzZWxRc1Z6OEYzUmp1cGdPWnRFaXVFYjNuNXdyRTZyVVFBclV1MjJ5UG51djB1SUZMNFpvM3h2ODZwYm9aUHBFdF9BQ0YtdkthWGo2cHFiYW9lQzlSS1Ugya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Operations supervisor at a commercial plant-service company, from $50k with full benefits, posted about 10 days ago. Duties and requirements not confirmed. Unverified."
     }
   ]
 }
