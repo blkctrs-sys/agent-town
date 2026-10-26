@@ -1,82 +1,91 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-26T11:48:03Z",
-  "lastRun": "2026-10-23T11:50:10Z",
-  "summary": "Found 8 new roles: 5 games & tech, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-23.md",
+  "state": "done",
+  "updated": "2026-10-26T11:51:18Z",
+  "lastRun": "2026-10-26T11:51:18Z",
+  "summary": "Found 9 new roles: 7 games & tech, 2 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-26.md",
   "items": [
     {
-      "title": "Associate Producer - Age of Empires/Mythology (Remote)",
-      "company": "Forgotten Empires",
-      "location": "Remote",
-      "url": "https://builtin.com/job/associate-producer-age-empiresmythology-remote/3964858",
-      "source": "Built In (web search)",
+      "title": "Contract QA Tester",
+      "company": "Mob Entertainment",
+      "location": "Remote (US)",
+      "url": "https://job-boards.greenhouse.io/mobentertainment/jobs/5202427007",
+      "source": "Game boards / Greenhouse (web search)",
       "category": "art",
-      "note": "Junior producer role at a games studio: schedules, project documents and team communication from pre-production to release, with Jira or Trello listed. Asks for 1-2+ years in game development; older copies of this listing were Europe-only, so confirm US eligibility. Unverified."
+      "note": "Remote contract QA tester at an indie-to-mid-size game studio: test cases, regression and bug reports on PC/console builds, with Unreal Engine and Jira listed. Asks for 1-2 years of game QA; no degree listed. Unverified."
     },
     {
-      "title": "Technical Support Specialist Level 1 (contract, East Coast)",
-      "company": "Centric Software",
-      "location": "Remote (US, Eastern Time)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5bGlXN2E0bW9Ody11a203bG9jc2pnEiQwMWExNjg5Ni0zZWVhLTcxOTgtOTk3Yi02M2IyYTA5MGE3ZjIaUEFBRW5hZXJPQ1NPVDduQUZPYlVDQjU3SlJ2WWg3QzN0QUhjVGp4LUdpeXFzOXJXcTdZQnk4SjZxNnl1a1VVYmlZcFUySi15bVpsTTVCbkFfIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Help Desk Technician",
+      "company": "LEAP Legal Software",
+      "location": "Remote (NJ/NY/CT tri-state; Jersey City HQ)",
+      "url": "https://to.indeed.com/aa8gw64xgbt7",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Entry-level SaaS help desk, $55k-$62k, posted Oct 23: phone/chat/email support and self-help articles, full training provided, 100% remote after training. Asks for 1 year of customer service and some SQL/Access knowledge; no degree listed. Verified via Indeed details."
+    },
+    {
+      "title": "Production Coordinator - Kids TV, Animation - NY",
+      "company": "Sony Pictures Entertainment",
+      "location": "New York, NY (hybrid)",
+      "url": "https://to.indeed.com/aazz6lf4r8sl",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Coordinator role on an animation production team, $24-$34/hr, posted Oct 14: schedules, documents and deliverables for the production manager and line producer. Hybrid in Manhattan; full requirements not listed. Verified via Indeed details."
+    },
+    {
+      "title": "Service Technical Support Specialist",
+      "company": "Datawatch Systems",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChYtUEd0Rl9fZmR5R1huQ0hJTlFBUUZ3EiQwMWExNzgwYS04MGJhLTc4NDAtYjFjZi0yNTkwZTA1NWY5ZTAaT0FBRzQ3M2FSTnpRc3VCMzJCSEx2NlJMbGd6SUpLZ2xPcjUyYkVMaFJmcUFkblM2eDVic3Fram1wYWFWYU5JOXI4ZE1HSXppdGkzSkZTa2sgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Entry-level SaaS support at a software company, remote on Eastern Time, about $48.5k-$73.5k, posted today under the junior filter. Jira is a listed skill and the contract can convert to full-time. Unverified."
+      "note": "Remote technical support at a building-security tech company, $50k-$56k with full benefits, posted 2 days ago under the junior filter. Requirements not confirmed. Unverified."
     },
     {
-      "title": "IT Help Desk / Specialist",
-      "company": "Jewish Educational Center (JEC)",
-      "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aajgh66ty2ts",
-      "source": "Indeed",
+      "title": "Project Coordinator",
+      "company": "HealthEdge",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZRVExIamxCcGxIVjdrMkFaa0ZHb3p3EiQwMWExNzgwYS03YWE3LTdhMDgtOWRkNC0xNmFlMDExMmM1NTkaUEFBRnNlTTBQakRPVzdVRFB1Nmd4WXU2WUZsbDBuSEVNYmhtV1FWQWJ4QktBRWZNSXJBRU5vVzd2Ry1VT3ZUWVUyUDZONzNxLVhqdS1xVFJKIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "art",
-      "note": "First-level help desk for a school network: laptops, Chromebooks, accounts, device inventory and new-hire setup, $45k-$50k, posted Oct 20. Help desk experience preferred, no degree listed, short train commute. Verified via Indeed details."
+      "note": "Remote project coordinator at a healthcare software company, $47.5k-$70.5k, posted 3 days ago under the junior filter. Degree and tool requirements not confirmed. Unverified."
     },
     {
-      "title": "Project Coordinator II",
-      "company": "NV5",
-      "location": "Remote",
-      "url": "https://to.indeed.com/aa79fgv9ltx8",
-      "source": "Indeed",
+      "title": "Comment Moderator (contract)",
+      "company": "WEBTOON Entertainment",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5U0tjamVMSGRTNl9YYW5XZkVEU213EiQwMWExNzgwYy0xMWIyLTdjZTYtYmNiYi0yMTM0MTdkNjYzMmUaUEFBR25odENzNGRMYjlGRzFYQXRBV3J0WWlMWTNsTjROYU1kNVByQ1R0OV95X1lyYkRvS1gxbXZ6MENEMkJ4eXZiOXljTU5mVzRmT3RDVDJyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote project coordinator at an engineering and tech consultancy, $55k-$65k, posted today: trackers, deliverables, meeting notes and dispatch scheduling. Degree preferred, not required. Verified via Indeed details."
+      "note": "Remote community moderation contract at a digital comics and entertainment platform, about $32k, posted 3 days ago. Entry-level community support work; hours and requirements not confirmed. Unverified."
     },
     {
-      "title": "IT Helpdesk Technician - Level I",
-      "company": "Impact Business Technology",
+      "title": "Technical Support Specialist ($20/hr)",
+      "company": "PSI Services",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5T1NMM3dDUjB1eG1sMjVFdy1ZbDZ3EiQwMWExNzgwYS04MGJhLTc4NDUtYTExYi1jNzEwODNjNjZjMTEaUEFBRjBHXzltd01qTkxpRTVXMzYwTUdweVByaTFYRUdObjk0M3M5TGxnV3dNNVZyQWo0WFhzek1QM1pQOGo4VWdxTS1wU1dRRTBPOXRBcHU2IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote tier-1 tech support for an online testing platform, $20/hr with full benefits, posted 4 days ago under the junior filter. Requirements not confirmed. Unverified."
+    },
+    {
+      "title": "Assistant Store Manager, New York",
+      "company": "Bandai America",
       "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZnd3dHNmZUMEN5Z0ZjT1lmbzFXRGNREiQwMWExNjg5Ni03N2FkLTdlMTYtOTY2Mi03NmNkNzg1NTVhYTMaW0FBRmFtUzRWUjBzRTBpblZNWExNTDZfc3ktdWczN3FiZk50MXlCQjZ2NE12X3N0N1VaSWJHQ2g2ZnFXX1JHYlhwbTU0VGVpQkF4aC1UMGhqSy04UTYtNldCUkEgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Level 1 help desk at a Manhattan IT services firm, $60k-$70k with full benefits, posted 2 days ago under the junior filter. Exact office location and requirements not confirmed. Unverified."
-    },
-    {
-      "title": "Operations Supervisor - Jersey Gardens",
-      "company": "Victoria's Secret",
-      "location": "Elizabeth, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZkelY3MDVZNklIV282OU1PRDJGN1NnEiQwMWExNjg5Ni03Mzc2LTc1ZmMtOTM3NS00N2M4OGI3ZjhhMDMaUEFBR2pqcHZmd3EzVE10cmNsZnNvXzBHNmQwTUV0aW9mOUhhMGN6a2ZLUTRFcDBtVkVxZHl3WTRJVU9Hc3lkYjJUNGx5aWN2aFM0dTYxaHRGIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Store operations supervisor role, $49k-$58.8k, posted a week ago: stock replenishment, back-of-house inventory accuracy and coaching associates. Similar listings ask for 1-2 years of retail preferred; short train commute. Unverified."
-    },
-    {
-      "title": "Full Time Supervisor",
-      "company": "PUMA",
-      "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aa2kyk6glnmw",
+      "url": "https://to.indeed.com/aall722ylxwf",
       "source": "Indeed",
       "category": "ops",
-      "note": "Retail store supervisor from $24/hr with benefits, posted Oct 13: scheduling, payroll control, training and merchandise flow. Asks for 1-2 years of customer-service retail and a high school diploma; short train commute. Verified via Indeed details."
+      "note": "Assistant manager at a collectibles store run by a toy and games company, $26-$28/hr, posted Oct 23: inventory counts, purchasing, staff training and store open/close. Degree preferred but experience can substitute; train commute into Manhattan. Verified via Indeed details."
     },
     {
-      "title": "Operations Supervisor",
-      "company": "MacBeth Farm Interiorscapes",
-      "location": "Newark, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ6ZS1KSFRwYzFpY1pvS0hxRkVTcWd3EiQwMWExNjg5Ni03Mzc2LTc1ZTgtYWNhOC0yMWQ1Y2Q4YzkxMTYaW0FBR3AzZWxRc1Z6OEYzUmp1cGdPWnRFaXVFYjNuNXdyRTZyVVFBclV1MjJ5UG51djB1SUZMNFpvM3h2ODZwYm9aUHBFdF9BQ0YtdkthWGo2cHFiYW9lQzlSS1Ugya0FEAEYya0F&tsid=100000502",
+      "title": "Retail Assistant Store Manager",
+      "company": "Skechers",
+      "location": "Elizabeth, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ2RGJxQTNmM3RvLWN1UnM1RDU5QnVBEiQwMWExNzgwYS1hNTU4LTdjNTYtYmFmYS04ZmVkNWM4MDllNzAaUEFBSEJjZWRTdi1jMTBhc2RPYWoyMFJxR0xMUnNiSzBpZUZJSlUxLTY5d09ZUWQ4QW5EZHUyS0tJZmdiVkxXc0lEWmE0SlNKZHlGTklEajd6IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Operations supervisor at a commercial plant-service company, from $50k with full benefits, posted about 10 days ago. Duties and requirements not confirmed. Unverified."
+      "note": "Assistant store manager from about $52.9k, posted 6 days ago: a management-training-track retail role. Duties and requirements not confirmed; short train commute. Unverified."
     }
   ]
 }
