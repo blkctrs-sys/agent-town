@@ -1,91 +1,73 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-27T11:48:48Z",
-  "lastRun": "2026-10-26T11:51:18Z",
-  "summary": "Found 9 new roles: 7 games & tech, 2 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-26.md",
+  "state": "done",
+  "updated": "2026-10-27T11:51:45Z",
+  "lastRun": "2026-10-27T11:51:45Z",
+  "summary": "Found 7 new roles: 4 games & tech, 3 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-27.md",
   "items": [
     {
-      "title": "Contract QA Tester",
-      "company": "Mob Entertainment",
-      "location": "Remote (US)",
-      "url": "https://job-boards.greenhouse.io/mobentertainment/jobs/5202427007",
-      "source": "Game boards / Greenhouse (web search)",
-      "category": "art",
-      "note": "Remote contract QA tester at an indie-to-mid-size game studio: test cases, regression and bug reports on PC/console builds, with Unreal Engine and Jira listed. Asks for 1-2 years of game QA; no degree listed. Unverified."
-    },
-    {
-      "title": "Help Desk Technician",
-      "company": "LEAP Legal Software",
-      "location": "Remote (NJ/NY/CT tri-state; Jersey City HQ)",
-      "url": "https://to.indeed.com/aa8gw64xgbt7",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Entry-level SaaS help desk, $55k-$62k, posted Oct 23: phone/chat/email support and self-help articles, full training provided, 100% remote after training. Asks for 1 year of customer service and some SQL/Access knowledge; no degree listed. Verified via Indeed details."
-    },
-    {
-      "title": "Production Coordinator - Kids TV, Animation - NY",
-      "company": "Sony Pictures Entertainment",
-      "location": "New York, NY (hybrid)",
-      "url": "https://to.indeed.com/aazz6lf4r8sl",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Coordinator role on an animation production team, $24-$34/hr, posted Oct 14: schedules, documents and deliverables for the production manager and line producer. Hybrid in Manhattan; full requirements not listed. Verified via Indeed details."
-    },
-    {
-      "title": "Service Technical Support Specialist",
-      "company": "Datawatch Systems",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChYtUEd0Rl9fZmR5R1huQ0hJTlFBUUZ3EiQwMWExNzgwYS04MGJhLTc4NDAtYjFjZi0yNTkwZTA1NWY5ZTAaT0FBRzQ3M2FSTnpRc3VCMzJCSEx2NlJMbGd6SUpLZ2xPcjUyYkVMaFJmcUFkblM2eDVic3Fram1wYWFWYU5JOXI4ZE1HSXppdGkzSkZTa2sgya0FEAEYya0F&tsid=100000502",
+      "title": "Junior Help Desk Support Specialist",
+      "company": "Transperfect Gaming Solutions",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZcF9Ma28tNkJFbU5VRG9rM01Xc05BEiQwMWExN2QzMS1iMjgyLTcxMTUtYjdjMS01YmFjMDM4NjY4YmQaUEFBRllhOXdMMGhNd2dmN2JmMjJpMXI3enVzdnItYlZlNGozYlF0SW5hREl3ek5WSnduYjQyS0h3TnVKNlcwNXFvaDdkYzd4T0pnX2JYb2o0IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote technical support at a building-security tech company, $50k-$56k with full benefits, posted 2 days ago under the junior filter. Requirements not confirmed. Unverified."
+      "note": "Junior help desk role at the gaming-solutions arm of a large language-services company, $50k-$55k, posted 5 days ago. A related listing describes hardware and software troubleshooting for staff in a Midtown office; full requirements not confirmed. Short train commute. Unverified."
+    },
+    {
+      "title": "Client Support Specialist Remote",
+      "company": "betterRX",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aavt22nttwzn",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Remote SaaS support at a healthcare software company, $21-$22/hr, posted Oct 21: 20-40 calls and tickets a day, user training and knowledge-base articles. No degree listed; pharmacy tech license preferred but not required. Verified via Indeed details."
     },
     {
       "title": "Project Coordinator",
-      "company": "HealthEdge",
+      "company": "Wynd Technologies",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZRVExIamxCcGxIVjdrMkFaa0ZHb3p3EiQwMWExNzgwYS03YWE3LTdhMDgtOWRkNC0xNmFlMDExMmM1NTkaUEFBRnNlTTBQakRPVzdVRFB1Nmd4WXU2WUZsbDBuSEVNYmhtV1FWQWJ4QktBRWZNSXJBRU5vVzd2Ry1VT3ZUWVUyUDZONzNxLVhqdS1xVFJKIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYwdXc0UDkxS3V2M1NSS2xuY0xIUUVnEiQwMWExN2QzMS1hMjcyLTc5ZGEtYWRmNC1hNjgxMDlmMDhjNjIaUEFBR3NrbUtSVmNMMXFpY1NYNXpNZDdFRURNNmRST2ZBQ1NiTFFSVGRPOTRBRERYZzRwZXdPZWRDR1dkdFNjM0NKRGRGNEVDX1kyYU92QVUyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote project coordinator at a healthcare software company, $47.5k-$70.5k, posted 3 days ago under the junior filter. Degree and tool requirements not confirmed. Unverified."
+      "note": "Remote-optional project coordinator at a hardware/tech company, $47k-$69.5k with full benefits, posted 4 days ago under the junior filter. Degree and tool requirements not confirmed. Unverified."
     },
     {
-      "title": "Comment Moderator (contract)",
-      "company": "WEBTOON Entertainment",
+      "title": "3D Blender Artist (contract)",
+      "company": "Digital Wizards Studios",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ5U0tjamVMSGRTNl9YYW5XZkVEU213EiQwMWExNzgwYy0xMWIyLTdjZTYtYmNiYi0yMTM0MTdkNjYzMmUaUEFBR25odENzNGRMYjlGRzFYQXRBV3J0WWlMWTNsTjROYU1kNVByQ1R0OV95X1lyYkRvS1gxbXZ6MENEMkJ4eXZiOXljTU5mVzRmT3RDVDJyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "url": "https://to.indeed.com/aawg2dtm8nsh",
+      "source": "Indeed",
       "category": "art",
-      "note": "Remote community moderation contract at a digital comics and entertainment platform, about $32k, posted 3 days ago. Entry-level community support work; hours and requirements not confirmed. Unverified."
+      "note": "Remote Blender-first 3D contract through Dec 18, $25/hr, posted Oct 20: models, props, environments, texturing and lighting. A stretch: asks for professional experience plus character rigging and animation. No degree listed. Verified via Indeed details."
     },
     {
-      "title": "Technical Support Specialist ($20/hr)",
-      "company": "PSI Services",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5T1NMM3dDUjB1eG1sMjVFdy1ZbDZ3EiQwMWExNzgwYS04MGJhLTc4NDUtYTExYi1jNzEwODNjNjZjMTEaUEFBRjBHXzltd01qTkxpRTVXMzYwTUdweVByaTFYRUdObjk0M3M5TGxnV3dNNVZyQWo0WFhzek1QM1pQOGo4VWdxTS1wU1dRRTBPOXRBcHU2IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Remote tier-1 tech support for an online testing platform, $20/hr with full benefits, posted 4 days ago under the junior filter. Requirements not confirmed. Unverified."
-    },
-    {
-      "title": "Assistant Store Manager, New York",
-      "company": "Bandai America",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aall722ylxwf",
+      "title": "Assistant General Manager - Retail",
+      "company": "Applegreen",
+      "location": "Avenel (Woodbridge), NJ",
+      "url": "https://to.indeed.com/aahlbbpvxlq9",
       "source": "Indeed",
       "category": "ops",
-      "note": "Assistant manager at a collectibles store run by a toy and games company, $26-$28/hr, posted Oct 23: inventory counts, purchasing, staff training and store open/close. Degree preferred but experience can substitute; train commute into Manhattan. Verified via Indeed details."
+      "note": "Entry-level management role at a travel plaza with quick-service restaurants, $40.6k-$52.4k, posted Oct 13: staff supervision, cash handling and spot inventory counts. Asks for 2 years of QSR or similar management; no degree. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Retail Assistant Store Manager",
-      "company": "Skechers",
-      "location": "Elizabeth, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ2RGJxQTNmM3RvLWN1UnM1RDU5QnVBEiQwMWExNzgwYS1hNTU4LTdjNTYtYmFmYS04ZmVkNWM4MDllNzAaUEFBSEJjZWRTdi1jMTBhc2RPYWoyMFJxR0xMUnNiSzBpZUZJSlUxLTY5d09ZUWQ4QW5EZHUyS0tJZmdiVkxXc0lEWmE0SlNKZHlGTklEajd6IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Logistics Coordinator (ICQA Associate)",
+      "company": "NYU Langone Health",
+      "location": "Manhattan, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYxRVUzbkwtYTNjVThnWnNHNzRFZC1nEiQwMWExN2QzMS1lZDcxLTc3MjAtOGYwYi04YjUwOTFiYzYwNDgaUEFBRXEtN0gwWVYwcEhrYXFlR3lKUGNFeno5N2RMTk1mZEFjUEduRU9VaE83NjFqZkFTZUVEV0VwcENxX0otV1dnU19LWUhfQmdoVlJTYWNwIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Assistant store manager from about $52.9k, posted 6 days ago: a management-training-track retail role. Duties and requirements not confirmed; short train commute. Unverified."
+      "note": "Inventory control and quality associate role at a hospital system, Mon-Fri 8-4, $41.5k-$52.5k, posted 3 days ago. Requirements not confirmed; train commute into Manhattan. Unverified."
+    },
+    {
+      "title": "Assistant Manager - ANN",
+      "company": "KnitWell Group",
+      "location": "Manhattan, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZyUzhEUkJYZHhudWd3ZGFvdjYxMGJREiQwMWExN2QzMS1jMGU2LTcyZDYtYWYyNy1mMTViNTliNWI5NjEaUEFBRkp4eGw0aFZyUFZOX2R2bGlUcGhrc2JicmkxZE1YX0JNSEhseEd3MnFJMXlCQTItOXdjdF9pVXg3aWJHMk0ycy1sUFdwUno0WnhPNDNaIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Retail assistant manager at a national apparel brand, $42k-$52.5k with full benefits, posted 5 days ago: a store-management training-track role. Duties and requirements not confirmed; train commute into Manhattan. Unverified."
     }
   ]
 }
