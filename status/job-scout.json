@@ -1,73 +1,64 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-28T11:49:28Z",
-  "lastRun": "2026-10-27T11:51:45Z",
-  "summary": "Found 7 new roles: 4 games & tech, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-27.md",
+  "state": "done",
+  "updated": "2026-10-28T11:52:55Z",
+  "lastRun": "2026-10-28T11:52:55Z",
+  "summary": "Found 6 new roles: 3 games & tech, 3 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-28.md",
   "items": [
     {
-      "title": "Junior Help Desk Support Specialist",
-      "company": "Transperfect Gaming Solutions",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZcF9Ma28tNkJFbU5VRG9rM01Xc05BEiQwMWExN2QzMS1iMjgyLTcxMTUtYjdjMS01YmFjMDM4NjY4YmQaUEFBRllhOXdMMGhNd2dmN2JmMjJpMXI3enVzdnItYlZlNGozYlF0SW5hREl3ek5WSnduYjQyS0h3TnVKNlcwNXFvaDdkYzd4T0pnX2JYb2o0IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Player Support Specialist",
+      "company": "Nexon America",
+      "location": "Remote (US, per listing)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZ3Z2tfY2N0anVMeEF2MU5EenplMWZREiQwMWExODI1OC1kZDliLTcxOTctYjIxNS03NzI0YTE2NTViNDkaT0FBR3dYcVhSdXFkWkstOXhCaHRXZDQ3OVFTQXo4UENZVFVVd0RmemNPTXhleWRwSWN0ekRsc3BhLXBMcG1wQU1KSFVHQUo4a1cyb1RlZGcgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Junior help desk role at the gaming-solutions arm of a large language-services company, $50k-$55k, posted 5 days ago. A related listing describes hardware and software troubleshooting for staff in a Midtown office; full requirements not confirmed. Short train commute. Unverified."
+      "note": "Player support at a major game publisher, $50k-$60k, posted today. Listed as remote, but other Nexon support roles are hybrid in El Segundo, CA; confirm before applying. Unverified."
     },
     {
-      "title": "Client Support Specialist Remote",
-      "company": "betterRX",
+      "title": "IT Help Desk Tier 1",
+      "company": "Siepe",
+      "location": "New York, NY (hybrid)",
+      "url": "https://jobs.lever.co/siepe/a7b05b25-4312-44b5-a58b-81e2a3d581f6",
+      "source": "ZipRecruiter / Lever",
+      "category": "art",
+      "note": "Junior ticket-queue help desk at a fintech software company, $65k-$72k, mostly remote with some on-site visits. Degree requirement not confirmed; train commute into Manhattan. Unverified."
+    },
+    {
+      "title": "Associate Customer Experience Specialist",
+      "company": "Zoetis",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aavt22nttwzn",
+      "url": "https://to.indeed.com/aad6dsvcrhvh",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote SaaS support at a healthcare software company, $21-$22/hr, posted Oct 21: 20-40 calls and tickets a day, user training and knowledge-base articles. No degree listed; pharmacy tech license preferred but not required. Verified via Indeed details."
+      "note": "Remote high-volume support role with first-level platform support, $19.70-$30.22/hr, posted Oct 22. High school diploma and 1 year of customer service; degree only preferred. Verified via Indeed details."
     },
     {
-      "title": "Project Coordinator",
-      "company": "Wynd Technologies",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYwdXc0UDkxS3V2M1NSS2xuY0xIUUVnEiQwMWExN2QzMS1hMjcyLTc5ZGEtYWRmNC1hNjgxMDlmMDhjNjIaUEFBR3NrbUtSVmNMMXFpY1NYNXpNZDdFRURNNmRST2ZBQ1NiTFFSVGRPOTRBRERYZzRwZXdPZWRDR1dkdFNjM0NKRGRGNEVDX1kyYU92QVUyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Remote-optional project coordinator at a hardware/tech company, $47k-$69.5k with full benefits, posted 4 days ago under the junior filter. Degree and tool requirements not confirmed. Unverified."
-    },
-    {
-      "title": "3D Blender Artist (contract)",
-      "company": "Digital Wizards Studios",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aawg2dtm8nsh",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Remote Blender-first 3D contract through Dec 18, $25/hr, posted Oct 20: models, props, environments, texturing and lighting. A stretch: asks for professional experience plus character rigging and animation. No degree listed. Verified via Indeed details."
-    },
-    {
-      "title": "Assistant General Manager - Retail",
-      "company": "Applegreen",
-      "location": "Avenel (Woodbridge), NJ",
-      "url": "https://to.indeed.com/aahlbbpvxlq9",
+      "title": "Assistant Restaurant Manager",
+      "company": "The Newark Standard",
+      "location": "Newark, NJ",
+      "url": "https://to.indeed.com/aaqrvd79khpc",
       "source": "Indeed",
       "category": "ops",
-      "note": "Entry-level management role at a travel plaza with quick-service restaurants, $40.6k-$52.4k, posted Oct 13: staff supervision, cash handling and spot inventory counts. Asks for 2 years of QSR or similar management; no degree. Short train commute. Verified via Indeed details."
+      "note": "Restaurant assistant manager, $23-$29/hr with benefits, posted Oct 27: scheduling, training, inventory and supply ordering. No degree. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Logistics Coordinator (ICQA Associate)",
-      "company": "NYU Langone Health",
-      "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYxRVUzbkwtYTNjVThnWnNHNzRFZC1nEiQwMWExN2QzMS1lZDcxLTc3MjAtOGYwYi04YjUwOTFiYzYwNDgaUEFBRXEtN0gwWVYwcEhrYXFlR3lKUGNFeno5N2RMTk1mZEFjUEduRU9VaE83NjFqZkFTZUVEV0VwcENxX0otV1dnU19LWUhfQmdoVlJTYWNwIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "title": "Inventory Control Coordinator",
+      "company": "MTF Biologics",
+      "location": "Edison, NJ",
+      "url": "https://to.indeed.com/aac92ms98f8j",
+      "source": "Indeed",
       "category": "ops",
-      "note": "Inventory control and quality associate role at a hospital system, Mon-Fri 8-4, $41.5k-$52.5k, posted 3 days ago. Requirements not confirmed; train commute into Manhattan. Unverified."
+      "note": "Weekday inventory-accuracy role, $20.82/hr, posted Oct 27: cycle counts, reconciliations, receiving inspection. High school diploma plus 2 years of inventory experience. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Assistant Manager - ANN",
-      "company": "KnitWell Group",
-      "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZyUzhEUkJYZHhudWd3ZGFvdjYxMGJREiQwMWExN2QzMS1jMGU2LTcyZDYtYWYyNy1mMTViNTliNWI5NjEaUEFBRkp4eGw0aFZyUFZOX2R2bGlUcGhrc2JicmkxZE1YX0JNSEhseEd3MnFJMXlCQTItOXdjdF9pVXg3aWJHMk0ycy1sUFdwUno0WnhPNDNaIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "title": "Shipping and Receiving Specialist",
+      "company": "TEXA USA",
+      "location": "Edison, NJ",
+      "url": "https://to.indeed.com/aa89fg4lrwqp",
+      "source": "Indeed",
       "category": "ops",
-      "note": "Retail assistant manager at a national apparel brand, $42k-$52.5k with full benefits, posted 5 days ago: a store-management training-track role. Duties and requirements not confirmed; train commute into Manhattan. Unverified."
+      "note": "Receiving and inventory role, $40k-$45k with benefits, posted Oct 27: PO checks, cycle counts, inventory reporting. High school diploma; asks for warehouse and inventory-control experience. Short train commute. Verified via Indeed details."
     }
   ]
 }
