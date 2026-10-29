@@ -1,26 +1,9 @@
 {
   "agent": "mildred",
-  "state": "done",
-  "updated": "2026-10-28T13:33:39Z",
+  "state": "working",
+  "updated": "2026-10-29T13:14:38Z",
   "lastRun": "2026-10-28T13:33:39Z",
-  "summary": "3 prep packs and today's drill. Same riff, a little cleaner each take.",
+  "summary": "Tuning up. Back in a minute.",
   "report": null,
-  "items": [
-    {
-      "title": "Prep pack",
-      "category": "prep"
-    },
-    {
-      "title": "Prep pack",
-      "category": "prep"
-    },
-    {
-      "title": "Prep pack",
-      "category": "prep"
-    },
-    {
-      "title": "Practice drill",
-      "category": "drill"
-    }
-  ]
+  "items": []
 }
