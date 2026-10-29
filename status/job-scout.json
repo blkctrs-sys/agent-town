@@ -1,64 +1,82 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-29T11:48:45Z",
-  "lastRun": "2026-10-28T11:52:55Z",
-  "summary": "Found 6 new roles: 3 games & tech, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-28.md",
+  "state": "done",
+  "updated": "2026-10-29T11:52:43Z",
+  "lastRun": "2026-10-29T11:52:43Z",
+  "summary": "Found 8 new roles: 3 games & tech, 5 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-29.md",
   "items": [
     {
-      "title": "Player Support Specialist",
-      "company": "Nexon America",
-      "location": "Remote (US, per listing)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZ3Z2tfY2N0anVMeEF2MU5EenplMWZREiQwMWExODI1OC1kZDliLTcxOTctYjIxNS03NzI0YTE2NTViNDkaT0FBR3dYcVhSdXFkWkstOXhCaHRXZDQ3OVFTQXo4UENZVFVVd0RmemNPTXhleWRwSWN0ekRsc3BhLXBMcG1wQU1KSFVHQUo4a1cyb1RlZGcgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Player support at a major game publisher, $50k-$60k, posted today. Listed as remote, but other Nexon support roles are hybrid in El Segundo, CA; confirm before applying. Unverified."
-    },
-    {
-      "title": "IT Help Desk Tier 1",
-      "company": "Siepe",
-      "location": "New York, NY (hybrid)",
-      "url": "https://jobs.lever.co/siepe/a7b05b25-4312-44b5-a58b-81e2a3d581f6",
-      "source": "ZipRecruiter / Lever",
-      "category": "art",
-      "note": "Junior ticket-queue help desk at a fintech software company, $65k-$72k, mostly remote with some on-site visits. Degree requirement not confirmed; train commute into Manhattan. Unverified."
-    },
-    {
-      "title": "Associate Customer Experience Specialist",
-      "company": "Zoetis",
+      "title": "QA Analyst (Core Tech)",
+      "company": "Testronic",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aad6dsvcrhvh",
+      "url": "https://builtin.com/job/qa-analyst-core-tech/8592376",
+      "source": "Built In",
+      "category": "art",
+      "note": "Junior-level game QA role, remote in the US: testing gameplay systems and Unity engine components, logging in JIRA and TestRail. Unverified."
+    },
+    {
+      "title": "Website QA Tester (Remote)",
+      "company": "Politicked",
+      "location": "Remote",
+      "url": "https://to.indeed.com/aaqshqknqcmp",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote high-volume support role with first-level platform support, $19.70-$30.22/hr, posted Oct 22. High school diploma and 1 year of customer service; degree only preferred. Verified via Indeed details."
+      "note": "Temporary, flexible-hours web QA role before a platform launch; no degree, Jira/Trello a plus. Pay not listed, so confirm it's paid."
+    },
+    {
+      "title": "Sales & Project Management Associate - 3D Printing",
+      "company": "Tangible Creative",
+      "location": "New York, NY area",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChY3cmxVZWwxMmZfWFNwU2tpTEdIVUF3EiQwMWExODc3ZS04OGNlLTc5NjAtYjhiZS00ZDYxMTQyMjE2YTEaW0FBRnVpQ3RLdVJSQnBZZU9nZ0NvOGxzRlp5TEV4T1lrMDdSNGdKRkQ2czZaemdqOGFBM1FDNlk5czRtM2ZWeUFjdXBaYXI1eXY5dlFfOWFLenRPT1NZSGUyNE0gya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Junior project-coordination role at a 3D printing and fabrication company; short train commute. Unverified."
     },
     {
       "title": "Assistant Restaurant Manager",
-      "company": "The Newark Standard",
+      "company": "Andros Restaurant",
       "location": "Newark, NJ",
-      "url": "https://to.indeed.com/aaqrvd79khpc",
+      "url": "https://to.indeed.com/aaldbn4kghd7",
       "source": "Indeed",
       "category": "ops",
-      "note": "Restaurant assistant manager, $23-$29/hr with benefits, posted Oct 27: scheduling, training, inventory and supply ordering. No degree. Short train commute. Verified via Indeed details."
+      "note": "Assistant manager, $22-$29/hr: scheduling, training, inventory and ordering, waste control. No degree; short train commute."
     },
     {
-      "title": "Inventory Control Coordinator",
-      "company": "MTF Biologics",
-      "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aac92ms98f8j",
+      "title": "Seasonal Inventory Coordinator, R2N",
+      "company": "Signet Jewelers (Blue Nile)",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aa9dz8cjwrpc",
       "source": "Indeed",
       "category": "ops",
-      "note": "Weekday inventory-accuracy role, $20.82/hr, posted Oct 27: cycle counts, reconciliations, receiving inspection. High school diploma plus 2 years of inventory experience. Short train commute. Verified via Indeed details."
+      "note": "Seasonal full-time inventory role, $24-$26/hr: trackers, purchase orders, vendor follow-up. Degree or equivalent experience."
     },
     {
-      "title": "Shipping and Receiving Specialist",
-      "company": "TEXA USA",
-      "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aa89fg4lrwqp",
+      "title": "Shipping & Receiving Clerk I",
+      "company": "Quest Diagnostics",
+      "location": "Linden, NJ",
+      "url": "https://to.indeed.com/aangjh4kzc88",
       "source": "Indeed",
       "category": "ops",
-      "note": "Receiving and inventory role, $40k-$45k with benefits, posted Oct 27: PO checks, cycle counts, inventory reporting. High school diploma; asks for warehouse and inventory-control experience. Short train commute. Verified via Indeed details."
+      "note": "Weekday receiving and stock-rotation role with day-one benefits; high school diploma; short train commute."
+    },
+    {
+      "title": "Assistant Manager",
+      "company": "Panda Restaurant Group",
+      "location": "Linden, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZBRmpNWEQ0T09pRjV6WnB4N0g5cy13EiQwMWExODc3ZS1hNDcwLTc1MGEtODFhYi1kZWJmYTcxZjVkNTMaUEFBR2tUb2JlRGtqbEdtNFpaZ3hLMXU0VUJDcjdjLWw3RFRKTnJ0R0FHRllDeFJwNURaVjR1bUh6QmpLbzhMQnoyVklYcUNsUFdyTXZBZTdaIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Restaurant assistant manager, $48k-$54k with benefits; short train commute. Unverified."
+    },
+    {
+      "title": "Logistics & Inventory Coordinator",
+      "company": "Bonji Foods",
+      "location": "New Brunswick, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZNZXRhUjJUSkRBc1RaSGJhTXBCVlF3EiQwMWExODc3ZS05Y2UzLTc2MDUtOGJmOS1iODQ4ZDg5ZWFjOTcaT0FBRndmN0lsdHhjRFpWYWpXOGZyblk3N1g4a2pMMjk0LWVpWmRXcUdsNi1sbDFDV0F3ODRha244cUZ2Ukt4ekJhcFNSWnlvNEhHZnp4eUkgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Inventory and logistics coordinator at a food company, $50k-$60k; short train commute. Unverified."
     }
   ]
 }
