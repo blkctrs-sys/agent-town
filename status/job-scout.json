@@ -1,82 +1,55 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-10-30T11:47:59Z",
-  "lastRun": "2026-10-29T11:52:43Z",
-  "summary": "Found 8 new roles: 3 games & tech, 5 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-29.md",
+  "state": "done",
+  "updated": "2026-10-30T11:51:24Z",
+  "lastRun": "2026-10-30T11:51:24Z",
+  "summary": "Found 5 new roles: 3 games & tech, 2 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-10-30.md",
   "items": [
     {
-      "title": "QA Analyst (Core Tech)",
-      "company": "Testronic",
-      "location": "Remote (US)",
-      "url": "https://builtin.com/job/qa-analyst-core-tech/8592376",
-      "source": "Built In",
-      "category": "art",
-      "note": "Junior-level game QA role, remote in the US: testing gameplay systems and Unity engine components, logging in JIRA and TestRail. Unverified."
-    },
-    {
-      "title": "Website QA Tester (Remote)",
-      "company": "Politicked",
-      "location": "Remote",
-      "url": "https://to.indeed.com/aaqshqknqcmp",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Temporary, flexible-hours web QA role before a platform launch; no degree, Jira/Trello a plus. Pay not listed, so confirm it's paid."
-    },
-    {
-      "title": "Sales & Project Management Associate - 3D Printing",
-      "company": "Tangible Creative",
-      "location": "New York, NY area",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChY3cmxVZWwxMmZfWFNwU2tpTEdIVUF3EiQwMWExODc3ZS04OGNlLTc5NjAtYjhiZS00ZDYxMTQyMjE2YTEaW0FBRnVpQ3RLdVJSQnBZZU9nZ0NvOGxzRlp5TEV4T1lrMDdSNGdKRkQ2czZaemdqOGFBM1FDNlk5czRtM2ZWeUFjdXBaYXI1eXY5dlFfOWFLenRPT1NZSGUyNE0gya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Junior project-coordination role at a 3D printing and fabrication company; short train commute. Unverified."
-    },
-    {
-      "title": "Assistant Restaurant Manager",
-      "company": "Andros Restaurant",
-      "location": "Newark, NJ",
-      "url": "https://to.indeed.com/aaldbn4kghd7",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Assistant manager, $22-$29/hr: scheduling, training, inventory and ordering, waste control. No degree; short train commute."
-    },
-    {
-      "title": "Seasonal Inventory Coordinator, R2N",
-      "company": "Signet Jewelers (Blue Nile)",
+      "title": "Technical Support Analyst",
+      "company": "Internova Travel Group",
       "location": "New York, NY",
-      "url": "https://to.indeed.com/aa9dz8cjwrpc",
+      "url": "https://to.indeed.com/aahmp64xwctj",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Desktop and help desk support in Manhattan, $18-$30/hr: tickets, laptop imaging, Microsoft 365. Associate's degree or equivalent training plus 3 years of support. Verified via Indeed details."
+    },
+    {
+      "title": "MLS Support Specialist (Tier 1)",
+      "company": "Charleston Regional MLS",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aa6shdbnldtr",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Remote Tier 1 software support in Zendesk with full training provided. No degree listed. Verified via Indeed details."
+    },
+    {
+      "title": "Technical Project Coordinator — Software Development",
+      "company": "First Vulcan, Inc.",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aazprhpbtn7j",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Part-time remote project coordination at a software startup, $25-$35/hr. Asks for a strong understanding of software development, so it's a stretch. Verified via Indeed details."
+    },
+    {
+      "title": "Operations Coordinator — Nexus in Middlesex County",
+      "company": "The Sports Facilities Companies",
+      "location": "Edison, NJ",
+      "url": "https://to.indeed.com/aarppg894dqm",
       "source": "Indeed",
       "category": "ops",
-      "note": "Seasonal full-time inventory role, $24-$26/hr: trackers, purchase orders, vendor follow-up. Degree or equivalent experience."
+      "note": "Event and facility operations at a sports complex: staff scheduling, training, manager on duty. No degree required. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Shipping & Receiving Clerk I",
-      "company": "Quest Diagnostics",
-      "location": "Linden, NJ",
-      "url": "https://to.indeed.com/aangjh4kzc88",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Weekday receiving and stock-rotation role with day-one benefits; high school diploma; short train commute."
-    },
-    {
-      "title": "Assistant Manager",
-      "company": "Panda Restaurant Group",
-      "location": "Linden, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZBRmpNWEQ0T09pRjV6WnB4N0g5cy13EiQwMWExODc3ZS1hNDcwLTc1MGEtODFhYi1kZWJmYTcxZjVkNTMaUEFBR2tUb2JlRGtqbEdtNFpaZ3hLMXU0VUJDcjdjLWw3RFRKTnJ0R0FHRllDeFJwNURaVjR1bUh6QmpLbzhMQnoyVklYcUNsUFdyTXZBZTdaIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Shipping and Receiving Clerk ($22/hr, 4pm-12:30am)",
+      "company": "Aerotek",
+      "location": "Edison, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZCU3M3T3h0VkV1bDNqR0dTUGZXMWlnEiQwMWExOGNhNS1hNDU2LTc5M2UtODA5Yi1jMWY1M2UwZWRkNzMaW0FBRkdvdjllakQwSTIxcXpxSmpaQ0hXWWhkUHd1bUpnUWxvaVdYaG90bVFrUXZuWDI5LXZVaHZUaERvWXQ5aHNXeUxkSVdIdTBPWG9hUWpOczdjbEVUWUR6Qmsgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Restaurant assistant manager, $48k-$54k with benefits; short train commute. Unverified."
-    },
-    {
-      "title": "Logistics & Inventory Coordinator",
-      "company": "Bonji Foods",
-      "location": "New Brunswick, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZNZXRhUjJUSkRBc1RaSGJhTXBCVlF3EiQwMWExODc3ZS05Y2UzLTc2MDUtOGJmOS1iODQ4ZDg5ZWFjOTcaT0FBRndmN0lsdHhjRFpWYWpXOGZyblk3N1g4a2pMMjk0LWVpWmRXcUdsNi1sbDFDV0F3ODRha244cUZ2Ukt4ekJhcFNSWnlvNEhHZnp4eUkgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Inventory and logistics coordinator at a food company, $50k-$60k; short train commute. Unverified."
+      "note": "Evening receiving role via a staffing agency, $22/hr with benefits. Short train commute. Unverified."
     }
   ]
 }
