@@ -1,7 +1,7 @@
 {
   "agent": "job-scout",
-  "state": "done",
-  "updated": "2026-10-30T11:51:24Z",
+  "state": "working",
+  "updated": "2026-11-02T12:51:22Z",
   "lastRun": "2026-10-30T11:51:24Z",
   "summary": "Found 5 new roles: 3 games & tech, 2 operations. 3 tailored resume drafts ready.",
   "report": "jobs/2026-10-30.md",
@@ -25,7 +25,7 @@
       "note": "Remote Tier 1 software support in Zendesk with full training provided. No degree listed. Verified via Indeed details."
     },
     {
-      "title": "Technical Project Coordinator — Software Development",
+      "title": "Technical Project Coordinator \u2014 Software Development",
       "company": "First Vulcan, Inc.",
       "location": "Remote (US)",
       "url": "https://to.indeed.com/aazprhpbtn7j",
@@ -34,7 +34,7 @@
       "note": "Part-time remote project coordination at a software startup, $25-$35/hr. Asks for a strong understanding of software development, so it's a stretch. Verified via Indeed details."
     },
     {
-      "title": "Operations Coordinator — Nexus in Middlesex County",
+      "title": "Operations Coordinator \u2014 Nexus in Middlesex County",
       "company": "The Sports Facilities Companies",
       "location": "Edison, NJ",
       "url": "https://to.indeed.com/aarppg894dqm",
