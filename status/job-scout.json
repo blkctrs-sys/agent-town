@@ -1,55 +1,91 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-02T12:51:22Z",
-  "lastRun": "2026-10-30T11:51:24Z",
-  "summary": "Found 5 new roles: 3 games & tech, 2 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-10-30.md",
+  "state": "done",
+  "updated": "2026-11-02T12:54:43Z",
+  "lastRun": "2026-11-02T12:54:43Z",
+  "summary": "Found 9 new roles: 5 games & tech, 4 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-02.md",
   "items": [
     {
-      "title": "Technical Support Analyst",
-      "company": "Internova Travel Group",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aahmp64xwctj",
-      "source": "Indeed",
+      "title": "Player Support Analyst",
+      "company": "thatgamecompany",
+      "location": "Remote (US & Canada)",
+      "url": "https://app.joinrise.co/jobs/thatgamecompany-player-support-analyst-uro4",
+      "source": "Web search (Rise)",
       "category": "art",
-      "note": "Desktop and help desk support in Manhattan, $18-$30/hr: tickets, laptop imaging, Microsoft 365. Associate's degree or equivalent training plus 3 years of support. Verified via Indeed details."
+      "note": "Ticket-based player support at an indie-spirited game studio, fully remote in North America; asks for support experience and a love of games, no degree listed. Weekend shifts possible. Unverified (posting date not shown; the careers page could not be opened)."
     },
     {
-      "title": "MLS Support Specialist (Tier 1)",
-      "company": "Charleston Regional MLS",
+      "title": "Technical Support Specialist (ISI Software)",
+      "company": "Fullsteam",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aa6shdbnldtr",
+      "url": "https://to.indeed.com/aawhnqnvhcw9",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote Tier 1 software support in Zendesk with full training provided. No degree listed. Verified via Indeed details."
+      "note": "Full-time remote software support, $19.71-$32.21/hr, posted Oct 29: phone and email cases, troubleshooting, knowledge-base writing and user training. High school diploma plus 2 years of customer-facing tech support; asks for Linux and Windows troubleshooting. Verified via Indeed details."
     },
     {
-      "title": "Technical Project Coordinator \u2014 Software Development",
-      "company": "First Vulcan, Inc.",
+      "title": "Project Coordinator",
+      "company": "Apprenti",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aazprhpbtn7j",
+      "url": "https://to.indeed.com/aagyj78b9tnr",
       "source": "Indeed",
       "category": "art",
-      "note": "Part-time remote project coordination at a software startup, $25-$35/hr. Asks for a strong understanding of software development, so it's a stretch. Verified via Indeed details."
+      "note": "Full-time remote project coordination at a tech-apprenticeship nonprofit, $75k-$85k, posted Oct 29: tracking milestones, running meetings, keeping SOPs and status reports. No degree listed; asks for 3-5 years of coordination or operations support, so it's a stretch. Verified via Indeed details."
     },
     {
-      "title": "Operations Coordinator \u2014 Nexus in Middlesex County",
-      "company": "The Sports Facilities Companies",
-      "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aarppg894dqm",
+      "title": "Associate Producer (Motion-Based Games)",
+      "company": "Nex",
+      "location": "Remote / Hybrid (LA preferred)",
+      "url": "https://job-boards.greenhouse.io/nex/jobs/5156023008",
+      "source": "Greenhouse (web search)",
+      "category": "art",
+      "note": "Associate producer on family motion-controlled games, remote or hybrid, $85k-$115k, reporting to a senior producer. A real game-production role but likely wants prior production experience. Unverified (Greenhouse couldn't be opened; the posting may be older)."
+    },
+    {
+      "title": "Client Support Specialist",
+      "company": "Finalsite Enrollment",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZDWUdZcHJYemlyVmZrN3RwanFMaWhnEiQwMWExOWM1MC1mOTIzLTc4YjYtOTkwYi04ZmNjNzU2NmU2MzEaWEFBSGJLR0liLXZDREJjaVhRbk12bzRkbm5qeHpKclZlbVAwam1LU1ZwaUZtT3h6MGRWTjYwd2VBOWZXa294SnZtWnFKaTVHVmtVWHE0TkpTNDkzSjNfWWsgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote software support at an education-tech company, listed at $37k-$49.5k, posted about 4 days ago, tagged entry/junior level. Unverified (requirements not confirmed)."
+    },
+    {
+      "title": "F&B Purchasing & Operations Coordinator",
+      "company": "The Standard, High Line",
+      "location": "New York, NY (Manhattan)",
+      "url": "https://to.indeed.com/aav9sy8nzrxn",
       "source": "Indeed",
       "category": "ops",
-      "note": "Event and facility operations at a sports complex: staff scheduling, training, manager on duty. No degree required. Short train commute. Verified via Indeed details."
+      "note": "Full-time hotel kitchen purchasing role, $23-$25/hr with full benefits, posted Oct 29: ordering to pars, receiving and invoice checks, monthly inventory, vendor relations, FIFO storage, waste tracking. No degree required. Train to Penn Station, then a short subway ride. Verified via Indeed details."
     },
     {
-      "title": "Shipping and Receiving Clerk ($22/hr, 4pm-12:30am)",
-      "company": "Aerotek",
-      "location": "Edison, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZCU3M3T3h0VkV1bDNqR0dTUGZXMWlnEiQwMWExOGNhNS1hNDU2LTc5M2UtODA5Yi1jMWY1M2UwZWRkNzMaW0FBRkdvdjllakQwSTIxcXpxSmpaQ0hXWWhkUHd1bUpnUWxvaVdYaG90bVFrUXZuWDI5LXZVaHZUaERvWXQ5aHNXeUxkSVdIdTBPWG9hUWpOczdjbEVUWUR6Qmsgya0FEAEYya0F&tsid=100000502",
+      "title": "Retail Assistant Manager (Assistant Brand Experience Leader)",
+      "company": "Bath & Body Works",
+      "location": "Elizabeth, NJ (Jersey Gardens)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYybnpIVWtWRFZGSS1FY1JVaDcwT0p3EiQwMWExOWM1MS0xMzEyLTdiMTItYTM4ZS1jMTVhZjBlNTMwZmIaW0FBRmlpUmRMTHVoRjhIenZDdW1uU1VnMUtpWnhZZ1ZGY3VRNzNmLS1rb2RpTkxaa1VUV3JZZUpvX0ljSHRmcjlZYTQ0LUJOOU4yNWtlNmQ4VDRSTUtRbjFGTjQgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Evening receiving role via a staffing agency, $22/hr with benefits. Short train commute. Unverified."
+      "note": "Full-time assistant store manager, listed at $59k-$74k with benefits, posted about 4 days ago; a store-management path. Short train commute plus a bus to the mall. Unverified (requirements not confirmed)."
+    },
+    {
+      "title": "Facility Coordinator",
+      "company": "Craigs Plumbing",
+      "location": "Avenel, NJ",
+      "url": "https://to.indeed.com/aa2c6gsrf9th",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Full-time warehouse inventory coordinator, $25-$27/hr with benefits, posted Oct 28: inventory counts and reconciliations, stock levels, organized storage, Excel reports. No degree; asks for 3-5 years of warehouse experience, so it's a stretch. Short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Fleet Operations Coordinator (contract)",
+      "company": "TEKsystems",
+      "location": "Linden, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZoVV93M2NYMG5YYWFyUl84Z3RmNzRBEiQwMWExOWM1MS0xODk0LTdhM2YtYjQyZi05ZTJhM2I5ZmNlMjQaW0FBR002V2loM1B3dVNmUzRXeGphZTJOQjMtY1ZuZ0NVY3JwWnNyQUpoT0VKY3RzcnlwZkFSZmMwazJCTTlKWjhjLTAyMzlkU1p3cWRULUlKWnRUSFhUWnlxdFkgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Contract operations coordinator through a staffing agency, listed at $46k-$52k with benefits, posted about 12 days ago, tagged entry/junior level. Short train commute. Unverified (requirements not confirmed)."
     }
   ]
 }
