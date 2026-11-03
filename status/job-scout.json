@@ -1,91 +1,55 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-03T12:47:15Z",
-  "lastRun": "2026-11-02T12:54:43Z",
-  "summary": "Found 9 new roles: 5 games & tech, 4 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-02.md",
+  "state": "done",
+  "updated": "2026-11-03T12:50:14Z",
+  "lastRun": "2026-11-03T12:50:14Z",
+  "summary": "Found 5 new roles: 1 games & tech, 4 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-03.md",
   "items": [
     {
-      "title": "Player Support Analyst",
-      "company": "thatgamecompany",
-      "location": "Remote (US & Canada)",
-      "url": "https://app.joinrise.co/jobs/thatgamecompany-player-support-analyst-uro4",
-      "source": "Web search (Rise)",
-      "category": "art",
-      "note": "Ticket-based player support at an indie-spirited game studio, fully remote in North America; asks for support experience and a love of games, no degree listed. Weekend shifts possible. Unverified (posting date not shown; the careers page could not be opened)."
-    },
-    {
-      "title": "Technical Support Specialist (ISI Software)",
-      "company": "Fullsteam",
+      "title": "Technical Support Specialist",
+      "company": "Insight Global",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aawhnqnvhcw9",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Full-time remote software support, $19.71-$32.21/hr, posted Oct 29: phone and email cases, troubleshooting, knowledge-base writing and user training. High school diploma plus 2 years of customer-facing tech support; asks for Linux and Windows troubleshooting. Verified via Indeed details."
-    },
-    {
-      "title": "Project Coordinator",
-      "company": "Apprenti",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aagyj78b9tnr",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Full-time remote project coordination at a tech-apprenticeship nonprofit, $75k-$85k, posted Oct 29: tracking milestones, running meetings, keeping SOPs and status reports. No degree listed; asks for 3-5 years of coordination or operations support, so it's a stretch. Verified via Indeed details."
-    },
-    {
-      "title": "Associate Producer (Motion-Based Games)",
-      "company": "Nex",
-      "location": "Remote / Hybrid (LA preferred)",
-      "url": "https://job-boards.greenhouse.io/nex/jobs/5156023008",
-      "source": "Greenhouse (web search)",
-      "category": "art",
-      "note": "Associate producer on family motion-controlled games, remote or hybrid, $85k-$115k, reporting to a senior producer. A real game-production role but likely wants prior production experience. Unverified (Greenhouse couldn't be opened; the posting may be older)."
-    },
-    {
-      "title": "Client Support Specialist",
-      "company": "Finalsite Enrollment",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpwBChZDWUdZcHJYemlyVmZrN3RwanFMaWhnEiQwMWExOWM1MC1mOTIzLTc4YjYtOTkwYi04ZmNjNzU2NmU2MzEaWEFBSGJLR0liLXZDREJjaVhRbk12bzRkbm5qeHpKclZlbVAwam1LU1ZwaUZtT3h6MGRWTjYwd2VBOWZXa294SnZtWnFKaTVHVmtVWHE0TkpTNDkzSjNfWWsgya0FEAEYya0F&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZKY3VxUUdiQk9qbkVnSG5pT1lBQ2Z3EiQwMWExYTE3My1iZjdhLTdlZWQtOGQzMC03ZWYwYWI1MDc0ZmYaW0FBRm00QVBtaDRGRkNyLWF5cmtHX0t3Sm9PWnBFV084alJKMmR0NkNpRFNmd0pBSlA2VVlZRFJPM1dKMEtoTTdoTzJ0TW4xR2x2Uk1KRklJZ2Y3N1FrMFRkalEgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote software support at an education-tech company, listed at $37k-$49.5k, posted about 4 days ago, tagged entry/junior level. Unverified (requirements not confirmed)."
+      "note": "Full-time remote tech support through a staffing firm, listed at $45k-$48k, posted about a day ago and tagged entry/junior level. Unverified (requirements and any state limits not confirmed; the listing is tied to a Colorado office)."
     },
     {
-      "title": "F&B Purchasing & Operations Coordinator",
-      "company": "The Standard, High Line",
+      "title": "Sr Inventory Management Specialist (Unity Lab Services)",
+      "company": "Thermo Fisher Scientific",
+      "location": "Local, NJ",
+      "url": "https://to.indeed.com/aanb44pkjkmy",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Full-time day-shift on-site inventory role, $20.62-$30.94/hr with full benefits, posted Oct 31: replenishment, receiving, stock rotation, cycle counts, order entry and report reconciliation. High school diploma required, no degree; lab experience preferred, not required. Short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Supervisor - Catering Operations & Logistics",
+      "company": "United Airlines",
+      "location": "Newark, NJ",
+      "url": "https://to.indeed.com/aas4ylpc2s7y",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Full-time airport catering oversight, $66.5k-$86.6k plus bonus and flight perks, posted Oct 30: vendor performance, inventory spot checks, food-safety audits, waste reduction. Bachelor's degree or 4 years of relevant experience, so it's a stretch. Short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Assistant Manager",
+      "company": "Dominique Ansel Bakery",
       "location": "New York, NY (Manhattan)",
-      "url": "https://to.indeed.com/aav9sy8nzrxn",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time hotel kitchen purchasing role, $23-$25/hr with full benefits, posted Oct 29: ordering to pars, receiving and invoice checks, monthly inventory, vendor relations, FIFO storage, waste tracking. No degree required. Train to Penn Station, then a short subway ride. Verified via Indeed details."
-    },
-    {
-      "title": "Retail Assistant Manager (Assistant Brand Experience Leader)",
-      "company": "Bath & Body Works",
-      "location": "Elizabeth, NJ (Jersey Gardens)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYybnpIVWtWRFZGSS1FY1JVaDcwT0p3EiQwMWExOWM1MS0xMzEyLTdiMTItYTM4ZS1jMTVhZjBlNTMwZmIaW0FBRmlpUmRMTHVoRjhIenZDdW1uU1VnMUtpWnhZZ1ZGY3VRNzNmLS1rb2RpTkxaa1VUV3JZZUpvX0ljSHRmcjlZYTQ0LUJOOU4yNWtlNmQ4VDRSTUtRbjFGTjQgya0FEAEYya0F&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZpdnlGVkt1RjBJSTV5M3FocGVTSmVREiQwMWExYTE3My1kOTkxLTdlMWEtOGJjZS1mMzA4MjgxMDBhM2IaW0FBSGVhOGowRnpiZDBSQ1RCRzA3VjR0Z3ppVXNFWXI3Vl96bHlwUElhZThoNUlDQnV2YXk3bTA4NmZ6NnFzcVFMcFlqbUl4Q3N6OFJ4MXFnSnB6aG9SRTZ5Q2Mgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Full-time assistant store manager, listed at $59k-$74k with benefits, posted about 4 days ago; a store-management path. Short train commute plus a bus to the mall. Unverified (requirements not confirmed)."
+      "note": "Full-time bakery assistant manager, listed at $35.5k-$54.5k with benefits, posted about a week ago. Train to Penn Station, then a short subway ride. Unverified (requirements not confirmed)."
     },
     {
-      "title": "Facility Coordinator",
-      "company": "Craigs Plumbing",
-      "location": "Avenel, NJ",
-      "url": "https://to.indeed.com/aa2c6gsrf9th",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time warehouse inventory coordinator, $25-$27/hr with benefits, posted Oct 28: inventory counts and reconciliations, stock levels, organized storage, Excel reports. No degree; asks for 3-5 years of warehouse experience, so it's a stretch. Short train commute. Verified via Indeed details."
-    },
-    {
-      "title": "Fleet Operations Coordinator (contract)",
-      "company": "TEKsystems",
-      "location": "Linden, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZoVV93M2NYMG5YYWFyUl84Z3RmNzRBEiQwMWExOWM1MS0xODk0LTdhM2YtYjQyZi05ZTJhM2I5ZmNlMjQaW0FBR002V2loM1B3dVNmUzRXeGphZTJOQjMtY1ZuZ0NVY3JwWnNyQUpoT0VKY3RzcnlwZkFSZmMwazJCTTlKWjhjLTAyMzlkU1p3cWRULUlKWnRUSFhUWnlxdFkgya0FEAEYya0F&tsid=100000502",
+      "title": "Assistant General Manager",
+      "company": "nutbar",
+      "location": "New York, NY (Manhattan)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZIYmdsc2dPSE1QbjVrNWlSYy1MUDJREiQwMWExYTE3My1kOTkxLTdlMjctYTY4OC1mN2I2NGI1OTYwMDkaW0FBRnhabGk0blhuaXJxY3lKaExoNDB0Qk56MHplRlpIaG9QMV9kMnFIWmlKOGhRZlFoMENmZGc5Ty14eFpLZnhqbFh5LTF1S3BLWTdOaldTajg0V2VzZndmU00gya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Contract operations coordinator through a staffing agency, listed at $46k-$52k with benefits, posted about 12 days ago, tagged entry/junior level. Short train commute. Unverified (requirements not confirmed)."
+      "note": "Full-time cafe assistant general manager, listed at $60k-$70k, posted about a day ago. Train to Penn Station, then the subway; exact store not confirmed. Unverified (requirements not confirmed)."
     }
   ]
 }
