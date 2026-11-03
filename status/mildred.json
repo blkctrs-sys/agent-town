@@ -1,14 +1,9 @@
 {
   "agent": "mildred",
-  "state": "done",
-  "updated": "2026-10-30T13:27:20Z",
-  "lastRun": "2026-10-30T13:27:20Z",
-  "summary": "3 prep packs and today's drill. Another clean take in the books.",
+  "state": "working",
+  "updated": "2026-11-03T14:17:09Z",
+  "lastRun": null,
+  "summary": "Tuning up the board before the run.",
   "report": null,
-  "items": [
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Practice drill", "category": "drill" }
-  ]
+  "items": []
 }
