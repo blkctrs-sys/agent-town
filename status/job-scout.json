@@ -1,82 +1,46 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-05T12:45:53Z",
-  "lastRun": "2026-11-04T12:49:28Z",
-  "summary": "Found 8 new roles: 4 games & tech, 4 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-04.md",
+  "state": "done",
+  "updated": "2026-11-05T12:48:43Z",
+  "lastRun": "2026-11-05T12:48:43Z",
+  "summary": "Found 4 new roles: 1 games & tech, 3 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-05.md",
   "items": [
     {
-      "title": "Technical Support Representative - Tier I (Remote U.S.)",
-      "company": "Uniguest",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aaqjv86zlm4d",
+      "title": "IT Support Technician – Remote & Field Support (NYC)",
+      "company": "Kinetx Co",
+      "location": "New York, NY (hybrid)",
+      "url": "https://to.indeed.com/aafz7d6fsymv",
       "source": "Indeed",
       "category": "art",
-      "note": "Full-time, fully remote US tech support for a kiosk and guest-technology company, $17.50-$18.50/hr with benefits, posted Oct 23: phone and remote-tool troubleshooting of Windows PCs, printers and networking, logged in a ticketing system. High school diploma required, no degree; A+/Network+ preferred, not required. Early day shift (7 AM-3:30 PM Eastern). Verified via Indeed details."
-    },
-    {
-      "title": "Technology Technician - Nexus in Middlesex County (NJ)",
-      "company": "The Sports Facilities Companies",
-      "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aavplrg4qz2y",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Full-time on-site tech lead for a new sports and entertainment venue, posted Nov 2: event-day support for AV, WiFi, ticketing, POS and guest tech, plus vendor coordination. 2 years of help desk preferred, no degree listed; live-event or hospitality background wanted. Pay not listed. Short train commute. Verified via Indeed details."
-    },
-    {
-      "title": "Desktop Support Specialist",
-      "company": "East Coast Warehouse & Distribution Corp",
-      "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aa62c6x2ksrs",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Full-time on-site desktop support at a logistics company, $52.9k-$72.2k, posted today: ticket queues, hardware and connectivity troubleshooting, vendor coordination. Degree or equivalent experience; asks for 3-5+ years of desktop support plus basic switch/network work, so it's a stretch on the networking side. Short train commute. Verified via Indeed details."
-    },
-    {
-      "title": "Desktop Support Technician II",
-      "company": "Ethos Veterinary Health",
-      "location": "Red Bank, NJ",
-      "url": "https://to.indeed.com/aaszw7jx2bjy",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Full-time onsite IT support for a veterinary hospital network, $24.28-$32.30/hr, posted Nov 3: walk-up, phone and ticket support, knowledge-base articles. No degree listed; wants Active Directory, imaging and basic network troubleshooting, so it's a stretch. Short train commute. Verified via Indeed details."
+      "note": "Contract IT support, $20-$25/hr: ticket-driven Windows and Microsoft 365 troubleshooting with some on-site visits. 2-5 years of help desk wanted, no degree; networking setup is the stretch. Short train commute via PATH."
     },
     {
       "title": "Restaurant Manager",
-      "company": "Central Restaurant",
-      "location": "Newark, NJ",
-      "url": "https://to.indeed.com/aa9flsxd2vx7",
+      "company": "Red Lobster",
+      "location": "Iselin, NJ",
+      "url": "https://to.indeed.com/aavxfw4l8jpl",
       "source": "Indeed",
       "category": "ops",
-      "note": "Restaurant manager role, $22-$29/hr at about 32 hours a week with health, dental, vision and 401(k) match, posted Oct 31: scheduling, training, purchasing, receiving, stock rotation, waste and food-cost control. High school diploma, no degree. Short train commute. Verified via Indeed details."
+      "note": "Full-time restaurant manager, $55k-$65.1k plus bonus, with a manager training program. Needs 1+ year of supervisory experience and ServSafe or ability to get it; degree preferred only. Short train commute."
     },
     {
-      "title": "Assistant General Manager",
-      "company": "Blaze Pizza",
-      "location": "Linden, NJ",
-      "url": "https://to.indeed.com/aansdxnkxhh7",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time fast-casual AGM with a franchisee, from $20/hr plus bonuses, posted Nov 3: shift leadership, labor and food cost, inventory counts, ordering and vendor coordination. No degree; ServSafe or ability to get it. Short train commute. Verified via Indeed details."
-    },
-    {
-      "title": "Retail Store Manager",
-      "company": "Lindt & Sprüngli",
+      "title": "Store Manager - Coach Coffee Shop - Jersey Gardens",
+      "company": "Coach (Tapestry)",
       "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aapnl98x4hd2",
+      "url": "https://to.indeed.com/aanktkknflbd",
       "source": "Indeed",
       "category": "ops",
-      "note": "Full-time chocolate-shop store manager, $26-$30/hr plus monthly bonus, posted Nov 2: scheduling, labor, stock levels and date codes, food-safety audits. High school diploma, associate degree preferred only; asks for 2+ years of management and prior retail/POS, so retail is the stretch. Short train commute. Verified via Indeed details."
+      "note": "Coffee-shop manager, $75k-$80k: staffing, training, inventory control and food safety. No degree listed; 3+ years of retail or F&B management is the stretch. Short train commute plus a bus."
     },
     {
-      "title": "Supv-Operations",
-      "company": "FedEx Freight",
-      "location": "Newark, NJ",
-      "url": "https://to.indeed.com/aasyvvwpll69",
+      "title": "Logistics Coordinator",
+      "company": "ESW Beauty",
+      "location": "Linden, NJ",
+      "url": "https://to.indeed.com/aahmddsb87p6",
       "source": "Indeed",
       "category": "ops",
-      "note": "Full-time freight dock supervisor, $71.6k-$92.3k with benefits and tuition help, posted Nov 2: daily staffing and schedules, safety coaching, damage-free on-time shipments. High school diploma required; LTL/DOT knowledge preferred, not required. Dock environment with varying hours. Short train commute. Verified via Indeed details."
+      "note": "Distribution-center coordinator, $60k-$65k: receiving, vendor and carrier coordination, inventory coverage. Degree or equivalent experience; freight and customs work is the stretch. Short train commute."
     }
   ]
 }
