@@ -13,8 +13,8 @@
   // Shared with the Reading Room, so one unlock works on both pages.
   const TOKEN_KEY = 'agentTown.readingRoom.token';
   const PREFS_KEY = 'agentTown.studio.prefs';
-  // Newsletter every other Wednesday from this date (see brenden/INSTRUCTIONS.md).
-  const NEWSLETTER_START = '2026-10-14';
+  // Newsletter every other Sunday from this date (see brenden/INSTRUCTIONS.md).
+  const NEWSLETTER_START = '2026-11-08';
 
   // ---------- small helpers ----------
   const $ = (id) => document.getElementById(id);
@@ -293,7 +293,7 @@
     const d = state.data;
     if (!d) { el.innerHTML = state.loading ? '<p class="empty">Loading…</p>' : lockedNote("this week's posts, Shorts ideas and newsletter"); return; }
     const latest = d.desks[0];
-    if (!latest) { el.innerHTML = '<p class="empty">No content desk yet. Brenden writes one every Wednesday.</p>'; return; }
+    if (!latest) { el.innerHTML = '<p class="empty">No content desk yet. Brenden writes one every Sunday morning.</p>'; return; }
     const fresh = d.packages.filter((p) => p.date && p.date >= latest.date);
     el.innerHTML = `<div class="week-head"><h2>Content desk · ${esc(fmtDay(latest.date))}</h2>
         <span>${copyBtn(latest.text, 'Copy whole desk')} <a class="btn ghost" style="text-decoration:none" href="${esc(ghUrl(latest.path))}" target="_blank" rel="noopener">GitHub ↗</a></span></div>

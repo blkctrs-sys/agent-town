@@ -13,7 +13,7 @@ in a private repo. This file only covers what he writes **here**, in the public 
   "state": "working | done | error",
   "updated": "<now, UTC ISO 8601>",
   "lastRun": "<now, UTC ISO 8601, when done>",
-  "summary": "One friendly line, e.g. 'Content desk done: 3 posts and a newsletter draft ready.'",
+  "summary": "One friendly line, e.g. 'Content desk done: 4 posts and a newsletter draft ready.'",
   "report": null,
   "items": [
     { "title": "Poll draft", "category": "post" },
