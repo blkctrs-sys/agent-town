@@ -1,46 +1,64 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-06T12:46:30Z",
-  "lastRun": "2026-11-05T12:48:43Z",
-  "summary": "Found 4 new roles: 1 games & tech, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-05.md",
+  "state": "done",
+  "updated": "2026-11-06T12:49:16Z",
+  "lastRun": "2026-11-06T12:49:16Z",
+  "summary": "Found 6 new roles: 4 games & tech, 2 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-06.md",
   "items": [
     {
-      "title": "IT Support Technician – Remote & Field Support (NYC)",
-      "company": "Kinetx Co",
-      "location": "New York, NY (hybrid)",
-      "url": "https://to.indeed.com/aafz7d6fsymv",
+      "title": "Help Desk Technician",
+      "company": "Thenos Link",
+      "location": "Manhattan, NY (hybrid)",
+      "url": "https://to.indeed.com/aawbjvnf4sbx",
       "source": "Indeed",
       "category": "art",
-      "note": "Contract IT support, $20-$25/hr: ticket-driven Windows and Microsoft 365 troubleshooting with some on-site visits. 2-5 years of help desk wanted, no degree; networking setup is the stretch. Short train commute via PATH."
+      "note": "Hybrid help desk role near Penn Station, $28-$33/hr: ticket queue, Windows and Microsoft 365 troubleshooting. Basic Windows knowledge required, ticketing experience preferred, no degree. Short train commute."
     },
     {
-      "title": "Restaurant Manager",
-      "company": "Red Lobster",
-      "location": "Iselin, NJ",
-      "url": "https://to.indeed.com/aavxfw4l8jpl",
+      "title": "Customer Support Specialist",
+      "company": "School Pathways",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aalctwjvm6fx",
       "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time restaurant manager, $55k-$65.1k plus bonus, with a manager training program. Needs 1+ year of supervisory experience and ServSafe or ability to get it; degree preferred only. Short train commute."
+      "category": "art",
+      "note": "Remote support role at an education software company, $21-$25/hr: calls, email and chat, Tier 2 escalations. Needs 1-2 years of support work, no degree; Pacific business hours."
     },
     {
-      "title": "Store Manager - Coach Coffee Shop - Jersey Gardens",
-      "company": "Coach (Tapestry)",
-      "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aanktkknflbd",
+      "title": "Help Desk Technician",
+      "company": "HamayaGroup",
+      "location": "Jersey City, NJ",
+      "url": "https://to.indeed.com/aakgxfnyp7jx",
       "source": "Indeed",
-      "category": "ops",
-      "note": "Coffee-shop manager, $75k-$80k: staffing, training, inventory control and food safety. No degree listed; 3+ years of retail or F&B management is the stretch. Short train commute plus a bus."
+      "category": "art",
+      "note": "On-site help desk role, $24.63-$26/hr: tickets, hardware and software fixes, documentation. No degree; Active Directory and network troubleshooting are the stretch. Short train commute via PATH."
+    },
+    {
+      "title": "Associate Producer",
+      "company": "1047 Games",
+      "location": "Remote (US)",
+      "url": "https://job-boards.greenhouse.io/1047games",
+      "source": "Web search",
+      "category": "art",
+      "note": "Remote associate producer at an independent shooter studio: task tracking, scheduling and change requests in Jira. Listed as junior-to-mid level with 2-3+ years wanted, so a stretch. Unverified."
     },
     {
       "title": "Logistics Coordinator",
-      "company": "ESW Beauty",
-      "location": "Linden, NJ",
-      "url": "https://to.indeed.com/aahmddsb87p6",
+      "company": "Novolex",
+      "location": "Elizabeth, NJ",
+      "url": "https://to.indeed.com/aax9gm7wrcry",
       "source": "Indeed",
       "category": "ops",
-      "note": "Distribution-center coordinator, $60k-$65k: receiving, vendor and carrier coordination, inventory coverage. Degree or equivalent experience; freight and customs work is the stretch. Short train commute."
+      "note": "Distribution coordinator, $21.63-$26.44/hr, posted today: delivery appointments, inventory checks before shipping, carrier requests. High school diploma; forklift knowledge is the stretch. Short train commute."
+    },
+    {
+      "title": "Full-Time Assistant Store Manager",
+      "company": "ALDI",
+      "location": "Linden, NJ",
+      "url": "https://to.indeed.com/aamtx8tczc9x",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Assistant manager at $27/hr with full benefits: scheduling, training, ordering, inventory counts and loss control. Asks for 3 years of retail or equivalent experience, no degree. Short train commute."
     }
   ]
 }
