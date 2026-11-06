@@ -295,3 +295,4 @@ body.halloween .roster h2, body.halloween .panel h3 { color: var(--amber); }
   background: var(--panel-2);
 }
 .reading-link:hover { border-color: var(--amber); }
+.reading-link + .reading-link { margin-left: 0; }
