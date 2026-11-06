@@ -21,7 +21,6 @@ status/<agent>.json     each agent's latest status (read by the town)
 agents/<agent>/PROMPT.md  the agent's instructions
 jobs/                   Job Scout's daily reports and seen-jobs list
 reports/                the Reading Room: every Craig report plus Donathan's prep, in one page
-studio/                 Brenden's Studio: his content desks and video packages, ready to copy
 ```
 
 ## Reading Room
@@ -32,14 +31,6 @@ drills, the interview list, and Craig's tailored resumes live in the private rep
 page only shows them after you paste a fine-grained GitHub token with **Contents:
 Read-only** access to `agent-town-private`. The token stays in that browser; the page has
 instructions for making one.
-
-## Brenden's Studio
-
-`studio/` (linked from the town header, the Reading Room, and Brenden's kiosk) shows Brenden's
-drafts from the private repo as clean cards: the latest Wednesday content desk with a copy
-button on every post, Shorts idea and newsletter, every video package, past desks, the inbox,
-and the content schedule. Anything Brenden marked `[[ADD: …]]` is highlighted and listed under
-"Brenden needs from you". It uses the same token as the Reading Room, so unlocking one unlocks both.
 
 ## Residents
 

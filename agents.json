@@ -30,8 +30,8 @@
     "status": "status/brenden.json",
     "links": [
       {
-        "label": "Open my studio",
-        "url": "https://blkctrs-sys.github.io/agent-town/studio/"
+        "label": "Open my drafts",
+        "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/brenden/drafts"
       }
     ]
   },
