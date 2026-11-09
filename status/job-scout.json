@@ -1,64 +1,91 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-09T12:46:03Z",
-  "lastRun": "2026-11-06T12:49:16Z",
-  "summary": "Found 6 new roles: 4 games & tech, 2 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-06.md",
+  "state": "done",
+  "updated": "2026-11-09T12:49:03Z",
+  "lastRun": "2026-11-09T12:49:03Z",
+  "summary": "Found 9 new roles: 5 games & tech, 4 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-09.md",
   "items": [
     {
-      "title": "Help Desk Technician",
-      "company": "Thenos Link",
-      "location": "Manhattan, NY (hybrid)",
-      "url": "https://to.indeed.com/aawbjvnf4sbx",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Hybrid help desk role near Penn Station, $28-$33/hr: ticket queue, Windows and Microsoft 365 troubleshooting. Basic Windows knowledge required, ticketing experience preferred, no degree. Short train commute."
-    },
-    {
-      "title": "Customer Support Specialist",
-      "company": "School Pathways",
+      "title": "Technical Support Specialist",
+      "company": "Sonar Software",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aalctwjvm6fx",
+      "url": "https://to.indeed.com/aar4ggywkc4b",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote support role at an education software company, $21-$25/hr: calls, email and chat, Tier 2 escalations. Needs 1-2 years of support work, no degree; Pacific business hours."
+      "note": "Remote front-line SaaS support with ticketing, issue reproduction and knowledge-base work. Asks for 1+ year of support, no degree."
     },
     {
-      "title": "Help Desk Technician",
-      "company": "HamayaGroup",
-      "location": "Jersey City, NJ",
-      "url": "https://to.indeed.com/aakgxfnyp7jx",
-      "source": "Indeed",
-      "category": "art",
-      "note": "On-site help desk role, $24.63-$26/hr: tickets, hardware and software fixes, documentation. No degree; Active Directory and network troubleshooting are the stretch. Short train commute via PATH."
-    },
-    {
-      "title": "Associate Producer",
-      "company": "1047 Games",
+      "title": "IT Dispatcher (Remote – Pacific Time Zone Hours)",
+      "company": "Xantrion",
       "location": "Remote (US)",
-      "url": "https://job-boards.greenhouse.io/1047games",
-      "source": "Web search",
+      "url": "https://to.indeed.com/aa7nrcy2hrk8",
+      "source": "Indeed",
       "category": "art",
-      "note": "Remote associate producer at an independent shooter studio: task tracking, scheduling and change requests in Jira. Listed as junior-to-mid level with 2-3+ years wanted, so a stretch. Unverified."
+      "note": "Remote ticket triage and technician scheduling at an IT services firm, $45k-$50k. High school diploma plus 2 years of customer service; Pacific hours."
     },
     {
-      "title": "Logistics Coordinator",
-      "company": "Novolex",
+      "title": "Customer Success Specialist",
+      "company": "MaiaLearning",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aa6p2vx7mvn6",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Entry- or mid-level remote onboarding, training and tech support at an education software company, $60k-$65k. No degree listed; Pacific hours."
+    },
+    {
+      "title": "User Support Specialist II",
+      "company": "Rutgers University",
+      "location": "New Brunswick, NJ",
+      "url": "https://to.indeed.com/aaw2djyd2lgn",
+      "source": "Indeed",
+      "category": "art",
+      "note": "University IT help desk, $81k+, overnight shift. Degree or equivalent experience accepted. Short train commute."
+    },
+    {
+      "title": "Associate Producer (North America, Fully Remote)",
+      "company": "Escape Velocity Entertainment",
+      "location": "Remote (US/Canada)",
+      "url": "https://apply.workable.com/escape-velocity-entertainment-inc/jobs/view/23116FB8C2",
+      "source": "Web search (Workable)",
+      "category": "art",
+      "note": "Fully remote associate producer at a game studio, using Jira and Confluence. Unverified: check it's still open."
+    },
+    {
+      "title": "Inventory Coordinator",
+      "company": "MetaBrand",
+      "location": "Edison, NJ",
+      "url": "https://to.indeed.com/aah6q7kcdvcq",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Hands-on inventory accuracy, receiving and vendor coordination at a beverage maker, $25/hr. 1 year of inventory experience, no degree. Short train commute."
+    },
+    {
+      "title": "Automotive Parts & Inventory Coordinator",
+      "company": "Koplin Auto Body",
       "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aax9gm7wrcry",
+      "url": "https://to.indeed.com/aakgm2t9c6dx",
       "source": "Indeed",
       "category": "ops",
-      "note": "Distribution coordinator, $21.63-$26.44/hr, posted today: delivery appointments, inventory checks before shipping, carrier requests. High school diploma; forklift knowledge is the stretch. Short train commute."
+      "note": "Parts receiving, inventory records and vendor follow-up at a collision shop, $51k-$62k. No degree. Short train commute."
     },
     {
-      "title": "Full-Time Assistant Store Manager",
-      "company": "ALDI",
-      "location": "Linden, NJ",
-      "url": "https://to.indeed.com/aamtx8tczc9x",
+      "title": "Products Procurement Specialist",
+      "company": "IMC Designs",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aangt2l28pmj",
       "source": "Indeed",
       "category": "ops",
-      "note": "Assistant manager at $27/hr with full benefits: scheduling, training, ordering, inventory counts and loss control. Asks for 3 years of retail or equivalent experience, no degree. Short train commute."
+      "note": "Remote purchasing role: vendor quotes, purchase orders and order follow-up, $21-$27/hr. High school diploma."
+    },
+    {
+      "title": "Project Coordinator – Multi-Family Lighting",
+      "company": "LightStyles (Building Material Distributors)",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aacv9l2w8mnn",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Remote order and delivery coordination for large lighting projects, from $23/hr. 1-3 years in customer service or coordination, no degree."
     }
   ]
 }
