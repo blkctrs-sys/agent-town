@@ -80,14 +80,27 @@
     return 'autumn';
   }
 
-  // Seasonal events: Halloween runs Oct 1 to Nov 7. Preview with ?event=halloween or ?event=none.
-  const EVENT_PARAM = new URLSearchParams(location.search).get('event');
+  // Seasonal events:
+  //   Halloween    Oct 1 to Nov 7
+  //   Thanksgiving Nov 8 to the day after Thanksgiving (the 4th Thursday of November)
+  //   Christmas    the Saturday after Thanksgiving to Jan 1 (always snowy)
+  // Preview with ?event=halloween, ?event=thanksgiving, ?event=christmas or ?event=none.
+  const QS = new URLSearchParams(location.search);
+  const EVENT_PARAM = QS.get('event');
+  function thanksgivingDay(year) {
+    const dow = new Date(year, 10, 1).getDay();
+    return 1 + ((4 - dow + 7) % 7) + 21;
+  }
   function eventOf(d) {
     if (EVENT_PARAM) return EVENT_PARAM === 'none' ? '' : EVENT_PARAM;
     const m = d.getMonth(), day = d.getDate();
-    return m === 9 || (m === 10 && day <= 7) ? 'halloween' : '';
+    if (m === 9 || (m === 10 && day <= 7)) return 'halloween';
+    if (m === 10) return day <= thanksgivingDay(d.getFullYear()) + 1 ? 'thanksgiving' : 'christmas';
+    if (m === 11 || (m === 0 && day === 1)) return 'christmas';
+    return '';
   }
   let spooky = false;
+  let holiday = '';
   const SPOOKY_CROWN = ['#3d1f33', '#6b2a2a', '#a8461f'];
 
   // Sky tint keyframes by hour: [hour, [r, g, b, alpha]]
@@ -253,6 +266,8 @@
           }
           return;
         }
+        if (holiday === 'thanksgiving') { drawScarecrow(g, P.x + 24, P.y + 44); drawHayBale(g, P.x + 38, P.y + 44); drawHayBale(g, P.x + 10, P.y + 44); return; }
+        if (holiday === 'christmas') { drawSnowman(g, P.x + 18, P.y + 44); drawSnowman(g, P.x + 36, P.y + 44, true); return; }
         for (const [cx, cy] of [[12, 32], [20, 34], [15, 27]]) {
           rect(g, P.x + cx, P.y + cy, 7, 6, '#b98a5a');
           rect(g, P.x + cx, P.y + cy, 7, 1, '#d0a272');
@@ -275,6 +290,18 @@
     disc(ctx, tr.x + sw, cy, tr.r, dark);
     disc(ctx, tr.x + sw - 1, cy - 2, tr.r - 2, mid);
     disc(ctx, tr.x + sw - 3, cy - 4, Math.max(2, tr.r - 6), light);
+    if (holiday === 'christmas') {
+      // ornaments and twinkling lights, and a star on the big tree in the square
+      const R = mulberry(Math.round(tr.x * 7 + tr.y));
+      const n = Math.max(4, tr.r);
+      for (let k = 0; k < n; k++) {
+        const ang = R() * Math.PI * 2, rr = R() * (tr.r - 1);
+        const ox = Math.round(tr.x + sw + Math.cos(ang) * rr), oy = Math.round(cy + Math.sin(ang) * rr);
+        const col = XMAS_LIGHTS[(k + Math.floor(t * 2 + tr.ph)) % XMAS_LIGHTS.length];
+        rect(ctx, ox, oy, 1, 1, col);
+      }
+      if (tr.r >= 12) glyph(ctx, tr.x + sw - 2, cy - tr.r - 4, ['..#..', '.###.', '#####', '.#.#.'], '#ffe066');
+    }
   }
 
   function drawHome(P, a, lit, t) {
@@ -329,6 +356,22 @@
     rect(ctx, x + 17, y + 34, 6, 12, lit ? '#ffe0a0' : '#7fb3c4');
     rect(ctx, x + 20, y + 34, 1, 12, '#4a4f60');
     rect(ctx, x + 15, y + 46, 10, 1, '#a49d90');
+    if (holiday === 'thanksgiving') {
+      // harvest bunting under the roof and a fall wreath on the door
+      for (let k = 0; k < 40; k += 4) {
+        const col = HARVEST[(k / 4) % HARVEST.length];
+        rect(ctx, x + k, y + 16, 3, 1, col);
+        rect(ctx, x + k + 1, y + 17, 1, 1, col);
+      }
+      drawWreath(x + 20, y + 38, '#c8552c', '#efb348');
+    } else if (holiday === 'christmas') {
+      // string lights along the roof and a wreath on the door
+      for (let k = 1; k < 40; k += 3) {
+        const on = Math.sin(t * 3 + k * 0.9 + P.x) > -0.3;
+        rect(ctx, x + k, y + 16 + (k % 2), 1, 1, on ? XMAS_LIGHTS[(k / 3 | 0) % XMAS_LIGHTS.length] : '#5d6275');
+      }
+      drawWreath(x + 20, y + 38, '#2f7a4a', '#d63a3a');
+    }
   }
 
   function drawKiosk(P, a, t) {
@@ -362,6 +405,8 @@
 
   function drawLamp(L, lit) {
     rect(ctx, L.x, L.y - 16, 1, 16, '#3b3f4d');
+    if (holiday === 'christmas') for (let k = 0; k < 16; k += 4) rect(ctx, L.x, L.y - 16 + k, 1, 2, '#e8f0f4'); // candy cane
+    if (holiday === 'christmas') for (let k = 2; k < 16; k += 4) rect(ctx, L.x, L.y - 16 + k, 1, 2, '#d63a3a');
     rect(ctx, L.x - 1, L.y - 1, 3, 1, '#3b3f4d');
     rect(ctx, L.x, L.y - 17, 4, 1, '#3b3f4d');
     rect(ctx, L.x + 2, L.y - 16, 3, 1, lit ? AMBER : '#ddd5bd');
@@ -394,7 +439,18 @@
     disc(ctx, x + 6, y, 2, '#3b3f4d');
     rect(ctx, x - 9, y - 19, 1, 10, '#6b4428');
     rect(ctx, x + 8, y - 19, 1, 10, '#6b4428');
-    for (let k = 0; k < 20; k += 4) { rect(ctx, x - 10 + k, y - 21, 2, 3, '#e8c547'); rect(ctx, x - 8 + k, y - 21, 2, 3, '#f4ecdc'); }
+    const [stripeA, stripeB] = holiday === 'christmas' ? ['#d63a3a', '#f4ecdc'] : holiday === 'thanksgiving' ? ['#c8552c', '#efb348'] : ['#e8c547', '#f4ecdc'];
+    for (let k = 0; k < 20; k += 4) { rect(ctx, x - 10 + k, y - 21, 2, 3, stripeA); rect(ctx, x - 8 + k, y - 21, 2, 3, stripeB); }
+    if (holiday === 'thanksgiving') {
+      // a pumpkin pie on the counter
+      ellipse(ctx, x + 3, y - 10, 3, 1, '#c98a3a');
+      rect(ctx, x + 1, y - 11, 5, 1, '#e08a33');
+    } else if (holiday === 'christmas') {
+      // a mug of cocoa
+      rect(ctx, x + 2, y - 12, 3, 3, '#f4ecdc');
+      rect(ctx, x + 5, y - 11, 1, 1, '#f4ecdc');
+      rect(ctx, x + 2, y - 12, 3, 1, '#7a4b2a');
+    }
     rect(ctx, x + 9, y - 17, 3, 4, lit ? '#ff7a59' : '#e07a5f');
     rect(ctx, x + 10, y - 18, 1, 1, '#3b3f4d');
   }
@@ -464,12 +520,21 @@
       rect(ctx, x - 2, y - 2, 1, v.moving && f ? 1 : 2, '#3b3f4d');
       rect(ctx, x + 1, y - 2, 1, v.moving && !f ? 1 : 2, '#3b3f4d');
     }
-    // jacket & arms
-    rect(ctx, x - 3, y - 7, 6, 5, a.color);
-    rect(ctx, x - 3, y - 3, 6, 1, shade(a.color, -30));
-    rect(ctx, x - 4, y - 6, 1, 3, shade(a.color, -15));
-    rect(ctx, x + 3, y - 6, 1, 3, shade(a.color, -15));
-    rect(ctx, x, y - 7, 1, 4, shade(a.color, 30));
+    const elf = holiday === 'christmas';
+    // jacket & arms (an elf tunic at Christmas)
+    const coat = elf ? ELF_GREEN : a.color;
+    rect(ctx, x - 3, y - 7, 6, 5, coat);
+    rect(ctx, x - 3, y - 3, 6, 1, shade(coat, -30));
+    rect(ctx, x - 4, y - 6, 1, 3, shade(coat, -15));
+    rect(ctx, x + 3, y - 6, 1, 3, shade(coat, -15));
+    if (elf) {
+      rect(ctx, x - 3, y - 7, 6, 1, '#d63a3a');
+      rect(ctx, x - 2, y - 7, 1, 1, '#f4f8fb');
+      rect(ctx, x + 1, y - 7, 1, 1, '#f4f8fb');
+      rect(ctx, x - 3, y - 4, 6, 1, '#3b2f25');
+      rect(ctx, x, y - 4, 1, 1, '#f2c94c');
+      rect(ctx, x - 3, y - 3, 6, 1, '#d63a3a');
+    } else rect(ctx, x, y - 7, 1, 4, shade(a.color, 30));
     if (a.prop === 'boombox') {
       // gold chain and a boombox carried at the side
       rect(ctx, x - 1, y - 7, 3, 1, '#f2c94c');
@@ -481,6 +546,14 @@
       rect(ctx, bx + 1, y - 5 + bob, 1, 2, '#c8ccd6');
       rect(ctx, bx + 4, y - 5 + bob, 1, 2, '#c8ccd6');
       rect(ctx, bx + 2, y - 5 + bob, 2, 1, (a.mode === 'working' || a.mode === 'home') && Math.sin(t * 8) > 0 ? PINK : '#5d6275');
+    } else if (a.prop === 'pumpkin' && elf) {
+      // at Christmas the pumpkin pail becomes a present
+      const bx = v.dir > 0 ? x + 4 : x - 9, bob = v.moving && f ? 1 : 0;
+      rect(ctx, bx, y - 7 + bob, 5, 5, '#d63a3a');
+      rect(ctx, bx + 2, y - 7 + bob, 1, 5, '#f2c94c');
+      rect(ctx, bx, y - 5 + bob, 5, 1, '#f2c94c');
+      rect(ctx, bx + 1, y - 8 + bob, 1, 1, '#f2c94c');
+      rect(ctx, bx + 3, y - 8 + bob, 1, 1, '#f2c94c');
     } else if (a.prop === 'pumpkin') {
       // jack-o'-lantern pail carried at the side
       const bx = v.dir > 0 ? x + 4 : x - 9;
@@ -515,7 +588,21 @@
     if (v.moving) rect(ctx, v.dir > 0 ? x + 1 : x - 2, y - 10, 1, 1, ink);
     else { rect(ctx, x - 2, y - 10, 1, 1, ink); rect(ctx, x + 1, y - 10, 1, 1, ink); }
     rect(ctx, v.dir > 0 ? x + 2 : x - 3, y - 9, 1, 1, '#eaa48e');
-    if (a.hairStyle === 'emo') {
+    if (elf) {
+      // pointy ears and a floppy elf hat with a bell
+      rect(ctx, x - 4, y - 11, 1, 2, skin);
+      rect(ctx, x + 3, y - 11, 1, 2, skin);
+      rect(ctx, x - 5, y - 12, 1, 1, skin);
+      rect(ctx, x + 4, y - 12, 1, 1, skin);
+      if (a.hair) { rect(ctx, x - 3, y - 12, 1, 2, a.hair); rect(ctx, x + 2, y - 12, 1, 2, a.hair); }
+      rect(ctx, x - 3, y - 13, 6, 1, '#f4f8fb');
+      rect(ctx, x - 3, y - 14, 6, 1, ELF_GREEN);
+      const back = v.dir > 0 ? -1 : 1, flop = v.moving && f ? 1 : 0;
+      rect(ctx, x - 2 + back, y - 15, 4, 1, ELF_GREEN);
+      rect(ctx, x - 1 + back * 2, y - 16, 2, 1, shade(ELF_GREEN, -20));
+      rect(ctx, x + back * 4, y - 16 + flop, 1, 1, shade(ELF_GREEN, -20));
+      rect(ctx, x + back * 5, y - 15 + flop, 1, 1, '#f2c94c');
+    } else if (a.hairStyle === 'emo') {
       // long sides and a side fringe over one eye
       rect(ctx, x - 3, y - 14, 6, 2, a.hair);
       rect(ctx, x - 4, y - 13, 1, 5, a.hair);
@@ -651,6 +738,204 @@
     for (const f of fogs) { f.x += f.speed * dt; if (f.x - f.rx > W) f.x = -f.rx; }
   }
 
+  // ---------- Thanksgiving & Christmas ----------
+
+  const HARVEST = ['#c8552c', '#efb348', '#8a5a3a', '#e08a33'];
+  const XMAS_LIGHTS = ['#ff5d5d', '#ffe066', '#7be08a', '#6fb6ff', '#ff8fc4'];
+  const ELF_GREEN = '#2f8f4e';
+
+  function drawWreath(x, y, ring, bow) {
+    glyph(ctx, x - 2, y - 2, ['.###.', '#...#', '#...#', '#...#', '.###.'], ring);
+    rect(ctx, x - 1, y + 2, 3, 1, bow);
+    rect(ctx, x, y + 3, 1, 1, bow);
+  }
+
+  function drawHayBale(c, x, y) {
+    rect(c, x - 5, y - 4, 10, 5, '#d9b356');
+    rect(c, x - 5, y - 4, 10, 1, '#ecd07e');
+    rect(c, x - 5, y, 10, 1, '#b28c3a');
+    rect(c, x - 3, y - 4, 1, 5, '#b28c3a');
+    rect(c, x + 2, y - 4, 1, 5, '#b28c3a');
+  }
+
+  function drawCornStalks(c, x, y) {
+    for (const [dx, h] of [[-2, 11], [0, 13], [2, 10]]) {
+      rect(c, x + dx, y - h, 1, h, '#c9a65a');
+      rect(c, x + dx - 1, y - h + 2, 1, 1, '#d8bd73');
+      rect(c, x + dx + 1, y - h + 4, 1, 1, '#d8bd73');
+    }
+    rect(c, x - 2, y - 5, 5, 1, '#8a5a3a');
+  }
+
+  function drawScarecrow(c, x, y) {
+    rect(c, x, y - 18, 1, 18, '#6b4423');
+    rect(c, x - 6, y - 13, 13, 1, '#6b4423');
+    rect(c, x - 3, y - 13, 7, 6, '#7a8fb5');
+    rect(c, x - 3, y - 9, 7, 1, '#c8552c');
+    rect(c, x - 5, y - 12, 2, 2, '#d9b356');
+    rect(c, x + 4, y - 12, 2, 2, '#d9b356');
+    rect(c, x - 2, y - 18, 5, 5, '#e8c98a');
+    rect(c, x - 1, y - 16, 1, 1, '#3b2f25');
+    rect(c, x + 1, y - 16, 1, 1, '#3b2f25');
+    rect(c, x - 3, y - 19, 7, 1, '#8a5a3a');
+    rect(c, x - 1, y - 21, 3, 2, '#8a5a3a');
+  }
+
+  function drawSnowman(c, x, y, small) {
+    const k = small ? 0 : 1;
+    disc(c, x, y - 3, 3 + k, '#f4f8fb');
+    disc(c, x, y - 8 - k, 2 + k, '#f4f8fb');
+    rect(c, x - 3 - k, y - 3, 1, 1, '#c9d6df');
+    rect(c, x - 1, y - 9 - k, 1, 1, '#2a2f3d');
+    rect(c, x + 1, y - 9 - k, 1, 1, '#2a2f3d');
+    rect(c, x, y - 8 - k, 2, 1, '#e8742a');
+    rect(c, x - 2 - k, y - 6 - k, 5 + k * 2, 1, '#d63a3a');
+    rect(c, x - 2, y - 11 - k * 2, 5, 1, '#2a2f3d');
+    rect(c, x - 1, y - 13 - k * 2, 3, 2, '#2a2f3d');
+    rect(c, x + 4 + k, y - 7, 2, 1, '#6b4423');
+    rect(c, x - 5 - k, y - 7, 2, 1, '#6b4423');
+  }
+
+  function drawGourd(x, y, col) {
+    ellipse(ctx, x, y - 1, 2, 1, col);
+    rect(ctx, x - 2, y - 2, 5, 2, col);
+    rect(ctx, x, y - 2, 1, 2, shade(col, -40));
+    rect(ctx, x, y - 3, 1, 1, '#4a7a2a');
+  }
+
+  function drawPresent(x, y, box, ribbon) {
+    rect(ctx, x, y - 3, 4, 3, box);
+    rect(ctx, x + 1, y - 3, 1, 3, ribbon);
+    rect(ctx, x, y - 2, 4, 1, ribbon);
+    rect(ctx, x + 1, y - 4, 1, 1, ribbon);
+  }
+
+  // A turkey, standing at (x, y) and facing d (1 = right).
+  function drawTurkey(tk, t) {
+    const d = tk.dir, x = Math.round(tk.x), step = Math.floor(t * (tk.fast ? 14 : 7) + tk.ph) % 2;
+    const y = Math.round(tk.y) - (tk.fast && step ? 1 : 0);
+    ellipse(ctx, x, Math.round(tk.y) + 1, 3, 1, 'rgba(0,0,0,0.2)');
+    // tail fan behind
+    const tx = x - d * 3;
+    glyph(ctx, tx - 3, y - 11, ['.#.#.#.', '##.#.##', '#######', '.#####.'], '#b5482f');
+    glyph(ctx, tx - 2, y - 9, ['#.#.#', '#####', '.###.'], '#e08a33');
+    rect(ctx, tx - 1, y - 7, 3, 1, '#f2c94c');
+    // legs
+    rect(ctx, x - 1, y - 2, 1, step ? 2 : 1, '#e0a030');
+    rect(ctx, x + 1, y - 2, 1, step ? 1 : 2, '#e0a030');
+    // body and wing
+    ellipse(ctx, x, y - 4, 3, 2, '#6b4226');
+    rect(ctx, x - 1, y - 5, 3, 2, '#553321');
+    // neck, head, beak, wattle
+    rect(ctx, x + d * 2, y - 8, 1, 3, '#8a5a3a');
+    rect(ctx, x + d * 3 - (d < 0 ? 1 : 0), y - 10, 2, 2, '#c9d6e8');
+    rect(ctx, x + d * 4, y - 9, 1, 1, '#2a2f3d');
+    rect(ctx, x + d * 5 - (d < 0 ? 0 : 0), y - 9, 1, 1, '#f2c94c');
+    rect(ctx, x + d * 4, y - 8, 1, 2, '#d63a3a');
+    if (tk.hat) {
+      // the parade leader wears a pilgrim hat
+      const hx = x + d * 3 - (d < 0 ? 1 : 0);
+      rect(ctx, hx - 1, y - 11, 4, 1, '#2a2f3d');
+      rect(ctx, hx, y - 13, 2, 2, '#2a2f3d');
+      rect(ctx, hx, y - 12, 2, 1, '#f2c94c');
+    }
+  }
+
+  // Turkeys take over the street now and then: a slow parade or a frantic gaggle, in turns.
+  // Preview with ?turkeys=1 (parade first) or ?turkeys=gaggle.
+  const turkeys = { list: [], wait: QS.has('turkeys') ? 0 : 8, next: QS.get('turkeys') === 'gaggle' ? 'gaggle' : 'parade', holding: false };
+  function updateTurkeys(dt) {
+    if (!turkeys.list.length) {
+      turkeys.wait -= dt;
+      if (turkeys.wait > 0) return;
+      // hold the traffic and wait for the road to clear before the turkeys step out
+      turkeys.holding = true;
+      if (cars.length) return;
+      const kind = turkeys.next, dir = Math.random() > 0.5 ? 1 : -1;
+      turkeys.next = kind === 'parade' ? 'gaggle' : 'parade';
+      const n = kind === 'parade' ? 6 : 8;
+      for (let i = 0; i < n; i++) {
+        const lag = kind === 'parade' ? i * 13 : Math.random() * 34;
+        turkeys.list.push({
+          x: dir > 0 ? -10 - lag : W + 10 + lag, dir, fast: kind === 'gaggle', hat: kind === 'parade' && i === 0, ph: Math.random() * 6,
+          y: kind === 'parade' ? ROAD_Y + 11 : ROAD_Y + 6 + Math.random() * 9, base: 0,
+          speed: kind === 'parade' ? 13 : 40 + Math.random() * 18, wob: Math.random() * 6,
+        });
+      }
+      for (const tk of turkeys.list) tk.base = tk.y;
+      return;
+    }
+    for (const tk of turkeys.list) {
+      tk.x += tk.dir * tk.speed * dt;
+      if (tk.fast) {
+        tk.wob += dt * 5;
+        tk.y = Math.max(ROAD_Y + 5, Math.min(ROAD_Y + 15, tk.base + Math.sin(tk.wob) * 3));
+        if (Math.random() < dt * 2) particles.push({ kind: 'feather', x: tk.x, y: tk.y - 6, vx: -tk.dir * 6, vy: 4, life: 0, max: 1.6, ph: Math.random() * 6 });
+      }
+    }
+    turkeys.list = turkeys.list.filter((tk) => (tk.dir > 0 ? tk.x < W + 50 : tk.x > -50));
+    if (!turkeys.list.length) { turkeys.holding = false; turkeys.wait = 30 + Math.random() * 30; }
+  }
+
+  // Santa's sleigh, pulled by one red-nosed reindeer, crosses the sky every so often.
+  const sleigh = { x: -80, y: 12, active: false, wait: QS.has('sleigh') ? 0 : 5, preview: QS.has('sleigh'), base: 12 };
+  const twinkles = [];
+  function updateSleigh(dt, t) {
+    if (!sleigh.active) {
+      sleigh.wait -= dt;
+      if (sleigh.wait <= 0) { sleigh.active = true; sleigh.x = sleigh.preview ? 170 : -30; sleigh.preview = false; sleigh.base = 8 + Math.random() * 14; }
+    } else {
+      sleigh.x += 40 * dt; sleigh.y = sleigh.base + Math.sin(t * 1.8) * 3;
+      if (Math.random() < dt * 16) twinkles.push({ x: sleigh.x - 10, y: sleigh.y + 2 + Math.random() * 3, life: 0, col: ['#ffe066', '#ffffff', '#ffd1e0'][(Math.random() * 3) | 0] });
+      if (sleigh.x > W + 40) { sleigh.active = false; sleigh.wait = 30 + Math.random() * 30; }
+    }
+    for (let i = twinkles.length - 1; i >= 0; i--) { const s = twinkles[i]; s.life += dt; s.y += 5 * dt; if (s.life > 1.4) twinkles.splice(i, 1); }
+  }
+
+  function drawSleigh(t) {
+    if (!sleigh.active) return;
+    const x = Math.round(sleigh.x), y = Math.round(sleigh.y), gallop = Math.floor(t * 8) % 2;
+    // reindeer out front
+    const rx = x + 16, ry = y - 1 + (gallop ? -1 : 0);
+    rect(ctx, rx - 3, ry - 1, 7, 3, '#8a5a3a');
+    rect(ctx, rx - 3, ry + 1, 7, 1, '#6b4423');
+    rect(ctx, rx - 3, ry + 2, 1, gallop ? 2 : 1, '#5a3a22');
+    rect(ctx, rx - 1, ry + 2, 1, gallop ? 1 : 2, '#5a3a22');
+    rect(ctx, rx + 2, ry + 2, 1, gallop ? 2 : 1, '#5a3a22');
+    rect(ctx, rx + 3, ry + 2, 1, gallop ? 1 : 2, '#5a3a22');
+    rect(ctx, rx - 4, ry - 1, 1, 1, '#f4ecdc');
+    rect(ctx, rx + 4, ry - 3, 2, 3, '#8a5a3a');
+    rect(ctx, rx + 6, ry - 2, 1, 1, '#8a5a3a');
+    rect(ctx, rx + 5, ry - 3, 1, 1, '#2a2f3d');
+    rect(ctx, rx + 7, ry - 2, 1, 1, '#ff3b3b');
+    glyph(ctx, rx + 3, ry - 7, ['#.#.#', '.###.', '..#..', '..#..'], '#c9a46a');
+    // harness
+    rect(ctx, x + 6, y + 1, rx - 3 - (x + 6), 1, '#d63a3a');
+    rect(ctx, x + 6 + ((Math.floor(t * 4)) % 6), y + 1, 1, 1, '#ffe066');
+    // sleigh body and runner
+    rect(ctx, x - 7, y - 3, 13, 5, '#c0262d');
+    rect(ctx, x - 7, y - 3, 13, 1, '#e04848');
+    rect(ctx, x + 4, y - 6, 2, 4, '#c0262d');
+    rect(ctx, x - 7, y + 1, 13, 1, '#f2c94c');
+    rect(ctx, x - 8, y + 3, 16, 1, '#f2c94c');
+    rect(ctx, x + 7, y + 2, 1, 1, '#f2c94c');
+    rect(ctx, x - 5, y + 2, 1, 1, '#f2c94c');
+    rect(ctx, x + 3, y + 2, 1, 1, '#f2c94c');
+    // sack of presents
+    disc(ctx, x - 5, y - 5, 3, '#6b8f3a');
+    rect(ctx, x - 6, y - 9, 2, 1, '#d63a3a');
+    // Santa
+    rect(ctx, x - 1, y - 7, 5, 4, '#d63a3a');
+    rect(ctx, x - 1, y - 4, 5, 1, '#f4f8fb');
+    rect(ctx, x, y - 10, 3, 3, '#f3cfa6');
+    rect(ctx, x, y - 8, 4, 2, '#f4f8fb');
+    rect(ctx, x + 2, y - 9, 1, 1, '#2a2f3d');
+    rect(ctx, x - 1, y - 11, 4, 1, '#d63a3a');
+    rect(ctx, x - 2, y - 12, 3, 1, '#d63a3a');
+    rect(ctx, x - 3, y - 11, 1, 1, '#f4f8fb');
+    rect(ctx, x - 1, y - 10, 5, 1, '#f4f8fb');
+  }
+
   // ---------- resident behaviour ----------
 
   function modeOf(a, now) {
@@ -752,7 +1037,7 @@
     }
 
     // hover cars in two lanes
-    if (carTimer <= 0) {
+    if (carTimer <= 0 && !(holiday === 'thanksgiving' && turkeys.holding)) {
       carTimer = 2.5 + Math.random() * 4;
       const right = Math.random() > 0.5;
       cars.push({ x: right ? -14 : W + 1, y: right ? ROAD_Y + 13 : ROAD_Y + 6, dir: right ? 1 : -1,
@@ -781,6 +1066,9 @@
       } else if (p.kind === 'note') {
         ctx.globalAlpha = Math.min(1, 2 * (1 - p.life / p.max));
         glyph(ctx, p.x + Math.sin(t * 3 + p.ph) * 1.5, p.y, ['.##', '.#.', '##.', '##.'], p.col);
+      } else if (p.kind === 'feather') {
+        ctx.globalAlpha = 1 - p.life / p.max;
+        rect(ctx, p.x + Math.sin(t * 6 + p.ph), p.y, 2, 1, Math.sin(p.ph) > 0 ? '#8a5a3a' : '#e08a33');
       } else if (p.kind === 'snow') {
         ctx.globalAlpha = 0.9;
         rect(ctx, p.x, p.y, 1, 1, '#ffffff');
@@ -802,7 +1090,7 @@
     const dark = Math.max(sky[3] / 0.56, spooky ? 0.6 : 0);
     const lightsOn = dark > 0.3;
 
-    const key = season + '|' + spooky + '|' + agents.map((a) => a.plot).join(',');
+    const key = season + '|' + spooky + '|' + holiday + '|' + agents.map((a) => a.plot).join(',');
     if (key !== bgKey) { bg = buildBackground(); bgKey = key; }
     ctx.drawImage(bg, 0, 0);
 
@@ -817,12 +1105,20 @@
     PLOTS.forEach((P, i) => {
       const a = occupied.get(i);
       if (spooky) items.push([P.y + 50, () => drawPumpkin(P.x + 14, P.y + 50, lightsOn, t)]);
+      if (holiday === 'thanksgiving' && a) {
+        items.push([P.y + 51, () => { drawHayBale(ctx, P.x + 13, P.y + 51); drawGourd(P.x + 11, P.y + 46, '#e8742a'); drawGourd(P.x + 16, P.y + 46, '#f2c94c'); drawGourd(P.x + 20, P.y + 52, '#e8742a'); }]);
+        items.push([P.y + 50, () => drawCornStalks(ctx, P.x + 7, P.y + 50)]);
+      }
+      if (holiday === 'christmas' && a) {
+        items.push([P.y + 50, () => { drawPresent(P.x + 56, P.y + 50, '#d63a3a', '#f2c94c'); drawPresent(P.x + 84, P.y + 50, '#2f7a4a', '#f4f8fb'); drawPresent(P.x + 59, P.y + 51, '#6fb6ff', '#ffe066'); }]);
+      }
       if (!a) { items.push([P.y + 48, () => drawHoloSign(P, t)]); return; }
       const lit = (lightsOn && a.mode !== 'sleeping') || (a.mode === 'working' && dark > 0.1);
       items.push([P.y + 46, () => drawHome(P, a, lit, t)]);
       items.push([P.y + 48, () => drawKiosk(P, a, t)]);
       if (!a.v.hidden) items.push([a.v.y, () => drawVillager(a, t)]);
     });
+    if (holiday === 'thanksgiving') for (const tk of turkeys.list) items.push([tk.y, () => drawTurkey(tk, t)]);
     items.sort((p, q) => p[0] - q[0]);
     for (const [, draw] of items) draw();
 
@@ -838,6 +1134,7 @@
 
     // spooky gloom, then the time-of-day tint
     if (spooky) { ctx.fillStyle = 'rgba(34,12,48,0.34)'; ctx.fillRect(0, 0, W, H); }
+    if (holiday === 'thanksgiving') { ctx.fillStyle = 'rgba(255,160,70,0.07)'; ctx.fillRect(0, 0, W, H); }
     if (sky[3] > 0.005) {
       ctx.fillStyle = `rgba(${sky[0] | 0},${sky[1] | 0},${sky[2] | 0},${sky[3].toFixed(3)})`;
       ctx.fillRect(0, 0, W, H);
@@ -878,7 +1175,18 @@
       if (tram.x > -100 && tram.x < W + 90) for (let k = 0; k < 3; k++) glow(tram.x - k * 27 + 12, RAIL_Y, 14, '#ffbe64', 0.25 * dark);
       glow(CART.x + 10, CART.y - 15, 12, '#ff7a59', 0.4 * dark);
       for (const d of drones) glow(d.x, d.y + 2, 4, '#7be08a', 0.5 * dark);
+      if (holiday === 'christmas') {
+        PLOTS.forEach((P, i) => { if (occupied.has(i)) for (let k = 0; k < 4; k++) glow(P.x + 12 + k * 10, P.y + 17, 6, XMAS_LIGHTS[k], 0.22 * dark); });
+        const big = trees[0];
+        glow(big.x, big.y - 8 - big.r * 2, 10, '#ffe066', 0.5 * dark);
+        if (sleigh.active) glow(sleigh.x + 23, sleigh.y - 3, 7, '#ff3b3b', 0.7 * dark + 0.2);
+      }
       ctx.globalCompositeOperation = 'source-over';
+    }
+    if (holiday === 'christmas') {
+      for (const s of twinkles) { ctx.globalAlpha = 1 - s.life / 1.4; rect(ctx, s.x, s.y, 1, 1, s.col); }
+      ctx.globalAlpha = 1;
+      drawSleigh(t);
     }
 
     if (spooky) {
@@ -932,10 +1240,13 @@
     const dt = Math.min(0.05, (ms - last) / 1000);
     last = ms;
     const t = ms / 1000, now = clockNow();
-    season = seasonOf(now);
-    spooky = eventOf(now) === 'halloween';
-    document.body.classList.toggle('halloween', spooky);
+    holiday = eventOf(now);
+    season = holiday === 'christmas' ? 'winter' : seasonOf(now);
+    spooky = holiday === 'halloween';
+    for (const ev of ['halloween', 'thanksgiving', 'christmas']) document.body.classList.toggle(ev, holiday === ev);
     if (spooky) updateSpooky(dt, t);
+    if (holiday === 'thanksgiving') updateTurkeys(dt);
+    if (holiday === 'christmas') updateSleigh(dt, t);
     for (const a of agents) { a.mode = modeOf(a, now); updateVillager(a, dt); }
     updateWorld(dt, t);
     render(t, now);
@@ -1092,7 +1403,7 @@
     document.getElementById('clock').textContent =
       now.toLocaleDateString(undefined, { weekday: 'long' }) + ', ' +
       now.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' }) + ' · ' +
-      (eventOf(now) === 'halloween' ? '🎃 Spooky season' : s[0].toUpperCase() + s.slice(1));
+      ({ halloween: '🎃 Spooky season', thanksgiving: '🦃 Thanksgiving', christmas: '🎄 Christmas' }[eventOf(now)] || s[0].toUpperCase() + s.slice(1));
   }
 
   tickClock();

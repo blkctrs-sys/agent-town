@@ -7,7 +7,15 @@ At night they go to sleep.
 
 **Live town:** https://blkctrs-sys.github.io/agent-town/
 
-Add `?hour=21` to preview a time of day, `?event=halloween` or `?event=none` to preview the seasonal theme, and `?witch=1` to summon the witch right away.
+Add `?hour=21` to preview a time of day. Seasonal themes switch on by date, and you can preview them with `?event=`:
+
+| Theme | Dates | Preview |
+|---|---|---|
+| 🎃 Halloween | Oct 1 – Nov 7 | `?event=halloween`, `?witch=1` summons the witch |
+| 🦃 Thanksgiving | Nov 8 – the day after Thanksgiving | `?event=thanksgiving`, `?turkeys=1` (parade) or `?turkeys=gaggle` |
+| 🎄 Christmas | the Saturday after Thanksgiving – Jan 1 | `?event=christmas`, `?sleigh=1` sends the sleigh |
+
+`?event=none` turns themes off.
 
 ## How it works
 

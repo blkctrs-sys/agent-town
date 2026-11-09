@@ -274,6 +274,56 @@ body.halloween .panel { border-left-color: var(--amber); }
 body.halloween .chip { background: var(--amber); }
 body.halloween .roster h2, body.halloween .panel h3 { color: var(--amber); }
 
+/* ---------- Thanksgiving (Nov 8 – the day after Thanksgiving) ---------- */
+body.thanksgiving {
+  --bg: #241a14;
+  --panel: #33261d;
+  --panel-2: #2b2019;
+  --line: #4e3a2b;
+  --ink: #f6ead8;
+  --muted: #bfa98f;
+  --amber: #f0a43a;
+  --cyan: #e8c55a;
+  --pink: #e0663a;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 85% -10%, rgba(240, 164, 58, 0.18), transparent 50%),
+    radial-gradient(ellipse at 10% 110%, rgba(200, 85, 44, 0.16), transparent 55%),
+    radial-gradient(rgba(240, 164, 58, 0.07) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 22px 22px;
+}
+body.thanksgiving h1 { color: var(--amber); text-shadow: 0 0 12px rgba(240, 164, 58, 0.45), 0 2px 0 #4a1f0c; }
+body.thanksgiving .stage { box-shadow: 0 0 0 1px rgba(240, 164, 58, 0.45), 0 0 30px rgba(240, 164, 58, 0.14), 0 14px 30px rgba(0, 0, 0, 0.55); }
+body.thanksgiving .label { border-color: var(--amber); background: rgba(36, 26, 20, 0.88); }
+body.thanksgiving .card:hover, body.thanksgiving .card:focus-visible { border-color: var(--amber); }
+body.thanksgiving .panel { border-left-color: var(--amber); }
+body.thanksgiving .roster h2, body.thanksgiving .panel h3 { color: var(--amber); }
+
+/* ---------- Christmas (the Saturday after Thanksgiving – Jan 1) ---------- */
+body.christmas {
+  --bg: #0f1d26;
+  --panel: #182b36;
+  --panel-2: #14242e;
+  --line: #2b4552;
+  --ink: #f2f6f8;
+  --muted: #a7bcc6;
+  --amber: #ffe066;
+  --cyan: #7be08a;
+  --pink: #ff5d5d;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 85% -10%, rgba(255, 93, 93, 0.16), transparent 50%),
+    radial-gradient(ellipse at 10% 110%, rgba(123, 224, 138, 0.14), transparent 55%),
+    radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 26px 26px;
+}
+body.christmas h1 { color: #ff6b6b; text-shadow: 0 0 12px rgba(255, 93, 93, 0.5), 0 2px 0 #1d4a2c; }
+body.christmas .stage { box-shadow: 0 0 0 1px rgba(255, 93, 93, 0.5), 0 0 30px rgba(123, 224, 138, 0.14), 0 14px 30px rgba(0, 0, 0, 0.55); }
+body.christmas .label { border-color: var(--pink); background: rgba(15, 29, 38, 0.88); }
+body.christmas .card:hover, body.christmas .card:focus-visible { border-color: var(--pink); }
+body.christmas .panel { border-left-color: var(--pink); }
+body.christmas .roster h2, body.christmas .panel h3 { color: var(--amber); }
+
 .btn-link {
   display: inline-block;
   margin-right: 12px;
