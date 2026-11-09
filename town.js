@@ -341,7 +341,7 @@
     for (let i = 0; i < Math.min(items.length, 10); i++) {
       const px = bx + 2 + (i % 5) * 4, py = by + 2 + Math.floor(i / 5) * 5;
       const cat = items[i].category;
-      rect(ctx, px, py, 3, 4, cat === 'ops' || cat === 'newsletter' ? PINK : cat === 'video' ? AMBER : CYAN);
+      rect(ctx, px, py, 3, 4, cat === 'ops' || cat === 'newsletter' || cat === 'attention' ? PINK : cat === 'video' ? AMBER : CYAN);
       rect(ctx, px, py, 3, 1, '#e9fffd');
     }
     if (a.mode === 'working') rect(ctx, bx + 1, by + 1 + Math.floor(t * 8) % 12, 20, 1, rgba(CYAN, 0.6));
@@ -1017,7 +1017,7 @@
       : 'Every lot in town is taken.';
   }
 
-  const CATEGORY_NAMES = { art: 'Games & tech', ops: 'Operations & inventory', video: 'Video packages', post: 'Community posts', newsletter: 'Newsletter' };
+  const CATEGORY_NAMES = { art: 'Games & tech', ops: 'Operations & inventory', video: 'Video packages', post: 'Community posts', newsletter: 'Newsletter', attention: 'Needs your attention' };
   let openId = null, lastFocus = null;
 
   function openPanel(id, refresh) {

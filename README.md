@@ -45,6 +45,7 @@ and the content schedule. Anything Brenden marked `[[ADD: …]]` is highlighted 
 
 - **Craig**, Job Scout: finds new openings every weekday morning.
 - **Brenden**, Content Producer: drafts posts and video packages.
+- **Penny**, Inbox Keeper: cleans Gmail every morning and flags what matters. Reports stay in the private repo.
 - **Donathan**, Interview Coach (files under `mildred/`): preps for Craig's top 3 roles and any interviews on the
   owner's list, plus a daily practice drill. Everything he writes stays in the private repo.
 
