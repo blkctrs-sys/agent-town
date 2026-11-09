@@ -61,5 +61,25 @@
         "url": "https://github.com/blkctrs-sys/agent-town-private/edit/main/mildred/interviews.md"
       }
     ]
+  },
+  {
+    "id": "inbox",
+    "name": "Penny",
+    "title": "Inbox Keeper",
+    "plot": 3,
+    "color": "#4f9d69",
+    "hair": "#7a4a2b",
+    "skin": "#e8b88f",
+    "status": "status/inbox.json",
+    "links": [
+      {
+        "label": "Open my daily reports",
+        "url": "https://github.com/blkctrs-sys/agent-town-private/tree/main/inbox/reports"
+      },
+      {
+        "label": "Edit my rules",
+        "url": "https://github.com/blkctrs-sys/agent-town-private/edit/main/inbox/rules.md"
+      }
+    ]
   }
 ]
