@@ -1,91 +1,109 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-10T12:46:03Z",
-  "lastRun": "2026-11-09T12:49:03Z",
-  "summary": "Found 9 new roles: 5 games & tech, 4 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-09.md",
+  "state": "done",
+  "updated": "2026-11-10T12:49:22Z",
+  "lastRun": "2026-11-10T12:49:22Z",
+  "summary": "Found 11 new roles: 4 games & tech, 7 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-10.md",
   "items": [
     {
-      "title": "Technical Support Specialist",
-      "company": "Sonar Software",
+      "title": "Production Assistant (E-commerce Photo Studio)",
+      "company": "Lids",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aasvhy94cqft",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Junior on-site studio role, $40.9k-$59.7k, posted Nov 5: shoot products, run captures through an AI imaging tool, and QA every render against the real item. No photography resume or degree required; starts part-time temporary with a path to full-time. Short train commute."
+    },
+    {
+      "title": "Software Quality and Support Specialist",
+      "company": "Points North",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aar4ggywkc4b",
-      "source": "Indeed",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYtdEpiQjFPMnAxVUh6ZmNyVXAzSUJnEiQwMWExYzU3Zi0zNzc4LTdiYjAtOGY2YS00ZjNiMWY4MjRmZmUaW0FBRXlfSVZCb1drR3d6SUVIVS1YRWdISkkta1BWN3dsQWJtTUQ5eXVTX2RETm5ENFFXdW56SlMwclpLazdmOWhSSTN3aFEwTmNnYXdEOEd2eG5nUy1ZZ0haYmMgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "art",
-      "note": "Remote front-line SaaS support with ticketing, issue reproduction and knowledge-base work. Asks for 1+ year of support, no degree."
+      "note": "Remote junior-level role combining software QA and customer support, $47.6k-$65.5k with benefits, posted about 5 days ago. Full requirements couldn't be read; check the degree and experience asks before applying."
     },
     {
-      "title": "IT Dispatcher (Remote – Pacific Time Zone Hours)",
-      "company": "Xantrion",
+      "title": "Community Manager, Games & AI Creators",
+      "company": "Layer AI",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aa7nrcy2hrk8",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZLN1JnX2dSWmlCbXpWUFg4YU1vQ0x3EiQwMWExYzU3Zi0zZTczLTczMzgtODEwNy04YzE2ODZkNDRlMzIaUEFBRmpRWXNzRkR5bGRtY1RlVmdqRmRQY0QxLUNTZlQzT2JJOWtoaHpFNGRuZFNkVWFBeEtjdGpqOGpHRFczTnUzcXFoblpJUjFQRXlZMlh3IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Remote contract community role at an AI art-tools company for game creators, $48.1k-$68.6k, posted about 8 days ago. Tagged junior; full requirements couldn't be read."
+    },
+    {
+      "title": "Help Desk Analyst (contract)",
+      "company": "3coresystems",
+      "location": "Manhattan, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZIRk5XMWYtbUktU1NvQ2hvLW5fRVN3EiQwMWExYzU3Zi02ZjU4LTczNzMtOWU1OS1iYWUwZjhmNWE5NTYaUEFBRmZFV0xyUDJyLVJlWG1rdUtVbUtBX1RmZDcyZ0dSYmJMajU0V195ajhSYnpUQXRlcEZkdDlZeVhDVHRwNjZTc0drWFUwbHZRNk9FVV81IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Entry/junior on-site help desk contract, $45k-$61.5k, posted about 7 days ago: ticket-based end-user support. Short train commute. Exact office location and requirements couldn't be read."
+    },
+    {
+      "title": "Office & Operations Coordinator",
+      "company": "Taylor Creative",
+      "location": "New York, NY (Times Square, hybrid after 90 days)",
+      "url": "https://to.indeed.com/aanttdslnb4p",
       "source": "Indeed",
-      "category": "art",
-      "note": "Remote ticket triage and technician scheduling at an IT services firm, $45k-$50k. High school diploma plus 2 years of customer service; Pacific hours."
+      "category": "ops",
+      "note": "Full-time, $26.44-$36.06/hr with 401(k) match, posted Nov 4: office supply inventory and ordering, vendor and building contact, meeting and event logistics, plus payment and check processing. High school diploma plus 1-5 years in admin or a related role; degree not required. Short train commute."
     },
     {
-      "title": "Customer Success Specialist",
-      "company": "MaiaLearning",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aa6p2vx7mvn6",
+      "title": "Assistant Restaurant Manager (Assistant Coach)",
+      "company": "Sweetgreen",
+      "location": "Hoboken, NJ",
+      "url": "https://to.indeed.com/aabnbztyntdv",
       "source": "Indeed",
-      "category": "art",
-      "note": "Entry- or mid-level remote onboarding, training and tech support at an education software company, $60k-$65k. No degree listed; Pacific hours."
+      "category": "ops",
+      "note": "Full-time, $65k-$78k plus 15% bonus potential, posted Nov 9: hiring, training, scheduling, food safety, cost control and supply issues. Needs 2+ years of restaurant supervision, 6+ people per shift, and a Food Handler or ServSafe card; no degree. Short train commute."
     },
     {
-      "title": "User Support Specialist II",
-      "company": "Rutgers University",
-      "location": "New Brunswick, NJ",
-      "url": "https://to.indeed.com/aaw2djyd2lgn",
-      "source": "Indeed",
-      "category": "art",
-      "note": "University IT help desk, $81k+, overnight shift. Degree or equivalent experience accepted. Short train commute."
-    },
-    {
-      "title": "Associate Producer (North America, Fully Remote)",
-      "company": "Escape Velocity Entertainment",
-      "location": "Remote (US/Canada)",
-      "url": "https://apply.workable.com/escape-velocity-entertainment-inc/jobs/view/23116FB8C2",
-      "source": "Web search (Workable)",
-      "category": "art",
-      "note": "Fully remote associate producer at a game studio, using Jira and Confluence. Unverified: check it's still open."
-    },
-    {
-      "title": "Inventory Coordinator",
-      "company": "MetaBrand",
+      "title": "Assistant Store Manager",
+      "company": "Zara (Inditex)",
       "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aah6q7kcdvcq",
+      "url": "https://to.indeed.com/aaczhgbk8c47",
       "source": "Indeed",
       "category": "ops",
-      "note": "Hands-on inventory accuracy, receiving and vendor coordination at a beverage maker, $25/hr. 1 year of inventory experience, no degree. Short train commute."
+      "note": "Full-time, $84k-$95.8k plus bonus, posted Nov 9: second in charge of the store, covering stock and merchandise flow, shrink, scheduling, training and customer issues. No degree or certification listed. Short train commute."
     },
     {
-      "title": "Automotive Parts & Inventory Coordinator",
-      "company": "Koplin Auto Body",
-      "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aakgm2t9c6dx",
-      "source": "Indeed",
+      "title": "Purchasing Coordinator",
+      "company": "GD Group LLC",
+      "location": "Remote (NJ-based company)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZOQUwxYVJzRTgwbldnM2c1THJFbnhREiQwMWExYzU3Zi01ZGI3LTdjOGItODI4Yi1jZjBkMzE1NWEwZDkaW0FBSHZIdWhQS0hCWjVMU1JBdzNzNzNHZzc5ZzY5cE5FOXA3RFpWT2VhVzJCZ3BKa0lHZmJMaDR2empWNnRRdUQ5aHBleGRZdTFUUlotWFpJODRiZjNyZkpWdUUgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Parts receiving, inventory records and vendor follow-up at a collision shop, $51k-$62k. No degree. Short train commute."
+      "note": "Full-time remote purchasing role, $43k-$58k with medical and PTO, posted about 3 days ago. Full requirements couldn't be read."
     },
     {
-      "title": "Products Procurement Specialist",
-      "company": "IMC Designs",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aangt2l28pmj",
-      "source": "Indeed",
+      "title": "Inventory Clerk",
+      "company": "Adorama",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZGaDBSamJNT3hxRkVtT040eFBWRmpREiQwMWExYzU3Zi01OTA5LTc2NDItOTNiYy0yMjgzNmNiMGU4MjEaUEFBRTFIVXdqUVVyZzlCcnNqYWNwYkRTbDVnZkk5a3pvQ09meHkxeXNXNjFiYktZRmJYZzJoUUdZTzBoY2J0NFdRTkZELTJGMUZ6RjdEbmk5IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Remote purchasing role: vendor quotes, purchase orders and order follow-up, $21-$27/hr. High school diploma."
+      "note": "Full-time on-site inventory role at a camera and electronics retailer, $40k-$44k, posted about 5 days ago. Entry-level pay; requirements couldn't be read. Short train commute."
     },
     {
-      "title": "Project Coordinator – Multi-Family Lighting",
-      "company": "LightStyles (Building Material Distributors)",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aacv9l2w8mnn",
+      "title": "Unit Leader - Restaurant Operations",
+      "company": "The Restaurant Zone",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZNZV9VUUhMZE1JNjVEQzhhb0Y2b0dnEiQwMWExYzU3Zi02Nzg4LTdhNjMtYmM0Zi03Mzk0Mzg3MGI3NDgaW0FBRXZSTTM2ckxfYXdmY3RLOXA5Rzg5d2VSQktWb0p6ZkpUaEVIcUJvUkF1ZzVQVnlseFN6THNEUGEwY3hHN29La2lUSG1QcjdWMWdvVGhBaEZob0RWNU11OFkgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Full-time restaurant operations lead, $55k-$65k with medical, dental and vision, posted today. Requirements and exact location couldn't be read. Short train commute if near Midtown."
+    },
+    {
+      "title": "Shift Lead",
+      "company": "Walgreens",
+      "location": "Woodbridge, NJ",
+      "url": "https://to.indeed.com/aaf2z9mnntmx",
       "source": "Indeed",
       "category": "ops",
-      "note": "Remote order and delivery coordination for large lighting projects, from $23/hr. 1-3 years in customer service or coordination, no degree."
+      "note": "Full-time keyholder role, $18.50-$23.50/hr, posted Nov 9: opening and closing, vendor deliveries, inventory counts, FIFO rotation and coaching staff. Needs 1 year of leadership or supervisory experience; no degree. Lower pay than the other roles. Short train commute."
     }
   ]
 }
