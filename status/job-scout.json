@@ -1,7 +1,7 @@
 {
   "agent": "job-scout",
-  "state": "done",
-  "updated": "2026-11-09T12:49:03Z",
+  "state": "working",
+  "updated": "2026-11-10T12:46:03Z",
   "lastRun": "2026-11-09T12:49:03Z",
   "summary": "Found 9 new roles: 5 games & tech, 4 operations. 3 tailored resume drafts ready.",
   "report": "jobs/2026-11-09.md",
