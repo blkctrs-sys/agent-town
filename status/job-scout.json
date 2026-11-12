@@ -1,82 +1,91 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-12T12:45:23Z",
-  "lastRun": "2026-11-11T12:49:24Z",
-  "summary": "Found 8 new roles: 2 games & tech, 6 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-11.md",
+  "state": "done",
+  "updated": "2026-11-12T12:49:08Z",
+  "lastRun": "2026-11-12T12:49:08Z",
+  "summary": "Found 9 new roles: 4 games & tech, 5 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-12.md",
   "items": [
     {
-      "title": "TechOps Administrator",
-      "company": "The RealReal",
-      "location": "Perth Amboy, NJ (rotates to NYC and Secaucus)",
-      "url": "https://to.indeed.com/aagbpzjqnjxx",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Full-time IT support role at an online resale marketplace, $63k-$84k with 401(k) match, posted today: ticket queue, hardware provisioning, asset audits and onboarding. Asks for 2-4 years of tech support; no degree required. Short train commute."
-    },
-    {
-      "title": "IT Asset & Inventory Coordinator",
-      "company": "INA Solution Inc",
+      "title": "IT Systems Support Associate",
+      "company": "Pret A Manger",
       "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZhOWxaaGhNOFRSX1BKMXFSdWllOTR3EiQwMWExY2FhNi1iZGJlLTc0MzItOTlmNi0zOGQxN2FhOGM5OTQaUEFBR0toYmtKaVF0MUdJWUQ2MnlKWDJoQlA5Y0pwSHpBMk90blFfTm5RZHp6OVFVRi1FNlRDWHNBdEE4cHAwa1NLakNKbGk3WDBfR081VGJHIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZwN21rMUx5bGxQUW9xSF8wal9YSDVBEiQwMWExY2ZjYi01ODU2LTdkMjAtOTRmZS1iM2QwYmNmYmRhMzgaW0FBRm9YRE1xcHgwWi1ZRFdYdTFHNzlBbXZlY1E3bFFNS2VLQWlRWjBLeEdvcDJ0dmFTSFZiS1NTQXJOWWdhbktaZ25YSFVkVEZUVkJ3SjNXVUkxN3lfdk5UZWMgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "On-site IT contract mixing hardware asset tracking and inventory, $40k-$52.5k, posted yesterday. Requirements and exact office couldn't be read. Short train commute."
+      "note": "Full-time IT support role at a restaurant chain's NYC office, $68k-$70k with medical, dental, vision, PTO and retirement, posted yesterday. Supports systems used in shops, so restaurant know-how helps; requirements couldn't be read. Short train commute. Unverified."
     },
     {
-      "title": "Kitchen Manager",
-      "company": "24K Restaurant & Lounge",
-      "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aaq4qcvzb2dq",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time, $23-$26/hr, posted Nov 3: runs a high-volume kitchen with scheduling, training, inventory counts three times a week, ordering, vendor contact and food-cost control. Needs 3 years of professional kitchen experience; no degree. Short train commute."
-    },
-    {
-      "title": "Culinary Operations Manager",
-      "company": "Holy Apostles Soup Kitchen",
-      "location": "New York, NY (Chelsea)",
-      "url": "https://to.indeed.com/aa9nckfc7zvv",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time nonprofit role, $65k-$70k with health, dental, vision and 403(b), posted Nov 2: leads kitchen staff and shifts, inventory control and cost monitoring. No degree listed. Short train commute."
-    },
-    {
-      "title": "Assistant Kitchen Manager",
-      "company": "Chama Mama",
-      "location": "New York, NY (Chelsea)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZhRGNjZDVib0xmNnlhblVKUWRLZER3EiQwMWExY2FhNS02YmMwLTc3ZmMtYmI5Ni1kMDExMmU5NGU4ZWUaW0FBRnQyTGVNdkJfVWlWWHRpbWQ3bE5KanNVcUxrZGJOelFlX2lLMGs5emhIQy0wQkI5bUpZd3JSN0xlS2ltRUxWbGlwSldQWWlzb0wwT05UNUVuS2hlUHhOcGsgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Full-time, $41k-$59.5k with medical, dental, vision and PTO, posted about 7 days ago. Second-in-command kitchen role; requirements couldn't be read. Short train commute."
-    },
-    {
-      "title": "Inventory Control Specialist",
-      "company": "Princess Cruises",
+      "title": "Helpdesk Engineer (Onsite)",
+      "company": "WCA Technologies, Inc.",
       "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZoTGFMTzBwa2hBQ2tmUXFPYnkzSzFREiQwMWExY2FhNS01ZWRmLTc4ZTEtOGQ5Mi1lOTE0NzhmMjJlY2UaUEFBRS00MU9lVzlPUzh3MHVMSEtxZjRsUmxhZ2hkWXdEQUNkZjlzUENDOUpLQjJFRUxDNnJOZ2RDS3gxUld2dEhsVjltTDNkR0o4VlpkSnZWIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "On-site inventory contract, $39.5k-$51k, posted about 5 days ago. Exact site and requirements couldn't be read; check the location before applying. Short train commute if in Midtown."
+      "url": "https://to.indeed.com/aa4nhy7vlt6d",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Full-time Level 1 help desk role at an IT managed-services firm, $65k-$80k with 401(k), health and training budget, posted Nov 3: ticket dispatch, end-user support, knowledge-base upkeep. Asks for 2-5 years of MSP help desk work, so it's a stretch; no degree listed. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Manager, (Re)Loved Studio Operations",
-      "company": "Tapestry, Inc.",
-      "location": "Jersey City, NJ (hybrid)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZQLXQ5R1lTQUtEVmpwQ3Y4aFZFOFNREiQwMWExY2FhNS00OGQ0LTcxODMtOGNjNi1hN2Y1YzZjMzcyOWUaUEFBRm9CQkhGeVdWS2tjWHlJVjUxbkJrZFZESUtXZ29iWXkxN012cjBYNkFkc2RHclVwOElXekRVS3c2QzZxUG9MUUtHNVBnOGF2N2ZRTlhZIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Technical Support Specialist - Exam Support (Weekends)",
+      "company": "NBME",
+      "location": "Remote (US; Philadelphia-based)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZlYmhtVDZ1aHhKRG1QVF9Eems0alNBEiQwMWExY2ZjYi0zNzhkLTc3ZjMtYjlmNS1lZDcxOTI5ODZjMWIaT0FBR2VxcDBJeGxFSjRwSnRZNjJ3VDE1SXMyLWk2OUFGVWx6M0VINW5nMTY3SXQ4YzZ6M2VFczVLeGNIazlpTVRfNjM5bWJJSmNCenhtdDggya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Full-time hybrid operations role for a resale and repair studio, $52k-$62.5k with medical, dental, vision and retirement, posted about 8 days ago. Requirements couldn't be read. Short train commute."
+      "category": "art",
+      "note": "Full-time remote technical support for online exam delivery on a weekend schedule, $51k-$60k with medical, dental, vision and retirement, posted yesterday. Tagged entry/junior level; requirements couldn't be read. Unverified."
     },
     {
-      "title": "Kitchen Manager",
-      "company": "Park Ave Kitchen by David Burke",
-      "location": "New York, NY (Midtown)",
-      "url": "https://to.indeed.com/aadtjv8wjzh9",
+      "title": "Associate Social & Community Manager",
+      "company": "BlushCrunch Studio",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZYal93aXoweEpzZng5SmZLQ0dEb1h3EiQwMWExY2ZjYi0yNzI3LTc5MmQtYWMzZi03ZmQ5M2ZmN2NiZjQaW0FBRzdCTzBLYjM2ZFVSeE1kRUdUWmxfYzMza3pGRWYydEp1WXN4OWlNMHF6cnQyb2I5SWVoMlVZTzVOVnRzRjdEdGI0T1FVR09TbFBZZEQ5Wm9iTjJjcmRRckUgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Full-time remote associate-level community role at a creative studio, $55k-$65k, posted yesterday. Couldn't confirm it's a game studio or read the requirements, so check before applying. Unverified."
+    },
+    {
+      "title": "Warehouse Manager",
+      "company": "OTG Management",
+      "location": "Newark, NJ (Newark Airport)",
+      "url": "https://to.indeed.com/aajy2dmgnt6s",
       "source": "Indeed",
       "category": "ops",
-      "note": "Full-time, $65k-$75k with health insurance and paid training, posted Nov 2: leads kitchen staff for events and catering. Asks for 3 years in chef leadership roles, so it's a stretch; no degree. Short train commute."
+      "note": "Full-time, $60k-$70k plus bonus, posted Nov 10: runs ordering, inventory counts, stock rotation, waste logging and deliveries for airport restaurants and markets. Asks for 1-3 years of restaurant or retail management; degree only preferred. Short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Sports Nutrition Operations Coordinator",
+      "company": "RWJBarnabas Health",
+      "location": "New Brunswick, NJ",
+      "url": "https://to.indeed.com/aadjdyv67bfn",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Full-time, $51.7k-$55k with full benefits, posted Nov 11: runs inventory, purchasing and meal ordering for athletics fueling stations and supervises student staff. Lists 'degree and/or advanced training' in food service or hospitality, so check that line; ServSafe preferred. Short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Restaurant Manager",
+      "company": "La Tête d'Or",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChY0N2RRdWNUaFZ3bzlJTlh5MTNLdmZ3EiQwMWExY2ZjYi00ZmMxLTcyNDEtODhlYi05MTFmMmYyZjYxNDcaW0FBRk9ja3ZzVzdqUlI0TGlxNDRpTm84VnNRTzRyVmZfd0FDSHJQSUVJMi0ydm5WQjNUallocGxXNHRrOUR4WThSTXZtYW5HcTFNb0d2NERCbjU0ZkFrQlJJbUEgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Full-time manager role at a Manhattan steakhouse, $70k-$80k, posted 2 days ago. A step up in title; requirements couldn't be read. Short train commute. Unverified."
+    },
+    {
+      "title": "Assistant General Manager - Upscale Restaurant",
+      "company": "Willow Tree Recruiting (client restaurant)",
+      "location": "New York, NY (Manhattan)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZOc3BGZUxRZEMxUHY1dXFQdFk0MTVREiQwMWExY2ZjYi00ZmMxLTcyM2QtYWM3OC0zMjcwYmVhMTI0N2EaW0FBSHlkWlVfYzgtTTl3LTFIWW92Q1pVZ2hSa2g4THNyR2lxU2Q1MFJhODVXcElZcS1yTDZyV2F1ckItMVBKalNHSHNWSHF5YzBPRVlNaEdzdE5iOEdoTFB3YWsgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Full-time AGM role through a hospitality recruiter, $75k-$90k with medical, dental, vision, PTO and retirement, posted about 7 days ago. Restaurant name and requirements couldn't be read. Short train commute. Unverified."
+    },
+    {
+      "title": "Inventory Specialist",
+      "company": "GPC - Genuine Parts Company",
+      "location": "New York, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZmTm01dHVxbGd6REpBd2x6WjBUVG5nEiQwMWExY2ZjYy1hYmY5LTc4NGItYmQyOC01MmU5ZTNkZWZhMGMaUEFBRnZSSVZaSjY5Y0x2c1VINUVJT0txZDl1YWJGdFhZRm1jZE5rc3ZVbGpiNTkyajhNQ0x5NVJuWm1rVkpQOEJYd2llUkNyT3V5Zm9Xazg3IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Full-time on-site inventory role at a parts distributor, from $36k with medical, dental, vision, PTO and retirement, posted about 9 days ago. Exact site and requirements couldn't be read; check the location. Unverified."
     }
   ]
 }
