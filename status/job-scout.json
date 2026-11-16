@@ -1,136 +1,109 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-16T12:46:36Z",
-  "lastRun": "2026-11-13T12:48:34Z",
-  "summary": "Found 14 new roles: 8 games & tech, 6 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-13.md",
+  "state": "done",
+  "updated": "2026-11-16T12:50:34Z",
+  "lastRun": "2026-11-16T12:50:34Z",
+  "summary": "Found 11 new roles: 7 art, 4 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-16.md",
   "items": [
     {
-      "title": "IT Support Assistant (Provisional), Dept. of Information Technology",
-      "company": "City University of New York (John Jay College)",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aaj4lw4lh7b8",
+      "title": "Customer Solutions Supervisor",
+      "company": "Installation Made Easy",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aagxycgwj29t",
       "source": "Indeed",
       "category": "art",
-      "note": "Full-time campus IT support role, $44,746 to start with CUNY benefits and pension, posted Nov 13: tier-2 desk and phone support, ticketing, lab and classroom equipment setup. Asks for a high school diploma plus 18 months of related work, no degree; A+ is a plus, not required. Applications need three recommendation letters and close Nov 30. Short train commute. Verified via Indeed details."
+      "note": "Remote support team lead at a home-improvement software company: escalations, coaching, QA reviews and KPI reporting. No degree listed. Verified via Indeed details."
     },
     {
-      "title": "Workplace Operations Coordinator",
-      "company": "Navan",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZUSmhSd3owUWpPX096aU15NWNuSFZBEiQwMWExZDRmMS1jODI1LTcxMDItYjhjZi1hNWIxYmNlOWU0MjgaUEFBSGNHME12aFZsUG9KbER4dzN3aXVFVW4tdVhmRzNXejRTN2dwZEFfejJxb1FLR3RneW02TF9QenI3bmI0c1hybkpjQ0tXWmdJdFpUYU9SIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Full-time on-site workplace operations role at a travel-and-expense software company, $42k-$96k, posted 2 days ago. Requirements couldn't be read. Short train commute. Unverified."
-    },
-    {
-      "title": "Service Desk Analyst I",
-      "company": "Republic Services",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChYtVjNFdXp6eU1yUVNhallObkJTd1VnEiQwMWExZDRmMi1iZGNiLTczNjgtODY3NC0xM2E5YzRlM2YyNjYaUEFBRVV6SE81M3ZpN21IQVFCQzJvNFpMTnp6cGhjUDQ4UEp3V2UtR2JMRW1ndWQ2U2dSQUFTMERNZmhMWXcxc090MXczOWFZeDhCenVGRlo5IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Entry-level remote service desk role at a large national company, $42k-$57.5k with medical, dental, vision, PTO and retirement, posted 3 days ago. Requirements couldn't be read. Unverified."
-    },
-    {
-      "title": "Jr. Prop Artist",
-      "company": "Studio Wildcard",
-      "location": "Remote (US; Bellevue, WA-based)",
-      "url": "https://www.builtinseattle.com/job/jr-prop-artist/11583358",
-      "source": "Built In / Remotive (web search)",
-      "category": "art",
-      "note": "Junior prop artist on a long-running survival game franchise, remote in the US, listed at $50k-$60k (contract on one board). Tools include Blender, ZBrush and Substance Painter, with a small art test. One copy asks for a game-dev degree and/or a shipped title or mod work, so check that line. Unverified."
-    },
-    {
-      "title": "Project Coordinator",
-      "company": "Industrial Services Group, Inc.",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aahzhfmmmqsf",
+      "title": "IT Service Technician",
+      "company": "GovCIO",
+      "location": "Newark, NJ",
+      "url": "https://to.indeed.com/aaksjrz2fjf7",
       "source": "Indeed",
       "category": "art",
-      "note": "Full-time remote project coordinator for a flooring division, with 401(k) match and health benefits, posted Nov 10: tracks orders, schedules, vendors and milestones in project software. No degree listed; 3+ years and PMP are preferred, not required. Verified via Indeed details."
+      "note": "Onsite tier-2 desk support with ServiceNow ticketing, hardware swaps and asset inventory; high school + 0-3 years, short train commute. Needs US citizenship and certs within 6 months (reimbursed). Verified via Indeed details."
     },
     {
-      "title": "Project Coordinator",
-      "company": "Clinical Ink",
+      "title": "Technical Moderator (Contract)",
+      "company": "Atari",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZkbjZRMjJSRWczV09EdnhSMXJpTktnEiQwMWExZDRmMS1hYzQyLTdkYmUtYWEwYS1kZGE5Y2U5NjBkZTMaUEFBR0hINWxBbll3UnFLcTNWZWozTTBUYmhiNWJXRi1Tczc2QzQ3NF9WSTNZeUJtQmlTN3ZkemdPUDFaVmN5RnlabDNuQ1RBYVNUQXd5QmcxIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ4U3Z6RDBNSkg2OHhhVElONzRUeW53EiQwMWExZTQ2Ny02OWRhLTcxODktYWViOS05ODJkNjQwODNlOTAaUEFBSGFEcFk2bDdQcC1rcFFXMjRpVzg3VUdsVGFURnN3YkphSS1BWTBhcGpTeWhQT3ZMUTdPcGZmTVhieWE0Nlk1RE5BX0JUM0NKTF8xNG5MIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Full-time remote junior project coordinator at a clinical-trial software company, $47.5k-$70.5k, posted 2 days ago. Requirements couldn't be read. Unverified."
+      "note": "Remote community/technical moderation contract at a game publisher, posted 4 days ago. Unverified."
     },
     {
-      "title": "Information Technology Support Specialist",
-      "company": "PGMTEK Inc.",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZaSEdoTDJYWHkwaUotZUtpQjNmalNREiQwMWExZDRmMS1hODVjLTc5OGUtYmQ0NS03MDQ2ZWY4M2E0MDAaW0FBR0d6d3lqaV96SUhlcExzZjYxWW80Z2o5LUhUR3MxSEJJYmI5MkdtSDI3TXFLTVg2TkRzcUpmUHp4Nm15SU1DSVB3YUNYWnZEZUx6WTdTRnYxX2s4X2FlQUUgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Full-time on-site IT support role tagged junior, $51k-$104k, posted yesterday. Requirements couldn't be read. Short train commute. Unverified."
-    },
-    {
-      "title": "Level 1 Desktop Support Analyst",
-      "company": "True Group, Inc.",
+      "title": "Technical Support Specialist II",
+      "company": "ConnectWise",
       "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ1cEpLVWxUQ2JTeHF3QTh4dFVkMlF3EiQwMWExZDRmMi1iZGNiLTczODEtYWZlYS05NzE4ODUxMGY4N2QaW0FBSEVFd0tyVW9jN296UlBBLXg4R1VLbERmUmZoUy1yQjFoVHFDejdNZ2FxaTlOWUhKYjZtbkNSd1pWbUphU0lyWEhyLUYzbnVjTUs4dkRZUG1OTFBCLUlLaXMgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Full-time remote Level 1 desktop support role, $47.5k-$64k, posted yesterday. Requirements couldn't be read. Unverified."
-    },
-    {
-      "title": "Purchasing Coordinator (Onsite) - NYC",
-      "company": "Compass Group",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZKNmY2UE5iU0dyWkJIYlMydzU5SFd3EiQwMWExZDRmMS1iZGI0LTczZDEtYTVlMy05YzI5ZGNmNGNjYTMaUEFBSHpLa3FFMC1zNHRZUGtwdkY3dER2VWUwWFNKUGhtSGp6eFdpcjFoSWNuVWtzbUc0TGx6ajJ5LWVaVGFqSVZIeXpyd3VheFdjSXRJcWk0IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Full-time purchasing role at a large food-service company, $46k-$62k with medical, dental, vision, PTO, life insurance and retirement, posted today. Requirements couldn't be read. Short train commute. Unverified."
-    },
-    {
-      "title": "Wholesale Purchase Order Coordinator",
-      "company": "ACF Brands",
-      "location": "Keasbey, NJ",
-      "url": "https://to.indeed.com/aablr27wwplz",
+      "url": "https://to.indeed.com/aalqmmn2znxk",
       "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time PO follow-up role at a footwear wholesaler, $20-$24/hr with health insurance and PTO, posted Nov 12: tracks retail orders, shortages and delivery dates with warehouse and buyers. Prior experience preferred, no degree. Near a commutable NJ Transit station, but check the last stretch. Verified via Indeed details."
+      "category": "art",
+      "note": "Remote case-based technical support at a software company; knowledge-base writing and escalation work, no degree listed. Verified via Indeed details."
     },
     {
-      "title": "Account Support Coordinator",
-      "company": "United Legwear & Apparel Co.",
+      "title": "Temporary Associate Producer",
+      "company": "2K (Cloud Chamber)",
+      "location": "Remote (US)",
+      "url": "https://job-boards.greenhouse.io/2k/jobs/6561372003",
+      "source": "Greenhouse (web search)",
+      "category": "art",
+      "note": "Entry-level production support on a major game team, fully remote anywhere in the US; temporary. Posting date not visible. Unverified."
+    },
+    {
+      "title": "Information Technology Implementation Technician",
+      "company": "Head Field Solutions",
+      "location": "Jersey City, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZ4Sjd6S1Zqd3NzTGhDb09UZWNLXzVBEiQwMWExZTQ2NS1lM2M0LTcwZjEtODE4Mi0wMjZhZjYwM2ZiMGQaW0FBSEJLNXpHeTVmM0l3Vk53M1NsVXdKUzlEN1ZSdTlRZWZzMWlENXZodHhXa1M5VEdudTJaT3VOVUZ3SW1OTy1FYUswOEJlN3BGVE9wdC1LUjgzd0t4YmwzM3cgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Junior hardware rollout/implementation tech role, PATH-reachable, posted 1 day ago. Unverified."
+    },
+    {
+      "title": "Roblox UGC Artist",
+      "company": "Sawhorse Productions",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZZeDBOS3N0M0p0ejFHZFA1ejFUVUhREiQwMWExZTQ2NS1kZGQ3LTc2NzktYjJlYS0zMGNhOTRhYWQyN2QaUEFBSGxZOHdkN29JdnVWeDBwRld3WTJucE5xMVR0YlNtUGJXR0hmMXRVbzVMaHlVdTdfMlN4dG4tOHlReUpEcTQ5ZGNOaWh5ZS16a1hsTWV0IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Junior-tagged 3D item/asset art for Roblox, remote-optional, $70-90k listed. Unverified."
+    },
+    {
+      "title": "Assistant Manager, Operations (Menlo Park Pop-up)",
+      "company": "lululemon",
       "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aawfrvvdh7qq",
+      "url": "https://to.indeed.com/aam662nfqk2j",
       "source": "Indeed",
       "category": "ops",
-      "note": "Contract-to-permanent order and inventory coordination role, $25-$35/hr, posted Nov 12: open-order reports, inventory checks and warehouse follow-up. High school diploma plus 3-4 years and advanced Excel/ERP asked, so it's a stretch. Short train commute. Verified via Indeed details."
+      "note": "Store ops lead role covering scheduling, inventory counts, receiving and vendors; asks for 1 year of ops/admin experience, degree only a nice-to-have, short train commute. Verified via Indeed details."
     },
     {
-      "title": "Area Manager Trainee",
-      "company": "Performance Foodservice",
-      "location": "Elizabeth, NJ",
-      "url": "https://to.indeed.com/aakgtlpqp6dx",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Full-time trainee role at a broadline food distributor, with day-1 health benefits, 401(k) match and education assistance, posted Nov 9. Asks for a high school diploma and 0-6 months of sales or restaurant experience; the work is mostly account sales to restaurants. Short train commute. Verified via Indeed details."
-    },
-    {
-      "title": "Inventory Coordinator",
-      "company": "Podium Automation",
-      "location": "New York, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZYWlhKV2dRVExCOHkyamVrLWpvOXJREiQwMWExZDRmMS1iOTBmLTczYjYtOTk2ZS0xNmI1Yjg4NTEzM2IaUEFBRjg0Y0FFOHVLTXRuYnZzNkRIZGRBQWYxRmFHNFpGRnVmbVYxdjNkSURzODFRellZaGp1TjBkSktqZW1RMzR0SkJ6UEtJQXFTN0dkX3FVIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Purchase Order Coordinator",
+      "company": "Enchanté Accessories",
+      "location": "Manhattan, NY",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZhX296U0R0OWVmZm5Xc0ZKMzVQdVVnEiQwMWExZTQ2NS1mN2RmLTc2NjAtOTc3Mi1kMmIyYTQ1MjBhNjIaW0FBR0tDR2dLc0ZMeExVcncyV25nOVc4ZFlpcVJfd2NSYVZDVEJYbFlTQXdlU1FSSlNvWDctSEpyU0p6MDFXNlFMQ0FXZ1FCTjlKZmc0TU1SeFYxVFBVQ1ljY1Egya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "On-site contract inventory role, $40k-$52.5k, posted today. Requirements couldn't be read. Short train commute. Unverified."
+      "note": "Purchasing/PO coordination role in Manhattan (confirm the office is near Penn Station), $60k+, posted 2 days ago. Unverified."
     },
     {
-      "title": "Shipping/Receiving Clerk (Parts Dept.)",
-      "company": "Lexus of Edison (Kollective Auto Group)",
-      "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aaddj26s64qn",
-      "source": "Indeed",
+      "title": "MRO Purchasing Agent",
+      "company": "Synerfac Technical Staffing",
+      "location": "Avenel, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZJYzhSbDJjUmF1SVJibnFaRG50QU93EiQwMWExZTQ2NS1mN2RmLTc2NjItOTk3My1kNzlhZmQ2ZmQwM2QaW0FBSHdOWXBhdHpXTlRlVG91ajlZQ3BvZmppNEg3WTVsWGptYnR6eFh1WDh5ZzlqSXJxMXI1V0xYRGx0MzdNV3dtR2tGT1ZpcHV2YlRpZVNTejRrVUxTdV9EQVEgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Full-time union parts-department role, $44k-$68k with medical, dental and 401(k), posted Nov 12: receives and scans stock orders, preps outbound deliveries. No experience minimum listed; requires a driver's license check and some heavy lifting. Short train commute. Verified via Indeed details."
+      "note": "Maintenance-supplies purchasing role next to an NJ Transit stop, $55-60k, posted 3 days ago. Unverified."
+    },
+    {
+      "title": "Assistant Store Manager - Kay Jewelers - Woodbridge Center",
+      "company": "Signet Jewelers",
+      "location": "Woodbridge, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZvQ3Y5RnV4Q1YzdjRqYmFaS1ViSHhBEiQwMWExZTQ2NS1mYmQyLTc5ZjktODljNS0yNmE5ZmFjZGE4MjQaUEFBRXlicHdWaGQybDZwTk90bkVrNmUwN19CYkhJb1Jyb1c2ajBoSzYyUUhJamFCcTFpeU5MN3AtazRSdkVGQ3VLYnZiTVdOX1VlWlMxV0pqIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "ops",
+      "note": "Assistant store manager path with benefits, short train commute, posted 5 days ago. Unverified."
     }
   ]
 }
