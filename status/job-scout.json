@@ -1,118 +1,64 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-18T12:45:22Z",
-  "lastRun": "2026-11-17T12:48:57Z",
-  "summary": "Found 12 new roles: 9 art, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-17.md",
+  "state": "done",
+  "updated": "2026-11-18T12:48:40Z",
+  "lastRun": "2026-11-18T12:48:40Z",
+  "summary": "Found 6 new roles: 3 art, 3 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-18.md",
   "items": [
     {
-      "title": "Contract External Development Production Assistant",
-      "company": "Bungie",
-      "location": "Remote (US)",
-      "url": "https://job-boards.greenhouse.io/bungie/jobs/6913374",
-      "source": "Greenhouse (web search)",
-      "category": "art",
-      "note": "Early-career production support role on a major game team: tracking vendor tasks, risks and content approvals; remote anywhere in the US. Contract. Unverified."
-    },
-    {
-      "title": "Junior IT Support Technician",
-      "company": "AMSPEC",
-      "location": "Avenel, NJ",
-      "url": "https://to.indeed.com/aas7r4mnnpd4",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Junior service desk role (ticketing, laptop/mobile setup, asset records, KB articles); high school diploma + 1-3 years help desk, posted today, short train commute. Verified via Indeed details."
-    },
-    {
       "title": "Customer Support Specialist",
-      "company": "Get Covered LLC",
+      "company": "ABC Fitness Solutions",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aad6b8qcbf8k",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY5UnpIMHBNd1RJb19ZWjB5V0NTdUFnEiQwMWExZWViMS01NDUxLTc1MTEtOGExZC01YTA0YmRlNmFiZTcaUEFBRndIS0JvWVppWW0xX1Y3QTlkSF8xd0I3NzFBYXVLQktRcG9OY0hRYjdCWm9QUmVGY085V3REVWRDS2dBNDJOVlFFd3RrZXptT3dQdmVvIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Junior-tagged remote support role at a fitness software company, $34-54k with full benefits, posted 1 day ago. Unverified."
+    },
+    {
+      "title": "IT Support Technician",
+      "company": "Falcon Recruitment",
+      "location": "Newark, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZGd0thMUo1MUE3OVlXdVAyMkJGbk1BEiQwMWExZWViMS05YTA3LTc3ZDktYTE3OC0zNDY1ZDVjYmYzNWEaW0FBR1I1Zk9KdDJkTVl5YWU0b3BMWHI1bjl0VFhzTzFBMzV5T3N6MnNDUDI1d1hHQmVmblBEbW9IaXpBbFZ3d0lLeHVwNUp5Tm91aDRyb3B6TzJLbVVJUDFGNnMgya0FEAEYya0F&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Junior-tagged onsite IT support role through a recruiter, $56-70k with benefits, posted 1 day ago, short train commute. Unverified."
+    },
+    {
+      "title": "Associate Implementation Specialist - Remote",
+      "company": "Karmak, Inc.",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aaj2yn8fsxxs",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote ticket, chat and email support at an insurance-tech company, $45-55k; no degree listed, customer service experience preferred. Verified via Indeed details."
+      "note": "Associate-level remote software onboarding and training role at a business-software company, $48-50k; no degree listed, needs a driver's license and some travel. Verified via Indeed details."
     },
     {
-      "title": "Associate Producer",
-      "company": "Atari",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZqcVdEU2JIRWJQWHRkYTR1NjVfdlBnEiQwMWExZTk4Yi0wYjIwLTcwY2UtOWEyMy02M2MyMmExNTc3ZjAaUEFBRnU1TS1nUjMzRXcxX3JDUUFUY09VODh6ZHlseW9qd3VBZ2VaM1FYdHhZeTJpczRNeklQYVo0TU1fcUdUTnFxa3NUNTg2R3VDQmQxMjM3IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Vans: Assistant Manager - Jersey Gardens",
+      "company": "Vans (VF Corporation)",
+      "location": "Elizabeth, NJ",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZkckZPVWNRV2lPWFpDT2FDZG9jc3p3EiQwMWExZWViMS1hN2E2LTc3NTEtODEyNy05ODJiZTVjMmFkODcaUEFBRWV4alpWa1kyOTI4NVFaMmtvel91UF80cXlvTS1CLU0wRWlvbEFfRXcxdldPeXdkRHFRT2I0WXRJT09tSktNUTdvelRLZnByY3FoYzZDIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Associate-level producer role at a game publisher, remote-optional, $75-90k, posted 1 day ago. Experience bar not visible. Unverified."
+      "category": "ops",
+      "note": "Retail assistant manager role on a store-management path, $54-81k with medical, posted 8 days ago, short train commute plus a bus. Unverified."
     },
     {
-      "title": "Technical Support Specialist, GovTech - US",
-      "company": "Aquila",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ4LWwzSThQZjVUU0FXdVhPaVpobnR3EiQwMWExZTk4Yi0xZTcyLTdkOTgtOWY5OS1mMDgwOTMzZDViMWEaUEFBR0lCc3UyM3pHUXhveDdwSTF5c2syeGxkYjRHYURxNEZJODJSRVpTY2txcFB4cWx6WklWdjdhRENEUHNHbml4U05GbnN5M3BhaFBDVmVlIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Junior-tagged remote software support role, $43-65k, posted 1 day ago. Unverified."
-    },
-    {
-      "title": "Jr/Mid Level Helpdesk Specialist",
-      "company": "Amtex Systems Inc.",
-      "location": "Jersey City, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYtQll1N3BHRjJVa01qa3l6cTlWUVRREiQwMWExZTk4Yy03OGZiLTcyZmItYTA0NS05YjEzMDQ0NTNmY2QaW0FBR3RuQnROUEw3RkZxcWlQdk9fcmlYWUlFbENrYWJHWWVqMHl3RnJjVVpSWlpNVXJ3a2ZYTHZrOTdIS2dxX0lBOGd0NVdrMkhuajFSVEN2azJodDVVRmFWYVEgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Onsite junior/mid help desk role, $44-62k, PATH-reachable, posted 4 days ago. Unverified."
-    },
-    {
-      "title": "Help Desk Representative",
-      "company": "The Research Foundation of CUNY",
+      "title": "Coordinator, NA Purchasing",
+      "company": "Tapestry, Inc.",
       "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZDdXRNZm50UlRqVkpTYklSVVZxWUhnEiQwMWExZTk4Yy03OGZiLTcyZjctOWE2NC1lMTljMWE3OTliZDMaUEFBRWd5RThqSVU3UlJocGcySVYzX2V2c0FZLUhWMlAwUmNrUlhjbFhWYm5ZTkJmNUVBWDBwMklfc2JjSUk2MTN0RUZsYXREX0tuVlQ1bGpYIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Entry-level help desk role, $45-55k, posted 5 days ago; confirm the office is near Penn Station. Unverified."
-    },
-    {
-      "title": "Remote Gaming Moderation Specialist",
-      "company": "ModSquad",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ3Z2lXRFdCU0EtcmZNWl9VOHlDRkh3EiQwMWExZTk4Yi0zMzgwLTc1N2MtOWU0Ni0xYjEyODE2ZTk3NzkaUEFBRjUyWW1rUVBORGZKUUxER1E4N0RZZ1FjeWdfVXZ6UlZSWXJfVlVocjBCeTYzWU1pdDRLSVk3Q1dkU3hhOENtVjcxeE1FckcyOEN0YnJXIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Part-time remote community moderation for game clients, posted 12 days ago. Unverified."
-    },
-    {
-      "title": "3D Artist (Part-Time, Remote)",
-      "company": "Default Project",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ4ekJ5NVhZQW5xZXZaT0JscmVkb3ZBEiQwMWExZTk4Yi0xNTc4LTcwMTMtOWMzMy0zMzI3YzNmMzcwMzQaUEFBRXg0YzFrMTJRdFptSFZQcWlmNllMY2R1LVZwUFJTSFBrVi16MDNfZ0NjSXhfZVdfb2FDa09TR3NFZVAyMVNadkM4bXRDNm9rTW5SXzJyIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Junior-tagged part-time remote 3D art role, up to $40/hr, posted 1 day ago. Unverified."
-    },
-    {
-      "title": "Inventory Specialist - NY",
-      "company": "Mixlab",
-      "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY2U2pJU0Jyb3pBRFlPT2loM2szLUt3EiQwMWExZTk4Yi0zY2FhLTczMTUtOGM0OC0xODkxMmNhYWY1M2MaUEFBSE9RUEsxdjNTUDRFR01XN1czdVFaQXFqZlpNeFFGQ3ZucW5qekEzS2I2dU4wajVHZWJIdHlOWUhQWlNhSVJkV0tIb2Y4ZGJNSzZFdVl6IMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZ6cHU0UnctdHJXb1lHeGNhY29KZTV3EiQwMWExZWViMS03NjU2LTdjM2UtOWM1Yi01MGYzMTEyZjhmMzQaUEFBRjhzQzhfNE56WUN0TFhMRmI3TVhDZjd1czF2OUxVVERnWW5wc3BUZ3BMUl9zVWpaQjlQZ3ZPM3NsMGZ2NkZqc1VzMFZjZ19wV2ZlRnVNIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Full-time inventory role with benefits, $40-48k, posted 1 day ago; confirm the site is near Penn Station. Unverified."
+      "note": "Coordinator-level purchasing role, $69-75k with benefits, posted 2 days ago; the company HQ is a short walk from Penn Station. Check the posting for a degree requirement. Unverified."
     },
     {
-      "title": "Assistant Store Manager",
-      "company": "Claire's",
-      "location": "Edison, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZDajBYTjZ4OFhoNG9xU0xDZC1hNlRnEiQwMWExZTk4Yi1hNWUxLTc3OTgtOWQ5ZS1kOTExYzZiOTAxMjgaUEFBRl9rcXVaWUEwQURNV3Y2eVRBOTFIOTdjSGRtOW1nZmhSMlVxT29hNVEtLVRhako5aFJFUnpORVdPNjExOFV5bFZaTFNPelBnT0dOTUdQIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
+      "title": "Assistant Project Manager (Entry-Level) - Residential Renovation",
+      "company": "Comstock Home Renovations",
+      "location": "Hoboken, NJ",
+      "url": "https://to.indeed.com/aapn9gsrk2md",
+      "source": "Indeed",
       "category": "ops",
-      "note": "Store management path with benefits, posted today, short train commute. Unverified."
-    },
-    {
-      "title": "Field Project Coordinator",
-      "company": "DCI Signs",
-      "location": "Newark, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChY2a1NGV3c0TmVTWWtvYmtqQ3NTdW5nEiQwMWExZTk4Yi0xYTk5LTdhZjItOTM4OC1lMzc5N2EyNDA5ZjkaW0FBR043V0lNVGZiZ0s5TDJPNXNpNTd0aDBlalNjZlhHZ2NVRnF0c3VEYmVNblZ4eG1UN2QzYlJhU0ZwQm1ZT0VoQ3ZWaUJ5RHJwMVBPWWNXVmJyajZKbjhBREkgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Junior-tagged project coordination role (scheduling, vendors, field crews), $50-72k with benefits, posted 13 days ago, short train commute. Unverified."
+      "note": "Entry-level coordination role (deliveries, on-site inventory, vendor and trade scheduling), $25-30/hr, will train; needs an NJ driver's license for van runs. Verified via Indeed details."
     }
   ]
 }
