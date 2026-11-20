@@ -1,91 +1,55 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-20T12:45:54Z",
-  "lastRun": "2026-11-19T12:49:45Z",
-  "summary": "Found 9 new roles: 5 art, 4 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-19.md",
+  "state": "done",
+  "updated": "2026-11-20T12:49:18Z",
+  "lastRun": "2026-11-20T12:49:18Z",
+  "summary": "Found 5 new roles: 3 art, 2 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-20.md",
   "items": [
     {
-      "title": "IT Technical Support Analyst",
-      "company": "Lakeside Book Company",
+      "title": "Customer Support Engineer",
+      "company": "PlaySight",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aalfsb7kcqfd",
+      "url": "https://to.indeed.com/aasn6htlxmbz",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote first-line support role running a ticket queue for business and manufacturing systems, $60-70k with benefits, posted Nov 16. Lists a degree or an equivalent mix of education and experience. Verified via Indeed details."
+      "note": "Remote Tier 1/Tier 2 support at a sports-tech company working a Freshdesk ticket queue, $50-75k, posted Nov 18; asks for 1.5+ years of support experience, no degree listed. Verified via Indeed details."
     },
     {
-      "title": "Level 1 Technical Support Representative (Remote)",
-      "company": "Activus Connect",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZDeWEwQ3puYlUxVEZjelRsNWJWWFpnEiQwMWExZjNkNy1mNjdmLTc4OTEtYWJjZS0wOGVkYzNkNmU3NjQaW0FBRTN6SV80ZUItVlNkbEh0bVNpTmZBb0pfWFJYR1ZvQ2UyWU1ldUE3dDFQbEhnLXV5aHJ6SV8zNU5nRElfRjVTN0lnNldlcjI2MWc2Vmtock84dXA2TG1HY3Mgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
+      "title": "Production Assistant",
+      "company": "Alderon Games",
+      "location": "Remote",
+      "url": "https://alderongames.com/work-with-us/production-assistant",
+      "source": "Studio careers page",
       "category": "art",
-      "note": "Entry-level (junior-tagged) remote tier 1 tech support, about $36k with full benefits, posted 1 day ago. Unverified."
+      "note": "Entry production role at an Unreal Engine indie studio (task tracking, scheduling, reports; Jira/Trello/Asana preferred), no degree listed. No visible posting date. Unverified."
     },
     {
-      "title": "Project Coordinator",
-      "company": "Epiq",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZpS1lrOHpOOUxZamw5MGJxZEhXZmh3EiQwMWExZjNkNy1mZDQzLTc2ODQtODhiMy02YTczNzVmMTBhYTIaUEFBSHBPbzlnUGlvZHFfTkxnQVZuQWdFbVlUSm5lZ2MzMF94RjNtZ0ZFQ19DYUNYT0xYenFlUHUzR2VkYjhQekRKR3F4dFZhc2hJQWxjbGxOIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Junior-tagged remote project coordinator at a legal-tech services company, $36-48k, posted today. Check the posting for a degree line. Unverified."
-    },
-    {
-      "title": "Production Coordinator",
-      "company": "Tzumi Innovations",
+      "title": "Help Desk Technician I",
+      "company": "JRM Construction Management",
       "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChY3dVJ2b2lqZXNDWnIxRm9Dd1Uzb1R3EiQwMWExZjNkNy1mMDE5LTdhNmEtOTRjMC1jMmM4OWJhY2UyOTIaW0FBSFEtUno5ZmI0bVMwNzN0Z1RpcTgzeFExV0dUX3ppVWJZc2R4OUdsT0ppVHZxLW9LczJVQm9fc1gzLURFTVRQamd2Tk1RbFBfemVEX2t2YURZdkJqT0RKQ2sgya0FEAEYya0F&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZPbzl2OEdtX1FLM2gtcmpkd0dSampnEiQwMWExZjhmZS1hZWE2LTc0MDktOTA2Yy1lY2VmZTg5YzIwMTUaUEFBRUZQM1NTY014OThBMGFfLTZqaEdyQXRxZHEycUoyaVBmbjVLUjZwWHBVQUpWekpoUUNtSzQ5cG01UVRCTlo2UVk5N1NCVXg1N1pLNjVtIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Junior-level production coordinator at a consumer-electronics company, $50-55k with full benefits, posted 13 days ago; short train commute into Manhattan. Unverified."
+      "note": "Junior-tagged onsite help desk role, $44-59k, posted 1 day ago; short train commute. Unverified."
     },
     {
-      "title": "Help Desk Associate",
-      "company": "Wolfe Research",
-      "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpMBChZTODZQaUVGWmxxRElCTmY5QXZYNDB3EiQwMWExZjNkOC0zZDIyLTdlM2UtYTZjOS04MTBhNTJjZTc0MWEaT0FBRi1mSWJkeFJkaFk5YXdWMzJIVmZDazFGVHVsaHhqNWdwZTdaeHVGU1BSUDNCMVVxOElZZmx2cG9YdjR6S3dxOGJKZnhJbGl5eEw1WU0gya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "art",
-      "note": "Junior-tagged onsite help desk role at a research firm, $75-80k with benefits, posted 3 days ago; short train commute. Likely wants some prior help desk work. Unverified."
-    },
-    {
-      "title": "Applebee's Restaurant Manager",
-      "company": "Doherty Enterprises",
+      "title": "Corporate Office and Facilities Coordinator",
+      "company": "FINRA",
       "location": "Woodbridge, NJ",
-      "url": "https://to.indeed.com/aabwmr7ld7mx",
+      "url": "https://to.indeed.com/aakbv22ks4zc",
       "source": "Indeed",
       "category": "ops",
-      "note": "High-volume restaurant manager role with paid leadership training, inventory and cost control, $58-80k plus bonus, posted Nov 18; asks for 1-3 years of restaurant leadership, no degree. Short train commute. Verified via Indeed details."
+      "note": "Facilities coordinator handling vendors, supply inventory and service tickets, posted Nov 17; degree or equivalent experience. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Purchasing Coordinator (Onsite) - NYC",
-      "company": "Crothall Healthcare",
+      "title": "Assistant General Manager",
+      "company": "Seed Library",
       "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY1dnlOSVBjUmRaTzYwZEhzTnJOdUdBEiQwMWExZjNkOC0xMTMxLTc3MmItOTQ0Mi03Y2U3YjA4NmE3M2UaUEFBSENrSVAyVEhFSV9vR204V2Y0a3A0WTJzOWw1QzJQRzd4M2ZHS09vZk1GRDc1Vkt1QkNPVUF4MGp6OFI4bVQ2cDJaNFhtM2g1MGRuOXlsIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYzSE1JUVV1R0VMTjVVT0l2Q3c1V1B3EiQwMWExZjhmZS1kM2FlLTc5MTYtYmI5YS05MWJjZGNiMzQ2YjMaW0FBRy10Y0p2X2lnTVE4Q0JreGNZX0RUbkZYMEVuNDlIbUJ5RzlobWZPTWdpY3c2aklCeERLd29GZ0tpeHpjc0JZOU1vaVJRb091TlZSbnJqLWh6Smo1RnRsUEkgya0FEAEYya0F&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Junior-tagged purchasing coordinator at a hospital support-services company, $46-62k with full benefits, posted 7 days ago. Check which hospital site it is for the commute. Unverified."
-    },
-    {
-      "title": "Project Coordinator",
-      "company": "Consortium Companies",
-      "location": "Edison, NJ",
-      "url": "https://to.indeed.com/aadqdpwyv4gs",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "In-office print production coordinator (orders, schedules, vendors, job tracking), $50-70k with benefits, posted Nov 17, no degree; print-industry experience is strongly preferred. Short train commute. Verified via Indeed details."
-    },
-    {
-      "title": "Store Manager, Middlesex County",
-      "company": "Starbucks",
-      "location": "New Brunswick, NJ",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZXT2QwN2poSVZKZ0p0V2VZQXdyM3VnEiQwMWExZjNkOC0wYWQxLTcwY2YtOGYyYS0xYjE3MDBmYjAzYWIaW0FBRjByeEY2U3hjbnRsVTRmNGttSFpiTVZHQ085NnZsY0VUZ3hydXpib2VWcGNlc2wxOFNkY0tzcGF2STFSNUIwc2VjNEJxUnhhdUN3WWYxUUZpNmJFTkhFRWMgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Store manager role with staffing, inventory and training duties, $69-97k with full benefits, posted 8 days ago; short train commute. A stretch on level. Unverified."
+      "note": "Hospitality assistant GM role, $72-82.5k with benefits, posted today; a stretch on level. Short train commute. Unverified."
     }
   ]
 }
