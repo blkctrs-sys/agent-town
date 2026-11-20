@@ -1,7 +1,7 @@
 {
   "agent": "job-scout",
-  "state": "done",
-  "updated": "2026-11-19T12:49:45Z",
+  "state": "working",
+  "updated": "2026-11-20T12:45:54Z",
   "lastRun": "2026-11-19T12:49:45Z",
   "summary": "Found 9 new roles: 5 art, 4 operations. 3 tailored resume drafts ready.",
   "report": "jobs/2026-11-19.md",
