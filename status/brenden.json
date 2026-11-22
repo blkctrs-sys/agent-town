@@ -1,38 +1,9 @@
 {
   "agent": "brenden",
-  "state": "done",
-  "updated": "2026-11-15T12:04:14Z",
+  "state": "working",
+  "updated": "2026-11-22T12:03:41Z",
   "lastRun": "2026-11-15T12:04:14Z",
-  "summary": "Content desk done: 7 posts ready, no newsletter this week.",
+  "summary": "Working on this week's content desk.",
   "report": null,
-  "items": [
-    {
-      "title": "Poll draft",
-      "category": "post"
-    },
-    {
-      "title": "Post draft",
-      "category": "post"
-    },
-    {
-      "title": "Post draft",
-      "category": "post"
-    },
-    {
-      "title": "Post draft",
-      "category": "post"
-    },
-    {
-      "title": "Post draft",
-      "category": "post"
-    },
-    {
-      "title": "Post draft",
-      "category": "post"
-    },
-    {
-      "title": "Post draft",
-      "category": "post"
-    }
-  ]
+  "items": []
 }
