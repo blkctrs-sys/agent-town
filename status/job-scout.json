@@ -1,55 +1,100 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-23T12:45:52Z",
-  "lastRun": "2026-11-20T12:49:18Z",
-  "summary": "Found 5 new roles: 3 art, 2 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-20.md",
+  "state": "done",
+  "updated": "2026-11-23T12:49:10Z",
+  "lastRun": "2026-11-23T12:49:10Z",
+  "summary": "Found 10 new roles: 7 art, 3 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-23.md",
   "items": [
     {
-      "title": "Customer Support Engineer",
-      "company": "PlaySight",
+      "title": "Help Desk Engineer",
+      "company": "Equinox",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aabj9s4c2hxb",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Entry-level help desk role working ServiceNow tickets and desktop support, $70-75k; degree or 1 year of experience. Short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "IT Support Specialist",
+      "company": "Onebrief",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aasn6htlxmbz",
+      "url": "https://to.indeed.com/aac9wc82chqt",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote Tier 1/Tier 2 support at a sports-tech company working a Freshdesk ticket queue, $50-75k, posted Nov 18; asks for 1.5+ years of support experience, no degree listed. Verified via Indeed details."
+      "note": "Remote IT support at a software company (tickets, equipment inventory, onboarding), $100-112k; 3+ years of help desk, no degree required. Verified via Indeed details."
     },
     {
-      "title": "Production Assistant",
-      "company": "Alderon Games",
-      "location": "Remote",
-      "url": "https://alderongames.com/work-with-us/production-assistant",
-      "source": "Studio careers page",
+      "title": "Office Coordinator",
+      "company": "Modicum",
+      "location": "New York, NY (hybrid)",
+      "url": "https://to.indeed.com/aasx4hmbhr7z",
+      "source": "Indeed",
       "category": "art",
-      "note": "Entry production role at an Unreal Engine indie studio (task tracking, scheduling, reports; Jira/Trello/Asana preferred), no degree listed. No visible posting date. Unverified."
+      "note": "Studio operations at a design and animation agency (vendors, supplies, onboarding, events), $67-76k, no degree listed. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Help Desk Technician I",
-      "company": "JRM Construction Management",
-      "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZPbzl2OEdtX1FLM2gtcmpkd0dSampnEiQwMWExZjhmZS1hZWE2LTc0MDktOTA2Yy1lY2VmZTg5YzIwMTUaUEFBRUZQM1NTY014OThBMGFfLTZqaEdyQXRxZHEycUoyaVBmbjVLUjZwWHBVQUpWekpoUUNtSzQ5cG01UVRCTlo2UVk5N1NCVXg1N1pLNjVtIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "title": "Client Support Specialist",
+      "company": "empeon",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aa8y2wyx2b7s",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Remote ticket-based client support at a payroll/HR software company, $60-70k, no degree listed. Verified via Indeed details."
+    },
+    {
+      "title": "Product Support Analyst, Evening Shift",
+      "company": "Adaptation",
+      "location": "New York, NY (remote after training)",
+      "url": "https://to.indeed.com/aar8wysxktwp",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Help desk monitoring and issue tracking, $21.50/hr, high school diploma required; remote after 2 weeks of onsite training. Verified via Indeed details."
+    },
+    {
+      "title": "Customer Relations Specialist, Vault",
+      "company": "Collectors",
+      "location": "Jersey City, NJ",
+      "url": "https://to.indeed.com/aapr987k98hv",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Customer relations at a collectibles grading and tech company, $22.50-24.50/hr, 3-11:30 PM onsite shift, no degree required. Verified via Indeed details."
+    },
+    {
+      "title": "Casino Customer Support Agent - Evenings & Weekends",
+      "company": "Penn Interactive",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChY3UUpsNmZBZVFsdm1LeFVKcl9oYUVnEiQwMWEyMDg3MS1jMWJhLTc5NzktYTE2Ny05NzkyMmJmMWM1ZGMaUEFBSGw3VWhQWWZBQlo4aWZNWUpGaHFzQUFya09HVlpnaHI2QTRCSVVLSDNwMWVRM0ZrR0RMS2ZMRTZ0T2xQSTF2TUhjNDBJZjdfNWxNejEtIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Junior-tagged onsite help desk role, $44-59k, posted 1 day ago; short train commute. Unverified."
+      "note": "Remote player support for an online casino product, $38.5-51k, evenings and weekends; check state eligibility. Unverified."
     },
     {
-      "title": "Corporate Office and Facilities Coordinator",
-      "company": "FINRA",
+      "title": "Assistant Banquet Sales and Operations Manager",
+      "company": "The Sapphire Grand",
       "location": "Woodbridge, NJ",
-      "url": "https://to.indeed.com/aakbv22ks4zc",
+      "url": "https://to.indeed.com/aaxng9zc8sty",
       "source": "Indeed",
       "category": "ops",
-      "note": "Facilities coordinator handling vendors, supply inventory and service tickets, posted Nov 17; degree or equivalent experience. Short train commute. Verified via Indeed details."
+      "note": "Event-venue operations coordinating kitchen, staff and vendors, $23-27/hr, 1-3 years of hospitality experience. Short train commute. Verified via Indeed details."
     },
     {
-      "title": "Assistant General Manager",
-      "company": "Seed Library",
-      "location": "Manhattan, NY",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChYzSE1JUVV1R0VMTjVVT0l2Q3c1V1B3EiQwMWExZjhmZS1kM2FlLTc5MTYtYmI5YS05MWJjZGNiMzQ2YjMaW0FBRy10Y0p2X2lnTVE4Q0JreGNZX0RUbkZYMEVuNDlIbUJ5RzlobWZPTWdpY3c2aklCeERLd29GZ0tpeHpjc0JZOU1vaVJRb091TlZSbnJqLWh6Smo1RnRsUEkgya0FEAEYya0F&tsid=100000502",
-      "source": "ZipRecruiter",
+      "title": "Procurement Specialist",
+      "company": "Sloomoo Institute",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aayn78ndmhr4",
+      "source": "Indeed",
       "category": "ops",
-      "note": "Hospitality assistant GM role, $72-82.5k with benefits, posted today; a stretch on level. Short train commute. Unverified."
+      "note": "Purchasing and inventory for a multi-location brand, $75-82k; a stretch at 3-5 years plus ERP experience. Short train commute. Verified via Indeed details."
+    },
+    {
+      "title": "Co-Manager II",
+      "company": "Guess",
+      "location": "Edison, NJ",
+      "url": "https://to.indeed.com/aahgdcwl8hd6",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Second-in-command retail role (staffing, training, stockroom, loss prevention), $17.10-30/hr, 2 years of management, no degree required. Verified via Indeed details."
     }
   ]
 }
