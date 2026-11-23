@@ -1,14 +1,9 @@
 {
   "agent": "mildred",
-  "state": "done",
-  "updated": "2026-11-20T14:18:59Z",
+  "state": "working",
+  "updated": "2026-11-23T14:20:15Z",
   "lastRun": "2026-11-20T14:18:59Z",
-  "summary": "3 prep packs and today's drill. Let's run it back till it's clean.",
+  "summary": "Tuning up. Let's run it back till it's clean.",
   "report": null,
-  "items": [
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Prep pack", "category": "prep" },
-    { "title": "Practice drill", "category": "drill" }
-  ]
+  "items": []
 }
