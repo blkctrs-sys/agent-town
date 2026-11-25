@@ -1,82 +1,73 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-25T12:45:47Z",
-  "lastRun": "2026-11-24T12:49:12Z",
-  "summary": "Found 8 new roles: 5 art, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-24.md",
+  "state": "done",
+  "updated": "2026-11-25T12:48:44Z",
+  "lastRun": "2026-11-25T12:48:44Z",
+  "summary": "Found 7 new roles: 4 art, 3 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-25.md",
   "items": [
     {
-      "title": "Associate Production Coordinator: Commerce",
-      "company": "Rockstar Games",
-      "location": "New York, NY",
-      "url": "https://www.themuse.com/jobs/rockstargames/associate-production-coordinator-commerce",
-      "source": "LinkedIn search / Greenhouse",
-      "category": "art",
-      "note": "Entry-level production coordinator role at a game studio, $60-72.5k, degree or equivalent experience. Short train commute. Unverified; confirm it's still open."
-    },
-    {
-      "title": "Workplace Experience Coordinator",
-      "company": "Nanit",
-      "location": "New York, NY (hybrid)",
-      "url": "https://to.indeed.com/aa22wvybtcn2",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Office ops role at a consumer tech company covering vendors, events, budget and first-line IT, $65-75k, no degree listed. Short train commute. Verified via Indeed details."
-    },
-    {
-      "title": "QE Operator",
-      "company": "Disney Streaming Tech",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aa4tt7qtq7f2",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Streaming QA/ops role troubleshooting playback and logging issues in JIRA, $47.5-63.6k, high school diploma required. Nights and weekends. Verified via Indeed details."
-    },
-    {
-      "title": "Office Manager/Workplace Experience Coordinator",
-      "company": "LATENT",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aaqmsvmrlw8f",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Runs a startup's NYC office: vendors, budget, onboarding and events, $90-105k, no degree listed. A stretch. Verified via Indeed details."
-    },
-    {
-      "title": "Customer Support Specialist (Ecommerce)",
-      "company": "Evergreen Support",
+      "title": "Customer Support Specialist",
+      "company": "Bloomerang",
       "location": "Remote (US)",
-      "url": "https://to.indeed.com/aajfbnvpq8wc",
+      "url": "https://boards.greenhouse.io/bloomerang/jobs/4640022005",
+      "source": "ZipRecruiter / Greenhouse",
+      "category": "art",
+      "note": "Entry-level SaaS support role, $36-50k, remote with benefits. Unverified; confirm it's open."
+    },
+    {
+      "title": "Video Game QA Tester",
+      "company": "SpiderWare",
+      "location": "Remote",
+      "url": "https://jobs.workable.com/jobs/e7fb6cb5-841a-4f1b-8ded-4bc2a589dff9",
+      "source": "Web search (Workable)",
+      "category": "art",
+      "note": "Entry-level QA at an indie MMO studio. Unverified; confirm date and US eligibility."
+    },
+    {
+      "title": "Customer Service Representative - Online Tax Product Support",
+      "company": "Drake Software (1040.com)",
+      "location": "Remote (US)",
+      "url": "https://to.indeed.com/aawmzwqv9zg7",
       "source": "Indeed",
       "category": "art",
-      "note": "Remote part-time email support for e-commerce/SaaS clients, including bug reproduction and documentation, $20/hr, with a path to full time. Verified via Indeed details."
+      "note": "Seasonal entry-level chat/email product support, high school diploma or equivalent. Verified via Indeed."
     },
     {
-      "title": "Staffing Coordinator and Central Supply Clerk",
-      "company": "New Brunswick Nursing Home",
-      "location": "New Brunswick, NJ",
-      "url": "https://to.indeed.com/aaxj4dzspftl",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Scheduling plus central-supply inventory, ordering and receiving, $41-59k, no degree listed. Short train commute. Verified via Indeed details."
+      "title": "Customer Support Specialist (Contract or Intern)",
+      "company": "Eight Sleep",
+      "location": "Remote (US)",
+      "url": "https://jobs.ashbyhq.com/eightsleep/217583eb-e5a8-4889-adc1-01b718e0bd17",
+      "source": "ZipRecruiter / Ashby",
+      "category": "art",
+      "note": "Contract support role at a consumer tech company, from $40k. Unverified."
     },
     {
-      "title": "Assistant Production Manager, Photography",
-      "company": "The RealReal",
-      "location": "Perth Amboy, NJ",
-      "url": "https://to.indeed.com/aa2xmkmz6mxq",
+      "title": "Supplement Clerk (Supplement Operations Specialist)",
+      "company": "Morrison Center",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aakrwmb9byvs",
       "source": "Indeed",
       "category": "ops",
-      "note": "Warehouse team-ops role covering scheduling, trackers, payroll and training, $59.6-80.9k, needs 2+ years managing a team, no degree listed. Verified via Indeed details."
+      "note": "Inventory, receiving, purchasing and fulfillment in a small department, $24-29/hr, no degree listed. Short train commute. Verified via Indeed."
     },
     {
-      "title": "Food and Beverage Operations Manager",
-      "company": "Marriott International",
-      "location": "Newark, NJ",
-      "url": "https://to.indeed.com/aahmhksdl2bj",
-      "source": "Indeed",
+      "title": "Purchasing Coordinator",
+      "company": "Kirkland & Ellis",
+      "location": "New York, NY",
+      "url": "https://staffjobsus.kirkland.com/jobs/18502059-purchasing-coordinator",
+      "source": "ZipRecruiter",
       "category": "ops",
-      "note": "Daily F&B shift operations covering ordering, staffing and budget, $68-83k plus bonus. A stretch: asks for 4 years of F&B experience, no degree needed. Verified via Indeed details."
+      "note": "Purchasing coordinator role, $58-80k. Short train commute. Unverified."
+    },
+    {
+      "title": "Inventory Coordinator",
+      "company": "Signet Jewelers (Blue Nile)",
+      "location": "New York, NY",
+      "url": "https://signetjewelers.wd1.myworkdayjobs.com/BlueNile/job/Inventory-Coordinator_REQ_84695",
+      "source": "ZipRecruiter / Workday",
+      "category": "ops",
+      "note": "Full-time inventory coordinator, from $52k. Short train commute. Unverified."
     }
   ]
 }
