@@ -1,73 +1,73 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-26T12:45:35Z",
-  "lastRun": "2026-11-25T12:48:44Z",
-  "summary": "Found 7 new roles: 4 art, 3 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-25.md",
+  "state": "done",
+  "updated": "2026-11-26T12:48:29Z",
+  "lastRun": "2026-11-26T12:48:29Z",
+  "summary": "Found 7 new roles: 5 art, 2 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-26.md",
   "items": [
     {
+      "title": "Associate Customer Support Specialist",
+      "company": "Fleetio",
+      "location": "Remote (US)",
+      "url": "https://job-boards.greenhouse.io/fleetio/jobs/5308396007",
+      "source": "Indeed / ZipRecruiter / Greenhouse",
+      "category": "art",
+      "note": "Entry-level ticket and phone support at a software company, fully remote, posted Nov 25. No degree listed."
+    },
+    {
+      "title": "IT Support Desk Technician",
+      "company": "The Plastic Surgery Center",
+      "location": "Red Bank, NJ",
+      "url": "https://to.indeed.com/aazd2hvg2ykp",
+      "source": "Indeed",
+      "category": "art",
+      "note": "Help desk role with hardware setup and ticket work, $50-60k, short train commute. Stretch: asks for Windows Server experience."
+    },
+    {
       "title": "Customer Support Specialist",
-      "company": "Bloomerang",
+      "company": "MatrixCare (ResMed)",
       "location": "Remote (US)",
-      "url": "https://boards.greenhouse.io/bloomerang/jobs/4640022005",
-      "source": "ZipRecruiter / Greenhouse",
-      "category": "art",
-      "note": "Entry-level SaaS support role, $36-50k, remote with benefits. Unverified; confirm it's open."
-    },
-    {
-      "title": "Video Game QA Tester",
-      "company": "SpiderWare",
-      "location": "Remote",
-      "url": "https://jobs.workable.com/jobs/e7fb6cb5-841a-4f1b-8ded-4bc2a589dff9",
-      "source": "Web search (Workable)",
-      "category": "art",
-      "note": "Entry-level QA at an indie MMO studio. Unverified; confirm date and US eligibility."
-    },
-    {
-      "title": "Customer Service Representative - Online Tax Product Support",
-      "company": "Drake Software (1040.com)",
-      "location": "Remote (US)",
-      "url": "https://to.indeed.com/aawmzwqv9zg7",
-      "source": "Indeed",
-      "category": "art",
-      "note": "Seasonal entry-level chat/email product support, high school diploma or equivalent. Verified via Indeed."
-    },
-    {
-      "title": "Customer Support Specialist (Contract or Intern)",
-      "company": "Eight Sleep",
-      "location": "Remote (US)",
-      "url": "https://jobs.ashbyhq.com/eightsleep/217583eb-e5a8-4889-adc1-01b718e0bd17",
-      "source": "ZipRecruiter / Ashby",
-      "category": "art",
-      "note": "Contract support role at a consumer tech company, from $40k. Unverified."
-    },
-    {
-      "title": "Supplement Clerk (Supplement Operations Specialist)",
-      "company": "Morrison Center",
-      "location": "New York, NY",
-      "url": "https://to.indeed.com/aakrwmb9byvs",
-      "source": "Indeed",
-      "category": "ops",
-      "note": "Inventory, receiving, purchasing and fulfillment in a small department, $24-29/hr, no degree listed. Short train commute. Verified via Indeed."
-    },
-    {
-      "title": "Purchasing Coordinator",
-      "company": "Kirkland & Ellis",
-      "location": "New York, NY",
-      "url": "https://staffjobsus.kirkland.com/jobs/18502059-purchasing-coordinator",
-      "source": "ZipRecruiter",
-      "category": "ops",
-      "note": "Purchasing coordinator role, $58-80k. Short train commute. Unverified."
-    },
-    {
-      "title": "Inventory Coordinator",
-      "company": "Signet Jewelers (Blue Nile)",
-      "location": "New York, NY",
-      "url": "https://signetjewelers.wd1.myworkdayjobs.com/BlueNile/job/Inventory-Coordinator_REQ_84695",
+      "url": "https://resmed.wd3.myworkdayjobs.com/resmed_external_careers/job/Customer-Support-Specialist_JR_055670-2",
       "source": "ZipRecruiter / Workday",
+      "category": "art",
+      "note": "Remote software support role with benefits, posted about 6 days ago. Unverified."
+    },
+    {
+      "title": "Project Coordinator - JIRA",
+      "company": "Inteldot",
+      "location": "Remote (US)",
+      "url": "https://inteldot.breezy.hr/p/4024e16a2277-project-coordinator-jira",
+      "source": "ZipRecruiter / Breezy",
+      "category": "art",
+      "note": "Junior project coordinator role centered on Jira tracking, remote, $43-64k. Unverified."
+    },
+    {
+      "title": "Unreal Engine Specialist - Windows",
+      "company": "Default Project",
+      "location": "Remote (US)",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZkQlA1d1ExanVqU21YTUU2NTVaUWR3EiQwMWEyMTdlNC05YWZmLTdiOGUtYWE4Yy03ODczNjViOTdkN2EaUEFBRUtZcFFWNjM0MXRfUUMwRTlRcEJzWmhpWW1ldGd0b1NSUzgweFAzQkJ3dXhvdDJqNGZFZmoxbk5ja3FiMWV1cktBSUJIT3ZZUDVqc0plIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "source": "ZipRecruiter",
+      "category": "art",
+      "note": "Part-time remote Unreal Engine role. Unverified; full description not visible."
+    },
+    {
+      "title": "Inventory Specialist",
+      "company": "RWJBarnabas Health",
+      "location": "New Brunswick, NJ",
+      "url": "https://to.indeed.com/aa4fx2gvzkyp",
+      "source": "Indeed",
       "category": "ops",
-      "note": "Full-time inventory coordinator, from $52k. Short train commute. Unverified."
+      "note": "Inventory role with ordering, PAR levels and audits; high school diploma only. Night shift. Short train commute."
+    },
+    {
+      "title": "Sourcing Coordinator",
+      "company": "Ann Taylor",
+      "location": "New York, NY (hybrid)",
+      "url": "https://to.indeed.com/aaqxmd869yzr",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Purchase-order and vendor coordination role, hybrid near Penn Station, degree or equivalent experience."
     }
   ]
 }
