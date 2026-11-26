@@ -82,8 +82,8 @@
 
   // Seasonal events:
   //   Halloween    Oct 1 to Nov 7
-  //   Thanksgiving Nov 8 to the day after Thanksgiving (the 4th Thursday of November)
-  //   Christmas    the Saturday after Thanksgiving to Jan 1 (always snowy)
+  //   Thanksgiving Nov 8 to the day before Thanksgiving (the 4th Thursday of November)
+  //   Christmas    Thanksgiving Day to Jan 1: a snowy retro-RPG village
   // Preview with ?event=halloween, ?event=thanksgiving, ?event=christmas or ?event=none.
   const QS = new URLSearchParams(location.search);
   const EVENT_PARAM = QS.get('event');
@@ -95,7 +95,7 @@
     if (EVENT_PARAM) return EVENT_PARAM === 'none' ? '' : EVENT_PARAM;
     const m = d.getMonth(), day = d.getDate();
     if (m === 9 || (m === 10 && day <= 7)) return 'halloween';
-    if (m === 10) return day <= thanksgivingDay(d.getFullYear()) + 1 ? 'thanksgiving' : 'christmas';
+    if (m === 10) return day < thanksgivingDay(d.getFullYear()) ? 'thanksgiving' : 'christmas';
     if (m === 11 || (m === 0 && day === 1)) return 'christmas';
     return '';
   }
@@ -183,6 +183,7 @@
   // ---------- background (static, rebuilt when season or plots change) ----------
 
   function buildBackground() {
+    if (holiday === 'christmas') return buildVillageBackground();
     const S = SEASONS[season];
     const c = document.createElement('canvas');
     c.width = W; c.height = H;
@@ -936,6 +937,243 @@
     rect(ctx, x - 1, y - 10, 5, 1, '#f4f8fb');
   }
 
+  // ---------- Christmas village: a snowy retro-RPG hometown ----------
+  // Original art: cottages, picket fences, pine borders, tall-grass meadows with three made-up critters.
+
+  const VG = { snow: '#eef3f7', snow2: '#e1e9f0', snow3: '#f8fbfd', ink: '#3a3442', path: '#cdb48d', path2: '#b99c74',
+    pine: '#2f6b4f', pine2: '#245640', grass: '#4f9a5e', grass2: '#3d7f4c', wall: '#f4ead8', wall2: '#e2d3b8', wood: '#8a5a3a', wood2: '#6b4428' };
+
+  function drawPine(g, x, y, h) {
+    // a tiered pine with snow on each tier, trunk at (x, y)
+    rect(g, x - 1, y - 2, 2, 2, VG.wood2);
+    for (let k = 0; k < 3; k++) {
+      const ty = y - 2 - k * Math.round(h / 4), w = 7 - k * 2;
+      for (let r = 0; r < 4; r++) rect(g, x - w + r, ty - r, (w - r) * 2, 1, k % 2 ? VG.pine2 : VG.pine);
+      rect(g, x - w + 3, ty - 3, (w - 3) * 2, 1, VG.snow3);
+    }
+    rect(g, x - 1, y - 2 - 3 * Math.round(h / 4) - 1, 2, 1, VG.snow3);
+  }
+
+  function tallGrass(g, x, y) {
+    // one 8x8 tile of snowy tall grass
+    rect(g, x, y, 8, 8, VG.grass2);
+    glyph(g, x, y + 1, ['.#..#..#', '##.##.##', '#..#..#.', '.#..#..#', '##.##.##', '#..#..#.'], VG.grass);
+    glyph(g, x, y, ['.#..#..#'], VG.snow3);
+  }
+
+  function picketFence(g, x0, x1, y, gaps) {
+    for (let x = x0; x < x1; x += 3) {
+      if (gaps.some(([a, b]) => x + 1 >= a && x <= b)) continue;
+      rect(g, x, y - 4, 2, 5, '#ffffff');
+      rect(g, x, y - 5, 1, 1, '#ffffff');
+      rect(g, x + 1, y - 4, 1, 5, '#cfd8e0');
+    }
+    for (const yy of [y - 3, y - 1]) for (let x = x0; x < x1; x++) if (!gaps.some(([a, b]) => x >= a && x <= b)) rect(g, x, yy, 1, 1, '#dbe3ea');
+  }
+
+  function buildVillageBackground() {
+    const c = document.createElement('canvas');
+    c.width = W; c.height = H;
+    const g = c.getContext('2d');
+    const R = mulberry(23);
+    // snowy ground in soft 8px tiles
+    rect(g, 0, 0, W, H, VG.snow);
+    for (let y = 0; y < H; y += 8) for (let x = (y / 8) % 2 ? 0 : 8; x < W; x += 16) rect(g, x, y, 8, 8, VG.snow2);
+    for (let i = 0; i < 260; i++) rect(g, R() * W, R() * H, 1, 1, VG.snow3);
+    // pine forest along the top and bottom edges of town
+    rect(g, 0, 0, W, SKYLINE_H, '#cfe0ee');
+    for (let x = -4; x < W + 8; x += 9) drawPine(g, x, SKYLINE_H + 1 - ((x / 9) % 2 ? 3 : 0), 22);
+    for (let x = 0; x < W + 8; x += 9) drawPine(g, x, H + 4 - ((x / 9) % 2 ? 0 : 3), 18);
+    // packed-snow dirt path where the road was
+    rect(g, 0, ROAD_Y, W, ROAD_H, VG.path);
+    for (let i = 0; i < 140; i++) rect(g, R() * W, ROAD_Y + 1 + R() * (ROAD_H - 2), 1, 1, VG.path2);
+    for (let x = 0; x < W; x += 2) { rect(g, x, ROAD_Y - 1 + (x % 4 ? 0 : 1), 2, 1, VG.snow3); rect(g, x, ROAD_Y + ROAD_H - 1 - (x % 4 ? 0 : 1), 2, 1, VG.snow3); }
+    for (let x = 10; x < W; x += 13) { rect(g, x, ROAD_Y + 5, 1, 1, VG.path2); rect(g, x + 3, ROAD_Y + 9, 1, 1, VG.path2); }
+    const occupied = new Set(agents.map((a) => a.plot));
+    PLOTS.forEach((P, i) => {
+      // walkway to the path
+      if (P.top) rect(g, P.x + 23, P.y + 46, 7, ROAD_Y - P.y - 46, VG.path);
+      else { rect(g, P.x + 48, ROAD_Y + ROAD_H, 7, P.y + 50 - (ROAD_Y + ROAD_H), VG.path); rect(g, P.x + 23, P.y + 46, 32, 6, VG.path); }
+      if (!occupied.has(i)) {
+        // an open lot is a tall-grass meadow until someone moves in
+        for (let y = P.y + 18; y < P.y + 62; y += 8) for (let x = P.x + 8; x < P.x + 82; x += 8) if (!(x > P.x + 56 && y < P.y + 50 && y > P.y + 26)) tallGrass(g, x, y);
+        return;
+      }
+      // white picket fence around the yard, with a gap for the walkway
+      const gap = P.top ? [[P.x + 22, P.x + 31]] : [[P.x + 47, P.x + 56]];
+      picketFence(g, P.x + 4, P.x + 87, P.y + 67, gap);
+      for (let y = P.y + 48; y < P.y + 67; y += 3) { rect(g, P.x + 4, y, 2, 2, '#ffffff'); rect(g, P.x + 85, y, 2, 2, '#ffffff'); }
+      // a small tall-grass patch in the corner of each yard
+      tallGrass(g, P.x + 72, P.y + 56);
+    });
+    return c;
+  }
+
+  function drawCottage(P, a, lit, t) {
+    const x = P.x + 6, y = P.y, roof = a.color;
+    ellipse(ctx, x + 20, y + 47, 24, 2, 'rgba(40,50,70,0.15)');
+    // chimney
+    rect(ctx, x + 29, y + 3, 5, 9, '#a5523a'); rect(ctx, x + 29, y + 3, 5, 1, '#c76a4e'); rect(ctx, x + 28, y + 2, 7, 2, VG.snow3);
+    // walls with an outline
+    rect(ctx, x - 1, y + 21, 42, 26, VG.ink);
+    rect(ctx, x, y + 22, 40, 24, VG.wall);
+    rect(ctx, x, y + 42, 40, 4, VG.wall2);
+    for (let k = 2; k < 40; k += 6) rect(ctx, x + k, y + 22, 1, 20, '#ebdfc8');
+    // gabled roof: shingle rows, snow along the ridge with drips
+    for (let r = 0; r < 15; r++) {
+      const inset = Math.max(0, 7 - Math.floor(r / 2));
+      rect(ctx, x - 3 + inset, y + 7 + r, 46 - inset * 2, 1, r % 3 === 2 ? shade(roof, -35) : r < 2 ? VG.ink : roof);
+    }
+    rect(ctx, x - 3, y + 22, 46, 1, VG.ink);
+    rect(ctx, x + 4, y + 7, 32, 3, VG.snow3);
+    for (let k = 5; k < 36; k += 4) rect(ctx, x + k, y + 10, 2, 1 + (k % 3), VG.snow3);
+    rect(ctx, x - 3, y + 21, 46, 1, VG.snow3);
+    // string lights under the eaves
+    for (let k = 0; k < 44; k += 3) {
+      const on = Math.sin(t * 3 + k * 0.9 + P.x) > -0.3;
+      rect(ctx, x - 2 + k, y + 23 + (k % 2), 1, 1, on ? XMAS_LIGHTS[(k / 3 | 0) % XMAS_LIGHTS.length] : '#8a8f9e');
+    }
+    // windows with a cross frame and a little snow on the sill
+    for (const wx of [x + 4, x + 28]) {
+      rect(ctx, wx - 1, y + 27, 10, 9, VG.ink);
+      rect(ctx, wx, y + 28, 8, 7, lit ? '#ffd98a' : '#a9d2e6');
+      rect(ctx, wx + 3, y + 28, 2, 7, VG.wood); rect(ctx, wx, y + 31, 8, 1, VG.wood);
+      if (!lit) rect(ctx, wx + 1, y + 29, 1, 1, '#e6f4fb');
+      rect(ctx, wx - 1, y + 36, 10, 1, VG.snow3);
+    }
+    // front door with a wreath and a doormat
+    rect(ctx, x + 15, y + 32, 10, 15, VG.ink);
+    rect(ctx, x + 16, y + 33, 8, 13, VG.wood);
+    rect(ctx, x + 16, y + 33, 8, 1, shade(VG.wood, 25));
+    rect(ctx, x + 22, y + 40, 1, 1, '#f2c94c');
+    drawWreath(x + 20, y + 37, '#2f7a4a', '#d63a3a');
+    rect(ctx, x + 15, y + 47, 10, 1, '#b5482f');
+  }
+
+  function drawNoticeBoard(P, a, t) {
+    // a wooden notice board; each pinned note is one status item
+    const bx = P.x + 60, by = P.y + 30;
+    const items = (a.status && a.status.items) || [];
+    rect(ctx, bx + 2, by + 10, 2, 9, VG.wood2); rect(ctx, bx + 18, by + 10, 2, 9, VG.wood2);
+    rect(ctx, bx - 1, by - 1, 24, 14, VG.ink);
+    rect(ctx, bx, by, 22, 12, VG.wood);
+    rect(ctx, bx, by, 22, 1, shade(VG.wood, 30));
+    rect(ctx, bx - 1, by - 2, 24, 2, VG.snow3);
+    for (let i = 0; i < Math.min(items.length, 10); i++) {
+      const px = bx + 2 + (i % 5) * 4, py = by + 2 + Math.floor(i / 5) * 5;
+      const cat = items[i].category;
+      rect(ctx, px, py, 3, 4, '#fbf6ea');
+      rect(ctx, px + 1, py, 1, 1, cat === 'ops' || cat === 'newsletter' || cat === 'attention' ? '#d63a3a' : cat === 'video' ? '#f2a93a' : '#2f8f4e');
+    }
+    if (a.mode === 'working') rect(ctx, bx + 1, by + 1 + Math.floor(t * 6) % 10, 20, 1, 'rgba(255,240,180,0.6)');
+    const light = a.mode === 'working' ? '#f2a93a' : (a.mode === 'error' || a.mode === 'stuck') ? '#ff5d5d' : '#7be08a';
+    rect(ctx, bx + 10, by - 3, 2, 1, light);
+  }
+
+  function drawWoodSign(P) {
+    const sx = P.x + 64, sy = P.y + 32;
+    rect(ctx, sx + 5, sy + 7, 2, 9, VG.wood2);
+    rect(ctx, sx - 1, sy - 1, 14, 9, VG.ink);
+    rect(ctx, sx, sy, 12, 7, VG.wood);
+    rect(ctx, sx - 1, sy - 2, 14, 2, VG.snow3);
+    glyph(ctx, sx + 2, sy + 2, ['#.#.###', '###..#.', '#.#.###'], '#fbf6ea'); // "HI"
+  }
+
+  // Three original critters live in the tall grass: a snow fox, a round penguin puff and a holly sprite.
+  const CRITTER_KINDS = ['fox', 'puff', 'holly'];
+  const critters = CRITTER_KINDS.concat(CRITTER_KINDS).map((kind, k) => ({ kind, k, lot: -1, x: 0, y: 0, tx: 0, ty: 0, pause: Math.random() * 2, dir: 1, hop: 0, ph: k * 1.7 }));
+
+  function grassAt(x, y) {
+    const lot = PLOTS.findIndex((P) => x >= P.x + 8 && x < P.x + 82 && y >= P.y + 18 && y < P.y + 62);
+    return lot >= 0 && !agents.some((a) => a.plot === lot);
+  }
+
+  function updateCritters(dt) {
+    const empty = PLOTS.map((P, i) => i).filter((i) => !agents.some((a) => a.plot === i));
+    critters.forEach((cr) => {
+      // live in an open lot's meadow; with no open lots, roam the yards' grass corners
+      const homes = empty.length ? empty : agents.map((a) => a.plot);
+      if (!homes.length) { cr.lot = -1; return; }
+      const want = homes[cr.k % homes.length];
+      const area = (P) => (empty.length ? { x0: P.x + 10, x1: P.x + 78, y0: P.y + 22, y1: P.y + 62 } : { x0: P.x + 72, x1: P.x + 80, y0: P.y + 58, y1: P.y + 64 });
+      if (cr.lot !== want) { cr.lot = want; const A = area(PLOTS[want]); cr.x = cr.tx = A.x0 + Math.random() * (A.x1 - A.x0); cr.y = cr.ty = A.y0 + Math.random() * (A.y1 - A.y0); }
+      if (cr.pause > 0) { cr.pause -= dt; cr.hop = 0; return; }
+      const dx = cr.tx - cr.x, dy = cr.ty - cr.y, d = Math.hypot(dx, dy);
+      if (d < 0.5) {
+        const A = area(PLOTS[cr.lot]);
+        cr.tx = A.x0 + Math.random() * (A.x1 - A.x0); cr.ty = A.y0 + Math.random() * (A.y1 - A.y0);
+        cr.pause = 0.8 + Math.random() * 3; return;
+      }
+      const step = Math.min(d, 12 * dt);
+      cr.x += (dx / d) * step; cr.y += (dy / d) * step; cr.hop += dt;
+      if (Math.abs(dx) > 0.2) cr.dir = dx > 0 ? 1 : -1;
+    });
+  }
+
+  function drawCritter(cr, t) {
+    const x = Math.round(cr.x), up = cr.hop > 0 && Math.floor(cr.hop * 8) % 2 ? 1 : 0;
+    const y = Math.round(cr.y) - up, d = cr.dir;
+    const inGrass = grassAt(cr.x, cr.y);
+    if (!inGrass) ellipse(ctx, x, Math.round(cr.y) + 1, 3, 1, 'rgba(40,50,70,0.18)');
+    if (cr.kind === 'fox') {
+      // white snow fox with an amber-tipped tail
+      rect(ctx, x - 3, y - 4, 6, 3, '#ffffff'); rect(ctx, x - 3, y - 4, 6, 1, '#e3ebf2');
+      rect(ctx, x - d * 4 - (d < 0 ? 1 : 0), y - 5, 2, 2, '#ffffff'); rect(ctx, x - d * 5 - (d < 0 ? 1 : 0), y - 6, 2, 1, '#f2a93a');
+      rect(ctx, x + d * 2 - (d < 0 ? 2 : 0), y - 7, 4, 3, '#ffffff');
+      rect(ctx, x + d * 2 - (d < 0 ? 2 : 0), y - 8, 1, 1, '#ffffff'); rect(ctx, x + d * 4 - (d < 0 ? 2 : 0) + (d < 0 ? 1 : 0), y - 8, 1, 1, '#ffffff');
+      rect(ctx, x + d * 4 - (d < 0 ? 1 : 0), y - 6, 1, 1, VG.ink);
+      rect(ctx, x - 2, y - 1, 1, 1, '#b8c4ce'); rect(ctx, x + 1, y - 1, 1, 1, '#b8c4ce');
+    } else if (cr.kind === 'puff') {
+      // round navy puffball with a white belly, orange beak and feet
+      disc(ctx, x, y - 4, 3, '#2d3f6b');
+      rect(ctx, x - 1 + d, y - 4, 2, 3, '#f4f8fb');
+      rect(ctx, x + d * 2, y - 6, 1, 1, '#f4f8fb'); rect(ctx, x + d * 2 + (d > 0 ? 0 : 0), y - 6, 1, 1, VG.ink);
+      rect(ctx, x + d * 3 - (d < 0 ? 0 : 0), y - 5, 1, 1, '#f2a93a');
+      rect(ctx, x - 2, y - 1, 1, 1, '#f2a93a'); rect(ctx, x + 1, y - 1, 1, 1, '#f2a93a');
+      rect(ctx, x - 1, y - 8, 2, 1, '#d63a3a'); // a tiny festive hat
+    } else {
+      // holly sprite: a leaf-green sprite wearing a red berry
+      glyph(ctx, x - 3, y - 6, ['.#####.', '#######', '.#####.', '..###..'], '#3f9a4e');
+      rect(ctx, x - 3, y - 5, 7, 1, '#2f7a3c');
+      rect(ctx, x - 1, y - 8, 2, 2, '#d63a3a'); rect(ctx, x - 1, y - 8, 1, 1, '#ff8a8a');
+      rect(ctx, x - 1 + d, y - 5, 1, 1, VG.ink); rect(ctx, x + 1 + d, y - 5, 1, 1, VG.ink);
+      rect(ctx, x - 1, y - 2, 1, 2, '#2f7a3c'); rect(ctx, x + 1, y - 2, 1, 2, '#2f7a3c');
+    }
+    if (inGrass) {
+      // tall grass hides their feet and rustles as they move
+      const sway = cr.hop > 0 && Math.floor(t * 10) % 2 ? 1 : 0;
+      glyph(ctx, x - 4 + sway, Math.round(cr.y) - 3, ['#..#..#..', '##.##.##.', '#########'], VG.grass);
+      glyph(ctx, x - 4 + sway, Math.round(cr.y) - 3, ['#..#..#..'], VG.snow3);
+    }
+  }
+
+  // RPG-style text box just below the town: tap a resident to hear from them; otherwise it cycles through everyone.
+  const textBox = { el: null, full: '', shown: 0, hold: 0, idx: 0, on: false };
+  function lineFor(a) {
+    const s = a.status || {};
+    const msg = s.message || s.summary || 'Just hanging around.';
+    return `${a.name.toUpperCase()}: ${msg}`;
+  }
+  function sayFor(a) { textBox.full = lineFor(a); textBox.shown = 0; textBox.hold = 9; }
+  function updateTextBox(dt, on) {
+    if (!textBox.el) {
+      textBox.el = document.createElement('div');
+      textBox.el.className = 'rpgbox'; textBox.el.setAttribute('aria-live', 'polite'); textBox.el.hidden = true;
+      const stage = document.getElementById('stage');
+      stage.parentNode.insertBefore(textBox.el, stage.nextSibling);
+    }
+    if (!on) { if (textBox.on) { textBox.el.hidden = true; textBox.on = false; } return; }
+    if (!textBox.on) { textBox.el.hidden = false; textBox.on = true; textBox.hold = 0; }
+    if (!agents.length) return;
+    if (textBox.shown >= textBox.full.length) {
+      textBox.hold -= dt;
+      if (textBox.hold <= 0) { const a = agents[textBox.idx++ % agents.length]; sayFor(a); textBox.hold = 6; }
+    } else textBox.shown = Math.min(textBox.full.length, textBox.shown + dt * 40);
+    const text = textBox.full.slice(0, Math.floor(textBox.shown));
+    if (textBox.el.dataset.t !== text) { textBox.el.dataset.t = text; textBox.el.textContent = text; }
+    textBox.el.classList.toggle('done', textBox.shown >= textBox.full.length);
+  }
+
   // ---------- resident behaviour ----------
 
   function modeOf(a, now) {
@@ -1037,7 +1275,7 @@
     }
 
     // hover cars in two lanes
-    if (carTimer <= 0 && !(holiday === 'thanksgiving' && turkeys.holding)) {
+    if (carTimer <= 0 && holiday !== 'christmas' && !(holiday === 'thanksgiving' && turkeys.holding)) {
       carTimer = 2.5 + Math.random() * 4;
       const right = Math.random() > 0.5;
       cars.push({ x: right ? -14 : W + 1, y: right ? ROAD_Y + 13 : ROAD_Y + 6, dir: right ? 1 : -1,
@@ -1097,10 +1335,12 @@
     // depth-sorted scene
     const items = [];
     for (const tr of trees) items.push([tr.y, () => drawTree(tr, t, S)]);
+    const village = holiday === 'christmas';
     for (const L of LAMPS) items.push([L.y, () => drawLamp(L, lightsOn)]);
-    for (const c of cars) items.push([c.y, () => drawCar(c, lightsOn)]);
+    if (!village) for (const c of cars) items.push([c.y, () => drawCar(c, lightsOn)]);
     items.push([FOUNTAIN.y + 8, () => drawFountain(t)], [CART.y + 2, () => drawCart(lightsOn)], [BENCH.y, drawBench]);
-    items.push([RAIL_Y + 8, () => drawTram(lightsOn)]);
+    if (!village) items.push([RAIL_Y + 8, () => drawTram(lightsOn)]);
+    if (village) for (const cr of critters) if (cr.lot >= 0) items.push([cr.y, () => drawCritter(cr, t)]);
     const occupied = new Map(agents.map((a) => [a.plot, a]));
     PLOTS.forEach((P, i) => {
       const a = occupied.get(i);
@@ -1112,10 +1352,10 @@
       if (holiday === 'christmas' && a) {
         items.push([P.y + 50, () => { drawPresent(P.x + 56, P.y + 50, '#d63a3a', '#f2c94c'); drawPresent(P.x + 84, P.y + 50, '#2f7a4a', '#f4f8fb'); drawPresent(P.x + 59, P.y + 51, '#6fb6ff', '#ffe066'); }]);
       }
-      if (!a) { items.push([P.y + 48, () => drawHoloSign(P, t)]); return; }
+      if (!a) { items.push([P.y + 48, () => (village ? drawWoodSign(P) : drawHoloSign(P, t))]); return; }
       const lit = (lightsOn && a.mode !== 'sleeping') || (a.mode === 'working' && dark > 0.1);
-      items.push([P.y + 46, () => drawHome(P, a, lit, t)]);
-      items.push([P.y + 48, () => drawKiosk(P, a, t)]);
+      items.push([P.y + 46, () => (village ? drawCottage(P, a, lit, t) : drawHome(P, a, lit, t))]);
+      items.push([P.y + 48, () => (village ? drawNoticeBoard(P, a, t) : drawKiosk(P, a, t))]);
       if (!a.v.hidden) items.push([a.v.y, () => drawVillager(a, t)]);
     });
     if (holiday === 'thanksgiving') for (const tk of turkeys.list) items.push([tk.y, () => drawTurkey(tk, t)]);
@@ -1123,7 +1363,7 @@
     for (const [, draw] of items) draw();
 
     drawParticles(t);
-    for (const d of drones) drawDrone(d, t);
+    if (!village) for (const d of drones) drawDrone(d, t);
 
     if (dark < 0.2 && (season === 'spring' || season === 'summer')) {
       for (const bf of butterflies) {
@@ -1142,8 +1382,10 @@
 
     // city lights after dark
     if (lightsOn) {
-      for (const w of skyWindows) if (w.lit) rect(ctx, w.x, w.y, 2, 2, w.col);
-      for (const b of skyline) if (b.antenna && Math.sin(t * 2 + b.ph) > 0.3) rect(ctx, b.x + (b.w >> 1), SKYLINE_H - b.h - 1, 1, 1, '#ff5d5d');
+      if (!village) {
+        for (const w of skyWindows) if (w.lit) rect(ctx, w.x, w.y, 2, 2, w.col);
+        for (const b of skyline) if (b.antenna && Math.sin(t * 2 + b.ph) > 0.3) rect(ctx, b.x + (b.w >> 1), SKYLINE_H - b.h - 1, 1, 1, '#ff5d5d');
+      }
       ctx.globalCompositeOperation = 'lighter';
       const glow = (x, y, r, col, a) => {
         const g = ctx.createRadialGradient(x, y, 0, x, y, r);
@@ -1164,19 +1406,19 @@
           glow(P.x + 36, P.y + 22, 8, '#ffbe64', 0.28 * dark);
         }
         glow(P.x + 26, P.y + 28, 22, a.color, 0.3 * dark);
-        glow(P.x + 71, P.y + 35, 12, CYAN, 0.3 * dark);
+        glow(P.x + 71, P.y + 35, 12, village ? '#ffbe64' : CYAN, 0.3 * dark);
         if (a.prop === 'pumpkin' && !a.v.hidden) glow(a.v.dir > 0 ? a.v.x + 6 : a.v.x - 7, a.v.y - 5, 7, '#ff8a2a', 0.5 * dark);
       }
-      PLOTS.forEach((P, i) => { if (!occupied.has(i)) glow(P.x + 70, P.y + 34, 10, CYAN, 0.25 * dark); });
+      if (!village) PLOTS.forEach((P, i) => { if (!occupied.has(i)) glow(P.x + 70, P.y + 34, 10, CYAN, 0.25 * dark); });
       for (const c of cars) {
         glow(c.x + (c.dir > 0 ? 16 : -3), c.y - 2, 7, '#fff6c8', 0.35 * dark);
         glow(c.x + 6, c.y + 2, 6, CYAN, 0.3 * dark);
       }
-      if (tram.x > -100 && tram.x < W + 90) for (let k = 0; k < 3; k++) glow(tram.x - k * 27 + 12, RAIL_Y, 14, '#ffbe64', 0.25 * dark);
+      if (!village && tram.x > -100 && tram.x < W + 90) for (let k = 0; k < 3; k++) glow(tram.x - k * 27 + 12, RAIL_Y, 14, '#ffbe64', 0.25 * dark);
       glow(CART.x + 10, CART.y - 15, 12, '#ff7a59', 0.4 * dark);
-      for (const d of drones) glow(d.x, d.y + 2, 4, '#7be08a', 0.5 * dark);
+      if (!village) for (const d of drones) glow(d.x, d.y + 2, 4, '#7be08a', 0.5 * dark);
       if (holiday === 'christmas') {
-        PLOTS.forEach((P, i) => { if (occupied.has(i)) for (let k = 0; k < 4; k++) glow(P.x + 12 + k * 10, P.y + 17, 6, XMAS_LIGHTS[k], 0.22 * dark); });
+        PLOTS.forEach((P, i) => { if (occupied.has(i)) for (let k = 0; k < 4; k++) glow(P.x + 8 + k * 12, P.y + 23, 6, XMAS_LIGHTS[k], 0.22 * dark); });
         const big = trees[0];
         glow(big.x, big.y - 8 - big.r * 2, 10, '#ffe066', 0.5 * dark);
         if (sleigh.active) glow(sleigh.x + 23, sleigh.y - 3, 7, '#ff3b3b', 0.7 * dark + 0.2);
@@ -1246,7 +1488,8 @@
     for (const ev of ['halloween', 'thanksgiving', 'christmas']) document.body.classList.toggle(ev, holiday === ev);
     if (spooky) updateSpooky(dt, t);
     if (holiday === 'thanksgiving') updateTurkeys(dt);
-    if (holiday === 'christmas') updateSleigh(dt, t);
+    if (holiday === 'christmas') { updateSleigh(dt, t); updateCritters(dt); }
+    updateTextBox(dt, holiday === 'christmas');
     for (const a of agents) { a.mode = modeOf(a, now); updateVillager(a, dt); }
     updateWorld(dt, t);
     render(t, now);
@@ -1392,7 +1635,7 @@
     return null;
   }
 
-  canvas.addEventListener('click', (e) => { const a = hitTest(e); if (a) openPanel(a.id); });
+  canvas.addEventListener('click', (e) => { const a = hitTest(e); if (a) { if (holiday === 'christmas') sayFor(a); openPanel(a.id); } });
   canvas.addEventListener('mousemove', (e) => { canvas.style.cursor = hitTest(e) ? 'pointer' : 'default'; });
 
   // ---------- clock ----------

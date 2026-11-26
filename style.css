@@ -299,7 +299,7 @@ body.thanksgiving .card:hover, body.thanksgiving .card:focus-visible { border-co
 body.thanksgiving .panel { border-left-color: var(--amber); }
 body.thanksgiving .roster h2, body.thanksgiving .panel h3 { color: var(--amber); }
 
-/* ---------- Christmas (the Saturday after Thanksgiving – Jan 1) ---------- */
+/* ---------- Christmas (Thanksgiving Day – Jan 1) ---------- */
 body.christmas {
   --bg: #0f1d26;
   --panel: #182b36;
@@ -346,3 +346,20 @@ body.christmas .roster h2, body.christmas .panel h3 { color: var(--amber); }
 }
 .reading-link:hover { border-color: var(--amber); }
 .reading-link + .reading-link { margin-left: 0; }
+
+/* retro RPG text box shown just below the town at Christmas */
+.rpgbox {
+  position: relative; margin: 10px 0 0;
+  background: #fbfbf4; color: #2a2834;
+  border: 3px double #2a2834; border-radius: 6px;
+  box-shadow: 0 0 0 2px #fbfbf4, 0 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 6px 26px 6px 10px; min-height: 2.6em;
+  font-family: "Pixelify Sans", monospace; font-size: clamp(0.85rem, 1.6vw, 1.05rem); line-height: 1.35;
+  pointer-events: none;
+}
+.rpgbox.done::after {
+  content: "▼"; position: absolute; right: 8px; bottom: 4px; font-size: 0.7em;
+  animation: rpgblink 0.9s steps(2) infinite;
+}
+@keyframes rpgblink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .rpgbox.done::after { animation: none; } }
