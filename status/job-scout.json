@@ -1,73 +1,73 @@
 {
   "agent": "job-scout",
-  "state": "working",
-  "updated": "2026-11-27T12:45:38Z",
-  "lastRun": "2026-11-26T12:48:29Z",
-  "summary": "Found 7 new roles: 5 art, 2 operations. 3 tailored resume drafts ready.",
-  "report": "jobs/2026-11-26.md",
+  "state": "done",
+  "updated": "2026-11-27T12:50:17Z",
+  "lastRun": "2026-11-27T12:50:17Z",
+  "summary": "Found 7 new roles: 3 art, 4 operations. 3 tailored resume drafts ready.",
+  "report": "jobs/2026-11-27.md",
   "items": [
     {
-      "title": "Associate Customer Support Specialist",
-      "company": "Fleetio",
-      "location": "Remote (US)",
-      "url": "https://job-boards.greenhouse.io/fleetio/jobs/5308396007",
-      "source": "Indeed / ZipRecruiter / Greenhouse",
-      "category": "art",
-      "note": "Entry-level ticket and phone support at a software company, fully remote, posted Nov 25. No degree listed."
-    },
-    {
-      "title": "IT Support Desk Technician",
-      "company": "The Plastic Surgery Center",
-      "location": "Red Bank, NJ",
-      "url": "https://to.indeed.com/aazd2hvg2ykp",
+      "title": "IT Support Technician (Logistics)",
+      "company": "SpaceX",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aalwgfl2ddkd",
       "source": "Indeed",
       "category": "art",
-      "note": "Help desk role with hardware setup and ticket work, $50-60k, short train commute. Stretch: asks for Windows Server experience."
+      "note": "Hands-on IT support with hardware deployment, tiered tickets and IT asset inventory. HS diploma plus 1+ year IT support, $39-55/hr. Confirm the NYC site."
     },
     {
-      "title": "Customer Support Specialist",
-      "company": "MatrixCare (ResMed)",
-      "location": "Remote (US)",
-      "url": "https://resmed.wd3.myworkdayjobs.com/resmed_external_careers/job/Customer-Support-Specialist_JR_055670-2",
-      "source": "ZipRecruiter / Workday",
+      "title": "Project & Operations Coordinator",
+      "company": "INVNT",
+      "location": "New York, NY (hybrid)",
+      "url": "https://to.indeed.com/aavcvrrzr6fl",
+      "source": "Indeed",
       "category": "art",
-      "note": "Remote software support role with benefits, posted about 6 days ago. Unverified."
+      "note": "Coordinator at a live-events agency: freelancer onboarding, logistics, schedules and process docs. $65-72k, no degree listed, short train commute."
     },
     {
-      "title": "Project Coordinator - JIRA",
-      "company": "Inteldot",
+      "title": "Technical Support Specialist",
+      "company": "Gearfire",
       "location": "Remote (US)",
-      "url": "https://inteldot.breezy.hr/p/4024e16a2277-project-coordinator-jira",
-      "source": "ZipRecruiter / Breezy",
-      "category": "art",
-      "note": "Junior project coordinator role centered on Jira tracking, remote, $43-64k. Unverified."
-    },
-    {
-      "title": "Unreal Engine Specialist - Windows",
-      "company": "Default Project",
-      "location": "Remote (US)",
-      "url": "https://www.ziprecruiter.com/job-redirect?match_token=CpQBChZkQlA1d1ExanVqU21YTUU2NTVaUWR3EiQwMWEyMTdlNC05YWZmLTdiOGUtYWE4Yy03ODczNjViOTdkN2EaUEFBRUtZcFFWNjM0MXRfUUMwRTlRcEJzWmhpWW1ldGd0b1NSUzgweFAzQkJ3dXhvdDJqNGZFZmoxbk5ja3FiMWV1cktBSUJIT3ZZUDVqc0plIMmtBRABGMmtBQ%3D%3D&tsid=100000502",
+      "url": "https://www.ziprecruiter.com/job-redirect?match_token=Cp8BChZTandiU2RIZFdNbVB5cEJ5M2lpZ0JREiQwMWEyMWQwYi0zZGIyLTdjZGItODUxNC04NTJlOGNmNTkxZGIaW0FBRWZfZzlqbWNEZFdIRENyWURNc3E5b1p6b0RtRFViVVR6bEp3OVBUZEtpSlB3Ym1PM0h4SU9wMG5qRklvTmNwYzY3Qk1aaE10TE82b2FRTnUzMkdxOTlrR1Ugya0FEAIYya0FImpodHRwczovL2NsaWNrLmFwcGNhc3QuaW8vdC9mV0lZZzdFVEFWNGxEWE0tM1Y2NHJ6QWFyZnc2VzBhbE1rSEVESml1MGVFYWVmRVh3TWF1QmFINllBMHlVTDdLP2NpZD1bY2xpY2tfaWRd&tsid=100000502",
       "source": "ZipRecruiter",
       "category": "art",
-      "note": "Part-time remote Unreal Engine role. Unverified; full description not visible."
+      "note": "Junior-tagged technical support at an e-commerce software company, remote-optional, $42.5-64k. Unverified."
     },
     {
-      "title": "Inventory Specialist",
-      "company": "RWJBarnabas Health",
-      "location": "New Brunswick, NJ",
-      "url": "https://to.indeed.com/aa4fx2gvzkyp",
+      "title": "Distribution Coordinator II",
+      "company": "J.B. Hunt",
+      "location": "Elizabeth, NJ",
+      "url": "https://to.indeed.com/aarx2srcr8m2",
       "source": "Indeed",
       "category": "ops",
-      "note": "Inventory role with ordering, PAR levels and audits; high school diploma only. Night shift. Short train commute."
+      "note": "Warehouse ops coordinator for receiving, inventory accuracy, carriers and safety. $69-86k, HS diploma plus experience; bachelor's only preferred. Short train commute."
     },
     {
-      "title": "Sourcing Coordinator",
-      "company": "Ann Taylor",
-      "location": "New York, NY (hybrid)",
-      "url": "https://to.indeed.com/aaqxmd869yzr",
+      "title": "Warehouse/Inventory Coordinator",
+      "company": "Interport Maintenance Co",
+      "location": "Newark, NJ",
+      "url": "https://workforcenow.cloud.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=5804d40b-2992-4d62-a839-7f49cc7d1db3&ccId=19000101_000001&jobId=20903&source=ZR&lang=en_US",
+      "source": "ZipRecruiter / ADP",
+      "category": "ops",
+      "note": "Full-time warehouse and inventory coordinator, $50-56k, short train commute. Unverified."
+    },
+    {
+      "title": "Experience Coordinator",
+      "company": "CBRE (Experience by Industrious)",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aalfk6gq9svg",
       "source": "Indeed",
       "category": "ops",
-      "note": "Purchase-order and vendor coordination role, hybrid near Penn Station, degree or equivalent experience."
+      "note": "Workplace operations: vendors, maintenance tickets, supply ordering and event setup. $55-61k, no degree listed, short train commute."
+    },
+    {
+      "title": "Stock Lead",
+      "company": "ONIVERSE",
+      "location": "New York, NY",
+      "url": "https://to.indeed.com/aalbygfbq97s",
+      "source": "Indeed",
+      "category": "ops",
+      "note": "Stockroom lead handling shipments, delivery checks and inventory control at a fashion retailer. $18-21/hr, HS diploma plus 1-2 years retail stockroom."
     }
   ]
 }
